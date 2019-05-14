@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": "Payment Renewal\nof Daum Webtoon",
+    "backgroundImage": "dw/portfolio-dw-bg",
+    "stuffs": [
+      {
+        "url": "dw/img-dw-cover-i-phone-x",
+        "animation": "transitionY 10px",
+        "duration": 1
+      }
+    ],
+    "animation": "",
+    "shouldBeExposed": true,
+    "isActive": false
+  },
+  {
+    "id": 2,
+    "title": "맥주인형",
+    "backgroundImage": "",
+    "animation": "",
+    "shouldBeExposed": true,
+    "isActive": false
+  },
+  {
+    "id": 3,
+    "title": "속초리조트호텔 Noye",
+    "backgroundImage": "",
+    "animation": "",
+    "shouldBeExposed": true,
+    "isActive": false
+  },
+  {
+    "id": 4,
+    "title": "이건 안나올껄?",
+    "backgroundImage": "",
+    "animation": "",
+    "shouldBeExposed": false,
+    "isActive": false
+  }
+]
