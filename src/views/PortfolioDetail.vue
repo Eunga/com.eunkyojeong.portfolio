@@ -1,24 +1,10 @@
 <template>
   <div id="portfolio-detail">
     <div class="portfolio-meta">
-      <div class="portfolio-item-background">
-        <div class="portfolio-item-background-padding portfolio-item-background-padding-left"></div>
-      <div class="portfolio-item-background-padding portfolio-item-background-padding-right"></div>
-        <img class="d-block w-100 portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)"/>
-      </div>
-
-      <div class="portfolio-item-content d-none d-md-block container">
-        <div class="portfolio-item-stuffs">
-          <img
-            v-for="stuff in work.stuffs" 
-            v-bind:key="stuff.url"
-            :src="getImgUrl(stuff.url)" />
-        </div>
-        
-        <div class="portfolio-item-title">
-          <span v-html="getWorkTitle()"></span>
-        </div>
-      </div>
+      <portfolio-item
+        v-bind:work="work"
+        v-bind:key="work.id"
+      />
     </div>
     <div class="portfolio-detail-info container">
       {{ work.overview }}
@@ -28,9 +14,13 @@
 
 <script>
 import works from "../assets/json/works.json";
+import PortfolioItem from "@/components/portfolio/PortfolioItem.vue";
 
 export default {
   name: 'PortfolioDetail',
+  components: {
+    "portfolio-item": PortfolioItem
+  },
   data() {
     return {
       works: works
@@ -42,6 +32,11 @@ export default {
       var paths = wholePath.split('/');
       var path = paths[paths.length - 1];
 
+      this.works.filter(work => work.shouldBeExposed).map(function(v, i, arr) {
+        v.parantWorks = arr;
+        return v;
+      });
+
       var work = null;
       this.works.forEach(element => {
         if (element.path == path) {
@@ -50,6 +45,8 @@ export default {
         }
       });
 
+      console.log(work);
+      console.log(this.works);
       return work;
     }
   },

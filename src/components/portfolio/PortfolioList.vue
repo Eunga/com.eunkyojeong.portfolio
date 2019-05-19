@@ -1,6 +1,7 @@
 <template>
   <div id="portfolio-list" class="carousel slide" data-ride="carousel">
-    <div v-if="works.length" class="portfolio-carousel carousel-inner">
+    <div v-if="works.length" 
+      class="portfolio-carousel carousel-inner">
       <portfolio-item
         v-on:goPortfolioDetail="goPortfolioDetail($event)"
         v-for="work in validWorks"
@@ -8,7 +9,6 @@
         v-bind:key="work.id"
       />
     </div>
-
 
     <button
       style="display:none;"
