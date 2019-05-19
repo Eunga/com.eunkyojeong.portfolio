@@ -4,7 +4,7 @@
     <div class="portfolio-item-background">
       <div class="portfolio-item-background-padding portfolio-item-background-padding-left"></div>
       <div class="portfolio-item-background-padding portfolio-item-background-padding-right"></div>
-      <img class="d-block w-100 portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)"/>
+      <img class="portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)"/>
     </div>
 
     <div class="portfolio-item-content carousel-caption d-none d-md-block container"
@@ -16,11 +16,11 @@
           :src="getImgUrl(stuff.url)" />
       </div>
       
-      <div class="portfolio-work-count">
-        <span>{{ getWorkCountNumber(work.id) }} ㅡ {{ getWorkCountNumber(work.parantWorks.length) }}</span>
-      </div>
-      
       <div class="portfolio-item-title">
+        <div class="portfolio-work-count">
+          <span>{{ getWorkCountNumber(work.id) }} ㅡ {{ getWorkCountNumber(work.parantWorks.length) }}</span>
+        </div>
+        
         <span v-html="getWorkTitle()"></span>
       </div>
     </div>
@@ -84,9 +84,17 @@ export default {
   height: 100%;
 }
 
-.portfolio-item-background {
+.list .portfolio-item-background {
+  position: absolute;
+  width: 100%;
+  left:0;
+  right:0;
+  overflow: hidden;
+  margin:auto;
+}
+
+.detail .portfolio-item-background {
   position: fixed;
-  /* width: calc(100% - 240px) !important; */
   width: 100%;
   left:0;
   right:0;
@@ -101,6 +109,7 @@ export default {
   z-index: 10;
   background-color: white;
 }
+
 .list .portfolio-item-background-padding-left {
   left:0;
 }
@@ -120,6 +129,7 @@ export default {
 .portfolio-item-background > img {
   position: relative;
   width: 100%;
+  height: 100%;
 }
 
 .portfolio-item-stuffs {
@@ -140,23 +150,23 @@ export default {
   position: relative;
   left: 0;
   right: 0;
+  top: 0;
   margin-top: 120px;
   cursor:pointer;
 }
 
 .portfolio-item-title {
-  /* position: absolute;;
-  color:black;
-  left: 10%;
-  top: 35%;
-  font-size: 50px; */
-
-  font-size: 50px;
+  transition: all .3s ease-out;
   position: relative;
-  top: 0;
+  top: 200px;
   left: 0;
   text-align: left;
   color: black;
+  font-size: 50px;
+}
+
+.portfolio-item.detail .portfolio-item-title {
+  top: -50px;
 }
 
 .portfolio-work-count {
@@ -164,6 +174,10 @@ export default {
   text-align: left;
 
   color:black;
+}
+
+.detail .portfolio-item-title .portfolio-work-count {
+  visibility: hidden;
 }
 
 .portfolio-work-count span {
@@ -205,6 +219,23 @@ export default {
   transform: translateX(-300px);
   transition-duration: .3s;
 }
+
+.fade-leave-active .portfolio-item.list .portfolio-item-title .portfolio-work-count {
+  visibility: hidden;
+}
+
+.fade-leave-active .portfolio-item.detail .portfolio-item-title .portfolio-work-count {
+  display: block;
+}
+
+.fade-leave-active .portfolio-item.list .portfolio-item-title {
+  top: -50px;
+}
+
+.fade-leave-active .portfolio-item.detail .portfolio-item-title {
+  top: 200px;
+}
+
 </style>
 
 

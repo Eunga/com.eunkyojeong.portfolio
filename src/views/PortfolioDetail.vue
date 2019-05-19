@@ -9,7 +9,9 @@
     </div>
     <div class="portfolio-detail-info">
       <div class="container">
-        {{ work.overview }}
+        <portfolio-item-detail
+          v-bind:work="work"
+          />
       </div>
     </div>
   </div>
@@ -18,11 +20,13 @@
 <script>
 import works from "../assets/json/works.json";
 import PortfolioItem from "@/components/portfolio/PortfolioItem.vue";
+import PortfolioItemDetail from "@/components/portfolio/PortfolioItemDetail.vue";
 
 export default {
   name: 'PortfolioDetail',
   components: {
-    "portfolio-item": PortfolioItem
+    "portfolio-item": PortfolioItem,
+    "portfolio-item-detail": PortfolioItemDetail
   },
   data() {
     return {
@@ -91,11 +95,26 @@ export default {
 
 .portfolio-meta, .portfolio-detail-info {
   position: relative;
-  height: 100%;
   background-color: white;
+}
+.portfolio-meta {
+  height: 640px;
 }
 
 #portfolio-detail .portfolio-item-content {
   cursor: initial;
+}
+
+.portfolio-detail-info {
+  transition: all .3s ease;
+}
+
+/* transition */
+.fade-enter-active .portfolio-detail-info {
+  opacity: 0;
+}
+
+.fade-leave-active .portfolio-detail-info {
+  opacity: 0;
 }
 </style>

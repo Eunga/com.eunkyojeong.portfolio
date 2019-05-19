@@ -46,14 +46,15 @@ export default {
 
 html,
 body {
-  height: 100%;
+  height:100%;
+  width:100%;
   font-family: 'Questrial'
-  /*overflow:hidden;*/
 }
 
 #app {
-  height: 100%;
   position: relative;
+  height:100%;
+  width:100%;
 }
 
 #content {
@@ -102,7 +103,7 @@ ul {
 
 /* Transistion */
 .fade-enter-active, .fade-leave-active {
-  transition-duration: 1s;
+  transition-duration: 0.3s;
 }
 
 </style>
