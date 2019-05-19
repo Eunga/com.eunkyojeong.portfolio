@@ -6,6 +6,7 @@
         v-on:goPortfolioDetail="goPortfolioDetail($event)"
         v-for="work in validWorks"
         v-bind:work="work"
+        v-bind:isDetail="false"
         v-bind:key="work.id"
       />
     </div>

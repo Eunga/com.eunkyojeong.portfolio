@@ -1,6 +1,6 @@
 <template>
   <div class="portfolio-item carousel-item"
-    v-bind:class="{ active: isActive }">
+    v-bind:class="{ active: isActive, detail: isDetail, list: !isDetail }">
     <div class="portfolio-item-background">
       <div class="portfolio-item-background-padding portfolio-item-background-padding-left"></div>
       <div class="portfolio-item-background-padding portfolio-item-background-padding-right"></div>
@@ -34,6 +34,11 @@ export default {
     work: {
       type: Object,
       required: true
+    },
+    isDetail: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   },
   data () {
@@ -96,46 +101,62 @@ export default {
   z-index: 10;
   background-color: white;
 }
-.portfolio-item-background-padding-left {
+.list .portfolio-item-background-padding-left {
   left:0;
 }
 
-.portfolio-item-background-padding-right {
+.list .portfolio-item-background-padding-right {
   right:0;
+}
+
+.detail .portfolio-item-background-padding-left {
+  left:-300px;
+}
+
+.detail .portfolio-item-background-padding-right {
+  right:-300px;
 }
 
 .portfolio-item-background > img {
-    position: relative;
-    width: 100%;
-    /* width: calc(100% + 240px) !important;
-    left: -120px; */
+  position: relative;
+  width: 100%;
 }
 
 .portfolio-item-stuffs {
+  /* position: relative; */
   position: absolute;
-  right:0;
-  width: 70%;
+  width: 50%;
+  left: 50%;
 }
 
 .portfolio-item-stuffs img {
   position: relative;
   width: 100%;
+
+  
 }
 
 .portfolio-item-content {
   position: relative;
   left: 0;
   right: 0;
-  padding-top: 120px;
+  margin-top: 120px;
   cursor:pointer;
 }
 
 .portfolio-item-title {
-  position: absolute;;
+  /* position: absolute;;
   color:black;
   left: 10%;
   top: 35%;
+  font-size: 50px; */
+
   font-size: 50px;
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: left;
+  color: black;
 }
 
 .portfolio-work-count {
@@ -143,20 +164,47 @@ export default {
   text-align: left;
 
   color:black;
-  left: 10%;
-  top: 15%;
 }
 
 .portfolio-work-count span {
   font-size: 30px;
 }
 
-/* Tansition */
-.fade-leave-active .portfolio-item .portfolio-item-stuffs img {
-  transform: translateY(-80px);
-  transition-duration: .8s;
+.detail .portfolio-item-stuffs img {
+  transform: translateY(-80px) scale(0.8);
 }
 
+/* Tansition */
+.fade-leave-active .portfolio-item.list .portfolio-item-stuffs img {
+  transform: translateY(-80px) scale(0.8);
+  transition-duration: .3s;
+}
+
+.fade-leave-active .portfolio-item.detail .portfolio-item-stuffs img {
+  transform: translateY(0px) scale(1);
+  transition-duration: .3s;
+}
+
+
+.fade-leave-active .portfolio-item.list .portfolio-item-background-padding-left {
+  transform: translateX(-300px);
+  transition-duration: .3s;
+}
+
+.fade-leave-active .portfolio-item.detail .portfolio-item-background-padding-left {
+  transform: translateX(300px);
+  transition-duration: .3s;
+}
+
+.fade-leave-active .portfolio-item.list .portfolio-item-background-padding-right {
+  transform: translateX(300px);
+  transition-duration: .3s;
+}
+
+.fade-leave-active .portfolio-item.detail .portfolio-item-background-padding-right {
+  transform: translateX(-300px);
+  transition-duration: .3s;
+}
 </style>
 
 

@@ -2,12 +2,15 @@
   <div id="portfolio-detail">
     <div class="portfolio-meta">
       <portfolio-item
+        v-bind:isDetail="true"
         v-bind:work="work"
         v-bind:key="work.id"
       />
     </div>
-    <div class="portfolio-detail-info container">
-      {{ work.overview }}
+    <div class="portfolio-detail-info">
+      <div class="container">
+        {{ work.overview }}
+      </div>
     </div>
   </div>
 </template>
@@ -45,8 +48,6 @@ export default {
         }
       });
 
-      console.log(work);
-      console.log(this.works);
       return work;
     }
   },
@@ -91,34 +92,10 @@ export default {
 .portfolio-meta, .portfolio-detail-info {
   position: relative;
   height: 100%;
+  background-color: white;
 }
 
 #portfolio-detail .portfolio-item-content {
   cursor: initial;
-}
-
-#portfolio-detail .portfolio-item-stuffs img {
-  position: relative;
-  width: 100%;
-  top: -80px;
-}
-
-#portfolio-detail .portfolio-item-background-padding {
-  opacity:0;
-  transition: opacity .8s ease;
-}
-/* Transistion */
-#portfolio-detail.fade-enter-active .portfolio-meta .portfolio-item-background-padding {
-  
-}
-
-#portfolio-detail.fade-enter-active .portfolio-item-stuffs img {
-  
-}
-
-#portfolio-detail.fade-leave-active .portfolio-item-stuffs img {
-  transform: translateY(80px);
-  transition-duration: .8s;
-  transition: opacity .8s ease;
 }
 </style>

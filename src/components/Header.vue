@@ -42,6 +42,14 @@ export default {
   z-index:500;
 }
 
+#header {
+  transition: all .3s ease-out;
+}
+#header.hide {
+  opacity: 0;
+  transform: translateY(-300px);
+}
+
 .navbar-toggler {
   visibility: hidden;
 }

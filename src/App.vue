@@ -24,9 +24,9 @@ export default {
   watch:{
     $route (to, from) {
       if (to.name == 'portfolio detail') {
-        $('#header').hide();
+        $('#header').addClass('hide');
       } else {
-        $('#header').show();
+        $('#header').removeClass('hide');
       }
     }
   },
@@ -47,12 +47,13 @@ export default {
 html,
 body {
   height: 100%;
+  font-family: 'Questrial'
   /*overflow:hidden;*/
 }
 
 #app {
-      height: 100%;
-    position: relative;
+  height: 100%;
+  position: relative;
 }
 
 #content {
