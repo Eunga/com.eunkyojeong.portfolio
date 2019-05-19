@@ -2,7 +2,11 @@
   <div id="app">
     <app-header/>
 
-    <router-view/>
+    <transition
+      name="fade"
+      mode="out-in">
+      <router-view/>
+    </transition>
 
     <app-footer/>
   </div>
@@ -16,7 +20,25 @@ export default {
   components: {
     'app-header': Header, 
     'app-footer': Footer
-  }
+  },
+  watch:{
+    $route (to, from) {
+      if (to.name == 'portfolio detail') {
+        $('#header').hide();
+      } else {
+        $('#header').show();
+      }
+    }
+  },
+  mounted() {
+    var routeName = this.$route.name;
+    if (routeName == 'portfolio detail') {
+      $('#header').hide();
+    } else {
+      $('#header').show();
+    }
+  },
+
 };
 </script>
 
@@ -26,6 +48,11 @@ html,
 body {
   height: 100%;
   /*overflow:hidden;*/
+}
+
+#app {
+      height: 100%;
+    position: relative;
 }
 
 #content {
@@ -71,4 +98,10 @@ ul {
     max-width: 1290px;
   }
 }
+
+/* Transistion */
+.fade-enter-active, .fade-leave-active {
+  transition-duration: 1s;
+}
+
 </style>

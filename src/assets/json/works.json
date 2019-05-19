@@ -2,6 +2,23 @@
   {
     "id": 1,
     "title": "Payment Renewal\nof Daum Webtoon",
+    "path": "daum_payment",
+    "backgroundImage": "dw/portfolio-dw-bg",
+    "stuffs": [
+      {
+        "url": "dw/img-dw-cover-i-phone-x",
+        "animation": "transitionY 10px",
+        "duration": 1
+      }
+    ],
+    "overview": "In summer 2018, Daum Webtoon has finally allowed the users to purchase the paid contents in iOS app as well as web app, and I designed the UI and the process of checkouts and purchasing. But, I believed every design has to be improved continuously, so I presented better idea of purchasing charged contents. All information in this case study is my own and does not necessarily reflect the views of Daum Webtoon.",
+    "animation": "",
+    "shouldBeExposed": true
+  },
+  {
+    "id": 2,
+    "title": "맥주인형",
+    "path": "beer_doll", 
     "backgroundImage": "dw/portfolio-dw-bg",
     "stuffs": [
       {
@@ -11,31 +28,35 @@
       }
     ],
     "animation": "",
-    "shouldBeExposed": true,
-    "isActive": false
-  },
-  {
-    "id": 2,
-    "title": "맥주인형",
-    "backgroundImage": "",
-    "animation": "",
-    "shouldBeExposed": true,
-    "isActive": false
+    "shouldBeExposed": true
   },
   {
     "id": 3,
     "title": "속초리조트호텔 Noye",
-    "backgroundImage": "",
+    "path": "sokcho", 
+    "backgroundImage": "dw/portfolio-dw-bg",
+    "stuffs": [
+      {
+        "url": "dw/img-dw-cover-i-phone-x",
+        "animation": "transitionY 10px",
+        "duration": 1
+      }
+    ],
     "animation": "",
-    "shouldBeExposed": true,
-    "isActive": false
+    "shouldBeExposed": true
   },
   {
     "id": 4,
     "title": "이건 안나올껄?",
-    "backgroundImage": "",
+    "backgroundImage": "dw/portfolio-dw-bg",
+    "stuffs": [
+      {
+        "url": "dw/img-dw-cover-i-phone-x",
+        "animation": "transitionY 10px",
+        "duration": 1
+      }
+    ],
     "animation": "",
-    "shouldBeExposed": false,
-    "isActive": false
+    "shouldBeExposed": false
   }
 ]

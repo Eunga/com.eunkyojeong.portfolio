@@ -1,15 +1,15 @@
 <template>
   <!-- Portfolio -->
-  <div id='portfolio' class='container'>
-    <div class='portfolio-background'></div>
+  <!-- <div id='portfolio' class='container'> -->
+    <div id='portfolio'>
 
     <portfolio-list
       v-on:goPortfolioDetail="goPortfolioDetail($event)"
     />
     
-    <portfolio-detail
+    <!-- <portfolio-detail
       v-bind:work="detailWork"
-    />
+    /> -->
 
 
   </div>
@@ -18,13 +18,11 @@
 <script>
 import works from '../assets/json/works.json'
 import PortfolioList from '@/components/portfolio/PortfolioList.vue'
-import PortfolioDetail from '@/components/portfolio/PortfolioDetail.vue'
 
 export default {
   name: 'Portfolio',
   components: { 
-    'portfolio-list': PortfolioList,
-    'portfolio-detail': PortfolioDetail
+    'portfolio-list': PortfolioList
   },
   data () {
     return {
@@ -45,13 +43,11 @@ export default {
       // return !this.route.id
     },
     goPortfolioDetail(work) {
-      console.log(`[Portfolio] click detail work ${work.id}`);
-      console.log(work);
+      $('#portfolio-list').hide();
+      $('#portfolio-detail').show();
+      
       this.detailWork = work;
     }
-  },
-  created () {
-    //console.log('Portfolio created')
   }
 }
 </script>
@@ -60,11 +56,12 @@ export default {
 <style>
 #portfolio {
   position: relative;
-  width: 100%;
-  height: 100%;
   margin: 0 auto;
   padding: 0px;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
+  height: calc(100% - 60px);
 }
 
 #portfolio-list > ul {
@@ -120,4 +117,5 @@ export default {
   height: 100%;
   border-color: #4a90e2;
 }
+
 </style>

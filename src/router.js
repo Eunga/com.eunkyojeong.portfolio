@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Portfolio from './views/Portfolio.vue'
+import PortfolioDetail from './views/PortfolioDetail.vue'
 
 Vue.use(Router)
 
@@ -14,9 +15,9 @@ export default new Router({
       component: Portfolio
     },
     {
-      path: '/portfolio/:id',
+      path: '/portfolio/:path',
       name: 'portfolio detail',
-      component: Portfolio
+      component: PortfolioDetail
     },
     {
       path: '/about',

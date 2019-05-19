@@ -29,11 +29,17 @@ export default {
 
 <style scoped>
 #header {
-  padding: 0px !important;
-  margin-left: 120px;
-  margin-right: 120px;
+  padding: 0px 120px !important;
   height: 120px;
   background-color: #ffffff !important;
+
+
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  left:0;
+  z-index:500;
 }
 
 .navbar-toggler {
