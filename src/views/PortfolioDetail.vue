@@ -12,6 +12,18 @@
         <portfolio-item-detail
           v-bind:work="work"
           />
+
+        <portfolio-item-detail
+          v-bind:work="work"
+          />
+        
+        <portfolio-item-detail
+          v-bind:work="work"
+          />
+        
+        <portfolio-item-detail
+          v-bind:work="work"
+          />
       </div>
     </div>
   </div>
@@ -99,6 +111,9 @@ export default {
 }
 .portfolio-meta {
   height: 640px;
+
+  /** FIXME **/
+  height: 544px;
 }
 
 #portfolio-detail .portfolio-item-content {
@@ -111,10 +126,11 @@ export default {
 
 /* transition */
 .fade-enter-active .portfolio-detail-info {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .fade-leave-active .portfolio-detail-info {
+  top: 500px;
   opacity: 0;
 }
 </style>

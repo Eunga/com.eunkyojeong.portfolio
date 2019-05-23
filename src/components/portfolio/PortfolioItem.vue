@@ -16,12 +16,29 @@
           :src="getImgUrl(stuff.url)" />
       </div>
       
-      <div class="portfolio-item-title">
+      <!-- <div class="portfolio-item-title">
         <div class="portfolio-work-count">
           <span>{{ getWorkCountNumber(work.id) }} ㅡ {{ getWorkCountNumber(work.parantWorks.length) }}</span>
         </div>
         
         <span v-html="getWorkTitle()"></span>
+
+        <span class="portfolio-item-subtitle" v-html="getWorkSubtitle()"></span>
+      </div> -->
+
+      <div class="portfolio-item-brief">
+        <div class="portfolio-work-count">
+          <span>{{ getWorkCountNumber(work.id) }} ㅡ {{ getWorkCountNumber(work.parantWorks.length) }}</span>
+        </div>
+
+        <div class="portfolio-item-title">
+          <span v-html="getWorkTitle()"></span>
+        </div>
+
+        <div class="portfolio-item-subtitle">
+          <span v-html="getWorkSubtitle()"></span>
+        </div>
+
       </div>
     </div>
   </div>
@@ -51,6 +68,10 @@ export default {
       this.work.title = this.work.title.replace(/\n/g, '<br/>');
       return this.work.title;
     },
+    getWorkSubtitle() {
+      this.work.subtitle = this.work.subtitle.replace(/\n/g, '<br/>');
+      return this.work.subtitle;
+    },
     getImgUrl(pet) {
       try {
         var images = require.context('../../assets/img/portfolio', true, /\.png$/)
@@ -61,6 +82,7 @@ export default {
       }
     },
     goPortfolioDetail() {
+      $('#portfolio').addClass('transition');
       this.$router.push({ path: `/portfolio/${this.work.path}`});
     },
     getWorkCountNumber(number) {
@@ -84,18 +106,17 @@ export default {
   height: 100%;
 }
 
+.portfolio-item-background {
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+
 .list .portfolio-item-background {
   position: absolute;
-  width: 100%;
-  left:0;
-  right:0;
-  overflow: hidden;
-  margin:auto;
 }
 
 .detail .portfolio-item-background {
   position: fixed;
-  width: 100%;
   left:0;
   right:0;
   overflow: hidden;
@@ -155,17 +176,46 @@ export default {
   cursor:pointer;
 }
 
-.portfolio-item-title {
+.portfolio-item-brief {
   transition: all .3s ease-out;
   position: relative;
   top: 200px;
   left: 0;
+}
+
+.portfolio-item-title {
+  transition: all .3s ease-out;
   text-align: left;
   color: black;
   font-size: 50px;
 }
 
-.portfolio-item.detail .portfolio-item-title {
+.portfolio-item-subtitle {
+  transition: all .3s ease-out;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+
+.list .portfolio-item-subtitle {
+  display: none;
+}
+
+.detail .portfolio-item-subtitle {
+  visibility: visible;
+}
+
+.detail .portfolio-item-subtitle::before {
+  margin-top: 40px;
+  margin-bottom:15px;
+  content: ' ';
+  width: 30px;
+  height: 1px;
+  border-bottom: 2px solid black;
+  display: block;
+}
+
+.portfolio-item.detail .portfolio-item-brief {
   top: -50px;
 }
 
@@ -176,7 +226,7 @@ export default {
   color:black;
 }
 
-.detail .portfolio-item-title .portfolio-work-count {
+.detail .portfolio-item-brief .portfolio-work-count {
   visibility: hidden;
 }
 
@@ -220,22 +270,38 @@ export default {
   transition-duration: .3s;
 }
 
-.fade-leave-active .portfolio-item.list .portfolio-item-title .portfolio-work-count {
+.fade-leave-active .portfolio-item.list .portfolio-item-brief .portfolio-work-count {
   visibility: hidden;
 }
 
-.fade-leave-active .portfolio-item.detail .portfolio-item-title .portfolio-work-count {
-  display: block;
+.fade-leave-active .portfolio-item.detail .portfolio-item-brief .portfolio-work-count {
+  visibility: visible;
+  /* display: block; */
 }
 
-.fade-leave-active .portfolio-item.list .portfolio-item-title {
+/* .fade-leave-active .portfolio-item.list .portfolio-item-brief .portfolio-item-title {
   top: -50px;
 }
 
-.fade-leave-active .portfolio-item.detail .portfolio-item-title {
+.fade-leave-active .portfolio-item.detail .portfolio-item-brief .portfolio-item-title {
+  top: 200px;
+} */
+
+.fade-leave-active .portfolio-item.list .portfolio-item-brief {
+  top: -50px;
+}
+
+.fade-leave-active .portfolio-item.detail .portfolio-item-brief {
   top: 200px;
 }
 
+.fade-leave-active .portfolio-item.list .portfolio-item-brief .portfolio-item-subtitle {
+  visibility: visible;
+}
+
+.fade-leave-active .portfolio-item.detail .portfolio-item-brief .portfolio-item-subtitle {
+  display: none;
+}
 </style>
 
 

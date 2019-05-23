@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Payment Renewal\nof Daum Webtoon",
+    "subtitle": "Easy and Fast Payment\nFor Seamless Reading Experience",
     "path": "daum_payment",
     "backgroundImage": "dw/portfolio-dw-bg",
     "stuffs": [
@@ -18,6 +19,7 @@
   {
     "id": 2,
     "title": "맥주인형",
+    "subtitle": "Payment Renewal\nof Daum Webtoon",
     "path": "beer_doll", 
     "backgroundImage": "dw/portfolio-dw-bg",
     "stuffs": [
@@ -33,6 +35,7 @@
   {
     "id": 3,
     "title": "속초리조트호텔 Noye",
+    "subtitle": "Payment Renewal\nof Daum Webtoon",
     "path": "sokcho", 
     "backgroundImage": "dw/portfolio-dw-bg",
     "stuffs": [
@@ -48,6 +51,7 @@
   {
     "id": 4,
     "title": "이건 안나올껄?",
+    "subtitle": "Payment Renewal\nof Daum Webtoon",
     "backgroundImage": "dw/portfolio-dw-bg",
     "stuffs": [
       {

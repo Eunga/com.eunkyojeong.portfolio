@@ -45,6 +45,8 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a> -->
+
+    <div id="portfolio-item-content-mask"></div>
   </div>
 </template>
 
@@ -108,6 +110,16 @@ export default {
 </script>
 
 <style>
+#portfolio-item-content-mask {
+  transition: all 0.3 ease-in;
+  height: 100vh;
+}
+
+.fade-leave-active #portfolio-item-content-mask {
+  position: relative;
+  top: 0;
+}
+
 #portfolio-list {
   height: 100%;
   width: 100%;

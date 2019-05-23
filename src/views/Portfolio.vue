@@ -1,17 +1,8 @@
 <template>
-  <!-- Portfolio -->
-  <!-- <div id='portfolio' class='container'> -->
-    <div id='portfolio'>
-
+  <div id='portfolio'>
     <portfolio-list
-      v-on:goPortfolioDetail="goPortfolioDetail($event)"
-    />
-    
-    <!-- <portfolio-detail
-      v-bind:work="detailWork"
-    /> -->
-
-
+      v-on:goPortfolioDetail="goPortfolioDetail($event)"/>
+  
   </div>
 </template>
 
@@ -27,10 +18,6 @@ export default {
   data () {
     return {
       works: works,
-      route: this.$route.params,
-      detailWork: {
-        'a': 1
-      }
     }
   },
   methods: {
@@ -40,14 +27,7 @@ export default {
       }
 
       return true;
-      // return !this.route.id
     },
-    goPortfolioDetail(work) {
-      $('#portfolio-list').hide();
-      $('#portfolio-detail').show();
-      
-      this.detailWork = work;
-    }
   }
 }
 </script>
@@ -61,7 +41,13 @@ export default {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  height: calc(100% - 60px);
+  height: calc(100vh - 60px);
+
+  transition: all .3s ease-in;
+}
+
+#portfolio.transition {
+  height: 650px;
 }
 
 #portfolio-list > ul {
