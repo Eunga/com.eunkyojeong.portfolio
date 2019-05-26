@@ -8,23 +8,9 @@
       />
     </div>
     <div class="portfolio-detail-info">
-      <div class="container">
-        <portfolio-item-detail
-          v-bind:work="work"
-          />
-
-        <portfolio-item-detail
-          v-bind:work="work"
-          />
-        
-        <portfolio-item-detail
-          v-bind:work="work"
-          />
-        
-        <portfolio-item-detail
-          v-bind:work="work"
-          />
-      </div>
+      <portfolio-item-detail
+        v-bind:work="work"
+        />
     </div>
   </div>
 </template>

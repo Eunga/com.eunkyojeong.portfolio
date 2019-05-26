@@ -9,11 +9,9 @@
 
     <div class="portfolio-item-content carousel-caption d-none d-md-block container"
       @click="goPortfolioDetail">
-      <div class="portfolio-item-stuffs">
+      <div class="portfolio-item-stuff">
         <img
-          v-for="stuff in work.stuffs" 
-          v-bind:key="stuff.url"
-          :src="getImgUrl(stuff.url)" />
+          :src="getImgUrl(work.stuff.url)" />
       </div>
       
       <!-- <div class="portfolio-item-title">
@@ -28,7 +26,9 @@
 
       <div class="portfolio-item-brief">
         <div class="portfolio-work-count">
-          <span>{{ getWorkCountNumber(work.id) }} ㅡ {{ getWorkCountNumber(work.parantWorks.length) }}</span>
+          <!-- <span>{{ getWorkCountNumber(work.id) }} / {{ getWorkCountNumber(work.parantWorks.length) }}</span> -->
+
+          <span class="porfolio-work-count-current">{{ getWorkCountNumber(work.id) }}</span> / <span class="porfolio-work-count-all">{{ getWorkCountNumber(work.parantWorks.length) }}</span>
         </div>
 
         <div class="portfolio-item-title">
@@ -153,14 +153,14 @@ export default {
   height: 100%;
 }
 
-.portfolio-item-stuffs {
+.portfolio-item-stuff {
   /* position: relative; */
   position: absolute;
   width: 50%;
   left: 50%;
 }
 
-.portfolio-item-stuffs img {
+.portfolio-item-stuff img {
   position: relative;
   width: 100%;
 
@@ -234,17 +234,23 @@ export default {
   font-size: 30px;
 }
 
-.detail .portfolio-item-stuffs img {
+.detail .portfolio-item-stuff img {
   transform: translateY(-80px) scale(0.8);
 }
+.porfolio-work-count-current {
+  font-weight: bold;
+}
 
+.porfolio-work-count-all {
+  color: gray;
+}
 /* Tansition */
-.fade-leave-active .portfolio-item.list .portfolio-item-stuffs img {
+.fade-leave-active .portfolio-item.list .portfolio-item-stuff img {
   transform: translateY(-80px) scale(0.8);
   transition-duration: .3s;
 }
 
-.fade-leave-active .portfolio-item.detail .portfolio-item-stuffs img {
+.fade-leave-active .portfolio-item.detail .portfolio-item-stuff img {
   transform: translateY(0px) scale(1);
   transition-duration: .3s;
 }

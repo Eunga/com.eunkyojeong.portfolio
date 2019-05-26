@@ -1,20 +1,17 @@
 [
   {
     "id": 1,
+    "name": "DwPayment",
     "title": "Payment Renewal\nof Daum Webtoon",
     "subtitle": "Easy and Fast Payment\nFor Seamless Reading Experience",
     "path": "daum_payment",
     "backgroundImage": "dw/portfolio-dw-bg",
-    "stuffs": [
-      {
-        "url": "dw/img-dw-cover-i-phone-x",
-        "animation": "transitionY 10px",
-        "duration": 1
-      }
-    ],
-    "overview": "In summer 2018, Daum Webtoon has finally allowed the users to purchase the paid contents in iOS app as well as web app, and I designed the UI and the process of checkouts and purchasing. But, I believed every design has to be improved continuously, so I presented better idea of purchasing charged contents. All information in this case study is my own and does not necessarily reflect the views of Daum Webtoon.",
-    "animation": "",
-    "shouldBeExposed": true
+    "shouldBeExposed": true,
+    "stuff": {
+      "url": "dw/img-dw-cover-i-phone-x",
+      "animation": "transitionY 10px",
+      "duration": 1
+    }
   },
   {
     "id": 2,
@@ -22,13 +19,11 @@
     "subtitle": "Payment Renewal\nof Daum Webtoon",
     "path": "beer_doll", 
     "backgroundImage": "dw/portfolio-dw-bg",
-    "stuffs": [
-      {
-        "url": "dw/img-dw-cover-i-phone-x",
-        "animation": "transitionY 10px",
-        "duration": 1
-      }
-    ],
+    "stuff": {
+      "url": "dw/img-dw-cover-i-phone-x",
+      "animation": "transitionY 10px",
+      "duration": 1
+    },
     "animation": "",
     "shouldBeExposed": true
   },
@@ -38,13 +33,11 @@
     "subtitle": "Payment Renewal\nof Daum Webtoon",
     "path": "sokcho", 
     "backgroundImage": "dw/portfolio-dw-bg",
-    "stuffs": [
-      {
-        "url": "dw/img-dw-cover-i-phone-x",
-        "animation": "transitionY 10px",
-        "duration": 1
-      }
-    ],
+    "stuff": {
+      "url": "dw/img-dw-cover-i-phone-x",
+      "animation": "transitionY 10px",
+      "duration": 1
+    },
     "animation": "",
     "shouldBeExposed": true
   },
@@ -53,13 +46,11 @@
     "title": "이건 안나올껄?",
     "subtitle": "Payment Renewal\nof Daum Webtoon",
     "backgroundImage": "dw/portfolio-dw-bg",
-    "stuffs": [
-      {
-        "url": "dw/img-dw-cover-i-phone-x",
-        "animation": "transitionY 10px",
-        "duration": 1
-      }
-    ],
+    "stuff": {
+      "url": "dw/img-dw-cover-i-phone-x",
+      "animation": "transitionY 10px",
+      "duration": 1
+    },
     "animation": "",
     "shouldBeExposed": false
   }
