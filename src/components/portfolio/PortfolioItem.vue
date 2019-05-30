@@ -13,16 +13,6 @@
         <img
           :src="getImgUrl(work.stuff.url)" />
       </div>
-      
-      <!-- <div class="portfolio-item-title">
-        <div class="portfolio-work-count">
-          <span>{{ getWorkCountNumber(work.id) }} ㅡ {{ getWorkCountNumber(work.parantWorks.length) }}</span>
-        </div>
-        
-        <span v-html="getWorkTitle()"></span>
-
-        <span class="portfolio-item-subtitle" v-html="getWorkSubtitle()"></span>
-      </div> -->
 
       <div class="portfolio-item-brief">
         <div class="portfolio-work-count">
@@ -78,7 +68,7 @@ export default {
         var image = images('./' + pet + '.png');
         return image;
       } catch (e) {
-        return '';
+        return pet;
       }
     },
     goPortfolioDetail() {
@@ -172,7 +162,8 @@ export default {
   left: 0;
   right: 0;
   top: 0;
-  margin-top: 120px;
+  /* margin-top: 120px; */
+  padding-top: 120px;
   cursor:pointer;
 }
 

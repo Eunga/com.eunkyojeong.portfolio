@@ -133,4 +133,9 @@ ul {
   margin-right: 0;
   margin-left: 0;
 }
+
+.container {
+  padding: 0;
+  margin: 0 auto;
+}
 </style>

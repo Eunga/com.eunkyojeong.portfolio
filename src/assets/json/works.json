@@ -15,17 +15,17 @@
   },
   {
     "id": 2,
-    "title": "맥주인형",
-    "subtitle": "Payment Renewal\nof Daum Webtoon",
-    "path": "beer_doll", 
-    "backgroundImage": "dw/portfolio-dw-bg",
+    "name": "Offin",
+    "title": "Offline Fashion Stores \nin Your Phone, Offin",
+    "subtitle": "Easy and Fast Payment\nfor Seamless Reading Experience",
+    "path": "beer_doll",
+    "backgroundImage": "https://stmed.net/sites/default/files/styles/1920x1200/public/aladdin-wallpapers-29368-8003080.jpg?itok=Exz9j9bm",
+    "shouldBeExposed": true,
     "stuff": {
       "url": "dw/img-dw-cover-i-phone-x",
       "animation": "transitionY 10px",
       "duration": 1
-    },
-    "animation": "",
-    "shouldBeExposed": true
+    }
   },
   {
     "id": 3,

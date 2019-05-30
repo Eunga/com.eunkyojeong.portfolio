@@ -1,17 +1,21 @@
 <template>
-  <div id="portfolio-list" class="carousel slide" data-ride="carousel">
-    <div v-if="works.length" 
-      class="portfolio-carousel carousel-inner">
-      <portfolio-item
-        v-on:goPortfolioDetail="goPortfolioDetail($event)"
-        v-for="work in validWorks"
-        v-bind:work="work"
-        v-bind:isDetail="false"
-        v-bind:key="work.id"
-      />
+  <div id="portfolio-list" class="carousel slide" data-interval="false" data-ride="carousel">
+  <!-- <div id="portfolio-list"> -->
+    <!-- <div class="carousel slide" data-interval="false" data-ride="carousel"> -->
+      <div v-if="works.length" 
+        class="portfolio-carousel carousel-inner">
+        <portfolio-item
+          v-on:goPortfolioDetail="goPortfolioDetail($event)"
+          v-for="work in validWorks"
+          v-bind:work="work"
+          v-bind:isDetail="false"
+          v-bind:key="work.id"
+        />
+      <!-- </div> -->
     </div>
 
-    <button
+    <!-- <hr class="transition-timer-carousel-progress-bar" /> -->
+    <!-- <button
       style="display:none;"
       class="carousel-control-prev"
       @click="previous()">
@@ -25,7 +29,7 @@
       @click="next()">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
-    </button>
+    </button> -->
 
     <div id="portfolio-item-content-mask"></div>
   </div>
@@ -71,6 +75,32 @@ export default {
       console.log(current);
       //console.log(e);
     });
+
+
+    /* Bootstrap Carousel Progress bar */
+    /* https://codepen.io/bsngr/pen/oBWgPy */
+    // $(document).ready(function(){
+    //   var percent = 0, bar = $('.transition-timer-carousel-progress-bar'), crsl = $('#myCarousel');
+		// 	function progressBarCarousel() {
+		// 	  bar.css({width:percent+'%'});
+		// 	 percent = percent +0.5;
+		// 	  if (percent>100) {
+		// 	      percent=0;
+		// 	      crsl.carousel('next');
+		// 	  }      
+		// 	}
+		// 	crsl.carousel({
+		// 	    interval: false,
+		// 	    pause: true
+		// 	}).on('slid.bs.carousel', function () {});var barInterval = setInterval(progressBarCarousel, 30);
+		// 	crsl.hover(
+		// 	    function(){
+		// 	        clearInterval(barInterval);
+		// 	    },
+		// 	    function(){
+		// 	        barInterval = setInterval(progressBarCarousel, 30);
+    //       })
+    // });
   },
   methods: {
     goPortfolioDetail(work) {
@@ -106,14 +136,14 @@ export default {
   width: 100%;
 }
 
-#portfolio-list > ul {
+/* #portfolio-list > ul {
   list-style: none;
   height: 100%;
   white-space: nowrap;
   position: relative;
   margin: 0;
   padding: 0;
-}
+} */
 
 .portfolio-carousel {
   width: 100%;
@@ -123,4 +153,18 @@ export default {
 .carousel-control-next {
   z-index: 100;
 }
+
+
+/* Bootstrap Carousel Progress bar */
+/* https://codepen.io/bsngr/pen/oBWgPy */
+/* .transition-timer-carousel-progress-bar {
+    height: 3px;
+    background-color: #5cb85c;
+    width: 0%;
+    margin: 0px 0px 0px 0px;
+    border: none;
+    z-index: 11;
+    position: relative;
+} */
+
 </style>

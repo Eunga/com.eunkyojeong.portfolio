@@ -20,7 +20,14 @@ export default {
             return this.work.name;
         },
         comp () {
-            return () => import(`@/components/works/${this.name}.vue`)
+            try {
+                const com = () => import(`@/components/works/${this.name}.vue`);
+                console.log(com);
+                return com;
+            } catch (e) {
+                console.log(e);
+                return null;
+            }
         }
     }
 }
