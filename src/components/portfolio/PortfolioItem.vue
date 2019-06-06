@@ -16,9 +16,7 @@
 
       <div class="portfolio-item-brief">
         <div class="portfolio-work-count">
-          <!-- <span>{{ getWorkCountNumber(work.id) }} / {{ getWorkCountNumber(work.parantWorks.length) }}</span> -->
-
-          <span class="porfolio-work-count-current">{{ getWorkCountNumber(work.id) }}</span> / <span class="porfolio-work-count-all">{{ getWorkCountNumber(work.parantWorks.length) }}</span>
+          <span class="porfolio-work-count-current">{{ getWorkCountNumber(work.id) }}</span> / <span class="porfolio-work-count-all">{{ getCountOfAllWorks() }}</span>
         </div>
 
         <div class="portfolio-item-title">
@@ -50,7 +48,7 @@ export default {
   },
   data () {
     return {
-      isActive: (this.work.id == 1)
+      isActive: this.work.id == 1
     }
   },
   methods: {
@@ -84,6 +82,17 @@ export default {
       }
 
       return countStr;
+    },
+    getCountOfAllWorks() {
+      const count = this.$store.getters.length;
+      var countStr;
+      if (count < 10) {
+        countStr = '0' + count;
+      } else {
+        countStr = '' + count;
+      }
+
+      return countStr;
     }
   },
 };
@@ -103,6 +112,9 @@ export default {
 
 .list .portfolio-item-background {
   position: absolute;
+}
+.detail {
+  display: block !important;
 }
 
 .detail .portfolio-item-background {

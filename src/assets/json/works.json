@@ -18,8 +18,8 @@
     "name": "Offin",
     "title": "Offline Fashion Stores \nin Your Phone, Offin",
     "subtitle": "Easy and Fast Payment\nFor Seamless Reading Experience",
-    "path": "beer_doll",
-    "backgroundImage": "https://stmed.net/sites/default/files/styles/1920x1200/public/aladdin-wallpapers-29368-8003080.jpg?itok=Exz9j9bm",
+    "path": "offin",
+    "backgroundImage": "http://cdn.vox-cdn.com/uploads/chorus_image/image/55227337/Bliss.1497349801.png",
     "shouldBeExposed": true,
     "stuff": {
       "url": "dw/img-dw-cover-i-phone-x",
@@ -29,20 +29,6 @@
   },
   {
     "id": 3,
-    "title": "속초리조트호텔 Noye",
-    "subtitle": "Payment Renewal\nof Daum Webtoon",
-    "path": "sokcho", 
-    "backgroundImage": "dw/portfolio-dw-bg",
-    "stuff": {
-      "url": "dw/img-dw-cover-i-phone-x",
-      "animation": "transitionY 10px",
-      "duration": 1
-    },
-    "animation": "",
-    "shouldBeExposed": true
-  },
-  {
-    "id": 4,
     "title": "이건 안나올껄?",
     "subtitle": "Payment Renewal\nof Daum Webtoon",
     "backgroundImage": "dw/portfolio-dw-bg",

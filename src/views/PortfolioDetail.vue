@@ -16,7 +16,6 @@
 </template>
 
 <script>
-import works from "../assets/json/works.json";
 import PortfolioItem from "@/components/portfolio/PortfolioItem.vue";
 import PortfolioItemDetail from "@/components/portfolio/PortfolioItemDetail.vue";
 
@@ -26,9 +25,10 @@ export default {
     "portfolio-item": PortfolioItem,
     "portfolio-item-detail": PortfolioItemDetail
   },
-  data() {
-    return {
-      works: works
+  watch:{
+    $route (to, from) {
+      console.log(to, from);
+      console.log(this.work);
     }
   },
   computed: {
@@ -37,13 +37,8 @@ export default {
       var paths = wholePath.split('/');
       var path = paths[paths.length - 1];
 
-      this.works.filter(work => work.shouldBeExposed).map(function(v, i, arr) {
-        v.parantWorks = arr;
-        return v;
-      });
-
       var work = null;
-      this.works.forEach(element => {
+      this.$store.getters.works.forEach(element => {
         if (element.path == path) {
           work = element;
           return;
@@ -51,9 +46,24 @@ export default {
       });
 
       return work;
-    }
+    },
   },
   methods: {
+    // work() {
+    //   var wholePath = this.$route.path;
+    //   var paths = wholePath.split('/');
+    //   var path = paths[paths.length - 1];
+
+    //   var work = null;
+    //   this.$store.getters.works.forEach(element => {
+    //     if (element.path == path) {
+    //       work = element;
+    //       return;
+    //     }
+    //   });
+
+    //   return work;
+    // },
     getWorkTitle() {
       this.work.title = this.work.title.replace(/\n/g, '<br/>');
       return this.work.title;
@@ -108,11 +118,6 @@ export default {
 
 .portfolio-detail-info {
   transition: all .3s ease;
-}
-
-/* transition */
-.fade-enter-active .portfolio-detail-info {
-  /* opacity: 0; */
 }
 
 .fade-leave-active .portfolio-detail-info {

@@ -8,17 +8,16 @@
                         <span class="portfolio-work-subtitle-sm">Overview</span>
                     </div>
                     <div>
-                        In 2018 summer, Daum Webtoon has finally introduced the new payment service for users to purchase the paid contents via iOS app as well as web app. For this service, I have designed the UI and the process for purchasing pay contents and recharging Webtoon Cash (Cash). Then, I made some improvements to the existing design as every design should be updated, and eventually I had a chance to present a better idea for the enhanced version of purchasing pay contents.
+                        ‘Offin’ is an app on a platform for an online open market available only for offline stores. It’s like an ‘online showroom’ but you can also make payments for purchase. 
                         <br/>
-                        <br/>
-                        <i>All information in this case study is my own and does not necessarily reflect the views of Daum Webtoon Company.</i>
+                        I joined the team as the one and only designer. I could work with the developers very closely as we built iOS and Android apps and a website. We were very thrilled and inspired to create a new shopping experience. 
                     </div>
                 </div>
 
                 <div class="col-md-6" style="padding-left:10%;">
                     <div>
                         <span class="portfolio-work-meta-label">Date</span>
-                        <span>December 2018</span>
+                        <span>June 2014</span>
                     </div>
 
                     <div>
@@ -32,20 +31,27 @@
         <!-- Challenge -->
         <div class="porfolio-work-wrap">
             <div class="porfolio-work container row">
-                <div class="col-md-12">
-                    <span class="portfolio-work-subtitle-sm">Challenge</span>
+                <div class="col-md-4">
+                    
                 </div>
 
-                <div class="row">
-                    <div class="col-md-4">
-                        <span class="portfolio-work-subtitle-lg">Better usability for heavy users</span>
+                <div class="row col-md-8">
+                    <div class="col-md-12">
+                        <span class="portfolio-work-subtitle-sm">The Problem</span>
                     </div>
 
                     <div style="width:500px; margin: auto;">
-                        Since the successful launch of Daum Webtoon 2.0, it had provided improvements of the user experience for all users which brought a sharp 200% increase in comics sales. Our next goal was to upgrade the app for heavy users who use every day and purchase a large volume of our pay comics.
-                        <br/><br/>
-                        and the basic goal was to : 
-                        Provide users with app that allows them to fully focus on reading and only reading which we believe is the core value of the service.
+                        There are so many offline clothing stores in Korea that have no brand names. We called them ‘Bo-se’ in Korean. For these stores, we wondered how people could find them and their products without actually having to have to visit the store. 
+                    </div>
+
+                    <div style="width:500px; margin: auto;">
+                        (According to the study / research) The study has found that ____ percentage of Koreans were shopping at non-branded clothing stores compared to branded stores. 
+                    </div>
+
+                    <div style="width:500px; margin: auto;">
+                        While the branded stores have their own online websites, most of non-branded stores don’t have websites unless they are major stores like Stylenanda or Imvely. 
+                        <br/>
+                        So, there was no way for customers to find and purchase the clothes that they have seen from offline stores online, and for store owners to offer their products to potential customers other than in the form of offline stores. 
                     </div>
                 </div>
             </div>
@@ -88,10 +94,10 @@
 
 <script>
 export default {
-    name: 'DwPayment',
+    name: 'Offin',
     mounted() {
-        console.log('DwPayment mounted');
-    },
+        console.log('Offin mounted');
+    }
 }
 </script>
 

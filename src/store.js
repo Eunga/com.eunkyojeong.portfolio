@@ -6,6 +6,7 @@ Vue.use(Vuex)
 
 import works from './assets/json/works.json'
 import about from './assets/json/about.json'
+import { _ } from 'core-js';
 
 const store = new Vuex.Store({
   state: {
@@ -17,17 +18,17 @@ const store = new Vuex.Store({
       return state.works;
     },
     works: state => {
-      return state.works.filter(work => work.shouldBeExposed).map(function(v, i, arr) {
-        v.parantWorks = arr;
-        return v;
-      })
+      return state.works.filter(work => work.shouldBeExposed);
+    },
+    length: (state, getters) => {
+      return getters.works.length;
     }
   },
   mutations: {
     
   },
   actions: {
-
+    
   }
 })
 

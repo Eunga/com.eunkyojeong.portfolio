@@ -33,18 +33,16 @@ export default {
   height: 120px;
   background-color: #ffffff !important;
 
-
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   top:0;
   left:0;
   right:0;
   left:0;
   z-index:500;
-}
-
-#header {
   transition: all .3s ease-out;
 }
+
 #header.hide {
   opacity: 0;
   transform: translateY(-300px);
@@ -70,5 +68,6 @@ export default {
 .navLink a.router-link-exact-active {
   opacity:1;
 }
+
 </style>
 

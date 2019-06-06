@@ -29,7 +29,10 @@
 <script>
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import store from './store'
+
 export default {
+  store,
   name: "App",
   components: {
     'app-header': Header, 
@@ -48,19 +51,13 @@ export default {
       }
     }
   },
-  mounted() {
-    var routeName = this.$route.name;
-    if (routeName == 'portfolio detail') {
-      $('#header').hide();
-    } else {
-      $('#header').show();
-    }
-  },
-
 };
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 body {

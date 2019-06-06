@@ -18,6 +18,18 @@ export default {
   background-color: #ffffff !important;
   position: relative;
 }
+
+#copyright {
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: var(--very-light-pink);
+}
 </style>
 
 
