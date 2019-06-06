@@ -2,7 +2,9 @@
   <div id='portfolio'>
     <portfolio-list
       v-on:goPortfolioDetail="goPortfolioDetail($event)"/>
-  
+
+    <div id="portfolio-bottom-mask">
+    </div>
   </div>
 </template>
 
@@ -47,7 +49,22 @@ export default {
 }
 
 #portfolio.transition {
-  height: 650px;
+  /* height: 650px; */
+
+}
+
+#portfolio-bottom-mask {
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-color: white;
+  transition: all .3s ease-in;
+  top:100%;
+}
+
+#portfolio.transition #portfolio-bottom-mask {
+  transition: all .3s ease-in;
+  top: 544px;
 }
 
 #portfolio-list > ul {

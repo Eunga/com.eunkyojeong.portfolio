@@ -17,6 +17,8 @@ export default {
   padding: 0px 120px;
   background-color: #ffffff !important;
   position: relative;
+  transition: all .3s ease-in;
+  height: 60px;
 }
 
 #copyright {

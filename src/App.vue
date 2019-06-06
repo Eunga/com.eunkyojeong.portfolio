@@ -22,7 +22,13 @@
       <router-view/>
     </transition>
 
-    <app-footer/>
+    <transition
+      name="fade"
+      mode="out-in">
+      <app-footer/>
+    </transition>
+    <!-- <app-footer/> -->
+    
   </div>
 </template>
 
@@ -43,6 +49,7 @@ export default {
   },
   watch:{
     $route (to, from) {
+      console.log(`watch: ${to.name}`);
       if (to.name == 'portfolio detail') {
         $('#header').addClass('hide');
       } else {
@@ -51,6 +58,15 @@ export default {
       }
     }
   },
+  mounted() {
+    var routeName = this.$route.name;
+    console.log(`routeName: ${routeName}`);
+    if (routeName == 'portfolio detail') {
+      $('#header').addClass('hide');
+    } else {
+      $('#header').removeClass('hide');
+    }
+  }
 };
 </script>
 
@@ -61,7 +77,8 @@ html {
 
 html,
 body {
-  font-family: 'Questrial'
+  font-family: 'Questrial';
+  height: 100%;
 }
 
 #app {

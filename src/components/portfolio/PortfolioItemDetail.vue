@@ -98,11 +98,9 @@ export default {
 $(document).ready(function() {
   'use strict';
   
-   let prevScrollTop = 0;//, currentScrollTop = 0, 
+   let prevScrollTop = 0;
    const $navbar = $('#header');
    const navbarHeight = $navbar.height();
-
-   $navbar.addClass("hide");
 
    $(window).scroll(function () {
       var currentScrollTop = $(window).scrollTop();
@@ -116,10 +114,6 @@ $(document).ready(function() {
           && !(currentScrollTop <= navbarHeight)) {
         $navbar.removeClass("hide");
       }
-
-    //   if (currentScrollTop < navbarHeight/2) {
-    //     $navbar.addClass("hide");
-    //   }
 
       prevScrollTop = currentScrollTop;
   });
