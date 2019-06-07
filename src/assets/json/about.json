@@ -5,13 +5,35 @@
   "sns": [
     {
       "id": 0,
-      "name": "LinkedIn",
-      "url": "https://linkedin.com"
+      "name": "Email",
+      "url": "mailto:eunkyojeongdesign@gmail.com",
+      "icon": "ico-email",
+      "isAvailable": true,
+      "target": "_top"
     },
     {
       "id": 1,
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/eunkyojeong",
+      "icon": "ico-linkedin",
+      "isAvailable": true,
+      "target": "_blank"
+    },
+    {
+      "id": 2,
+      "name": "Dribble",
+      "url": "https://dribbble.com/Eunga",
+      "icon": "ico-dribbble",
+      "isAvailable": true,
+      "target": "_blank"
+    },
+    {
+      "id": 3,
       "name": "Instagram",
-      "url": "https://instagram.com"
+      "url": "https://www.instagram.com/eunga_jeong",
+      "icon": "ico-instagram",
+      "isAvailable": true,
+      "target": "_blank"
     }
   ]
 }

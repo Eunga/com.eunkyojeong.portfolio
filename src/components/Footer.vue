@@ -1,14 +1,48 @@
 <template>
   <footer id="footer">
-    <div id="copyright">Designed by me & Developed by Karl Panki Park © 2019 All rights reserved.</div>
+    <div id="copyright">
+      Designed by me & Developed by <a href="https://mrkarl.github.io" class="pankipark"><span>Panki Park</span></a> © 2019 All rights reserved.
+    </div>
 
-    <div id="contact">LinkedIn Email Facebook Instagram</div>
+    <div id="contact">
+      <span 
+        v-for="sns in about.sns.filter((sns) => sns.isAvailable)"
+        v-bind:key="sns.id">
+        <a :href="sns.url"
+        :target="sns.target">
+          <img :src="getContactsUrl(sns.icon)" 
+          class="contact-icon"/>
+        </a>
+      </span>
+    </div>
   </footer>
 </template>
 
 <script>
+import about from '@/assets/json/about.json'
+
 export default {
   name: "Footer",
+  data: function() {
+    return {
+      about: about,
+    }
+  },
+
+  methods: {
+    getContacts() {
+
+    },
+    getContactsUrl(pet) {
+      try {
+        var images = require.context('../assets/img/common', true, /\.png$/)
+        var image = images('./' + pet + '.png');
+        return image;
+      } catch (e) {
+        return pet;
+      }
+    },
+  },
 };
 </script>
 
@@ -18,7 +52,7 @@ export default {
   background-color: #ffffff !important;
   position: relative;
   transition: all .3s ease-in;
-  height: 60px;
+  height: 120px;
 }
 
 #copyright {
@@ -30,8 +64,31 @@ export default {
   line-height: 1.14;
   letter-spacing: -0.3px;
   text-align: left;
-  color: var(--very-light-pink);
+  color: #bbbbbb;
 }
+
+#contact {
+  text-align: right;
+}
+
+.contact-icon {
+  width: 16px;
+  height: 16px;
+  margin-left:38px;
+  transition: all .2s ease-in;
+  opacity: .3;
+}
+
+.pankipark {
+  text-decoration: none;
+  color: #bbbbbb;
+  transition: all .2s ease-in;
+}
+
+.pankipark:hover, .contact-icon:hover {
+  cursor: pointer;
+  color: black;
+  opacity: 1;
+}
+
 </style>
-
-

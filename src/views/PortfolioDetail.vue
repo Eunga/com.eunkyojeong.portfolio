@@ -48,57 +48,12 @@ export default {
       return work;
     },
   },
-  methods: {
-    // work() {
-    //   var wholePath = this.$route.path;
-    //   var paths = wholePath.split('/');
-    //   var path = paths[paths.length - 1];
-
-    //   var work = null;
-    //   this.$store.getters.works.forEach(element => {
-    //     if (element.path == path) {
-    //       work = element;
-    //       return;
-    //     }
-    //   });
-
-    //   return work;
-    // },
-    getWorkTitle() {
-      this.work.title = this.work.title.replace(/\n/g, '<br/>');
-      return this.work.title;
-    },
-    getImgUrl(pet) {
-      try {
-        var images = require.context('../assets/img/portfolio', true, /\.png$/)
-        var image = images('./' + pet + '.png');
-        return image;
-      } catch (e) {
-        return '';
-      }
-    },
-    goPortfolioDetail() {
-      this.$emit('goPortfolioDetail', this.work)
-    },
-    getWorkCountNumber(number) {
-      var countStr;
-      if (number < 10) {
-        countStr = '0' + number;
-      } else {
-        countStr = '' + number;
-      }
-
-      return countStr;
-    }
-  },
 };
 </script>
 
 <style>
-/*  */
 #portfolio-detail {
   width:100%;
-  height:100%;
 }
 
 .portfolio-meta, .portfolio-detail-info {

@@ -59,7 +59,7 @@ export default {
   font-style: normal;
   font-stretch: normal;
   text-align: left;
-  color: var(--black);
+  color: #000000
 }
 
 .introduceHerSelf {
@@ -71,7 +71,7 @@ export default {
   line-height: 1.9;
   letter-spacing: -0.6px;
   text-align: left;
-  color: var(--black);
+  color: #000000
 }
 
 .aboutContact {
@@ -83,6 +83,6 @@ export default {
   line-height: 1.7;
   letter-spacing: -0.6px;
   text-align: left;
-  color: var(--very-light-pink);
+  color: #bbbbbb
 }
 </style>

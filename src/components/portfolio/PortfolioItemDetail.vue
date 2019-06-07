@@ -159,7 +159,7 @@ $(document).ready(function() {
   font-stretch: normal;
   line-height: 1.2;
   letter-spacing: -0.8px;
-  color: var(--black);
+  color: #000000
 }
 
 
