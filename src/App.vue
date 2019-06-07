@@ -49,7 +49,6 @@ export default {
   },
   watch:{
     $route (to, from) {
-      console.log(`watch: ${to.name}`);
       if (to.name == 'portfolio detail') {
         $('#header').addClass('hide');
       } else {
@@ -59,8 +58,7 @@ export default {
     }
   },
   mounted() {
-    var routeName = this.$route.name;
-    console.log(`routeName: ${routeName}`);
+    const routeName = this.$route.name;
     if (routeName == 'portfolio detail') {
       $('#header').addClass('hide');
     } else {

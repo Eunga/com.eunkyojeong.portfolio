@@ -87,7 +87,10 @@
 </template>
 
 <script>
+import Workbase from "./Workbase.vue";
+
 export default {
+    extends: Workbase,
     name: 'DwPayment',
     mounted() {
         console.log('DwPayment mounted');

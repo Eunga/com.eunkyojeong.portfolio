@@ -74,7 +74,6 @@ export default {
                 console.log(e);
             }
 
-            console.log("this.name: " + this.name);
             return comp;
         }
     },
