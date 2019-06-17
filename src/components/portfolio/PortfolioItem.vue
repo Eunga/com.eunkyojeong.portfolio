@@ -1,6 +1,6 @@
 <template>
   <div class="portfolio-item carousel-item"
-    v-bind:class="{ active: isActive, detail: isDetail, list: !isDetail }">
+    v-bind:class="[{ active: isActive(), detail: isDetail, list: !isDetail}, theme ]">
     <div class="portfolio-item-background">
       <div class="portfolio-item-background-padding portfolio-item-background-padding-left"></div>
       <div class="portfolio-item-background-padding portfolio-item-background-padding-right"></div>
@@ -10,13 +10,14 @@
     <div class="portfolio-item-content carousel-caption d-none d-md-block container"
       @click="goPortfolioDetail">
       <div class="portfolio-item-stuff">
-        <img
-          :src="getImgUrl(work.stuff.url)" />
+        <img :src="getImgUrl(work.stuff.url)" />
       </div>
 
       <div class="portfolio-item-brief">
         <div class="portfolio-work-count">
-          <span class="porfolio-work-count-current">{{ getWorkCountNumber(work.id) }}</span> / <span class="porfolio-work-count-all">{{ getCountOfAllWorks() }}</span>
+          <span class="porfolio-work-count-current">{{ getWorkIdNumber() }}</span> 
+            / 
+          <span class="porfolio-work-count-all">{{ getCountOfAllWorks() }}</span>
         </div>
 
         <div class="portfolio-item-title">
@@ -48,10 +49,17 @@ export default {
   },
   data () {
     return {
-      isActive: this.work.id == 1
+      theme: this.work.theme
     }
   },
   methods: {
+    isActive() {
+      let obj = {
+        work: this.work,
+      };
+      this.$store.commit('amIActive', obj);
+      return obj.isActive;
+    },
     getWorkTitle() {
       this.work.title = this.work.title.replace(/\n/g, '<br/>');
       return this.work.title;
@@ -62,8 +70,8 @@ export default {
     },
     getImgUrl(pet) {
       try {
-        var images = require.context('../../assets/img/portfolio', true, /\.png$/)
-        var image = images('./' + pet + '.png');
+        const images = require.context('../../assets/img/portfolio', true, /\.png$/);
+        const image = images('./' + pet + '.png');
         return image;
       } catch (e) {
         return pet;
@@ -71,25 +79,24 @@ export default {
     },
     goPortfolioDetail() {
       $('#portfolio').addClass('transition');
+      this.$store.commit('changeCurrentWorkId', this.work.id);
       this.$router.push({ path: `/portfolio/${this.work.path}`});
     },
-    getWorkCountNumber(number) {
-      var countStr;
+    getWorkIdNumber() {
+      return this.numberFormatWithTwoDigits(this.work.id + 1);
+    },
+    getCountOfAllWorks() {
+      const count = this.$store.getters.length;
+      return this.numberFormatWithTwoDigits(count);
+
+      return countStr;
+    },
+    numberFormatWithTwoDigits(number) {
+      let countStr;
       if (number < 10) {
         countStr = '0' + number;
       } else {
         countStr = '' + number;
-      }
-
-      return countStr;
-    },
-    getCountOfAllWorks() {
-      const count = this.$store.getters.length;
-      var countStr;
-      if (count < 10) {
-        countStr = '0' + count;
-      } else {
-        countStr = '' + count;
       }
 
       return countStr;
@@ -105,6 +112,14 @@ export default {
   height: 100%;
 }
 
+.portfolio-item.white .portfolio-item-count, .portfolio-item.white .portfolio-item-title, .portfolio-item.white .portfolio-item-subtitle {
+  color:white;
+}
+
+.portfolio-item.black .portfolio-item-count, .portfolio-item.black .portfolio-item-title, .portfolio-item.black .portfolio-item-subtitle {
+  color:black;
+}
+
 .portfolio-item-background {
   width: 100%;
   transition: all 0.3s ease-in;
@@ -113,6 +128,7 @@ export default {
 .list .portfolio-item-background {
   position: absolute;
 }
+
 .detail {
   display: block !important;
 }

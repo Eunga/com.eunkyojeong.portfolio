@@ -1,7 +1,8 @@
 <template>
   <div id="portfolio-list" class="carousel slide" data-interval="false" data-ride="carousel">
-    <div v-if="works.length" 
-      class="portfolio-carousel carousel-inner">
+
+    <!-- Carousel !! -->
+    <div v-if="works.length" class="portfolio-carousel carousel-inner">
       <portfolio-item
         v-on:goPortfolioDetail="goPortfolioDetail($event)"
         v-for="work in works"

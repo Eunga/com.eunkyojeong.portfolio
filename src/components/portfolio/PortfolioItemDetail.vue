@@ -1,13 +1,13 @@
 <template>
     <div class="portfolio-item-detail row">
         <div class="col-md-12">
-            <component v-bind:is="comp"/>
+            <component :is="comp"/>
         </div>
 
         <div class="portfolio-item-nav container">
             <div class="portfolio-item-nav-item portfolio-item-nav-prev" v-on:click="goOtherWork(prev)">
                 <div class="portfolio-item-nav-id">
-                    {{ formatedNumber(prev.id) }}
+                    {{ formatedNumber(prev.id + 1) }}
                 </div>
 
                 <div class="portfolio-item-nav-title">
@@ -16,7 +16,7 @@
             </div>            
             <div class="portfolio-item-nav-item portfolio-item-nav-next" v-on:click="goOtherWork(next)">
                 <div class="portfolio-item-nav-id">
-                    {{ formatedNumber(next.id) }}
+                    {{ formatedNumber(next.id + 1) }}
                 </div>
 
                 <div class="portfolio-item-nav-title">
@@ -36,6 +36,16 @@ export default {
             required: true
         },
     },
+    mounted: function() {
+        console.log(`[PortfolioItemDetail] ${this.work.name} mounted.`);
+        
+    },
+    data: function() {
+        return {
+            name: this.work.name,
+            key: this.work.id
+        }
+    },
     watch: {
         $route (to, from) {
             window.scrollTo(0, 0);
@@ -46,30 +56,18 @@ export default {
             return this.work.id;
         },
         prev: function() {
-            let prevId = this.currentId-1;
-            if (prevId <= 0) {
-                prevId = this.$store.getters.length;
-            }
-            
-            const work =  this.$store.getters.allWorks.filter(work => work.id == prevId);
-            return work[0];
+            const prevWork = this.$store.getters.prevWork; 
+            return prevWork;
         },
         next: function() {
-            let nextId = this.currentId+1;
-            if (nextId > this.$store.getters.length) {
-                nextId = this.$store.getters.length;
-            }
-            
-            const work =  this.$store.getters.allWorks.filter(work => work.id == nextId);
-            return work[0];
-        },  
-        name: function() {
-            return this.work.name;
+            const nextWork = this.$store.getters.nextWork; 
+            return nextWork;
         },
-        comp () {
+        comp: function() {
+            const name = this.name;
             let comp = null;
             try {
-                comp = () => import(`@/components/works/${this.name}.vue`);
+                comp = () => import(`@/components/works/${name}.vue`);
             } catch (e) {
                 console.log(e);
             }
@@ -79,44 +77,47 @@ export default {
     },
     methods: {
         goOtherWork(work) {
+            // this.$store.commit('changeCurrentWorkId', work.id);
+            this.$store.commit('changeCurrentWorkIdWithWork', work);
+            // this.$router.replace({ path: `/portfolio/${work.path}`});
             this.$router.push({ path: `/portfolio/${work.path}`});
         },
         formatedNumber(number) {
-        var countStr;
-        if (number < 10) {
-            countStr = '0' + number;
-        } else {
-            countStr = '' + number;
-        }
+            let countStr;
+            if (number < 10) {
+                countStr = '0' + number;
+            } else {
+                countStr = '' + number;
+            }
 
-        return countStr;
+            return countStr;
         }
     }
 }
 
-$(document).ready(function() {
-  'use strict';
+// $(document).ready(function() {
+//   'use strict';
   
-   let prevScrollTop = 0;
-   const $navbar = $('#header');
-   const navbarHeight = $navbar.height();
+//    let prevScrollTop = 0;
+//    const $navbar = $('#header');
+//    const navbarHeight = $navbar.height();
 
-   $(window).scroll(function () {
-      var currentScrollTop = $(window).scrollTop();
+//    $(window).scroll(function () {
+//       const currentScrollTop = $(window).scrollTop();
       
-      // Scroll Down
-      if (prevScrollTop < currentScrollTop 
-          && currentScrollTop > 2*navbarHeight) {
-        $navbar.addClass("hide");
-      } // Scroll Up
-      else if (prevScrollTop > currentScrollTop
-          && !(currentScrollTop <= navbarHeight)) {
-        $navbar.removeClass("hide");
-      }
+//       // Scroll Down
+//       if (prevScrollTop < currentScrollTop 
+//           && currentScrollTop > 2*navbarHeight) {
+//         $navbar.addClass("hide");
+//       } // Scroll Up
+//       else if (prevScrollTop > currentScrollTop
+//           && !(currentScrollTop <= navbarHeight)) {
+//         $navbar.removeClass("hide");
+//       }
 
-      prevScrollTop = currentScrollTop;
-  });
-});
+//       prevScrollTop = currentScrollTop;
+//   });
+// });
 </script>
 
 <style>

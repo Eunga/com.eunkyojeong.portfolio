@@ -10,6 +10,7 @@
     <div class="portfolio-detail-info">
       <portfolio-item-detail
         v-bind:work="work"
+        v-bind:key="work.id"
         />
     </div>
   </div>
@@ -25,28 +26,40 @@ export default {
     "portfolio-item": PortfolioItem,
     "portfolio-item-detail": PortfolioItemDetail
   },
-  watch:{
-    $route (to, from) {
-      
-    }
-  },
   computed: {
     work() {
-      var wholePath = this.$route.path;
-      var paths = wholePath.split('/');
-      var path = paths[paths.length - 1];
-
-      var work = null;
-      this.$store.getters.works.forEach(element => {
-        if (element.path == path) {
-          work = element;
-          return;
-        }
-      });
-
-      return work;
-    },
+      return this.$store.getters.currentWork;
+    }
   },
+  mounted() {
+    console.log(`path: ${this.$route.path}`);
+    const path = this.$route.path;
+    
+  },
+  watch: {
+    $route (to, from) {
+        // console.log(to);
+        // console.log(from);
+    }
+  },
+  // computed: {
+  //   work() {
+      // var wholePath = this.$route.path;
+      // var paths = wholePath.split('/');
+      // var path = paths[paths.length - 1];
+
+  //     console.log(`work: ${this.work}`);
+  //     var work = null;
+  //     this.$store.getters.works.forEach(element => {
+  //       if (element.path == path) {
+  //         work = element;
+  //         return;
+  //       }
+  //     });
+
+  //     return work;
+  //   },
+  // },
 };
 </script>
 

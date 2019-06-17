@@ -1,33 +1,22 @@
 <template>
   <div id="app">
+    
+    <!-- Header -->
     <app-header/>
 
-    <!-- <transition
-      v-on:before-enter="beforeEnter"
-      v-on:enter="enter"
-      v-on:after-enter="afterEnter"
-      v-on:enter-cancelled="enterCancelled"
-
-      v-on:before-leave="beforeLeave"
-      v-on:leave="leave"
-      v-on:after-leave="afterLeave"
-      v-on:leave-cancelled="leaveCancelled"
-
-      name="fade"
-      mode="out-in"> -->
-    
+    <!-- Routher View -->
     <transition
       name="fade"
       mode="out-in">
       <router-view/>
     </transition>
 
+    <!-- Footer -->
     <transition
       name="fade"
       mode="out-in">
       <app-footer/>
     </transition>
-    <!-- <app-footer/> -->
     
   </div>
 </template>
@@ -44,26 +33,25 @@ export default {
     'app-header': Header, 
     'app-footer': Footer
   },
-  methods: {
-    
-  },
-  watch:{
-    $route (to, from) {
-      if (to.name == 'portfolio detail') {
-        $('#header').addClass('hide');
-      } else {
-        $('#header').removeClass('hide');
-        $('#header').show();
-      }
+  created() {
+    const wholePath = this.$route.path;
+    const paths = wholePath.split('/');
+    const routeName = this.$route.name;
+    const path = paths[paths.length - 1];
+
+    if (routeName == 'portfolio detail') {
+      const work = this.$store.getters.works.filter(work => {
+        return work.path == path;
+      });
+      this.$store.commit('changeCurrentWorkIdWithWork', work[0]);
+    } else {
+      const work = this.$store.getters.currentWork;
+      // TODO: 여기서는 뭘할지 고민
+      
     }
   },
   mounted() {
-    const routeName = this.$route.name;
-    if (routeName == 'portfolio detail') {
-      $('#header').addClass('hide');
-    } else {
-      $('#header').removeClass('hide');
-    }
+    
   }
 };
 </script>

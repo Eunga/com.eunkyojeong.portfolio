@@ -1,6 +1,8 @@
 <template>
   <div id='portfolio'>
-    <portfolio-list
+    <!-- <portfolio-list
+      v-on:goPortfolioDetail="goPortfolioDetail($event)"/> -->
+      <portfolio-list
       v-on:goPortfolioDetail="goPortfolioDetail($event)"/>
 
     <div id="portfolio-bottom-mask">
@@ -9,7 +11,6 @@
 </template>
 
 <script>
-import works from '../assets/json/works.json'
 import PortfolioList from '@/components/portfolio/PortfolioList.vue'
 
 export default {
@@ -17,20 +18,6 @@ export default {
   components: { 
     'portfolio-list': PortfolioList
   },
-  data () {
-    return {
-      works: works,
-    }
-  },
-  methods: {
-    isDetailPage: function() {
-      if (this.route.id == null || this.route.id == undefined || this.route.id.length == 0) {
-        return false;
-      }
-
-      return true;
-    },
-  }
 }
 </script>
 
@@ -46,11 +33,6 @@ export default {
   height: calc(100vh - 120px);
 
   transition: all .3s ease-in;
-}
-
-#portfolio.transition {
-  /* height: 650px; */
-
 }
 
 #portfolio-bottom-mask {
