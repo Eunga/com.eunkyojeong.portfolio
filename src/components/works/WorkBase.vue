@@ -7,33 +7,33 @@ export default {
     name: "Workbase",
     mounted() {
         console.log('Workbase mounted');
-        // const $navbar = $('#header');
-        // $navbar.addClass('hide');
+        // // const $navbar = $('#header');
+        // // $navbar.addClass('hide');
     
-        console.log(`this.isRefreshing => ${this.isRefreshing}`);
-        $(document).ready(function() {
-            'use strict';
+        // console.log(`this.isRefreshing => ${this.isRefreshing}`);
+        // $(document).ready(function() {
+        //     'use strict';
             
-            let prevScrollTop = 0;
-            const $navbar = $('#header');
-            const navbarHeight = $navbar.height();
+        //     let prevScrollTop = 0;
+        //     const $navbar = $('#header');
+        //     const navbarHeight = $navbar.height();
 
-            $(window).scroll(function () {
-                const currentScrollTop = $(window).scrollTop();
+        //     $(window).scroll(function () {
+        //         const currentScrollTop = $(window).scrollTop();
                 
-                // Scroll Down
-                if (prevScrollTop < currentScrollTop 
-                    && currentScrollTop > 2*navbarHeight) {
-                    $navbar.addClass("hide");
-                } // Scroll Up
-                else if (prevScrollTop > currentScrollTop
-                    && !(currentScrollTop <= navbarHeight)) {
-                    $navbar.removeClass("hide");
-                }
+        //         // Scroll Down
+        //         if (prevScrollTop < currentScrollTop 
+        //             && currentScrollTop > 2*navbarHeight) {
+        //             $navbar.addClass("hide");
+        //         } // Scroll Up
+        //         else if (prevScrollTop > currentScrollTop
+        //             && !(currentScrollTop <= navbarHeight)) {
+        //             $navbar.removeClass("hide");
+        //         }
 
-                prevScrollTop = currentScrollTop;
-            });
-        });
+        //         prevScrollTop = currentScrollTop;
+        //     });
+        // });
     },
 }
 </script>

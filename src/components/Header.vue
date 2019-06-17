@@ -1,6 +1,7 @@
 <template>
     <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
-      <router-link class="navbar-brand" to="/">EUNKYO JEONG</router-link>
+      <div id="header-mask"></div>
+      <router-link class="navbar-brand" to="/" style="z-index:10">EUNKYO JEONG</router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -31,20 +32,28 @@ export default {
 #header {
   padding: 0px 120px !important;
   height: 120px;
-  background-color: #ffffff !important;
-
-  /* position: absolute; */
-  position: fixed;
+  position: absolute;
   top:0;
   left:0;
   right:0;
   left:0;
   z-index:500;
   transition: all .3s ease-out;
+  background-color: transparent !important;;
 }
 
-#header.hide {
-  opacity: 0;
+#header-mask {
+  position: absolute;
+  background-color: #ffffff !important;
+  width:100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all .3s ease-out;
+}
+
+
+#header.hide #header-mask {
   transform: translateY(-300px);
 }
 

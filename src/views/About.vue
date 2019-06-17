@@ -37,7 +37,7 @@ export default {
   name: "About",
   data() {
     return about;
-  }
+  },
 };
 </script>
 

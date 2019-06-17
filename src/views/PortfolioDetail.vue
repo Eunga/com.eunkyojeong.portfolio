@@ -32,15 +32,7 @@ export default {
     }
   },
   mounted() {
-    console.log(`path: ${this.$route.path}`);
-    const path = this.$route.path;
-    
-  },
-  watch: {
-    $route (to, from) {
-        // console.log(to);
-        // console.log(from);
-    }
+    $('#header').addClass('hide');
   },
   // computed: {
   //   work() {

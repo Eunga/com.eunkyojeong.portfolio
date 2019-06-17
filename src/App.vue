@@ -50,8 +50,14 @@ export default {
       
     }
   },
-  mounted() {
-    
+  watch: {
+    $route (to, from) {
+      if (to.name == 'portfolio detail') {
+        $('#header').addClass('hide');
+      } else {
+        $('#header').removeClass('hide');
+      }
+    }
   }
 };
 </script>
