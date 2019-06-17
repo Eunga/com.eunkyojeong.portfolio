@@ -24,6 +24,13 @@ export default {
   components: {
     "portfolio-item": PortfolioItem
   },
+  mounted() {
+    $(document).ready(function() {
+      $('#portfolio-list').carousel({
+        interval: 3000
+      })
+    });
+  },
   computed: {
     works() {
       return this.$store.getters.works;
