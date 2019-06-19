@@ -65,10 +65,13 @@ export default {
   letter-spacing: -0.3px;
   text-align: left;
   color: #bbbbbb;
+  line-height: 120px;
+  position: absolute;
 }
 
 #contact {
   text-align: right;
+  line-height: 120px;
 }
 
 .contact-icon {

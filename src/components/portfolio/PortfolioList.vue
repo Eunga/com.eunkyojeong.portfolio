@@ -28,7 +28,7 @@ export default {
     $(document).ready(function() {
       $('#portfolio-list').carousel({
         interval: 3000
-      })
+      });
     });
   },
   computed: {
@@ -74,6 +74,10 @@ export default {
 
 .carousel-control-next {
   z-index: 100;
+}
+
+.navLink {
+  z-index: 1;
 }
 
 </style>

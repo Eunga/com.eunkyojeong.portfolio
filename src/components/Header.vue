@@ -14,21 +14,41 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav"></div>
       <span class="navLink">
-        <router-link to="/" class="nav-link">Portfolio</router-link>
+        <!-- <router-link id="navPortfolio" to="/" class="nav-link">Portfolio</router-link> -->
+        <router-link id="navPortfolio" to="/" class="nav-link" 
+          :class="{'router-link-exact-active': isActivePortfolio()}">Portfolio</router-link>
       </span>
       <span class="navLink">
-        <router-link to="/about" class="nav-link">About</router-link>
+        <router-link id="navAbout" to="/about" class="nav-link">About</router-link>
       </span>
     </nav>
 </template>
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
+    watch: {
+      $route (to, from) {
+      
+      }
+    },
+    methods: {
+      isActivePortfolio() {
+        const name = this.$route.name;
+        if (name == 'about') {
+          return false;
+        }
+        return true
+      }
+    }
 }
 </script>
 
 <style scoped>
+.nav-link.active-highlight {
+  opacity: 1;
+}
+
 #header {
   padding: 0px 120px !important;
   height: 120px;

@@ -234,6 +234,18 @@ export default {
   display: block;
 }
 
+.detail.white .portfolio-item-subtitle::before {
+  border-bottom: 2px solid white;
+}
+
+.list.white .porfolio-work-count-current, .list.white .portfolio-work-count {
+  color: white;
+}
+
+.list.black .porfolio-work-count-current {
+  color: black;
+}
+
 .portfolio-item.detail .portfolio-item-brief {
   top: -50px;
 }
