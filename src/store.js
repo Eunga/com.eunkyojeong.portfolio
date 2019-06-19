@@ -21,6 +21,9 @@ const store = new Vuex.Store({
     currentWorkId: 0,
   },
   getters: {
+    about: state => {
+      return state.about;
+    },
     allWorks: state => {
       return state.allWorks;
     },

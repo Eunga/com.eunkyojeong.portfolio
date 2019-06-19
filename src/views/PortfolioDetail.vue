@@ -34,24 +34,6 @@ export default {
   mounted() {
     $('#header').addClass('hide');
   },
-  // computed: {
-  //   work() {
-      // var wholePath = this.$route.path;
-      // var paths = wholePath.split('/');
-      // var path = paths[paths.length - 1];
-
-  //     console.log(`work: ${this.work}`);
-  //     var work = null;
-  //     this.$store.getters.works.forEach(element => {
-  //       if (element.path == path) {
-  //         work = element;
-  //         return;
-  //       }
-  //     });
-
-  //     return work;
-  //   },
-  // },
 };
 </script>
 

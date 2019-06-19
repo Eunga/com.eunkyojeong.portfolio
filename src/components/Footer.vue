@@ -19,13 +19,11 @@
 </template>
 
 <script>
-import about from '@/assets/json/about.json'
-
 export default {
   name: "Footer",
   data: function() {
     return {
-      about: about,
+      about: this.$store.getters.about,
     }
   },
 

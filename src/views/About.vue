@@ -35,8 +35,10 @@
 import about from "../assets/json/about.json";
 export default {
   name: "About",
-  data() {
-    return about;
+  data: function() {
+    return {
+      about: this.$store.getters.about,
+    }
   },
 };
 </script>
@@ -47,8 +49,7 @@ export default {
 }
 
 #about {
-  margin-bottom: 100px;
-  margin: 0 auto;
+  margin: 120px auto 100px;
   padding: 0px;
 }
 
