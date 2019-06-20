@@ -10,6 +10,11 @@
         v-bind:isDetail="false"
         v-bind:key="work.id"
       />
+
+      <!-- <div id="portfolio-carousel-progressbar"></div> -->
+    </div>
+    <div id="portfolio-carousel-progressbar-wrapper">
+      <div id="portfolio-carousel-progressbar"></div>
     </div>
 
     <div id="portfolio-item-content-mask"></div>
@@ -19,6 +24,7 @@
 <script>
 import PortfolioItem from "./PortfolioItem.vue";
 
+const CAROUSEL_INTERNVAL = 3000;
 export default {
   name: "PortfolioList",
   components: {
@@ -27,7 +33,7 @@ export default {
   mounted() {
     $(document).ready(function() {
       $('#portfolio-list').carousel({
-        interval: 3000
+        interval: CAROUSEL_INTERNVAL
       });
     });
   },
@@ -52,6 +58,20 @@ export default {
 </script>
 
 <style>
+#portfolio-carousel-progressbar-wrapper {
+  height: 5px;
+  width: 100%;
+  padding: 0px 120px;
+  top: -5px;
+  position: relative;
+}
+#portfolio-carousel-progressbar {
+  height:100%;
+  width:0%;
+  width: 100%;
+  position: relative;
+  background-color: #5cb85c;
+}
 #portfolio-item-content-mask {
   transition: all 0.3 ease-in;
   height: 100vh;
