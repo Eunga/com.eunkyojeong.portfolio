@@ -61,12 +61,12 @@ export default {
       return obj.isActive;
     },
     getWorkTitle() {
-      this.work.title = this.work.title.replace(/\n/g, '<br/>');
-      return this.work.title;
+      const title = this.work.title.replace(/\n/g, '<br/>');
+      return title;
     },
     getWorkSubtitle() {
-      this.work.subtitle = this.work.subtitle.replace(/\n/g, '<br/>');
-      return this.work.subtitle;
+      const subtitle = this.work.subtitle.replace(/\n/g, '<br/>');
+      return subtitle;
     },
     getImgUrl(pet) {
       try {

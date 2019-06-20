@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import { setTimeout } from 'timers';
 export default {
     name: 'PortfolioItemDetail',
     props: {
@@ -48,7 +49,7 @@ export default {
     },
     watch: {
         $route (to, from) {
-            window.scrollTo(0, 0);
+
         }
     },
     computed: {
@@ -77,10 +78,12 @@ export default {
     },
     methods: {
         goOtherWork(work) {
-            // this.$store.commit('changeCurrentWorkId', work.id);
-            this.$store.commit('changeCurrentWorkIdWithWork', work);
-            // this.$router.replace({ path: `/portfolio/${work.path}`});
-            this.$router.push({ path: `/portfolio/${work.path}`});
+            // 다른 페이지로 가기전에 스크롤을 최상단으로 올린다.
+            window.scrollTo(0, 0);
+            setTimeout(() => {
+                this.$store.commit('changeCurrentWorkIdWithWork', work);
+                this.$router.push({ path: `/portfolio/${work.path}`});
+            }, 1000);
         },
         formatedNumber(number) {
             let countStr;
@@ -95,29 +98,6 @@ export default {
     }
 }
 
-// $(document).ready(function() {
-//   'use strict';
-  
-//    let prevScrollTop = 0;
-//    const $navbar = $('#header');
-//    const navbarHeight = $navbar.height();
-
-//    $(window).scroll(function () {
-//       const currentScrollTop = $(window).scrollTop();
-      
-//       // Scroll Down
-//       if (prevScrollTop < currentScrollTop 
-//           && currentScrollTop > 2*navbarHeight) {
-//         $navbar.addClass("hide");
-//       } // Scroll Up
-//       else if (prevScrollTop > currentScrollTop
-//           && !(currentScrollTop <= navbarHeight)) {
-//         $navbar.removeClass("hide");
-//       }
-
-//       prevScrollTop = currentScrollTop;
-//   });
-// });
 </script>
 
 <style>
