@@ -2,12 +2,12 @@
   <div class="portfolio-item carousel-item"
     v-bind:class="[{ active: isActive(), detail: isDetail, list: !isDetail}, theme ]">
     <div class="portfolio-item-background">
-      <div class="portfolio-item-background-padding portfolio-item-background-padding-left"></div>
-      <div class="portfolio-item-background-padding portfolio-item-background-padding-right"></div>
+      <div class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-left"></div>
+      <div class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-right"></div>
       <img class="portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)"/>
     </div>
 
-    <div class="portfolio-item-content carousel-caption d-none d-md-block container"
+    <div class="portfolio-item-content carousel-caption d-md-block container"
       @click="goPortfolioDetail">
       <div class="portfolio-item-stuff">
         <img :src="getImgUrl(work.stuff.url)" />
@@ -121,17 +121,21 @@ export default {
 }
 
 .portfolio-item-background {
+  position: fixed;
   width: 100%;
   height: 100%;
   transition: all 0.3s ease-in;
-}
 
+
+  position: fixed;
+  left:0;
+  right:0;
+  overflow: hidden;
+  margin:auto;
+}
+/* 
 .list .portfolio-item-background {
-  position: absolute;
-}
-
-.detail {
-  display: block !important;
+  
 }
 
 .detail .portfolio-item-background {
@@ -140,30 +144,39 @@ export default {
   right:0;
   overflow: hidden;
   margin:auto;
+} */
+
+.detail {
+  display: block !important;
 }
 
-.portfolio-item-background-padding {
+
+
+/* ====================================================================== */
+.detail .portfolio-detail-item-background-padding {
   position: absolute;
-  width:120px;
+  width: 120px;
   height:100%;
   z-index: 10;
   background-color: white;
 }
 
-.list .portfolio-item-background-padding-left {
-  left:0;
+.detail .portfolio-detail-item-background-padding-left {
+  left: -300px;
 }
 
-.list .portfolio-item-background-padding-right {
-  right:0;
+.detail .portfolio-detail-item-background-padding-right {
+  right: -300px;
 }
 
-.detail .portfolio-item-background-padding-left {
-  left:-300px;
+.fade-leave-active .detail .portfolio-detail-item-background-padding-left {
+  transform: translateX(300px);
+  transition-duration: .3s;
 }
 
-.detail .portfolio-item-background-padding-right {
-  right:-300px;
+.fade-leave-active .detail .portfolio-detail-item-background-padding-right {
+  transform: translateX(-300px);
+  transition-duration: .3s;
 }
 
 .portfolio-item-background > img {
@@ -184,8 +197,6 @@ export default {
 .portfolio-item-stuff img {
   position: relative;
   width: 100%;
-
-  
 }
 
 .portfolio-item-content {
@@ -193,7 +204,6 @@ export default {
   left: 0;
   right: 0;
   top: 0;
-  /* margin-top: 120px; */
   padding-top: 120px;
   cursor:pointer;
 }
@@ -289,43 +299,9 @@ export default {
   transition-duration: .3s;
 }
 
-
-.fade-leave-active .portfolio-item.list .portfolio-item-background-padding-left {
-  transform: translateX(-300px);
-  transition-duration: .3s;
-}
-
-.fade-leave-active .portfolio-item.detail .portfolio-item-background-padding-left {
-  transform: translateX(300px);
-  transition-duration: .3s;
-}
-
-.fade-leave-active .portfolio-item.list .portfolio-item-background-padding-right {
-  transform: translateX(300px);
-  transition-duration: .3s;
-}
-
-.fade-leave-active .portfolio-item.detail .portfolio-item-background-padding-right {
-  transform: translateX(-300px);
-  transition-duration: .3s;
-}
-
 .fade-leave-active .portfolio-item.list .portfolio-item-brief .portfolio-work-count {
   visibility: hidden;
 }
-
-.fade-leave-active .portfolio-item.detail .portfolio-item-brief .portfolio-work-count {
-  visibility: visible;
-  /* display: block; */
-}
-
-/* .fade-leave-active .portfolio-item.list .portfolio-item-brief .portfolio-item-title {
-  top: -50px;
-}
-
-.fade-leave-active .portfolio-item.detail .portfolio-item-brief .portfolio-item-title {
-  top: 200px;
-} */
 
 .fade-leave-active .portfolio-item.list .portfolio-item-brief {
   top: -50px;

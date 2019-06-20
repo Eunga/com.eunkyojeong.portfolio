@@ -103,6 +103,11 @@ export default {
     padding-top:120px;
     padding-bottom:100px;
     margin: auto;
+
+    /* 로딩 되면서, 위로 fadein & translateY 하기 위함 */
+    position: relative;
+    opacity: 0;
+    top: 50px;
 }
 
 .portfolio-work-subtitle-sm {
@@ -124,6 +129,10 @@ export default {
     margin-bottom: 30px;
 }
 
+.porfolio-work-wrap {
+    position: relative;
+}
+
 .porfolio-work-wrap:nth-child(even) {
     background-color: #F0F0F0;
 }
@@ -133,7 +142,7 @@ export default {
 }
 
 .portfolio-work-meta-label {
-    width: 70px;
+    width: 30px;
     font-weight: bold;
     display: inline-block
 }
