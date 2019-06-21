@@ -13,6 +13,9 @@
         v-bind:key="work.id"
         />
     </div>
+
+    <div id="portfolio-detail-mask">
+    </div>
   </div>
 </template>
 
@@ -32,7 +35,37 @@ export default {
       this.commitCurrentWorkToStore(work);
     }
   },
+  data: function() {
+    return {
+      isFirstLoad: false
+    }
+  },
+  updated() {
+    if (this.isFirstLoad) {
+      $('#portfolio-detail-mask').css({
+        opacity: 0,
+        'z-index': -1000
+      });
+      this.isFirstLoad = false;
+    } else {
+      $('#portfolio-detail-mask').css({
+        opacity: 1,
+        'z-index': 1000
+      });
+
+      $('#portfolio-detail-mask').animate({
+        opacity: 0,
+        'z-index': -1000
+      }, 2000);
+    }
+  },
   mounted() {
+    this.isFirstLoad = true;
+    $('#portfolio-detail-mask').css({
+      opacity: 0,
+      'z-index': -1000
+    });
+
     $('#header').addClass('hide');
     const path = this.$route.path; // /portfolio/${work.path}
     const work = this.getCurrentWorkFromPath(path);
@@ -60,6 +93,7 @@ export default {
 
 <style>
 #portfolio-detail {
+  position: relative;
   width:100%;
 }
 
@@ -85,5 +119,16 @@ export default {
 .fade-leave-active .portfolio-detail-info {
   top: 500px;
   opacity: 0;
+}
+
+#portfolio-detail-mask {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: white;
+  z-index: 1000; /* header 까지 가림. */
+  /* transition: all 1s ease-in-out; */
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="portfolio-item carousel-item"
-    v-bind:class="[{ active: isActive(), detail: isDetail, list: !isDetail}, theme ]">
+    v-bind:class="[{ active: isActive(), detail: isDetail, list: !isDetail}, theme() ]">
     <div class="portfolio-item-background">
       <div class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-left"></div>
       <div class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-right"></div>
@@ -47,12 +47,10 @@ export default {
       default: false
     }
   },
-  data () {
-    return {
-      theme: this.work.theme
-    }
-  },
   methods: {
+    theme() {
+      return this.work.theme;
+    },
     isActive() {
       let obj = {
         work: this.work,

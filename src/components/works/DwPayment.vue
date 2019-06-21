@@ -107,7 +107,7 @@ export default {
     /* 로딩 되면서, 위로 fadein & translateY 하기 위함 */
     position: relative;
     opacity: 0;
-    top: 50px;
+    top: 10px;
 }
 
 .portfolio-work-subtitle-sm {

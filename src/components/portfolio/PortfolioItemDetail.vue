@@ -1,5 +1,6 @@
 <template>
     <div class="portfolio-item-detail row">
+        <div class="portfolio-item-detail-temp"></div>
         <div class="col-md-12">
             <component :is="comp"/>
         </div>
@@ -133,6 +134,12 @@ export default {
   color: #000000
 }
 
+.portfolio-item-detail-temp {
+    position: relative;
+    min-height: 1000px;
+    width: 100%;
+    
+}
 
 </style>
 
