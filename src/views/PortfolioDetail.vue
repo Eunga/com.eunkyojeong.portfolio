@@ -3,13 +3,13 @@
     <div class="portfolio-meta">
       <portfolio-item
         v-bind:isDetail="true"
-        v-bind:work="work"
+        v-bind:work="work()"
         v-bind:key="work.id"
       />
     </div>
     <div class="portfolio-detail-info">
       <portfolio-item-detail
-        v-bind:work="work"
+        v-bind:work="work()"
         v-bind:key="work.id"
         />
     </div>
@@ -26,14 +26,35 @@ export default {
     "portfolio-item": PortfolioItem,
     "portfolio-item-detail": PortfolioItemDetail
   },
-  computed: {
-    work() {
-      return this.$store.getters.currentWork;
+  watch: {
+    $route (to, from) {
+      const work = this.getCurrentWorkFromPath(to.path);
+      this.commitCurrentWorkToStore(work);
     }
   },
   mounted() {
     $('#header').addClass('hide');
+    const path = this.$route.path; // /portfolio/${work.path}
+    const work = this.getCurrentWorkFromPath(path);
+    this.commitCurrentWorkToStore(work);
   },
+  methods: {
+    work() {
+      const currentWork = this.$store.getters.currentWork;
+      return currentWork;
+    },
+    getCurrentWorkFromPath(path) {
+      const before = this.$store.getters.currentWork;
+      const work = this.$store.getters.works.filter(work => {
+        return `/portfolio/${work.path}` == path;
+      });
+
+      return work[0];
+    },
+    commitCurrentWorkToStore(work) {
+      this.$store.commit('changeCurrentWorkIdWithWork', work);
+    }
+  }
 };
 </script>
 

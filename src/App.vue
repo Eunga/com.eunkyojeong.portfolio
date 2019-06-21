@@ -8,7 +8,8 @@
     <transition
       name="fade"
       mode="out-in">
-      <router-view/>
+
+      <router-view :key="$route.name"></router-view>
     </transition>
 
     <!-- Footer -->
@@ -34,21 +35,7 @@ export default {
     'app-footer': Footer
   },
   created() {
-    const wholePath = this.$route.path;
-    const paths = wholePath.split('/');
-    const routeName = this.$route.name;
-    const path = paths[paths.length - 1];
-
-    if (routeName == 'portfolio detail') {
-      const work = this.$store.getters.works.filter(work => {
-        return work.path == path;
-      });
-      this.$store.commit('changeCurrentWorkIdWithWork', work[0]);
-    } else {
-      const work = this.$store.getters.currentWork;
-      // TODO: 여기서는 뭘할지 고민
-      
-    }
+    
   },
   watch: {
     $route (to, from) {
@@ -64,7 +51,7 @@ export default {
 
 <style>
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 html,

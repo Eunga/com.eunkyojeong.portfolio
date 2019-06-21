@@ -3,7 +3,7 @@
         <div class="col-md-12">
             <component :is="comp"/>
         </div>
-
+        
         <div class="portfolio-item-nav container">
             <div class="portfolio-item-nav-item portfolio-item-nav-prev" v-on:click="goOtherWork(prev)">
                 <div class="portfolio-item-nav-id">
@@ -37,19 +37,9 @@ export default {
             required: true
         },
     },
-    mounted: function() {
-        console.log(`[PortfolioItemDetail] ${this.work.name} mounted.`);
-        
-    },
-    data: function() {
-        return {
-            name: this.work.name,
-            key: this.work.id
-        }
-    },
     watch: {
         $route (to, from) {
-
+                
         }
     },
     computed: {
@@ -63,6 +53,12 @@ export default {
         next: function() {
             const nextWork = this.$store.getters.nextWork; 
             return nextWork;
+        },
+        name: function() {
+            return this.work.name;
+        },
+        key: function() {
+            return this.work.id;
         },
         comp: function() {
             const name = this.name;
@@ -78,12 +74,7 @@ export default {
     },
     methods: {
         goOtherWork(work) {
-            // 다른 페이지로 가기전에 스크롤을 최상단으로 올린다.
-            window.scrollTo(0, 0);
-            setTimeout(() => {
-                this.$store.commit('changeCurrentWorkIdWithWork', work);
-                this.$router.push({ path: `/portfolio/${work.path}`});
-            }, 1000);
+            this.$router.push({ path: `/portfolio/${work.path}`});
         },
         formatedNumber(number) {
             let countStr;
