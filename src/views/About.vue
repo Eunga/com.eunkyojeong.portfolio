@@ -11,19 +11,21 @@
       </div>
 
       <div class="col-9">
-        <div class="introduceHerSelf">{{ introduce }}</div>
+        <div class="introduceHerSelf" v-html="introduce"></div>
 
         <div class="aboutContact">
-          <a href="tel:+821020077774">{{ phoneNumber }}</a>
+          <a href="tel:+821020077774" v-html="phoneNumber"></a>
         </div>
 
-        <div class="aboutContact">{{ email }}</div>
+        <div class="aboutContact" v-html="email"></div>
 
         <div class="aboutContact aboutContactSns">
           <ul>
-            <!-- <li v-for="s in sns">
-              <a v-bind:s="s.url">{{ s.name }}</a>
-            </li>-->
+            <li v-for="s in about.sns" v-bind:s="s" v-bind:key="s.id">
+              <a :href="s.url" :target="s.target">
+                <span v-html="s.name"></span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -32,7 +34,6 @@
 </template>
 
 <script>
-import about from "../assets/json/about.json";
 export default {
   name: "About",
   data: function() {
@@ -40,6 +41,17 @@ export default {
       about: this.$store.getters.about,
     }
   },
+  computed: {
+    introduce() {
+      return this.about.introduce.replace(/\n/g, '<br/>');
+    },
+    email() {
+      return this.about.email;
+    },
+    phoneNumber() {
+      return this.about.phoneNumber;
+    }
+  }
 };
 </script>
 
@@ -85,5 +97,17 @@ export default {
   letter-spacing: -0.6px;
   text-align: left;
   color: #bbbbbb
+}
+
+.aboutContactSns ul {
+  list-style: none;
+}
+
+.aboutContactSns ul li {
+  display: inline;
+}
+
+.aboutContactSns ul li:after {
+  content: ' ';
 }
 </style>
