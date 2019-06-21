@@ -1,0 +1,39 @@
+{
+  "introduce": "Hey, I'm Eunkyo! I'm a problem-solver, who has a keen eye for sensible and top-notch design.\nWith passion to improve people’s lives and to offer more pleasing and satisfying experiences,\nI try to always keep up and push my boundaries to learn and broaden my views in the field.\nI currently work at Daum Webtoon of Kakao in South Korea.\n\nFeel free to check my resume.\nIf you’d like to chat, contact me.",
+  "phoneNumber": "+82 10 2007 7774",
+  "email": "designer.jeg@gmail.com",
+  "sns": [
+    {
+      "id": 0,
+      "name": "Email",
+      "url": "mailto:eunkyojeongdesign@gmail.com",
+      "icon": "ico-email",
+      "isAvailable": true,
+      "target": "_top"
+    },
+    {
+      "id": 1,
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/eunkyojeong",
+      "icon": "ico-linkedin",
+      "isAvailable": true,
+      "target": "_blank"
+    },
+    {
+      "id": 2,
+      "name": "Dribble",
+      "url": "https://dribbble.com/Eunga",
+      "icon": "ico-dribbble",
+      "isAvailable": true,
+      "target": "_blank"
+    },
+    {
+      "id": 3,
+      "name": "Instagram",
+      "url": "https://www.instagram.com/eunga_jeong",
+      "icon": "ico-instagram",
+      "isAvailable": true,
+      "target": "_blank"
+    }
+  ]
+}
