@@ -43,6 +43,7 @@ export default {
 
 <style scoped>
 #footer {
+  width: 100%;
   padding: 0px 120px;
   background-color: #ffffff !important;
   position: relative;

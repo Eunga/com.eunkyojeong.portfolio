@@ -16,9 +16,9 @@
 
       <div class="portfolio-item-brief">
         <div class="portfolio-work-count">
-          <span class="porfolio-work-count-current">{{ getWorkIdNumber() }}</span> 
-          <span class="porfolio-work-count-delimeter">  / </span>
-          <span class="porfolio-work-count-all">{{ getCountOfAllWorks() }}</span>
+          <span class="portfolio-work-count-current">{{ getWorkIdNumber() }}</span> 
+          <span class="portfolio-work-count-delimeter">  / </span>
+          <span class="portfolio-work-count-all">{{ getCountOfAllWorks() }}</span>
         </div>
 
         <div class="portfolio-item-title">
@@ -251,11 +251,11 @@ export default {
   border-bottom: 2px solid white;
 }
 
-.list.white .porfolio-work-count-current, .list.white .portfolio-work-count {
+.list.white .portfolio-work-count-current, .list.white .portfolio-work-count {
   color: white;
 }
 
-.list.black .porfolio-work-count-current {
+.list.black .portfolio-work-count-current {
   color: black;
 }
 
@@ -287,11 +287,11 @@ export default {
   transform: translateY(-80px) scale(0.8);
 }
 
-.porfolio-work-count-current {
+.portfolio-work-count-current {
   font-weight: bold;
 }
 
-.porfolio-work-count-all, .porfolio-work-count-delimeter {
+.portfolio-work-count-all, .portfolio-work-count-delimeter {
   opacity: .3;
 }
 
