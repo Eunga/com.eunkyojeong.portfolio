@@ -7,7 +7,7 @@
     </div>
      -->
 
-    <div class="row" style="margin-top: 206px;">
+    <div class="row">
       <div id="aboutNameAndResume" class="col-xs-12 col-md-6">
         <div id="aboutName">Eunkyo Jeong</div>
         <div id="aboutResumeBtn">
@@ -67,6 +67,12 @@ export default {
 </script>
 
 <style>
+#about {
+  padding-top: 120px;
+  position: relative;
+  height: calc(100vh - 120px);
+}
+
 #aboutProfileImage {
   padding-top: 131px;
 }
@@ -75,18 +81,12 @@ export default {
   margin-right: 10px;
 }
 
-#about {
-  margin: 120px auto 100px;
-  padding: 0px;
-}
-
 #aboutName {
   font-family: Questrial;
   font-size: 70px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.14;
   letter-spacing: -1.4px;
   text-align: left;
   color: #000000;

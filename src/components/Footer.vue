@@ -42,12 +42,6 @@ export default {
 </script>
 
 <style scoped>
-@media (max-width: 767px) {
-  #footer {
-    display: none;
-  }
-}
-
 #footer {
   padding: 0px 120px;
   background-color: #ffffff !important;
@@ -95,4 +89,9 @@ export default {
   opacity: 1;
 }
 
+@media (max-width: 767px) {
+  #footer {
+    display: none;
+  }
+}
 </style>
