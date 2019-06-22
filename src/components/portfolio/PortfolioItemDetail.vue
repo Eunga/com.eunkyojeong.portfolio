@@ -1,9 +1,7 @@
 <template>
-    <div class="portfolio-item-detail row">
+    <div class="portfolio-item-detail">
         <div class="portfolio-item-detail-temp"></div>
-        <div class="col-md-12">
-            <component :is="comp"/>
-        </div>
+        <component :is="comp"/>
         
         <div class="portfolio-item-nav container">
             <div class="portfolio-item-nav-item portfolio-item-nav-prev" v-on:click="goOtherWork(prev)">
@@ -29,7 +27,6 @@
 </template>
 
 <script>
-import { setTimeout } from 'timers';
 export default {
     name: 'PortfolioItemDetail',
     props: {
@@ -37,11 +34,6 @@ export default {
             type: Object,
             required: true
         },
-    },
-    watch: {
-        $route (to, from) {
-                
-        }
     },
     computed: {
         currentId: function() {
@@ -67,7 +59,7 @@ export default {
             try {
                 comp = () => import(`@/components/works/${name}.vue`);
             } catch (e) {
-                console.log(e);
+                // console.log(e);
             }
 
             return comp;
@@ -93,6 +85,11 @@ export default {
 </script>
 
 <style>
+.portfolio-item-nav {
+    padding-top: 120px;
+    border-top: solid 1px #dddddd;
+    height: 410px;
+}
 
 .portfolio-item-nav-item {
     display: inline-block;
@@ -138,8 +135,6 @@ export default {
     position: relative;
     min-height: 1000px;
     width: 100%;
-    
 }
 
 </style>
-

@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import axios from 'axios'
 
 Vue.use(Vuex)
 
@@ -23,6 +22,12 @@ const store = new Vuex.Store({
   getters: {
     about: state => {
       return state.about;
+    },
+    snsForFooter: state => {
+      return state.about.sns.filter(s => s.exposeFooter);
+    },
+    snsForAboutPage: state => {
+      return state.about.sns.filter(s => s.exposeAboutPage);
     },
     allWorks: state => {
       return state.allWorks;
@@ -54,7 +59,15 @@ const store = new Vuex.Store({
     },
     currentWorkId: (state) => {
       return state.currentWorkId;
+    },
+    workFromPath: (state, getters) => (path) => {
+      const work = getters.works.filter(work => {
+        return `/portfolio/${work.path}` == path;
+      });
+
+      return work[0];
     }
+
   },
   mutations: {
     changeCurrentWorkId (state, workId) {

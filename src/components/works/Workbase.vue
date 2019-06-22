@@ -1,17 +1,16 @@
 <template>
-    
+    <div></div>    
 </template>
 
 <script>
 export default {
     name: "Workbase",
     mounted() {
-        console.log('Workbase mounted');
         $('.portfolio-item-detail-temp').hide();
 
         window.scrollTo(0, 0);
         $(document).ready(function() {
-            $('.porfolio-work').eq(0).animate({
+            $('.portfolio-work').eq(0).animate({
                 opacity: 1,
                 top: -10
             }, 500);
@@ -27,7 +26,7 @@ export default {
             $(window).scroll( function(){
                 /* Check the location of each desired element */
                 let isFirstChecked = false;
-                $('.porfolio-work').each( function(i) {
+                $('.portfolio-work').each( function(i) {
                     if (i==0) {
                         return;
                     }
@@ -52,5 +51,8 @@ export default {
 </script>
 
 <style>
-
+.portfolio-works {
+  font-family: HelveticaNeue;
+  font-size: 20px;
+}
 </style>

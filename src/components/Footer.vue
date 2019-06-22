@@ -1,17 +1,13 @@
 <template>
   <footer id="footer">
     <div id="copyright">
-      Designed by me & Developed by <a href="https://mrkarl.github.io" class="pankipark"><span>Panki Park</span></a> © 2019 All rights reserved.
+      Designed by me & Developed by <a href="https://mrkarl.github.io" target="_blank" class="pankipark"><span>Panki Park</span></a> © 2019 All rights reserved.
     </div>
 
     <div id="contact">
-      <span 
-        v-for="sns in about.sns.filter((sns) => sns.isAvailable)"
-        v-bind:key="sns.id">
-        <a :href="sns.url"
-        :target="sns.target">
-          <img :src="getContactsUrl(sns.icon)" 
-          class="contact-icon"/>
+      <span v-for="s in sns" v-bind:key="s.id">
+        <a :href="s.url" :target="s.target">
+          <img :src="getContactsUrl(s.icon)" class="contact-icon"/>
         </a>
       </span>
     </div>
@@ -24,6 +20,7 @@ export default {
   data: function() {
     return {
       about: this.$store.getters.about,
+      sns: this.$store.getters.snsForFooter
     }
   },
 
@@ -46,11 +43,14 @@ export default {
 
 <style scoped>
 #footer {
+  width: 100%;
   padding: 0px 120px;
   background-color: #ffffff !important;
   position: relative;
   transition: all .3s ease-in;
   height: 120px;
+  display: flex;
+  align-items: center;
 }
 
 #copyright {
@@ -59,17 +59,15 @@ export default {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.14;
   letter-spacing: -0.3px;
   text-align: left;
   color: #bbbbbb;
-  line-height: 120px;
-  position: absolute;
+  flex: 1;
 }
 
 #contact {
   text-align: right;
-  line-height: 120px;
+  flex: 1;
 }
 
 .contact-icon {
@@ -92,4 +90,9 @@ export default {
   opacity: 1;
 }
 
+@media (max-width: 767px) {
+  #footer {
+    display: none;
+  }
+}
 </style>

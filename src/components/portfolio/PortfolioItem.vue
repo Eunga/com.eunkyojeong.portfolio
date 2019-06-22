@@ -2,22 +2,23 @@
   <div class="portfolio-item carousel-item"
     v-bind:class="[{ active: isActive(), detail: isDetail, list: !isDetail}, theme() ]">
     <div class="portfolio-item-background">
-      <div class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-left"></div>
-      <div class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-right"></div>
+      
+      <div v-if="isDetail" class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-left"></div>
+      <div v-if="isDetail" class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-right"></div>
+      
       <img class="portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)"/>
     </div>
 
-    <div class="portfolio-item-content carousel-caption d-md-block container"
-      @click="goPortfolioDetail">
+    <div class="portfolio-item-content carousel-caption d-md-block container" @click="goPortfolioDetail">
       <div class="portfolio-item-stuff">
         <img :src="getImgUrl(work.stuff.url)" />
       </div>
 
       <div class="portfolio-item-brief">
         <div class="portfolio-work-count">
-          <span class="porfolio-work-count-current">{{ getWorkIdNumber() }}</span> 
-            / 
-          <span class="porfolio-work-count-all">{{ getCountOfAllWorks() }}</span>
+          <span class="portfolio-work-count-current">{{ getWorkIdNumber() }}</span> 
+          <span class="portfolio-work-count-delimeter">  / </span>
+          <span class="portfolio-work-count-all">{{ getCountOfAllWorks() }}</span>
         </div>
 
         <div class="portfolio-item-title">
@@ -86,8 +87,6 @@ export default {
     getCountOfAllWorks() {
       const count = this.$store.getters.length;
       return this.numberFormatWithTwoDigits(count);
-
-      return countStr;
     },
     numberFormatWithTwoDigits(number) {
       let countStr;
@@ -131,27 +130,13 @@ export default {
   overflow: hidden;
   margin:auto;
 }
-/* 
-.list .portfolio-item-background {
-  
-}
-
-.detail .portfolio-item-background {
-  position: fixed;
-  left:0;
-  right:0;
-  overflow: hidden;
-  margin:auto;
-} */
 
 .detail {
   display: block !important;
 }
 
-
-
 /* ====================================================================== */
-.detail .portfolio-detail-item-background-padding {
+.portfolio-detail-item-background-padding {
   position: absolute;
   width: 120px;
   height:100%;
@@ -159,23 +144,27 @@ export default {
   background-color: white;
 }
 
-.detail .portfolio-detail-item-background-padding-left {
+/**
+ * [Start] List <-> Detail 전환 시, "item-padding left & right" animation
+ */
+.portfolio-detail-item-background-padding-left {
   left: -300px;
 }
-
-.detail .portfolio-detail-item-background-padding-right {
+.portfolio-detail-item-background-padding-right {
   right: -300px;
 }
-
-.fade-leave-active .detail .portfolio-detail-item-background-padding-left {
+.fade-leave-active .portfolio-detail-item-background-padding-left {
   transform: translateX(300px);
   transition-duration: .3s;
 }
-
-.fade-leave-active .detail .portfolio-detail-item-background-padding-right {
+.fade-leave-active .portfolio-detail-item-background-padding-right {
   transform: translateX(-300px);
   transition-duration: .3s;
 }
+/**
+ * [End] List <-> Detail 전환 시, "item-padding left & right" animation
+ */
+
 
 .portfolio-item-background > img {
   position: relative;
@@ -186,10 +175,10 @@ export default {
 }
 
 .portfolio-item-stuff {
-  /* position: relative; */
   position: absolute;
   width: 50%;
   left: 50%;
+  top: 180px;
 }
 
 .portfolio-item-stuff img {
@@ -208,23 +197,36 @@ export default {
 
 .portfolio-item-brief {
   transition: all .3s ease-out;
-  position: relative;
-  top: 200px;
+  position: absolute;
+  top: 400px;
   left: 0;
 }
 
 .portfolio-item-title {
   transition: all .3s ease-out;
+
   text-align: left;
-  color: black;
-  font-size: 50px;
+  font-family: Questrial;
+  font-size: 70px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: -1.4px;
 }
 
 .portfolio-item-subtitle {
   transition: all .3s ease-out;
+  
+  font-family: Questrial;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: -0.6px;
   text-align: left;
   color: black;
-  font-size: 20px;
 }
 
 .list .portfolio-item-subtitle {
@@ -249,44 +251,54 @@ export default {
   border-bottom: 2px solid white;
 }
 
-.list.white .porfolio-work-count-current, .list.white .portfolio-work-count {
+.list.white .portfolio-work-count-current, .list.white .portfolio-work-count {
   color: white;
 }
 
-.list.black .porfolio-work-count-current {
+.list.black .portfolio-work-count-current {
   color: black;
 }
 
 .portfolio-item.detail .portfolio-item-brief {
-  top: -50px;
+  top: 200px;
 }
 
 .portfolio-work-count {
   position: relative;
-  text-align: left;
 
   color:black;
+  font-family: Questrial;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.04;
+  letter-spacing: normal;
+  text-align: left;
+  
+  margin-bottom: 28px;
 }
 
-.detail .portfolio-item-brief .portfolio-work-count {
+.detail .portfolio-work-count {
   visibility: hidden;
-}
-
-.portfolio-work-count span {
-  font-size: 30px;
 }
 
 .detail .portfolio-item-stuff img {
   transform: translateY(-80px) scale(0.8);
 }
-.porfolio-work-count-current {
+
+.portfolio-work-count-current {
   font-weight: bold;
 }
 
-.porfolio-work-count-all {
-  color: gray;
+.portfolio-work-count-all, .portfolio-work-count-delimeter {
+  opacity: .3;
 }
-/* Tansition */
+
+
+/**
+ * [Start] List <-> Detail 전환 시, "item-stuff" animation
+ */
 .fade-leave-active .portfolio-item.list .portfolio-item-stuff img {
   transform: translateY(-80px) scale(0.8);
   transition-duration: .3s;
@@ -296,26 +308,54 @@ export default {
   transform: translateY(0px) scale(1);
   transition-duration: .3s;
 }
+/**
+ * [End] List <-> Detail 전환 시, "item-stuff" animation
+ */
 
-.fade-leave-active .portfolio-item.list .portfolio-item-brief .portfolio-work-count {
+
+
+/**
+ * [Start] List <-> Detail 전환 시, "item-brief", "item-subtitle", "work-count" animation
+ */
+.fade-leave-active .list .portfolio-item-brief .portfolio-work-count {
   visibility: hidden;
 }
-
-.fade-leave-active .portfolio-item.list .portfolio-item-brief {
-  top: -50px;
-}
-
-.fade-leave-active .portfolio-item.detail .portfolio-item-brief {
+.fade-leave-active .list .portfolio-item-brief {
   top: 200px;
 }
-
-.fade-leave-active .portfolio-item.list .portfolio-item-brief .portfolio-item-subtitle {
-  visibility: visible;
+.fade-leave-active .detail .portfolio-item-brief {
+  top: 400px;
 }
-
-.fade-leave-active .portfolio-item.detail .portfolio-item-brief .portfolio-item-subtitle {
+.fade-leave-active .list .portfolio-item-brief .portfolio-item-subtitle {
+  visibility: visible;
+  /* transform: translateY(100px); */
+}
+.fade-leave-active .detail .portfolio-item-brief .portfolio-item-subtitle {
   display: none;
 }
+
+.fade-enter-active .detail .portfolio-item-brief .portfolio-item-subtitle {
+  opacity: 1;
+  /* transform: translateY(10px); */
+}
+/**
+ * [End] List <-> Detail 전환 시, "item-brief", "item-subtitle", "work-count" animation
+ */
+
+
+@media (max-width: 767px) {
+  .portfolio-item-stuff {
+    width: 100%;
+    left: 0%;
+  }
+
+  .portfolio-item-content {
+    padding-top: 48px;
+  }
+
+  .portfolio-item-brief {
+    bottom: 30px;
+  }
+}
+
 </style>
-
-

@@ -10,8 +10,8 @@
         v-bind:isDetail="false"
         v-bind:key="work.id"/>
 
-      <div class="portfolio-item-background-padding portfolio-item-background-padding-left"></div>
-      <div class="portfolio-item-background-padding portfolio-item-background-padding-right"></div>
+      <div class="portfolio-item-list-padding portfolio-item-list-padding-left"></div>
+      <div class="portfolio-item-list-padding portfolio-item-list-padding-right"></div>
 
     </div>
     <div id="portfolio-carousel-progressbar-wrapper">
@@ -27,7 +27,7 @@ import PortfolioItem from "./PortfolioItem.vue";
 
 
 const carouselBehavior = {
-  isCarouselActive: false,
+  isCarouselActive: true,
   shouldPauseWhenHover: false,
 };
 
@@ -98,10 +98,10 @@ export default {
 
 <style>
 #portfolio-carousel-progressbar-wrapper {
-  height: 5px;
+  height: 10px;
   width: 100%;
   padding: 0px 120px;
-  top: -5px;
+  top: -10px;
   position: relative;
 }
 #portfolio-carousel-progressbar {
@@ -110,7 +110,7 @@ export default {
   width: 100%;
   position: relative;
   background-color: #000000;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 #portfolio-item-content-mask {
   transition: all 0.3 ease-in;
@@ -136,43 +136,46 @@ export default {
   z-index: 100;
 }
 
-.navLink {
-  z-index: 1;
-}
-
-.portfolio-item-background-padding {
+/**
+ * [Start] List <-> Detail 전환 시, "item-list-padding left & right" animation
+ */
+.portfolio-item-list-padding {
   position: absolute;
   width:120px;
   height:100%;
   z-index: 10;
   background-color: white;
 }
-
-.portfolio-item-background-padding-left {
+.portfolio-item-list-padding-left {
   left:0;
 }
-
-.portfolio-item-background-padding-right {
+.portfolio-item-list-padding-right {
   right:0;
 }
-
-.fade-leave-active .portfolio-item-background-padding-left {
+.fade-leave-active .portfolio-item-list-padding-left {
   transform: translateX(-300px);
   transition-duration: .3s;
 }
-
-/* .fade-leave-active .portfolio-item-background-padding-left {
-  transform: translateX(300px);
-  transition-duration: .3s;
-} */
-
-.fade-leave-active .portfolio-item-background-padding-right {
+.fade-leave-active .portfolio-item-list-padding-right {
   transform: translateX(300px);
   transition-duration: .3s;
 }
+/**
+ * [End] List <-> Detail 전환 시, "item-list-padding left & right" animation
+ */
 
-/* .fade-leave-active .portfolio-item-background-padding-right {
-  transform: translateX(-300px);
-  transition-duration: .3s;
-} */
+@media (max-width: 767px) {
+  .portfolio-item-stuff {
+    width: 100%;
+    left: 0%;
+  }
+
+  .portfolio-item-list-padding {
+    display: none;
+  }
+
+  #portfolio-carousel-progressbar-wrapper {
+    padding: 0px;
+  }
+}
 </style>
