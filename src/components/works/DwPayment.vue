@@ -2,28 +2,29 @@
     <div class="porfolio-works">
         <!-- Overview -->
         <div class="porfolio-work-wrap">
-            <div class="porfolio-work container row">
-                <div class="col-md-6">
-                    <div>
-                        <span class="portfolio-work-subtitle-sm">Overview</span>
-                    </div>
-                    <div>
-                        In 2018 summer, Daum Webtoon has finally introduced the new payment service for users to purchase the paid contents via iOS app as well as web app. For this service, I have designed the UI and the process for purchasing pay contents and recharging Webtoon Cash (Cash). Then, I made some improvements to the existing design as every design should be updated, and eventually I had a chance to present a better idea for the enhanced version of purchasing pay contents.
-                        <br/>
-                        <br/>
-                        <i>All information in this case study is my own and does not necessarily reflect the views of Daum Webtoon Company.</i>
-                    </div>
-                </div>
-
-                <div class="col-md-6" style="padding-left:10%;">
-                    <div>
-                        <span class="portfolio-work-meta-label">Date</span>
-                        <span>December 2018</span>
+            <div class="porfolio-work container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="portfolio-work-subtitle-sm">Overview</div>
+                        
+                        <div>
+                            In 2018 summer, Daum Webtoon has finally introduced the new payment service for users to purchase the paid contents via iOS app as well as web app. For this service, I have designed the UI and the process for purchasing pay contents and recharging Webtoon Cash (Cash). Then, I made some improvements to the existing design as every design should be updated, and eventually I had a chance to present a better idea for the enhanced version of purchasing pay contents.
+                            <br/>
+                            <br/>
+                            <i>All information in this case study is my own and does not necessarily reflect the views of Daum Webtoon Company.</i>
+                        </div>
                     </div>
 
-                    <div>
-                        <span class="portfolio-work-meta-label">Role</span>
-                        <span>Product Designer</span>
+                    <div class="offset-md-1 col-md-5 col-xs-12">
+                        <div class="row">
+                            <div class="portfolio-work-subtitle-sm col-md-2 col-xs-3">Date</div>
+                            <div class="col-md-10 col-xs-9">December 2018</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="portfolio-work-subtitle-sm col-md-2 col-xs-3">Role</div>
+                            <div class="col-md-10 col-xs-9">Product Designer</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,7 +96,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .porfolio-work {
     padding-top:120px;
     padding-bottom:100px;
@@ -108,10 +109,14 @@ export default {
 }
 
 .portfolio-work-subtitle-sm {
-    font-size: 22px;
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 30px;
+  font-family: HelveticaNeue;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: -0.3px;
+  text-align: left;
+  flex: 1;
 }
 
 .portfolio-work-subtitle-lg {
@@ -139,9 +144,9 @@ export default {
 }
 
 .portfolio-work-meta-label {
-    width: 30px;
+    /* width: 30px; */
     font-weight: bold;
-    display: inline-block
+    display: inline-block;
 }
 
 </style>

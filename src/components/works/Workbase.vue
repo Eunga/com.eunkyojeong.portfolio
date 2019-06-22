@@ -51,5 +51,8 @@ export default {
 </script>
 
 <style>
-
+.porfolio-works {
+  font-family: HelveticaNeue;
+  font-size: 20px;
+}
 </style>

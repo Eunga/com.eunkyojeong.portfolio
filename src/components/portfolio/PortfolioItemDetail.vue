@@ -1,9 +1,7 @@
 <template>
-    <div class="portfolio-item-detail row">
+    <div class="portfolio-item-detail">
         <div class="portfolio-item-detail-temp"></div>
-        <div class="col-md-12">
-            <component :is="comp"/>
-        </div>
+        <component :is="comp"/>
         
         <div class="portfolio-item-nav container">
             <div class="portfolio-item-nav-item portfolio-item-nav-prev" v-on:click="goOtherWork(prev)">
@@ -136,7 +134,6 @@ export default {
     position: relative;
     min-height: 1000px;
     width: 100%;
-    
 }
 
 </style>

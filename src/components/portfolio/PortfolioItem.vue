@@ -9,8 +9,7 @@
       <img class="portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)"/>
     </div>
 
-    <div class="portfolio-item-content carousel-caption d-md-block container"
-      @click="goPortfolioDetail">
+    <div class="portfolio-item-content carousel-caption d-md-block container" @click="goPortfolioDetail">
       <div class="portfolio-item-stuff">
         <img :src="getImgUrl(work.stuff.url)" />
       </div>
