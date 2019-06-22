@@ -87,6 +87,10 @@ export default {
 </script>
 
 <style>
+.portfolio-item-nav {
+    padding-top: 120px;
+    border-top: solid 1px #dddddd;
+}
 
 .portfolio-item-nav-item {
     display: inline-block;
@@ -136,4 +140,3 @@ export default {
 }
 
 </style>
-

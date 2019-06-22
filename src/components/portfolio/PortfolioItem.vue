@@ -218,9 +218,16 @@ export default {
 
 .portfolio-item-subtitle {
   transition: all .3s ease-out;
+  
+  font-family: Questrial;
+  font-size: 28px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: -0.6px;
   text-align: left;
   color: black;
-  font-size: 20px;
 }
 
 .list .portfolio-item-subtitle {
@@ -311,20 +318,26 @@ export default {
 /**
  * [Start] List <-> Detail 전환 시, "item-brief", "item-subtitle", "work-count" animation
  */
-.fade-leave-active .portfolio-item.list .portfolio-item-brief .portfolio-work-count {
+.fade-leave-active .list .portfolio-item-brief .portfolio-work-count {
   visibility: hidden;
 }
-.fade-leave-active .portfolio-item.list .portfolio-item-brief {
+.fade-leave-active .list .portfolio-item-brief {
   top: 200px;
 }
-.fade-leave-active .portfolio-item.detail .portfolio-item-brief {
+.fade-leave-active .detail .portfolio-item-brief {
   top: 400px;
 }
-.fade-leave-active .portfolio-item.list .portfolio-item-brief .portfolio-item-subtitle {
+.fade-leave-active .list .portfolio-item-brief .portfolio-item-subtitle {
   visibility: visible;
+  /* transform: translateY(100px); */
 }
-.fade-leave-active .portfolio-item.detail .portfolio-item-brief .portfolio-item-subtitle {
+.fade-leave-active .detail .portfolio-item-brief .portfolio-item-subtitle {
   display: none;
+}
+
+.fade-enter-active .detail .portfolio-item-brief .portfolio-item-subtitle {
+  opacity: 1;
+  /* transform: translateY(10px); */
 }
 /**
  * [End] List <-> Detail 전환 시, "item-brief", "item-subtitle", "work-count" animation
