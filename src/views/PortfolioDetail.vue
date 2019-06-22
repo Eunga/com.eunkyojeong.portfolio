@@ -102,9 +102,6 @@ export default {
 }
 .portfolio-meta {
   height: 640px;
-
-  /** FIXME **/
-  height: 544px;
 }
 
 #portfolio-detail .portfolio-item-content {

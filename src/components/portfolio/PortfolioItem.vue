@@ -16,7 +16,7 @@
       <div class="portfolio-item-brief">
         <div class="portfolio-work-count">
           <span class="porfolio-work-count-current">{{ getWorkIdNumber() }}</span> 
-            / 
+          <span class="porfolio-work-count-delimeter">  / </span>
           <span class="porfolio-work-count-all">{{ getCountOfAllWorks() }}</span>
         </div>
 
@@ -129,18 +129,6 @@ export default {
   overflow: hidden;
   margin:auto;
 }
-/* 
-.list .portfolio-item-background {
-  
-}
-
-.detail .portfolio-item-background {
-  position: fixed;
-  left:0;
-  right:0;
-  overflow: hidden;
-  margin:auto;
-} */
 
 .detail {
   display: block !important;
@@ -157,23 +145,27 @@ export default {
   background-color: white;
 }
 
+/**
+ * [Start] List <-> Detail 전환 시, "item-padding left & right" animation
+ */
 .detail .portfolio-detail-item-background-padding-left {
   left: -300px;
 }
-
 .detail .portfolio-detail-item-background-padding-right {
   right: -300px;
 }
-
 .fade-leave-active .detail .portfolio-detail-item-background-padding-left {
   transform: translateX(300px);
   transition-duration: .3s;
 }
-
 .fade-leave-active .detail .portfolio-detail-item-background-padding-right {
   transform: translateX(-300px);
   transition-duration: .3s;
 }
+/**
+ * [End] List <-> Detail 전환 시, "item-padding left & right" animation
+ */
+
 
 .portfolio-item-background > img {
   position: relative;
@@ -184,10 +176,10 @@ export default {
 }
 
 .portfolio-item-stuff {
-  /* position: relative; */
   position: absolute;
   width: 50%;
   left: 50%;
+  top: 180px;
 }
 
 .portfolio-item-stuff img {
@@ -206,16 +198,21 @@ export default {
 
 .portfolio-item-brief {
   transition: all .3s ease-out;
-  position: relative;
-  top: 200px;
+  position: absolute;
+  top: 400px;
   left: 0;
 }
 
 .portfolio-item-title {
   transition: all .3s ease-out;
-  text-align: left;
-  color: black;
-  font-size: 50px;
+  
+  font-family: Questrial;
+  font-size: 70px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: -1.4px;
 }
 
 .portfolio-item-subtitle {
@@ -256,35 +253,45 @@ export default {
 }
 
 .portfolio-item.detail .portfolio-item-brief {
-  top: -50px;
+  top: 200px;
 }
 
 .portfolio-work-count {
   position: relative;
-  text-align: left;
 
   color:black;
+  font-family: Questrial;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.04;
+  letter-spacing: normal;
+  text-align: left;
+  
+  margin-bottom: 28px;
 }
 
-.detail .portfolio-item-brief .portfolio-work-count {
+.detail .portfolio-work-count {
   visibility: hidden;
-}
-
-.portfolio-work-count span {
-  font-size: 30px;
 }
 
 .detail .portfolio-item-stuff img {
   transform: translateY(-80px) scale(0.8);
 }
+
 .porfolio-work-count-current {
   font-weight: bold;
 }
 
-.porfolio-work-count-all {
-  color: gray;
+.porfolio-work-count-all, .porfolio-work-count-delimeter {
+  opacity: .3;
 }
-/* Tansition */
+
+
+/**
+ * [Start] List <-> Detail 전환 시, "item-stuff" animation
+ */
 .fade-leave-active .portfolio-item.list .portfolio-item-stuff img {
   transform: translateY(-80px) scale(0.8);
   transition-duration: .3s;
@@ -294,17 +301,21 @@ export default {
   transform: translateY(0px) scale(1);
   transition-duration: .3s;
 }
+/**
+ * [End] List <-> Detail 전환 시, "item-stuff" animation
+ */
+
 
 .fade-leave-active .portfolio-item.list .portfolio-item-brief .portfolio-work-count {
   visibility: hidden;
 }
 
 .fade-leave-active .portfolio-item.list .portfolio-item-brief {
-  top: -50px;
+  top: 200px;
 }
 
 .fade-leave-active .portfolio-item.detail .portfolio-item-brief {
-  top: 200px;
+  top: 400px;
 }
 
 .fade-leave-active .portfolio-item.list .portfolio-item-brief .portfolio-item-subtitle {
@@ -314,6 +325,20 @@ export default {
 .fade-leave-active .portfolio-item.detail .portfolio-item-brief .portfolio-item-subtitle {
   display: none;
 }
+
+@media (max-width: 767px) {
+  .portfolio-item-stuff {
+    width: 100%;
+    left: 0%;
+  }
+
+  .portfolio-item-content {
+    padding-top: 48px;
+  }
+
+  .portfolio-item-brief {
+    bottom: 30px;
+  }
+}
+
 </style>
-
-

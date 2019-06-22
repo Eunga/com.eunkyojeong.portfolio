@@ -98,10 +98,10 @@ export default {
 
 <style>
 #portfolio-carousel-progressbar-wrapper {
-  height: 5px;
+  height: 10px;
   width: 100%;
   padding: 0px 120px;
-  top: -5px;
+  top: -10px;
   position: relative;
 }
 #portfolio-carousel-progressbar {
@@ -110,7 +110,7 @@ export default {
   width: 100%;
   position: relative;
   background-color: #000000;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 #portfolio-item-content-mask {
   transition: all 0.3 ease-in;
@@ -175,4 +175,18 @@ export default {
   transform: translateX(-300px);
   transition-duration: .3s;
 } */
+
+@media (max-width: 767px) {
+  .portfolio-item-stuff {
+    width: 100%;
+    left: 0%;
+  }
+  .portfolio-item-background-padding {
+    display: none;
+  }
+
+  #portfolio-carousel-progressbar-wrapper {
+    padding: 0px;
+  }
+}
 </style>

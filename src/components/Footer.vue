@@ -1,7 +1,7 @@
 <template>
   <footer id="footer">
     <div id="copyright">
-      Designed by me & Developed by <a href="https://mrkarl.github.io" class="pankipark"><span>Panki Park</span></a> © 2019 All rights reserved.
+      Designed by me & Developed by <a href="https://mrkarl.github.io" target="_blank" class="pankipark"><span>Panki Park</span></a> © 2019 All rights reserved.
     </div>
 
     <div id="contact">
@@ -45,6 +45,12 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 767px) {
+  #footer {
+    display: none;
+  }
+}
+
 #footer {
   padding: 0px 120px;
   background-color: #ffffff !important;
@@ -65,6 +71,7 @@ export default {
   color: #bbbbbb;
   line-height: 120px;
   position: absolute;
+
 }
 
 #contact {

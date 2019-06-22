@@ -1,13 +1,11 @@
 <template>
   <div id='portfolio'>
-    <!-- <portfolio-list
-      v-on:goPortfolioDetail="goPortfolioDetail($event)"/> -->
       <portfolio-list
       v-on:goPortfolioDetail="goPortfolioDetail($event)"/>
 
-    <div id="portfolio-bottom-mask">
-    </div>
+    <div id="portfolio-bottom-mask"></div>
   </div>
+
 </template>
 
 <script>
@@ -46,7 +44,7 @@ export default {
 
 #portfolio.transition #portfolio-bottom-mask {
   transition: all .3s ease-in;
-  top: 544px;
+  top: 640px;
 }
 
 #portfolio-list > ul {
@@ -103,4 +101,9 @@ export default {
   border-color: #4a90e2;
 }
 
+@media (max-width: 767px) {
+  #portfolio {
+    height: 100%;
+  }
+}
 </style>
