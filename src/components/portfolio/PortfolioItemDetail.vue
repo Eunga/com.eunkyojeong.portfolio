@@ -88,6 +88,7 @@ export default {
 .portfolio-item-nav {
     padding-top: 120px;
     border-top: solid 1px #dddddd;
+    height: 410px;
 }
 
 .portfolio-item-nav-item {

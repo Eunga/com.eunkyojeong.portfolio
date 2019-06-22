@@ -8,7 +8,7 @@
     "backgroundImage": "dw/portfolio-dw-bg",
     "shouldBeExposed": true,
     "stuff": {
-      "url": "dw/img-dw-cover-i-phone-x",
+      "url": "dw/portfolio-dw-stuff",
       "animation": "transitionY 10px",
       "duration": 1
     }
@@ -19,10 +19,10 @@
     "theme": "white",
     "subtitle": "Easy and Fast Payment\nFor Seamless Reading Experience",
     "path": "offin",
-    "backgroundImage": "https://cdn.windowsreport.com/wp-content/uploads/2018/06/windows-10.jpg",
+    "backgroundImage": "offin/portfolio-offin-bg",
     "shouldBeExposed": true,
     "stuff": {
-      "url": "dw/img-dw-cover-i-phone-x",
+      "url": "offin/portfolio-offin-stuff",
       "animation": "transitionY 10px",
       "duration": 1
     }
