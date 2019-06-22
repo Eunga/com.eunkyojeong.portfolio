@@ -57,6 +57,8 @@ export default {
   position: relative;
   transition: all .3s ease-in;
   height: 120px;
+  display: flex;
+  align-items: center;
 }
 
 #copyright {
@@ -65,18 +67,15 @@ export default {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.14;
   letter-spacing: -0.3px;
   text-align: left;
   color: #bbbbbb;
-  line-height: 120px;
-  position: absolute;
-
+  flex: 1;
 }
 
 #contact {
   text-align: right;
-  line-height: 120px;
+  flex: 1;
 }
 
 .contact-icon {

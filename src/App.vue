@@ -6,7 +6,7 @@
 
     <!-- Routher View -->
     <transition
-      name="fade"
+      :name="shouldTransition ? 'fade' : ''"
       mode="out-in">
 
       <router-view :key="$route.name"></router-view>
@@ -23,6 +23,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import store from './store'
 
+// Transition을 적용하지 않을 $router.name 
+const exceptTransitionList = ['about'];
 export default {
   store,
   name: "App",
@@ -30,12 +32,23 @@ export default {
     'app-header': Header, 
     'app-footer': Footer
   },
+  data: function() {
+    return {
+      shouldTransition: true
+    }
+  },
   watch: {
     $route (to, from) {
       if (to.name != 'portfolio detail') {
         var windowHeight = window.innerHeight;
         var metaHeight = windowHeight - 120;
         $('#portfolio-meta').css({height: metaHeight});
+      }
+
+      if (exceptTransitionList.includes(to.name)) {
+        this.shouldTransition = false;
+      } else {
+        this.shouldTransition = true;
       }
     }
   },
