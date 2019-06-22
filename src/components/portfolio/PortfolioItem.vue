@@ -2,8 +2,10 @@
   <div class="portfolio-item carousel-item"
     v-bind:class="[{ active: isActive(), detail: isDetail, list: !isDetail}, theme() ]">
     <div class="portfolio-item-background">
-      <div class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-left"></div>
-      <div class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-right"></div>
+      
+      <div v-if="isDetail" class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-left"></div>
+      <div v-if="isDetail" class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-right"></div>
+      
       <img class="portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)"/>
     </div>
 
@@ -134,10 +136,8 @@ export default {
   display: block !important;
 }
 
-
-
 /* ====================================================================== */
-.detail .portfolio-detail-item-background-padding {
+.portfolio-detail-item-background-padding {
   position: absolute;
   width: 120px;
   height:100%;
@@ -148,17 +148,17 @@ export default {
 /**
  * [Start] List <-> Detail 전환 시, "item-padding left & right" animation
  */
-.detail .portfolio-detail-item-background-padding-left {
+.portfolio-detail-item-background-padding-left {
   left: -300px;
 }
-.detail .portfolio-detail-item-background-padding-right {
+.portfolio-detail-item-background-padding-right {
   right: -300px;
 }
-.fade-leave-active .detail .portfolio-detail-item-background-padding-left {
+.fade-leave-active .portfolio-detail-item-background-padding-left {
   transform: translateX(300px);
   transition-duration: .3s;
 }
-.fade-leave-active .detail .portfolio-detail-item-background-padding-right {
+.fade-leave-active .portfolio-detail-item-background-padding-right {
   transform: translateX(-300px);
   transition-duration: .3s;
 }
@@ -205,7 +205,8 @@ export default {
 
 .portfolio-item-title {
   transition: all .3s ease-out;
-  
+
+  text-align: left;
   font-family: Questrial;
   font-size: 70px;
   font-weight: normal;

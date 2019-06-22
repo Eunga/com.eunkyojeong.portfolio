@@ -1,5 +1,6 @@
 <template>
-    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light"
+      v-bind:class="[theme, {transparent: isTransparent}]">
       <div id="header-mask"></div>
       <router-link class="navbar-brand" to="/" style="z-index:10">EUNKYO JEONG</router-link>
       <button
@@ -31,7 +32,35 @@ export default {
         }
         return true
       }
-    }
+    },
+    data: function() {
+      return {
+        theme: 'black',
+        isTransparent: false
+      }
+    },
+    watch: {
+      $route(to, from) {
+        if (to.name == 'portfolio detail') {
+          const work = this.$store.getters.workFromPath(to.path);
+          this.theme = work.theme;
+          this.isTransparent = true;
+        } else {
+          this.theme = 'black';
+          this.isTransparent = false;
+        }
+      }
+    },
+    mounted() {
+      if (this.$route.name == 'portfolio detail') {
+          const work = this.$store.getters.workFromPath(this.$route.path);
+          this.theme = work.theme;
+          this.isTransparent = true;
+        } else {
+          this.theme = 'black';
+          this.isTransparent = false;
+        }
+    },
 }
 </script>
 
@@ -63,9 +92,12 @@ export default {
   transition: all .3s ease-out;
 }
 
-
-#header.hide #header-mask {
+#header.transparent #header-mask {
   transform: translateY(-300px);
+}
+
+.navLink {
+  z-index: 1;
 }
 
 .navbar-toggler {
@@ -84,6 +116,14 @@ export default {
   opacity:0.3;
   color: black;
   transition: opacity .4s ease-out;
+}
+
+#header.white .navbar-brand, #header.black .nav-link {
+  color: black;
+}
+
+#header.white .navbar-brand, #header.white .nav-link {
+  color: white;
 }
 
 .nav-link:hover {

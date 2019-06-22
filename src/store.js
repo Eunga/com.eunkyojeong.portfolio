@@ -54,7 +54,15 @@ const store = new Vuex.Store({
     },
     currentWorkId: (state) => {
       return state.currentWorkId;
+    },
+    workFromPath: (state, getters) => (path) => {
+      const work = getters.works.filter(work => {
+        return `/portfolio/${work.path}` == path;
+      });
+
+      return work[0];
     }
+
   },
   mutations: {
     changeCurrentWorkId (state, workId) {

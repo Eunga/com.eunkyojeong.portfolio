@@ -31,7 +31,7 @@ export default {
   },
   watch: {
     $route (to, from) {
-      const work = this.getCurrentWorkFromPath(to.path);
+      const work = this.$store.getters.workFromPath(to.path);
       this.commitCurrentWorkToStore(work);
     }
   },
@@ -66,9 +66,8 @@ export default {
       'z-index': -1000
     });
 
-    $('#header').addClass('hide');
-    const path = this.$route.path; // /portfolio/${work.path}
-    const work = this.getCurrentWorkFromPath(path);
+    const path = this.$route.path;
+    const work = this.$store.getters.workFromPath(path);
     this.commitCurrentWorkToStore(work);
   },
   methods: {
