@@ -96,11 +96,8 @@
 import Workbase from "./Workbase.vue";
 
 export default {
-    name: 'Gabia',
     extends: Workbase,
-    mounted() {
-        console.log('Gabia mounted');
-    }
+    name: 'Gabia',
 }
 </script>
 

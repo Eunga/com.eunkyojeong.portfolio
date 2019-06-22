@@ -18,14 +18,6 @@ export default {
   components: { 
     'portfolio-list': PortfolioList
   },
-  mounted() {
-    
-  },
-  watch: {
-    $route (to, from) {
-
-    }
-  }
 }
 </script>
 

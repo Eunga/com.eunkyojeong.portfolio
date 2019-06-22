@@ -86,8 +86,6 @@ export default {
     getCountOfAllWorks() {
       const count = this.$store.getters.length;
       return this.numberFormatWithTwoDigits(count);
-
-      return countStr;
     },
     numberFormatWithTwoDigits(number) {
       let countStr;

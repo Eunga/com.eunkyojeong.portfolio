@@ -29,7 +29,6 @@
 </template>
 
 <script>
-import { setTimeout } from 'timers';
 export default {
     name: 'PortfolioItemDetail',
     props: {
@@ -37,11 +36,6 @@ export default {
             type: Object,
             required: true
         },
-    },
-    watch: {
-        $route (to, from) {
-                
-        }
     },
     computed: {
         currentId: function() {
@@ -67,7 +61,7 @@ export default {
             try {
                 comp = () => import(`@/components/works/${name}.vue`);
             } catch (e) {
-                console.log(e);
+                // console.log(e);
             }
 
             return comp;

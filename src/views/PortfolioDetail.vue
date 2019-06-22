@@ -77,7 +77,6 @@ export default {
       return currentWork;
     },
     getCurrentWorkFromPath(path) {
-      const before = this.$store.getters.currentWork;
       const work = this.$store.getters.works.filter(work => {
         return `/portfolio/${work.path}` == path;
       });

@@ -98,9 +98,6 @@ import Workbase from "./Workbase.vue";
 export default {
     name: 'Offin',
     extends: Workbase,
-    mounted() {
-        console.log('Offin mounted');
-    }
 }
 </script>
 

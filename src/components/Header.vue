@@ -27,11 +27,6 @@
 <script>
 export default {
     name: 'Header',
-    watch: {
-      $route (to, from) {
-      
-      }
-    },
     methods: {
       isActivePortfolio() {
         const name = this.$route.name;

@@ -1,12 +1,11 @@
 <template>
-    
+    <div></div>    
 </template>
 
 <script>
 export default {
     name: "Workbase",
     mounted() {
-        console.log('Workbase mounted');
         $('.portfolio-item-detail-temp').hide();
 
         window.scrollTo(0, 0);
