@@ -1,6 +1,6 @@
 <template>
   <div id="portfolio-detail">
-    <div class="portfolio-meta">
+    <div id="portfolio-meta">
       <portfolio-item
         v-bind:isDetail="true"
         v-bind:work="work()"
@@ -75,13 +75,6 @@ export default {
       const currentWork = this.$store.getters.currentWork;
       return currentWork;
     },
-    getCurrentWorkFromPath(path) {
-      const work = this.$store.getters.works.filter(work => {
-        return `/portfolio/${work.path}` == path;
-      });
-
-      return work[0];
-    },
     commitCurrentWorkToStore(work) {
       this.$store.commit('changeCurrentWorkIdWithWork', work);
     }
@@ -95,12 +88,14 @@ export default {
   width:100%;
 }
 
-.portfolio-meta, .portfolio-detail-info {
+#portfolio-meta {
+  height: 640px;
+  transition: all .3s ease-in-out;
+}
+
+#portfolio-meta, .portfolio-detail-info {
   position: relative;
   background-color: white;
-}
-.portfolio-meta {
-  height: 640px;
 }
 
 #portfolio-detail .portfolio-item-content {
@@ -111,9 +106,12 @@ export default {
   transition: all .3s ease;
 }
 
+.fade-leave-active #portfolio-meta {
+  /* transform: translateY(300px); */
+  /* height: calc(100vh-120px); */
+}
 .fade-leave-active .portfolio-detail-info {
-  top: 500px;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 #portfolio-detail-mask {

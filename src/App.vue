@@ -13,12 +13,8 @@
     </transition>
 
     <!-- Footer -->
-    <transition
-      name="fade"
-      mode="out-in">
-      <app-footer/>
-    </transition>
-    
+    <app-footer/>
+
   </div>
 </template>
 
@@ -34,8 +30,14 @@ export default {
     'app-header': Header, 
     'app-footer': Footer
   },
-  created() {
-    
+  watch: {
+    $route (to, from) {
+      if (to.name != 'portfolio detail') {
+        var windowHeight = window.innerHeight;
+        var metaHeight = windowHeight - 120;
+        $('#portfolio-meta').css({height: metaHeight});
+      }
+    }
   },
 };
 </script>

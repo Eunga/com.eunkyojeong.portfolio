@@ -307,25 +307,29 @@ export default {
  */
 
 
+
+/**
+ * [Start] List <-> Detail 전환 시, "item-brief", "item-subtitle", "work-count" animation
+ */
 .fade-leave-active .portfolio-item.list .portfolio-item-brief .portfolio-work-count {
   visibility: hidden;
 }
-
 .fade-leave-active .portfolio-item.list .portfolio-item-brief {
   top: 200px;
 }
-
 .fade-leave-active .portfolio-item.detail .portfolio-item-brief {
   top: 400px;
 }
-
 .fade-leave-active .portfolio-item.list .portfolio-item-brief .portfolio-item-subtitle {
   visibility: visible;
 }
-
 .fade-leave-active .portfolio-item.detail .portfolio-item-brief .portfolio-item-subtitle {
   display: none;
 }
+/**
+ * [End] List <-> Detail 전환 시, "item-brief", "item-subtitle", "work-count" animation
+ */
+
 
 @media (max-width: 767px) {
   .portfolio-item-stuff {
