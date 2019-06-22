@@ -24,6 +24,12 @@ const store = new Vuex.Store({
     about: state => {
       return state.about;
     },
+    snsForFooter: state => {
+      return state.about.sns.filter(s => s.exposeFooter);
+    },
+    snsForAboutPage: state => {
+      return state.about.sns.filter(s => s.exposeAboutPage);
+    },
     allWorks: state => {
       return state.allWorks;
     },

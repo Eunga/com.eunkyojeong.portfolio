@@ -5,13 +5,9 @@
     </div>
 
     <div id="contact">
-      <span 
-        v-for="sns in about.sns.filter((sns) => sns.isAvailable)"
-        v-bind:key="sns.id">
-        <a :href="sns.url"
-        :target="sns.target">
-          <img :src="getContactsUrl(sns.icon)" 
-          class="contact-icon"/>
+      <span v-for="s in sns" v-bind:key="s.id">
+        <a :href="s.url" :target="s.target">
+          <img :src="getContactsUrl(s.icon)" class="contact-icon"/>
         </a>
       </span>
     </div>
@@ -24,6 +20,7 @@ export default {
   data: function() {
     return {
       about: this.$store.getters.about,
+      sns: this.$store.getters.snsForFooter
     }
   },
 

@@ -1,32 +1,42 @@
 <template>
   <div id="about" class="container">
+
+    <!-- 
     <div id="aboutProfileImage">
       <img src="../assets/img/about/img-profile.png">
     </div>
+     -->
 
-    <div class="row">
-      <div class="col-3">
-        <div class="aboutName">Eunkyo Jeong</div>
-        <div class="aboputResume">RESUME</div>
+    <div class="row" style="margin-top: 206px;">
+      <div id="aboutNameAndResume" class="col-xs-12 col-md-6">
+        <div id="aboutName">Eunkyo Jeong</div>
+        <div id="aboutResumeBtn">
+          <span>RESUME</span>
+          <img src="../assets/img/about/ico-download.png" alt="resume download"/>
+        </div>
       </div>
 
-      <div class="col-9">
-        <div class="introduceHerSelf" v-html="introduce"></div>
+      <div class="col-xs-12 col-md-6">
+        <div id="introduceHerSelf" v-html="introduce"></div>
 
-        <div class="aboutContact">
+<!-- 
+        <div id="aboutContact">
           <a href="tel:+821020077774" v-html="phoneNumber"></a>
         </div>
+ -->
+<!--  
+        <div id="aboutContact" v-html="email"></div>
+-->
 
-        <div class="aboutContact" v-html="email"></div>
+        <div id="aboutContact">
+          <span class="aboutContactSns" 
+            v-for="(s, idx ) in sns" 
+            v-bind:key="s.id">
 
-        <div class="aboutContact aboutContactSns">
-          <ul>
-            <li v-for="s in about.sns" v-bind:s="s" v-bind:key="s.id">
-              <a :href="s.url" :target="s.target">
-                <span v-html="s.name"></span>
-              </a>
-            </li>
-          </ul>
+            <a :href="s.url" :target="s.target" v-html="s.name"></a>
+
+            <span class="aboutContactSnsDelimiter" v-if="idx < sns.length - 1 "></span>
+          </span>
         </div>
       </div>
     </div>
@@ -39,6 +49,7 @@ export default {
   data: function() {
     return {
       about: this.$store.getters.about,
+      sns: this.$store.getters.snsForAboutPage
     }
   },
   computed: {
@@ -56,6 +67,10 @@ export default {
 </script>
 
 <style>
+#aboutProfileImage {
+  padding-top: 131px;
+}
+
 .about-contact-sns {
   margin-right: 10px;
 }
@@ -65,49 +80,77 @@ export default {
   padding: 0px;
 }
 
-.aboutName {
-  font-family: Gotham;
-  font-size: 46px;
-  font-weight: 500;
+#aboutName {
+  font-family: Questrial;
+  font-size: 70px;
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: -1.4px;
   text-align: left;
-  color: #000000
+  color: #000000;
 }
 
-.introduceHerSelf {
-  font-family: Gotham;
+#aboutResumeBtn {
+  margin-top: 30px;
+  width: 200px;
+  height: 58px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#aboutResumeBtn span {
+  text-align: center;
+  font-family: Questrial;
   font-size: 20px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.9;
-  letter-spacing: -0.6px;
+  line-height: 1;
+  letter-spacing: 4px;
   text-align: left;
-  color: #000000
 }
 
-.aboutContact {
-  font-family: Gotham;
+#introduceHerSelf {
+  font-family: HelveticaNeue;
   font-size: 20px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.7;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.2px;
   text-align: left;
-  color: #bbbbbb
+  color: #000000;
 }
 
-.aboutContactSns ul {
-  list-style: none;
+#aboutContact {
+  margin-top:30px;
+}
+#aboutContact a {
+  font-family: HelveticaNeue;
+  font-size: 20px;
+  color: #bbbbbb;
+  transition: opacity .4s ease-out;
+  text-decoration: none;
 }
 
-.aboutContactSns ul li {
-  display: inline;
+.aboutContactSnsDelimiter {
+  width: 14px;
+  height: 14px;
+  margin-right: 14px;
+  border-right: 1px solid #bbbbbb;
+  display: inline-block;
 }
 
-.aboutContactSns ul li:after {
-  content: ' ';
+#aboutContact a:hover {
+  color: black;
+}
+
+#aboutNameAndResume {
+  margin-bottom: 40px;
 }
 </style>
