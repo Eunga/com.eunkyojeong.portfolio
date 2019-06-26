@@ -6,7 +6,7 @@ import PortfolioDetail from './views/PortfolioDetail.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash', // The mode to history should be applied only when we have our own server.
   base: process.env.BASE_URL,
   routes: [
     {
