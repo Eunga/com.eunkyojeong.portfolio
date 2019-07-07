@@ -14,21 +14,22 @@
         <img :src="getImgUrl(work.stuff.url)" />
       </div>
 
-      <div class="portfolio-item-brief">
-        <div class="portfolio-work-count">
-          <span class="portfolio-work-count-current">{{ getWorkIdNumber() }}</span> 
-          <span class="portfolio-work-count-delimeter">  / </span>
-          <span class="portfolio-work-count-all">{{ getCountOfAllWorks() }}</span>
-        </div>
+      <div class="portfolio-item-brief-wrapper">
+        <div class="portfolio-item-brief">
+          <div class="portfolio-work-count">
+            <span class="portfolio-work-count-current">{{ getWorkIdNumber() }}</span> 
+            <span class="portfolio-work-count-delimeter">  / </span>
+            <span class="portfolio-work-count-all">{{ getCountOfAllWorks() }}</span>
+          </div>
 
-        <div class="portfolio-item-title">
-          <span v-html="getWorkTitle()"></span>
-        </div>
+          <div class="portfolio-item-title">
+            <span v-html="getWorkTitle()"></span>
+          </div>
 
-        <div class="portfolio-item-subtitle">
-          <span v-html="getWorkSubtitle()"></span>
+          <div class="portfolio-item-subtitle">
+            <span v-html="getWorkSubtitle()"></span>
+          </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -118,17 +119,16 @@ export default {
 }
 
 .portfolio-item-background {
-  position: fixed;
   width: 100%;
   height: 100%;
-  transition: all 0.3s ease-in;
-
-
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   left:0;
   right:0;
   overflow: hidden;
-  margin:auto;
+  margin:0;
+  transition: all 0.3s ease-in;
 }
 
 .detail {
@@ -178,28 +178,42 @@ export default {
   position: absolute;
   width: 50%;
   left: 50%;
-  top: 180px;
+  top:30%;
 }
 
 .portfolio-item-stuff img {
   position: relative;
   width: 100%;
+  transform: scale(1.3)
 }
 
 .portfolio-item-content {
   position: relative;
+  width: 100vw;
+  height: 100vh;
   left: 0;
   right: 0;
   top: 0;
-  padding-top: 120px;
   cursor:pointer;
 }
 
-.portfolio-item-brief {
+.portfolio-item-brief-wrapper {
   transition: all .3s ease-out;
+  position:static;
+  height: 100vh;
+}
+
+.portfolio-item-brief {
   position: absolute;
-  top: 400px;
-  left: 0;
+  transition: all .3s ease-out;
+}
+
+.list .portfolio-item-brief {
+  top: 50%;
+}
+
+.detail .portfolio-item-brief {
+  top: 10%;
 }
 
 .portfolio-item-title {
@@ -259,10 +273,6 @@ export default {
   color: black;
 }
 
-.portfolio-item.detail .portfolio-item-brief {
-  top: 200px;
-}
-
 .portfolio-work-count {
   position: relative;
 
@@ -305,7 +315,7 @@ export default {
 }
 
 .fade-leave-active .portfolio-item.detail .portfolio-item-stuff img {
-  transform: translateY(0px) scale(1);
+  transform: translateY(0px) scale(1.3);
   transition-duration: .3s;
 }
 /**
@@ -321,40 +331,101 @@ export default {
   visibility: hidden;
 }
 .fade-leave-active .list .portfolio-item-brief {
-  top: 200px;
+  top: 10%;
 }
 .fade-leave-active .detail .portfolio-item-brief {
-  top: 400px;
+  top: 50%;
 }
 .fade-leave-active .list .portfolio-item-brief .portfolio-item-subtitle {
   visibility: visible;
-  /* transform: translateY(100px); */
 }
 .fade-leave-active .detail .portfolio-item-brief .portfolio-item-subtitle {
-  display: none;
+  visibility: hidden;
 }
 
 .fade-enter-active .detail .portfolio-item-brief .portfolio-item-subtitle {
   opacity: 1;
-  /* transform: translateY(10px); */
 }
 /**
  * [End] List <-> Detail 전환 시, "item-brief", "item-subtitle", "work-count" animation
  */
 
-
 @media (max-width: 767px) {
+  #portfolio-meta {
+    height: 480px !important;
+  }
+
   .portfolio-item-stuff {
     width: 100%;
     left: 0%;
   }
 
-  .portfolio-item-content {
-    padding-top: 48px;
+  .portfolio-item-brief {
+    left: 30px;
+    right: 30px;
   }
 
-  .portfolio-item-brief {
-    bottom: 30px;
+  .portfolio-item-title {
+    font-size: 28px;
+  }
+
+  .detail .portfolio-item-subtitle::before {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 26px;
+  }
+  .portfolio-item-subtitle {
+    font-size: 18px;
+  }
+
+  .portfolio-work-count {
+    font-size: 14px;
+  }
+
+  .portfolio-item-stuff img {
+    transform: scale(1.45);
+  }
+
+  .portfolio-detail-item-background-padding {
+    display: none;
+  }
+
+  .fade-leave-active .portfolio-item.detail .portfolio-item-stuff img {
+    transform: translateY(0px) scale(1.45);
+  }
+  
+  .list .portfolio-item-brief {
+    top: 75%;
+  }
+
+  .detail .portfolio-item-brief {
+    top: 40%;
+  }
+
+  .fade-leave-active .list .portfolio-item-brief {
+     top: 40%;
+  }
+
+  .fade-leave-active .detail .portfolio-item-brief {
+    top: 75%;
+  }
+
+  .portfolio-item-stuff {
+    top: 130px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  .list .portfolio-item-brief {
+    top: 65%;
+  }
+
+  .fade-leave-active .detail .portfolio-item-brief {
+    top: 65%;
+  }
+
+  .portfolio-item-stuff {
+    top: 100px;
   }
 }
 

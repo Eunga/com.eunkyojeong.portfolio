@@ -154,6 +154,14 @@ export default {
     padding: 0px 30px !important;
     height: 48px;
   }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .navbar-brand {
+    font-size: 11px;
+  }
 }
 
 </style>

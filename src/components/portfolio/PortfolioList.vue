@@ -27,7 +27,8 @@ import PortfolioItem from "./PortfolioItem.vue";
 
 
 const carouselBehavior = {
-  isCarouselActive: true,
+  // isCarouselActive: true,
+  isCarouselActive: false,
   shouldPauseWhenHover: false,
 };
 
@@ -165,11 +166,6 @@ export default {
  */
 
 @media (max-width: 767px) {
-  .portfolio-item-stuff {
-    width: 100%;
-    left: 0%;
-  }
-
   .portfolio-item-list-padding {
     display: none;
   }
