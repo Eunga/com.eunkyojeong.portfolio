@@ -106,12 +106,9 @@ export default {
   transition: all .3s ease;
 }
 
-.fade-leave-active #portfolio-meta {
-  /* transform: translateY(300px); */
-  /* height: calc(100vh-120px); */
-}
 .fade-leave-active .portfolio-detail-info {
-  /* opacity: 0; */
+  transform: translateY(300px);
+  opacity: 0;
 }
 
 #portfolio-detail-mask {
