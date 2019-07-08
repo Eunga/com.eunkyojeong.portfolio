@@ -69,6 +69,7 @@ export default {
 <style>
 #about {
   padding-top: 120px;
+  margin-top: 120px;
   position: relative;
   height: calc(100vh - 120px);
 }
@@ -152,5 +153,33 @@ export default {
 
 #aboutNameAndResume {
   margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  #about {
+    margin-top: 60px;
+    padding-top: 60px;
+  }
+  
+  #aboutNameAndResume {
+    margin-bottom: 20px
+  }
+
+  #aboutName {
+    font-size: 50px;
+  }
+
+  #aboutResumeBtn {
+    margin-top: 15px;
+    width: 180px;
+  }
+
+  #aboutResumeBtn span {
+    font-size: 18px;
+  }
+
+  #introduceHerSelf {
+    font-size: 16px;
+  }
 }
 </style>
