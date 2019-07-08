@@ -88,6 +88,11 @@ ul {
   margin: 0;
 }
 
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 /*************
     Media
 *************/
@@ -124,23 +129,10 @@ ul {
 
 /* Override Bootstrap */
 .row>[class*="col"] {
-  /* padding-right:0;
-  padding-left:0; */
+  
 }
-
-/* .row>.grid:first-child {
-  padding-left:0;
-  margin-left: 0;
-}
-
-.row>.grid:last-child {
-  padding-right:0;
-  margin-right: 0;
-} */
-
 
 .container {
   padding: 0;
-  /* margin: 0 auto; */
 }
 </style>

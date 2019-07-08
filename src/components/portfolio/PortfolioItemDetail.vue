@@ -137,4 +137,25 @@ export default {
     width: 100%;
 }
 
+@media (max-width: 767px) {
+  .portfolio-item-nav {
+    padding-top: 40px;
+    height: 250px;
+  }
+
+  .portfolio-item-nav-item {
+    width: 50%;
+  }
+
+  .portfolio-item-nav-id {
+      font-size: 14px;
+      line-height: 4.29;
+  }
+
+  .portfolio-item-nav-title {
+    font-size: 22px;
+    line-height: 1.18;
+    letter-spacing: -0.4px;
+  }
+}
 </style>
