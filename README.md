@@ -35,5 +35,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 # Adobe XD
-- https://xd.adobe.com/view/5c0163e1-263f-4e2f-417c-21b4e3369f55-2a30/screen/a1986bb7-59dc-4666-adb6-0bcd67ad8eef/HOME-2-1
->>>>>>> 7cb7ef1240d519b3b407447a4d26d16ceb00c9f4
+- 프리젠테이션용 : https://xd.adobe.com/view/5c0163e1-263f-4e2f-417c-21b4e3369f55-2a30/screen/a1986bb7-59dc-4666-adb6-0bcd67ad8eef/HOME-2-1
+- 개발자용 : https://xd.adobe.com/spec/fdf76957-f3bf-48f5-461a-907655ae0fc7-8bc6/
+
