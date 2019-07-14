@@ -102,7 +102,6 @@ export default {
   height: 10px;
   width: 100%;
   padding: 0px 120px;
-  top: -10px;
   position: relative;
 }
 #portfolio-carousel-progressbar {

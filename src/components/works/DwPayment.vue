@@ -1,10 +1,10 @@
 <template>
     <div class="portfolio-works">
         <!-- Overview -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
-                    <div class="col-md-6 col-xs-12">
+                    <div class="col-sm-6 col-xs-12">
                         <div class="portfolio-work-title subtitle-sm">Overview</div>
                         <div>
                             In 2018 summer, Daum Webtoon has finally introduced the new payment service for users to purchase the paid contents via iOS app as well as web app. For this service, I have designed the UI and the process for purchasing pay contents and recharging Webtoon Cash (Cash). Then, I made some improvements to the existing design as every design should be updated, and eventually I had a chance to present a better idea for the enhanced version of purchasing pay contents.
@@ -13,37 +13,45 @@
                             <i style="color:#bbbbbb;">All information in this case study is my own and does not necessarily reflect the views of Daum Webtoon Company.</i>
                         </div>
                     </div>
-
-                    <div class="offset-md-1 col-md-5 col-xs-12">
-                        <div class="row" style="margin-bottom: 15px;">
-                            <div class="portfolio-work-title col-md-2 col-xs-3">Date</div>
-                            <div class="col-md-10 col-xs-9">December 2018</div>
+                    <div class="offset-sm-3 col-sm-3 offset-xs-0 col-xs-12">
+                        <div class="row" style="margin-bottom: 10px;">
+                            <div class="portfolio-work-title subtitle-sm subtitle col-sm-4">Date</div>
+                            <div class="col-sm-8">December 2018</div>
                         </div>
 
                         <div class="row">
-                            <div class="portfolio-work-title col-md-2 col-xs-3">Role</div>
-                            <div class="col-md-10 col-xs-9">Product Designer</div>
+                            <div class="portfolio-work-title subtitle-sm subtitle col-sm-4">Role</div>
+                            <div class="col-sm-8">Product Designer</div>
                         </div>
                     </div>
+
+                    <!-- <div class="offset-sm-3 col-sm-3 offset-xs-0 col-xs-12">
+                        <div class="portfolio-work-title subtitle-sm">Date</div>
+                        <div class="">December 2018</div>
+
+                        
+                        <div class="portfolio-work-title subtitle-sm subtitle">Role</div>
+                        <div class="">Product Designer</div>
+                    </div> -->
                 </div>
             </div>
         </div>
 
         <!-- Challenge -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="portfolio-work-title subtitle-sm">Challenge</div>
 
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="portfolio-work-title subtitle-lg">Better usability for heavy users</div>
+                    <div class="col-sm-4">
+                        <div class="portfolio-work-title subtitle-lg" style="width: 315px;">Better usability for heavy users</div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                     <!-- <div style="width:500px; margin: auto;"> -->
                         Since the successful launch of Daum Webtoon 2.0, it had provided improvements of the user experience for all users which brought a sharp 200% increase in comics sales. Our next goal was to upgrade the app for heavy users who use every day and purchase a large volume of our pay comics.
                         <br/><br/>
-                        and the basic goal was to : 
+                        and the basic goal was to : <br/>
                         Provide users with app that allows them to fully focus on reading and only reading which we believe is the core value of the service.
                     </div>
                 </div>
@@ -52,14 +60,14 @@
 
 
         <!-- The Problem -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <div class="portfolio-work-title subtitle-sm">The Problem</div>
                     </div>
 
-                    <div class="offset-md-1 col-md-6">
+                    <div class="offset-sm-1 col-sm-6">
                         <div>
                             <div class="portfolio-work-title subtitle-lg">Right from the user</div>
                         </div>
@@ -87,16 +95,16 @@
 
 
         <!-- Ideation-->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
-                    <div class="offset-md-3 col-md-9">
+                    <div class="offset-sm-3 col-sm-9">
                         <div class="portfolio-work-title subtitle-sm">Ideation</div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="offset-md-3 col-md-6">
+                    <div class="offset-sm-3 col-sm-6">
                         Through competitor analysis, I gained an insight that the simpler the process was the easier it felt and looked for customers to make the payment. Simple and easy dialog popups for payment in one service was a good example that showed this insight. This also led me to think that we could skip the redundant step through skipping a confirmation pop-up, or combine the two separate invoices and cash recharge pages into one so that you can check how much cash you have left and make the purchase from the same page.
                     </div>
                 </div>
@@ -111,16 +119,16 @@
 
 
         <!-- Goals-->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
-                    <div class="offset-md-3 col-md-9">
+                    <div class="offset-sm-3 col-sm-9">
                         <div class="portfolio-work-title subtitle-sm">Goals</div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="offset-md-3 col-md-6" style="font-family: Questrial; font-size: 40px; line-height: 48px;">
+                    <div class="offset-sm-3 col-sm-6" style="font-family: Questrial; font-size: 40px; line-height: 48px;">
                         1. Enable full payment for all or selected episodes at once for each webtoon. 
                         <br/><br/>
                         2. Omit redundant steps to offer faster and easier service.
@@ -132,14 +140,14 @@
         
 
         <!-- Concept -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <span class="portfolio-work-title subtitle-sm">Concept</span>
                     </div>
 
-                    <div class="offset-md-1 col-md-6">
+                    <div class="offset-sm-1 col-sm-6">
                         <div>
                             <span class="portfolio-work-title subtitle-lg">Distinct and Consistent Color</span>
                         </div>
@@ -165,14 +173,14 @@
 
 
         <!-- Iteration -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
-                    <div class="offset-md-1 col-md-4">
+                    <div class="offset-sm-1 col-sm-4">
                         <img src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration gif"/>
                     </div>
 
-                    <div class="col-md-7">
+                    <div class="col-sm-7">
 
                         <div>
                             <div class="portfolio-work-title subtitle-sm">Iteration</div>
@@ -202,7 +210,7 @@
         <div class="portfolio-work-wrap" style="background-color: black;">
             <div class="portfolio-work container">
                 <div class="row" style="margin-top: 200px;">
-                    <div class="col-md-5">
+                    <div class="col-sm-5">
                         <video style="width:100%; max-height: 900px;" controls>
                             <source src="../../assets/img/portfolio/dw/portfolio-dw-before.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -213,13 +221,13 @@
                         </div>
                     </div>
 
-                    <div class="col-md-2" style="display:flex; align-items: center; justify-content: center;">
+                    <div class="col-sm-2" style="display:flex; align-items: center; justify-content: center;">
                         <div style="color:white; font-size: 40px;">
                             >
                         </div>
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-sm-5">
                         <video style="width:100%; max-height: 900px;" controls>
                             <source src="../../assets/img/portfolio/dw/portfolio-dw-before.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -236,31 +244,31 @@
 
 
         <!-- Solution -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             
             <!-- <div class="portfolio-work container">
                 <div class="row">
-                    <div class="col-md-7" style="display: flex; align-items: center;">
+                    <div class="col-sm-7" style="display: flex; align-items: center;">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-sm-12">
                                 <div class="portfolio-work-title subtitle-sm">Solution</div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-sm-4">
                                 <div class="portfolio-work-title subtitle-lg">Enabling Multiple purchases at once</div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 Allow users to buy multiple episodes at once now also available via View page as well as Title home page.
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-sm-5">
                         <img src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration gif"/>
                     </div>
                 </div>
@@ -274,13 +282,13 @@
                         <div class="portfolio-work-title subtitle-sm">Solution</div>
 
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-sm-4">
                                 <div class="portfolio-work-title subtitle-lg">Enabling Multiple purchases at once</div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 Allow users to buy multiple episodes at once now also available via View page as well as Title home page.
                             </div>
                         </div>
@@ -300,13 +308,13 @@
                     
                     <div style="flex: 7;">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-sm-4">
                                 <div class="portfolio-work-title subtitle-lg">Instant feedback with micro-interactions</div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 It’s easy to understand, keeps users engaged in the process, and helps to accomplish the goal, purchasing.
                             </div>
                         </div>
@@ -317,13 +325,13 @@
                 <div style="display:flex; align-items: center;">
                     <div style="flex: 7;">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-sm-4">
                                 <div class="portfolio-work-title subtitle-lg">Simplifying the process</div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 Generally, by omitting unnecessary steps for users, we could make the app to be simpler, thus easier to use for our users.
                             </div>
                         </div>
@@ -343,13 +351,13 @@
                     
                     <div style="flex: 7;">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-sm-4">
                                 <div class="portfolio-work-title subtitle-lg">Offering the right choice</div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 With the changes, users don’t need to think about how much Cash they have left as we provide the exact amount of cash you need to charge by omitting irrelevant amount based on purchase details.
                             </div>
                         </div>
@@ -365,7 +373,7 @@
 
 
         <!-- Full size Product image -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div style="max-height:1080px">
                 <img src="../../assets/img/portfolio/dw/portfolio-dw-fullsize-background.png" alt="product image"/>
             </div>
@@ -375,16 +383,16 @@
 
 
         <!-- Retrospective-->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
-                    <div class="offset-md-3 col-md-9">
+                    <div class="offset-sm-3 col-sm-9">
                         <div class="portfolio-work-title subtitle-sm">Retrospective</div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="offset-md-3 col-md-6">
+                    <div class="offset-sm-3 col-sm-6">
                         One day during a meeting, we were having a discussion about things that could be improved, and one thing we covered was some problems with the payment process on the app. This made me feel interested to tackle this in order to upgrade our service and it could have been a great chance for me to study more about the UX regarding the payment portion. So I studied and learned a lot coming up with the proposal with the solution that I shared with our team which then received positive feedback. We decided to kill the project, but it was a nice chance for our team and myself to learn more about the UX in the payment.
                     </div>
                 </div>
@@ -410,6 +418,36 @@ import Workbase from "./Workbase.vue";
 export default {
     extends: Workbase,
     name: 'DwPayment',
+    // mounted() {
+    //     $(document).ready(function($) {
+    //         // Function which adds the 'animated' class to any '.animatable' in view
+    //         const doAnimations = function() {
+    //             // Calc current offset and get all animatables
+    //             const offset = $(window).scrollTop() + $(window).height(),
+    //                 $animatables = $('.animatable');
+                
+    //             // Unbind scroll handler if we have no animatables
+    //             if ($animatables.length == 0) {
+    //             $(window).off('scroll', doAnimations);
+    //             }
+                
+    //             // Check all animatables and animate them if necessary
+    //             $animatables.each(function(i) {
+    //             var $animatable = $(this);
+    //             if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+    //                 $animatable.removeClass('animatable').addClass('animated');
+    //             }
+    //             });
+
+    //         };
+
+    //         // Hook doAnimations on scroll, and trigger a scroll
+    //         $(window).on('scroll', doAnimations);
+    //         $(window).trigger('scroll');
+
+    //         });
+
+    // }
 }
 </script>
 
