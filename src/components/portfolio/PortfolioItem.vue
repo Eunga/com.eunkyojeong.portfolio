@@ -252,10 +252,10 @@ export default {
 }
 
 .detail .portfolio-item-subtitle::before {
-  margin-top: 40px;
-  margin-bottom:15px;
+  margin-top: 84px;
+  margin-bottom: 40px;
   content: ' ';
-  width: 30px;
+  width: 50px;
   height: 1px;
   border-bottom: 2px solid black;
   display: block;
@@ -358,11 +358,6 @@ export default {
   .portfolio-item-stuff {
     width: 100%;
     left: 0%;
-  }
-
-  .portfolio-item-brief {
-    left: 30px;
-    right: 30px;
   }
 
   .portfolio-item-title {

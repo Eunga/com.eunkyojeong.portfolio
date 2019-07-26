@@ -9,7 +9,7 @@ export default {
         $('.portfolio-item-detail-temp').hide();
 
         window.scrollTo(0, 0);
-        $(document).ready(function() {
+        $(document).ready(function($) {
             $('.portfolio-work').eq(0).animate({
                 opacity: 1,
                 top: -10
@@ -22,28 +22,32 @@ export default {
                 opacity: 1,
             }, 500);
 
-            /* Every time the window is scrolled ... */
-            $(window).scroll( function(){
-                /* Check the location of each desired element */
-                let isFirstChecked = false;
-                $('.portfolio-work').each( function(i) {
-                    if (i==0) {
-                        return;
+            // Function which adds the 'animated' class to any '.animatable' in view
+            const doAnimations = function() {
+                // Calc current offset and get all animatables
+                const offset = $(window).scrollTop() + $(window).height(),
+                    $animatables = $('.animatable');
+                
+                // Unbind scroll handler if we have no animatables
+                if ($animatables.length == 0) {
+                    $(window).off('scroll', doAnimations);
+                }
+                
+                // Check all animatables and animate them if necessary
+                $animatables.each(function(i) {
+                    const $animatable = $(this);
+                    if (($animatable.offset().top + 150) < offset) {
+                    // if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+                        $animatable.removeClass('animatable').addClass('animated');
                     }
+                });
 
-                    const bottom_of_object = $(this).position().top + $(this).outerHeight();
-                    const bottom_of_window = $(window).scrollTop() + $(window).height();
-                    
-                    /* If the object is completely visible in the window, fade it it */
-                    if (bottom_of_window > bottom_of_object + 800) {
-                        $(this).animate({
-                            opacity: 1,
-                            top: -10
-                        }, 700, 'easeInOutQuad');
-                    }
-                }); 
-            
-            });
+            };
+
+            // Hook doAnimations on scroll, and trigger a scroll
+            $(window).on('scroll', doAnimations);
+            $(window).trigger('scroll');
+
             
         });
     },
@@ -58,7 +62,7 @@ export default {
 
     /* 로딩 되면서, 위로 fadein & translateY 하기 위함 */
     position: relative;
-    opacity: 0;
+    /* opacity: 0; */
     top: 10px;
 }
 
@@ -90,29 +94,33 @@ export default {
     margin-bottom: 30px;
 }
 
+.subtitle.subtitle-sm {
+    margin-bottom: 0px;
+}
+
 .portfolio-work-wrap {
     position: relative;
 }
 
-.portfolio-work-wrap:nth-child(even) {
-    background-color: #F0F0F0;
-}
-
-.portfolio-work-wrap:nth-child(odd) {
+.portfolio-work-wrap {
     background-color: white;
 }
 
 .portfolio-work-meta-label {
-    /* width: 30px; */
     font-weight: bold;
     display: inline-block;
 }
 
-
 .portfolio-works {
   font-family: HelveticaNeue;
   font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.7;
+  letter-spacing: -0.2px;
 }
+
 @media (max-width: 767px) {
   .portfolio-works {
     font-size: 14px;

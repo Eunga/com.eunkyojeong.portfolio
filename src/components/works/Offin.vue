@@ -1,7 +1,7 @@
 <template>
     <div class="portfolio-works">
         <!-- Overview -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
@@ -15,12 +15,12 @@
 
                     <div class="offset-md-1 col-md-5 col-xs-12">
                         <div class="row" style="margin-bottom: 15px;">
-                            <div class="portfolio-work-title col-md-2 col-xs-3">Date</div>
+                            <div class="portfolio-work-title subtitle-sm subtitle col-md-2 col-xs-3">Date</div>
                             <div class="col-md-10 col-xs-9">June 2014</div>
                         </div>
 
                         <div class="row">
-                            <div class="portfolio-work-title col-md-2 col-xs-3">Role</div>
+                            <div class="portfolio-work-title subtitle-sm subtitle col-md-2 col-xs-3">Role</div>
                             <div class="col-md-10 col-xs-9">Product Designer</div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
 
 
         <!-- The Problem -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
                     <div class="col-md-4">
@@ -63,7 +63,7 @@
 
         
         <!-- Interviews -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
                     <div class="col-md-4">
@@ -111,7 +111,7 @@
 
 
         <!-- Goals-->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
                     <div class="offset-md-3 col-md-9">
@@ -132,7 +132,7 @@
         
 
         <!-- Concept -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
                     <div class="col-md-4">
@@ -165,7 +165,7 @@
 
 
         <!-- Iteration -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
                     <div class="offset-md-1 col-md-4">
@@ -204,7 +204,7 @@
 
 
         <!-- Solution -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
           
             <div class="portfolio-work container">
 
@@ -304,7 +304,7 @@
 
 
         <!-- Full size Product image -->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div style="max-height:1080px">
                 <img src="../../assets/img/portfolio/dw/portfolio-dw-fullsize-background.png" alt="product image"/>
             </div>
@@ -314,7 +314,7 @@
 
 
         <!-- Retrospective-->
-        <div class="portfolio-work-wrap">
+        <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
                     <div class="offset-md-3 col-md-9">
