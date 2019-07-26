@@ -40,7 +40,6 @@ const store = new Vuex.Store({
     },
     currentWork: (state, getters) => {
       const currentWorkId = state.currentWorkId;
-      console.log(`[STORE] currentWorkId: ${currentWorkId}`);
       return getters.works[currentWorkId];
     },
     nextWork: (state, getters) => {

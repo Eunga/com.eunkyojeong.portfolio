@@ -104,6 +104,7 @@ export default {
 
 .portfolio-detail-info {
   transition: all .3s ease;
+  z-index: 10;
 }
 
 .fade-leave-active .portfolio-detail-info {
