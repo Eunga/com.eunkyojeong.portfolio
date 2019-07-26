@@ -9,11 +9,8 @@
         v-bind:work="work"
         v-bind:isDetail="false"
         v-bind:key="work.id"/>
-
-      <div class="portfolio-item-list-padding portfolio-item-list-padding-left"></div>
-      <div class="portfolio-item-list-padding portfolio-item-list-padding-right"></div>
-
     </div>
+    
     <div id="portfolio-carousel-progressbar-wrapper">
       <div id="portfolio-carousel-progressbar"></div>
     </div>
@@ -25,11 +22,10 @@
 <script>
 import PortfolioItem from "./PortfolioItem.vue";
 
-
 const carouselBehavior = {
   isCarouselActive: false,
-  shouldPauseWhenHover: true,
-  shouldScrollMoveCarousel: false
+  shouldPauseWhenHover: false,
+  shouldScrollMoveCarousel: true
 };
 
 export default {
@@ -144,46 +140,13 @@ export default {
 .portfolio-carousel {
   width: 100%;
   height: 100%;
-  /* height: calc(100% - 10px); */
 }
 
 .carousel-control-next {
   z-index: 100;
 }
 
-/**
- * [Start] List <-> Detail 전환 시, "item-list-padding left & right" animation
- */
-.portfolio-item-list-padding {
-  position: absolute;
-  width:120px;
-  height:100%;
-  z-index: 10;
-  background-color: white;
-}
-.portfolio-item-list-padding-left {
-  left:0;
-}
-.portfolio-item-list-padding-right {
-  right:0;
-}
-.fade-leave-active .portfolio-item-list-padding-left {
-  transform: translateX(-300px);
-  transition-duration: .3s;
-}
-.fade-leave-active .portfolio-item-list-padding-right {
-  transform: translateX(300px);
-  transition-duration: .3s;
-}
-/**
- * [End] List <-> Detail 전환 시, "item-list-padding left & right" animation
- */
-
 @media (max-width: 767px) {
-  .portfolio-item-list-padding {
-    display: none;
-  }
-
   #portfolio-carousel-progressbar-wrapper {
     padding: 0px;
   }

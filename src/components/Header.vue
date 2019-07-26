@@ -70,8 +70,7 @@ export default {
 }
 
 #header {
-  padding: 0px 120px !important;
-  height: 120px;
+  padding: 0px;
   position: absolute;
   top:0;
   left:0;
@@ -145,14 +144,15 @@ export default {
   text-align: left;
 }
 
-@media (max-width: 767px) {
-  #navPortfolio {
-    display: none;
+/* Mediea Queries */
+@media screen and (max-width:767px) {
+  #header {
+    height: 48px;
+    padding: 0px 30px;
   }
 
-  #header {
-    padding: 0px 30px !important;
-    height: 48px;
+  #navPortfolio {
+    display: none;
   }
 
   .nav-link {
@@ -164,5 +164,32 @@ export default {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  #header {
+    height: 80px;
+    padding: 0px 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  #header {
+    height: 80px;
+    padding: 0px 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1776px) {
+  #header {
+    height: 120px;
+    padding: 0px 120px;
+  }
+}
+
+@media screen and (min-width: 1777px) {
+  #header {
+    height: 120px;
+    padding: 0px 120px;
+  }
+}
 </style>
 

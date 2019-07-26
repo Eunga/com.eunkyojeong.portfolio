@@ -21,6 +21,7 @@
 <script>
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+
 import store from './store'
 
 // Transition을 적용하지 않을 $router.name 
@@ -30,7 +31,7 @@ export default {
   name: "App",
   components: {
     'app-header': Header, 
-    'app-footer': Footer
+	'app-footer': Footer
   },
   data: function() {
     return {
@@ -57,17 +58,20 @@ export default {
         this.shouldTransition = true;
       }
     }
+  },
+  mounted() {
+	  const path = this.$route.name;
+	  if (path == 'home') {
+		$('body').addClass('overflowHidden')
+	  } else {
+		$('body').removeClass('overflowHidden')
+	  }
   }
 };
 </script>
 
 <style>
-html {
-  /* scroll-behavior: smooth; */
-}
-
-html,
-body {
+html, body {
   font-family: 'Questrial';
   height: 100%;
 }
@@ -90,50 +94,22 @@ body.overflowHidden {
   margin-right: 120px;
 }
 
-.container {
-  height: 100%;
-  padding: 0px;
-}
-
 ul {
   padding: 0px;
   margin: 0;
+}
+
+/* For fluid */
+.v-container-fluid {
+  max-width: 1296px;
+  margin: auto;
+  /* box-shadow: 5px 5px red inset; */
 }
 
 /*************
     Media
 *************/
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1530px) {
-  .container {
-    max-width: 1290px;
-  }
-}
-
-@media (max-width: 768px) {
-	.container {
-		padding-left:10px;
-		padding-right:10px;
-	}	
-}
 
 /* Transistion */
 .fade-enter-active, .fade-leave-active {
@@ -150,8 +126,6 @@ ul {
   margin-right: 0;
   margin-left: 0;
 }
-
-
 
 /* Animatable */
 .animatable {

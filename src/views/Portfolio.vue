@@ -1,6 +1,7 @@
 <template>
   <div id='portfolio'>
-      <portfolio-list
+    <app-mask />
+    <portfolio-list
       v-on:goPortfolioDetail="goPortfolioDetail($event)"/>
 
     <div id="portfolio-bottom-mask"></div>
@@ -9,12 +10,14 @@
 </template>
 
 <script>
+import Mask from './Mask'
 import PortfolioList from '@/components/portfolio/PortfolioList.vue'
 
 export default {
   name: 'Portfolio',
   components: { 
-    'portfolio-list': PortfolioList
+    'portfolio-list': PortfolioList,
+    'app-mask': Mask
   },
 }
 </script>

@@ -3,7 +3,7 @@
         <div class="portfolio-item-detail-temp"></div>
         <component :is="comp"/>
         
-        <div class="portfolio-item-nav container">
+        <div class="portfolio-item-nav v-container-fluid">
             <div class="portfolio-item-nav-item portfolio-item-nav-prev" v-on:click="goOtherWork(prev)">
                 <div class="portfolio-item-nav-id">
                     {{ formatedNumber(prev.id + 1) }}

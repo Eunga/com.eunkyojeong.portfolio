@@ -2,19 +2,21 @@
   <div class="portfolio-item carousel-item"
     v-bind:class="[{ active: isActive(), detail: isDetail, list: !isDetail}, theme() ]">
     <div class="portfolio-item-background">
-      
-      <div v-if="isDetail" class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-left"></div>
-      <div v-if="isDetail" class="portfolio-detail-item-background-padding portfolio-detail-item-background-padding-right"></div>
-      
       <img class="portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)"/>
     </div>
 
-    <div class="portfolio-item-content carousel-caption d-md-block container" @click="goPortfolioDetail">
+    <div class="portfolio-item-content carousel-caption d-md-block v-container-fluid" @click="goPortfolioDetail">
+      <!-- 
       <div class="portfolio-item-stuff">
         <img :src="getImgUrl(work.stuff.url)" />
-      </div>
+      </div> 
+      -->
 
       <div class="portfolio-item-brief-wrapper">
+        <div class="portfolio-item-stuff">
+          <img :src="getImgUrl(work.stuff.url)" />
+        </div>
+        
         <div class="portfolio-item-brief">
           <div class="portfolio-work-count">
             <span class="portfolio-work-count-current">{{ getWorkIdNumber() }}</span> 
@@ -135,37 +137,6 @@ export default {
   display: block !important;
 }
 
-/* ====================================================================== */
-.portfolio-detail-item-background-padding {
-  position: absolute;
-  width: 120px;
-  height:100%;
-  z-index: 10;
-  background-color: white;
-}
-
-/**
- * [Start] List <-> Detail 전환 시, "item-padding left & right" animation
- */
-.portfolio-detail-item-background-padding-left {
-  left: -300px;
-}
-.portfolio-detail-item-background-padding-right {
-  right: -300px;
-}
-.fade-leave-active .portfolio-detail-item-background-padding-left {
-  transform: translateX(300px);
-  transition-duration: .3s;
-}
-.fade-leave-active .portfolio-detail-item-background-padding-right {
-  transform: translateX(-300px);
-  transition-duration: .3s;
-}
-/**
- * [End] List <-> Detail 전환 시, "item-padding left & right" animation
- */
-
-
 .portfolio-item-background > img {
   position: relative;
   width: 100%;
@@ -175,32 +146,35 @@ export default {
 }
 
 .portfolio-item-stuff {
-  position: absolute;
+  position: relative;
+  float: right;
   width: 50%;
-  left: 50%;
-  top:30%;
+  /* left: 50%; */
+  top:10%;
 }
 
 .portfolio-item-stuff img {
   position: relative;
   width: 100%;
-  transform: scale(1.3)
+  transform: scale(1.3);
+  transform-origin: top;
 }
 
 .portfolio-item-content {
   position: relative;
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   left: 0;
   right: 0;
   top: 0;
   cursor:pointer;
+  padding: 0px;
 }
 
 .portfolio-item-brief-wrapper {
   transition: all .3s ease-out;
-  position:static;
-  height: 100vh;
+  position: relative;;
+  height: 100%;
 }
 
 .portfolio-item-brief {
@@ -336,9 +310,11 @@ export default {
 .fade-leave-active .detail .portfolio-item-brief {
   top: 50%;
 }
+
 .fade-leave-active .list .portfolio-item-brief .portfolio-item-subtitle {
   visibility: visible;
 }
+
 .fade-leave-active .detail .portfolio-item-brief .portfolio-item-subtitle {
   visibility: hidden;
 }
@@ -381,10 +357,6 @@ export default {
     transform: scale(1.45);
   }
 
-  .portfolio-detail-item-background-padding {
-    display: none;
-  }
-
   .fade-leave-active .portfolio-item.detail .portfolio-item-stuff img {
     transform: translateY(0px) scale(1.45);
   }
@@ -424,4 +396,44 @@ export default {
   }
 }
 
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width:767px) {
+  .portfolio-item-content {
+    padding-top:48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .portfolio-item-content {
+    padding-top:80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .portfolio-item-content {
+    padding-top:80px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1776px) {
+  .portfolio-item-content {
+    padding-top:120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1777px) {
+  .portfolio-item-content {
+    padding-top:120px;
+    padding-bottom: 120px;
+  }
+}
 </style>
