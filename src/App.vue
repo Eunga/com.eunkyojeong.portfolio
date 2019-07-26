@@ -39,6 +39,12 @@ export default {
   },
   watch: {
     $route (to, from) {
+      if (to.name == 'home') {
+		$('body').addClass('overflowHidden')
+	  } else {
+		$('body').removeClass('overflowHidden')
+	  }
+
       if (to.name != 'portfolio detail') {
         var windowHeight = window.innerHeight;
         var metaHeight = windowHeight - 120;
@@ -65,6 +71,11 @@ body {
   font-family: 'Questrial';
   height: 100%;
 }
+
+body.overflowHidden {
+	overflow: hidden;
+}
+
 
 #app {
   transition: all .3s ease-in;

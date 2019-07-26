@@ -27,9 +27,9 @@ import PortfolioItem from "./PortfolioItem.vue";
 
 
 const carouselBehavior = {
-  // isCarouselActive: true,
   isCarouselActive: false,
-  shouldPauseWhenHover: false,
+  shouldPauseWhenHover: true,
+  shouldScrollMoveCarousel: false
 };
 
 export default {
@@ -56,12 +56,14 @@ export default {
           }
         }
   
-        $crsl.carousel({
-          interval: false,
-          pause: true
-        }).on('slid.bs.carousel', function() {});
+        $crsl.carousel({interval: false, pause: true}).on('slid.bs.carousel', 
+        function() {
+          // 다음 슬라이드 보일 때마다 호출 됨. 프로그레스바 초기화.
+          console.log("hello");
+          percent = 0;
+        });
 
-        const barInterval = setInterval(progressBarCarousel, 40);
+        let barInterval = setInterval(progressBarCarousel, 40);
 
         if (carouselBehavior.shouldPauseWhenHover) {
           $crsl.hover(
@@ -73,8 +75,19 @@ export default {
           });
         }
       }
-      
-      
+
+      if (carouselBehavior.shouldScrollMoveCarousel) {
+        window.addEventListener('mousewheel', function(e) {
+          const wheelDelta = e.deltaY;
+          const $crsl = $('#portfolio-list');
+          if (wheelDelta > 50) {
+            $crsl.carousel('next');
+          } else if (wheelDelta < -50) {
+            $crsl.carousel('prev');
+          }
+          e.stopPropagation();
+        });
+      }
     });
   },
   computed: {
@@ -103,6 +116,7 @@ export default {
   width: 100%;
   padding: 0px 120px;
   position: relative;
+  top: -10px;
 }
 #portfolio-carousel-progressbar {
   height:100%;
@@ -130,6 +144,7 @@ export default {
 .portfolio-carousel {
   width: 100%;
   height: 100%;
+  /* height: calc(100% - 10px); */
 }
 
 .carousel-control-next {

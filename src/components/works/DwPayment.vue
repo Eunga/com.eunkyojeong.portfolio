@@ -24,15 +24,6 @@
                             <div class="col-sm-8">Product Designer</div>
                         </div>
                     </div>
-
-                    <!-- <div class="offset-sm-3 col-sm-3 offset-xs-0 col-xs-12">
-                        <div class="portfolio-work-title subtitle-sm">Date</div>
-                        <div class="">December 2018</div>
-
-                        
-                        <div class="portfolio-work-title subtitle-sm subtitle">Role</div>
-                        <div class="">Product Designer</div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -48,7 +39,6 @@
                     </div>
 
                     <div class="col-sm-6">
-                    <!-- <div style="width:500px; margin: auto;"> -->
                         Since the successful launch of Daum Webtoon 2.0, it had provided improvements of the user experience for all users which brought a sharp 200% increase in comics sales. Our next goal was to upgrade the app for heavy users who use every day and purchase a large volume of our pay comics.
                         <br/><br/>
                         and the basic goal was to : <br/>
@@ -63,11 +53,11 @@
         <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="offset-sm-1 col-sm-4">
                         <div class="portfolio-work-title subtitle-sm">The Problem</div>
                     </div>
 
-                    <div class="offset-sm-1 col-sm-6">
+                    <div class="col-sm-6">
                         <div>
                             <div class="portfolio-work-title subtitle-lg">Right from the user</div>
                         </div>
@@ -87,8 +77,10 @@
                     </div>
                 </div>
 
-                <div style="margin:auto; margin-top:102px; text-align:center;">
-                    <img src="../../assets/img/portfolio/dw/portfolio-dw-painpoint.png" alt="painpoint"/>
+                <div class="row">
+                    <div class="offset-sm-5 col-sm-7 col-xs-12">
+                        <img src="../../assets/img/portfolio/dw/portfolio-dw-painpoint.png" alt="painpoint"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,8 +101,10 @@
                     </div>
                 </div>
 
-                <div style="margin:auto; margin-top:102px; text-align:center;">
-                    <img src="../../assets/img/portfolio/dw/portfolio-dw-ideation.png" alt="ideation"/>
+                <div class="row">
+                    <div class="offset-sm-3 col-sm-7 col-xs-12">
+                        <img src="../../assets/img/portfolio/dw/portfolio-dw-ideation.png" alt="ideation"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,11 +137,11 @@
         <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="offset-sm-1 col-sm-4">
                         <span class="portfolio-work-title subtitle-sm">Concept</span>
                     </div>
 
-                    <div class="offset-sm-1 col-sm-6">
+                    <div class="col-sm-6">
                         <div>
                             <span class="portfolio-work-title subtitle-lg">Distinct and Consistent Color</span>
                         </div>
@@ -176,11 +170,11 @@
         <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work container">
                 <div class="row">
-                    <div class="offset-sm-1 col-sm-4">
+                    <div class="offset-sm-1 col-sm-4 offset-sm-1">
                         <img src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration gif"/>
                     </div>
 
-                    <div class="col-sm-7">
+                    <div class="offset-sm-1 col-sm-6">
 
                         <div>
                             <div class="portfolio-work-title subtitle-sm">Iteration</div>
@@ -277,7 +271,7 @@
 
             <div class="portfolio-work container">
 
-                <div style="display:flex; align-items: center;">
+                <!-- <div style="display:flex; align-items: center;">
                     <div style="flex: 7;">
                         <div class="portfolio-work-title subtitle-sm">Solution</div>
 
@@ -295,14 +289,55 @@
                     </div>
 
                     <div style="flex: 5;">
-                        <img src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration gif"/>
+                        <img src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png" alt="iteration gif"/>
+                    </div>
+                </div> -->
+
+
+                <div class="row">
+                    <div class="col-sm-6" style="display:table-cell">
+                        <div style="vertical-align: middle;">
+                            <div class="portfolio-work-title subtitle-sm">Solution</div>
+
+                            <div class="row">
+                                <div class="col-8 portfolio-work-title subtitle-lg">Enabling Multiple purchases at once</div>
+                            </div>
+
+                            <div>
+                                Allow users to buy multiple episodes at once now also available via View page as well as Title home page.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="offset-sm-2 col-sm-4 col-xs-12">
+                        <img src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png" alt="iteration gif"/>
                     </div>
                 </div>
+
+<!-- 
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="portfolio-work-title subtitle-sm">Solution</div>
+
+                        <div class="portfolio-work-title subtitle-lg">Enabling Multiple purchases at once</div>
+
+                        <div>
+                            Allow users to buy multiple episodes at once now also available via View page as well as Title home page.
+                        </div>
+                    </div>
+                    
+                    <div class="offset-sm-2 col-sm-4 col-xs-12">
+                        <img src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png" alt="iteration gif"/>
+                    </div>
+                </div> 
+-->
+
+
 
 
                 <div style="display:flex; align-items: center;">
                     <div style="flex: 5;">
-                        <img src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration gif"/>
+                        <img src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png" alt="iteration gif"/>
                     </div>
                     
                     
