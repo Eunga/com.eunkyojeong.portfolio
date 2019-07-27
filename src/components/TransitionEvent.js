@@ -10,34 +10,43 @@ export default class TransitionEvent {
         this.DEFAULT_EASING_WAY = this.EASING_WAYS.easeOutCubic;
     }
 
-    beforeEnter(el) {
+    beforeEnter(srcPath, destPath) {
         
     }
 
-    enter(el, callback) {
+    enter(srcPath, destPath, callback) {
         callback();
     }
 
-    afterEnter(el) {
+    afterEnter(srcPath, destPath) {
         
     }
 
-    beforeLeave(el) {
-        const elementId = $(el).attr('id');
-        if (elementId === 'portfolio-detail') {
+    beforeLeave(srcPath, destPath) {
+        if (destPath === 'about') {
+            // do nothing
+            return;
+        }
+        
+        if (srcPath === 'portfolio-detail') {
             this._beforeLeaveDetail()
-        } else if (elementId === 'portfolio') {
+        } else if (srcPath === 'portfolio') {
             this._beforeLeaveList()
         }
     }
 
-    leave(el, callback) {
+    leave(srcPath, destPath, callback) {
+        if (destPath === 'about') {
+            callback();
+            return;
+        }
+
         setTimeout(() => {
             callback();
         }, this.TRANSITION_INTERVAL_IN_MILLIS);
     }
 
-    afterLeave(el) {
+    afterLeave(srcPath, destPath) {
         
     }
 

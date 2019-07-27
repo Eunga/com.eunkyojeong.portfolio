@@ -85,18 +85,27 @@ export default {
 		// ENTERING
 		// --------
 		beforeEnter: function (el) {
-			this.transitionEvent.beforeEnter(el);
+			const srcPath = $(el).attr('id');
+			const destPath = this.$route.name;
+					
+			this.transitionEvent.beforeEnter(srcPath, destPath);
 			this.$TransitionEventBus.$emit("beforeEnter");
 		},
 		// done 콜백은 CSS와 함께 사용할 때 선택 사항입니다.
 		enter: function (el, done) {
-			this.transitionEvent.enter(el, () => {
+			const srcPath = $(el).attr('id');
+			const destPath = this.$route.name;
+
+			this.transitionEvent.enter(srcPath, destPath, () => {
 				done();
 			});
 			this.$TransitionEventBus.$emit("enter");
 		},
 		afterEnter: function (el) {
-			this.transitionEvent.afterEnter(el);
+			const srcPath = $(el).attr('id');
+			const destPath = this.$route.name;
+
+			this.transitionEvent.afterEnter(srcPath, destPath);
 			this.$TransitionEventBus.$emit("afterEnter");
 		},
 
@@ -104,19 +113,28 @@ export default {
 		// LEAVING
 		// --------
 		beforeLeave: function (el) {
-			this.transitionEvent.beforeLeave(el);
+			const srcPath = $(el).attr('id');
+			const destPath = this.$route.name;
+
+			this.transitionEvent.beforeLeave(srcPath, destPath);
 			this.$TransitionEventBus.$emit("beforeLeave");
 		},
 		
 		// done 콜백은 CSS와 함께 사용할 때 선택 사항입니다.
 		leave: function (el, done) {
-			this.transitionEvent.leave(el, () => {
+			const srcPath = $(el).attr('id');
+			const destPath = this.$route.name;
+
+			this.transitionEvent.leave(srcPath, destPath, () => {
 				done();
 			});
 			this.$TransitionEventBus.$emit("leave");
 		},
 		afterLeave: function (el) {
-			this.transitionEvent.afterLeave(el);
+			const srcPath = $(el).attr('id');
+			const destPath = this.$route.name;
+
+			this.transitionEvent.afterLeave(srcPath, destPath);
 			this.$TransitionEventBus.$emit("afterLeave");
 		},
   }

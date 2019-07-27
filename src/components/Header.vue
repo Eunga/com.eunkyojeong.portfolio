@@ -74,6 +74,10 @@ export default {
   background-color: transparent !important;
 }
 
+#navAbout {
+  padding-right: 0;
+}
+
 .navLink {
   z-index: 1;
 }
