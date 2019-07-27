@@ -1,6 +1,7 @@
 <template>
   <div id='portfolio'>
-      <portfolio-list
+    <app-mask />
+    <portfolio-list
       v-on:goPortfolioDetail="goPortfolioDetail($event)"/>
 
     <div id="portfolio-bottom-mask"></div>
@@ -9,12 +10,14 @@
 </template>
 
 <script>
+import Mask from './Mask'
 import PortfolioList from '@/components/portfolio/PortfolioList.vue'
 
 export default {
   name: 'Portfolio',
   components: { 
-    'portfolio-list': PortfolioList
+    'portfolio-list': PortfolioList,
+    'app-mask': Mask
   },
 }
 </script>
@@ -29,8 +32,6 @@ export default {
   width: 100%;
   height: 100%;
   height: calc(100vh - 120px);
-
-  transition: all .3s ease-in;
 }
 
 #portfolio-bottom-mask {
@@ -38,13 +39,7 @@ export default {
   width:100%;
   height:100%;
   background-color: white;
-  transition: all .3s ease-in;
   top:100%;
-}
-
-#portfolio.transition #portfolio-bottom-mask {
-  transition: all .3s ease-in;
-  top: 640px;
 }
 
 #portfolio-list > ul {
@@ -52,37 +47,6 @@ export default {
   height: 100%;
   white-space: nowrap;
   position: relative;
-}
-
-#portfolio-list-item {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-}
-
-#portfolio-list-item.active {
-  visibility: visible;
-}
-
-.portfolio-background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: #ffdbc6;
-  transition: width 0.58s cubic-bezier(0.19, 1, 0.22, 1),
-    height 1.1s cubic-bezier(0.19, 1, 0.22, 1),
-    transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-
-  border: red 1px solid;
-}
-
-.portfolio-slider {
-  position: absolute;
-  margin-left: 20%;
-  margin-bottom: 10%;
-  bottom: 0px;
 }
 
 #portfolio-timer-progressbar {
@@ -101,9 +65,34 @@ export default {
   border-color: #4a90e2;
 }
 
-@media (max-width: 767px) {
+/* Media Queries */
+@media screen and (max-width:767px) {
   #portfolio {
     height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  #portfolio {
+    height: calc(100vh - 80px);
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  #portfolio {
+    height: calc(100vh - 80px);
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1776px) {
+  #portfolio {
+    height: calc(100vh - 120px);
+  }
+}
+
+@media screen and (min-width: 1777px) {
+  #portfolio {
+    height: calc(100vh - 120px);
   }
 }
 </style>

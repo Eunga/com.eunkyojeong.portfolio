@@ -1,6 +1,6 @@
 <template>
-  <div id="about" class="container">
-
+  <div id="about" class="v-container-fluid">
+    <app-mask />
     <!-- 
     <div id="aboutProfileImage">
       <img src="../assets/img/about/img-profile.png">
@@ -44,8 +44,13 @@
 </template>
 
 <script>
+import Mask from './Mask'
+
 export default {
   name: "About",
+  components: {
+  	'app-mask': Mask
+  },
   data: function() {
     return {
       about: this.$store.getters.about,

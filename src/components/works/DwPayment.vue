@@ -2,7 +2,7 @@
     <div class="portfolio-works">
         <!-- Overview -->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
                         <div class="portfolio-work-title subtitle-sm">Overview</div>
@@ -30,7 +30,7 @@
 
         <!-- Challenge -->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="portfolio-work-title subtitle-sm">Challenge</div>
 
                 <div class="row">
@@ -51,7 +51,7 @@
 
         <!-- The Problem -->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="offset-sm-1 col-sm-4">
                         <div class="portfolio-work-title subtitle-sm">The Problem</div>
@@ -88,7 +88,7 @@
 
         <!-- Ideation-->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="offset-sm-3 col-sm-9">
                         <div class="portfolio-work-title subtitle-sm">Ideation</div>
@@ -114,7 +114,7 @@
 
         <!-- Goals-->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="offset-sm-3 col-sm-9">
                         <div class="portfolio-work-title subtitle-sm">Goals</div>
@@ -135,7 +135,7 @@
 
         <!-- Concept -->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="offset-sm-1 col-sm-4">
                         <span class="portfolio-work-title subtitle-sm">Concept</span>
@@ -168,7 +168,7 @@
 
         <!-- Iteration -->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="offset-sm-1 col-sm-4 offset-sm-1">
                         <img src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration gif"/>
@@ -202,7 +202,7 @@
 
         <!-- Before & After -->
         <div class="portfolio-work-wrap" style="background-color: black;">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row" style="margin-top: 200px;">
                     <div class="col-sm-5">
                         <video style="width:100%; max-height: 900px;" controls>
@@ -240,7 +240,7 @@
         <!-- Solution -->
         <div class="portfolio-work-wrap animatable fadeInUp">
             
-            <!-- <div class="portfolio-work container">
+            <!-- <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="col-sm-7" style="display: flex; align-items: center;">
                         <div class="row">
@@ -269,7 +269,7 @@
             </div> -->
 
 
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
 
                 <!-- <div style="display:flex; align-items: center;">
                     <div style="flex: 7;">
@@ -419,7 +419,7 @@
 
         <!-- Retrospective-->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="offset-sm-3 col-sm-9">
                         <div class="portfolio-work-title subtitle-sm">Retrospective</div>
@@ -453,36 +453,6 @@ import Workbase from "./Workbase.vue";
 export default {
     extends: Workbase,
     name: 'DwPayment',
-    // mounted() {
-    //     $(document).ready(function($) {
-    //         // Function which adds the 'animated' class to any '.animatable' in view
-    //         const doAnimations = function() {
-    //             // Calc current offset and get all animatables
-    //             const offset = $(window).scrollTop() + $(window).height(),
-    //                 $animatables = $('.animatable');
-                
-    //             // Unbind scroll handler if we have no animatables
-    //             if ($animatables.length == 0) {
-    //             $(window).off('scroll', doAnimations);
-    //             }
-                
-    //             // Check all animatables and animate them if necessary
-    //             $animatables.each(function(i) {
-    //             var $animatable = $(this);
-    //             if (($animatable.offset().top + $animatable.height() - 20) < offset) {
-    //                 $animatable.removeClass('animatable').addClass('animated');
-    //             }
-    //             });
-
-    //         };
-
-    //         // Hook doAnimations on scroll, and trigger a scroll
-    //         $(window).on('scroll', doAnimations);
-    //         $(window).trigger('scroll');
-
-    //         });
-
-    // }
 }
 </script>
 
