@@ -1,26 +1,28 @@
 export default class TransitionEvent {
     constructor() {
-        this.TRANSITION_INTERVAL_IN_MILLIS = 1500; // for debugging
-        // this.TRANSITION_INTERVAL_IN_MILLIS = 300;
-        this.DEFAULT_EASING_WAY = 'easeOutCubic';
+        this.EASING_WAYS = {
+            'easeOutCubic' : 'easeOutCubic',
+            'easeInOutCubic' : 'easeInOutCubic',
+        }
+
+        // this.TRANSITION_INTERVAL_IN_MILLIS = 1500; // for debugging
+        this.TRANSITION_INTERVAL_IN_MILLIS = 800;
+        this.DEFAULT_EASING_WAY = this.EASING_WAYS.easeOutCubic;
     }
 
     beforeEnter(el) {
-        console.log("beforeEnter");
+        
     }
 
     enter(el, callback) {
-        console.log("enter");
-
         callback();
     }
 
     afterEnter(el) {
-        console.log("afterEnter");
+        
     }
 
     beforeLeave(el) {
-        console.log("beforeLeave");
         const elementId = $(el).attr('id');
         if (elementId === 'portfolio-detail') {
             this._beforeLeaveDetail()
@@ -30,14 +32,13 @@ export default class TransitionEvent {
     }
 
     leave(el, callback) {
-        console.log("leave");
         setTimeout(() => {
             callback();
         }, this.TRANSITION_INTERVAL_IN_MILLIS);
     }
 
     afterLeave(el) {
-        console.log("afterLeave");
+        
     }
 
     _beforeLeaveDetail() {
@@ -59,19 +60,17 @@ export default class TransitionEvent {
         }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
         $('#margin.detail #margin-left').transition({
-            'x': '300',
+            'x': '120',
         }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
         $('#margin.detail #margin-right').transition({
-            'x': '-300',
+            'x': '-120',
         }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
-        $('#margin.detail #margin-bottom').transition({
-            'y': '-300',
-        }, 0, this.DEFAULT_EASING_WAY);
+        $('#margin.detail #margin-bottom').hide();
 
         $('#margin.detail #margin-top').transition({
-            'y': '300',
+            'y': '120',
         }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
         $('#portfolio-meta').transition({
@@ -97,19 +96,19 @@ export default class TransitionEvent {
         }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
         $('#margin.home #margin-left').transition({
-            'x': '-300',
+            'x': '-120',
         }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
         $('#margin.home #margin-right').transition({
-            'x': '300',
+            'x': '120',
         }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
         $('#margin.home #margin-bottom').transition({
-            'y': '300',
+            'y': '120',
         }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
         $('#margin.home #margin-top').transition({
-            'y': '-300',
+            'y': '-120',
         }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
         
         $('#portfolio-bottom-mask').animate({

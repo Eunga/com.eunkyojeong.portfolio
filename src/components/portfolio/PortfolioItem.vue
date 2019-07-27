@@ -226,13 +226,16 @@ export default {
   border-bottom: 2px solid white;
 }
 
-.list.white .portfolio-work-count-current, .list.white .portfolio-work-count {
+.portfolio-item.white .portfolio-work-count-current, 
+.portfolio-item.white .portfolio-work-count {
   color: white;
 }
 
-.list.black .portfolio-work-count-current {
+.portfolio-item.black .portfolio-work-count-current {
   color: black;
 }
+
+
 
 .portfolio-work-count {
   position: relative;

@@ -51,8 +51,6 @@ export default {
 
 .margin-vertical {
   height: 100%;
-  /* width:120px; */
-  /* position: absolute; */
   position: fixed;
   /* box-shadow: 5px 5px red inset; */
   z-index: 500;
@@ -60,7 +58,6 @@ export default {
 }
 
 .margin-horizontal {
-  /* height: 120px; */
   width: 100%;
   position: fixed;
   /* box-shadow: 5px 5px red inset; */
@@ -82,7 +79,7 @@ export default {
 }
 
 #margin.detail #margin-left {
-  left: -300px;
+  left: -120px;
 }
 
 /* RIGHT */
@@ -95,15 +92,12 @@ export default {
   content: '';
   width: 120px;
   height: 100%;
-  /* float:right; */
-  /* position: relative;
-  position: fixed; */
   background-color: white;
   display: block;
 }
 
 #margin.detail #margin-right {
-  right: -300px;
+  right: -120px;
 }
 
 /* BOTTOM */
@@ -126,7 +120,7 @@ export default {
 }
 
 #margin.detail #margin-bottom::after {
-  bottom: -300px;
+  bottom: -120px;
 }
 
 /* TOP */
@@ -144,12 +138,8 @@ export default {
   display: block;
 }
 
-#margin.home #margin-top::after {
-  /* display: none; */
-}
-
 #margin.detail #margin-top::after {
-  top: -300px;
+  top: -120px;
 }
 
 /* Media Queries */
@@ -209,7 +199,6 @@ export default {
 
 @media screen and (min-width: 1440px) and (max-width: 1776px) {
   .v-container-fluid {
-    /* max-width: 1119px; */
     margin-left: 240px;
     margin-right: 240px;
   }

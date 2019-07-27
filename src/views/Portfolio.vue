@@ -32,8 +32,6 @@ export default {
   width: 100%;
   height: 100%;
   height: calc(100vh - 120px);
-
-  /* transition: all .3s ease-in; */
 }
 
 #portfolio-bottom-mask {
