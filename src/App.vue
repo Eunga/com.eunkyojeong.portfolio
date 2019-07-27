@@ -5,8 +5,17 @@
     <app-header/>
 
     <!-- Routher View -->
-    <transition
-      :name="shouldTransition ? 'fade' : ''"
+	<transition
+	  @beforeEnter="beforeEnter"
+	  @enter="enter"
+	  @afterEnter="afterEnter"
+
+	  @beforeLeave="beforeLeave"
+	  @leave="leave"
+	  @afterLeave="afterLeave"
+
+	  v-bind:css="false"
+	  :name="shouldTransition ? 'fade' : ''"
       mode="out-in">
 
       <router-view :key="$route.name"></router-view>
@@ -22,7 +31,10 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
+import TransitionEvent from '@/components/TransitionEvent'
+
 import store from './store'
+import { setTimeout } from 'timers';
 
 // Transition을 적용하지 않을 $router.name 
 const exceptTransitionList = ['about'];
@@ -35,7 +47,8 @@ export default {
   },
   data: function() {
     return {
-      shouldTransition: true
+	  shouldTransition: true,
+	  transitionEvent: new TransitionEvent()
     }
   },
   watch: {
@@ -66,6 +79,46 @@ export default {
 	  } else {
 		$('body').removeClass('overflowHidden')
 	  }
+  },
+  methods: {
+	  	// --------
+		// ENTERING
+		// --------
+		beforeEnter: function (el) {
+			this.transitionEvent.beforeEnter(el);
+			this.$TransitionEventBus.$emit("beforeEnter");
+		},
+		// done 콜백은 CSS와 함께 사용할 때 선택 사항입니다.
+		enter: function (el, done) {
+			this.transitionEvent.enter(el, () => {
+				done();
+			});
+			this.$TransitionEventBus.$emit("enter");
+		},
+		afterEnter: function (el) {
+			this.transitionEvent.afterEnter(el);
+			this.$TransitionEventBus.$emit("afterEnter");
+		},
+
+		// --------
+		// LEAVING
+		// --------
+		beforeLeave: function (el) {
+			this.transitionEvent.beforeLeave(el);
+			this.$TransitionEventBus.$emit("beforeLeave");
+		},
+		
+		// done 콜백은 CSS와 함께 사용할 때 선택 사항입니다.
+		leave: function (el, done) {
+			this.transitionEvent.leave(el, () => {
+				done();
+			});
+			this.$TransitionEventBus.$emit("leave");
+		},
+		afterLeave: function (el) {
+			this.transitionEvent.afterLeave(el);
+			this.$TransitionEventBus.$emit("afterLeave");
+		},
   }
 };
 </script>
@@ -104,16 +157,6 @@ ul {
   max-width: 1296px;
   margin: auto;
   /* box-shadow: 5px 5px red inset; */
-}
-
-/*************
-    Media
-*************/
-
-
-/* Transistion */
-.fade-enter-active, .fade-leave-active {
-  transition-duration: 0.3s;
 }
 
 /* Override Bootstrap */

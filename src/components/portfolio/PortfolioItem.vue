@@ -5,13 +5,7 @@
       <img class="portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)"/>
     </div>
 
-    <div class="portfolio-item-content carousel-caption d-md-block v-container-fluid" @click="goPortfolioDetail">
-      <!-- 
-      <div class="portfolio-item-stuff">
-        <img :src="getImgUrl(work.stuff.url)" />
-      </div> 
-      -->
-
+    <div class="portfolio-item-content carousel-caption d-md-block" @click="goPortfolioDetail">
       <div class="portfolio-item-brief-wrapper">
         <div class="portfolio-item-stuff">
           <img :src="getImgUrl(work.stuff.url)" />
@@ -149,7 +143,6 @@ export default {
   position: relative;
   float: right;
   width: 50%;
-  /* left: 50%; */
   top:10%;
 }
 
@@ -162,7 +155,6 @@ export default {
 
 .portfolio-item-content {
   position: relative;
-  /* width: 100vw; */
   height: 100vh;
   left: 0;
   right: 0;
@@ -179,20 +171,17 @@ export default {
 
 .portfolio-item-brief {
   position: absolute;
-  transition: all .3s ease-out;
 }
 
 .list .portfolio-item-brief {
-  top: 50%;
+  bottom: 0px;
 }
 
 .detail .portfolio-item-brief {
-  top: 10%;
+  
 }
 
 .portfolio-item-title {
-  transition: all .3s ease-out;
-
   text-align: left;
   font-family: Questrial;
   font-size: 70px;
@@ -204,8 +193,6 @@ export default {
 }
 
 .portfolio-item-subtitle {
-  transition: all .3s ease-out;
-  
   font-family: Questrial;
   font-size: 28px;
   font-weight: normal;
@@ -268,7 +255,7 @@ export default {
 }
 
 .detail .portfolio-item-stuff img {
-  transform: translateY(-80px) scale(0.8);
+  transform: scale(0.8);
 }
 
 .portfolio-work-count-current {
@@ -278,53 +265,6 @@ export default {
 .portfolio-work-count-all, .portfolio-work-count-delimeter {
   opacity: .3;
 }
-
-
-/**
- * [Start] List <-> Detail 전환 시, "item-stuff" animation
- */
-.fade-leave-active .portfolio-item.list .portfolio-item-stuff img {
-  transform: translateY(-80px) scale(0.8);
-  transition-duration: .3s;
-}
-
-.fade-leave-active .portfolio-item.detail .portfolio-item-stuff img {
-  transform: translateY(0px) scale(1.3);
-  transition-duration: .3s;
-}
-/**
- * [End] List <-> Detail 전환 시, "item-stuff" animation
- */
-
-
-
-/**
- * [Start] List <-> Detail 전환 시, "item-brief", "item-subtitle", "work-count" animation
- */
-.fade-leave-active .list .portfolio-item-brief .portfolio-work-count {
-  visibility: hidden;
-}
-.fade-leave-active .list .portfolio-item-brief {
-  top: 10%;
-}
-.fade-leave-active .detail .portfolio-item-brief {
-  top: 50%;
-}
-
-.fade-leave-active .list .portfolio-item-brief .portfolio-item-subtitle {
-  visibility: visible;
-}
-
-.fade-leave-active .detail .portfolio-item-brief .portfolio-item-subtitle {
-  visibility: hidden;
-}
-
-.fade-enter-active .detail .portfolio-item-brief .portfolio-item-subtitle {
-  opacity: 1;
-}
-/**
- * [End] List <-> Detail 전환 시, "item-brief", "item-subtitle", "work-count" animation
- */
 
 @media (max-width: 767px) {
   #portfolio-meta {
@@ -354,43 +294,11 @@ export default {
   }
 
   .portfolio-item-stuff img {
-    transform: scale(1.45);
-  }
-
-  .fade-leave-active .portfolio-item.detail .portfolio-item-stuff img {
-    transform: translateY(0px) scale(1.45);
-  }
-  
-  .list .portfolio-item-brief {
-    top: 75%;
-  }
-
-  .detail .portfolio-item-brief {
-    top: 40%;
-  }
-
-  .fade-leave-active .list .portfolio-item-brief {
-     top: 40%;
-  }
-
-  .fade-leave-active .detail .portfolio-item-brief {
-    top: 75%;
-  }
-
-  .portfolio-item-stuff {
-    top: 130px;
+    /* transform: scale(1.45); */
   }
 }
 
 @media (min-width: 500px) and (max-width: 767px) {
-  .list .portfolio-item-brief {
-    top: 65%;
-  }
-
-  .fade-leave-active .detail .portfolio-item-brief {
-    top: 65%;
-  }
-
   .portfolio-item-stuff {
     top: 100px;
   }
@@ -398,42 +306,58 @@ export default {
 
 
 
-
+.portfolio-item-content {
+  width: 100vw;
+}
 
 
 /* Media Queries */
 @media screen and (max-width:767px) {
   .portfolio-item-content {
     padding-top:48px;
-    padding-bottom: 48px;
+    padding-bottom: 30px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .portfolio-item-content {
     padding-top:80px;
-    padding-bottom: 80px;
+    padding-bottom: 180px;
+
+    padding-left: 60px !important;
+    padding-right: 60px !important;
   }
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
   .portfolio-item-content {
     padding-top:80px;
-    padding-bottom: 80px;
+    padding-left: 160px !important;
+    padding-right: 160px !important;
+    padding-bottom: 160px;
   }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1776px) {
   .portfolio-item-content {
     padding-top:120px;
-    padding-bottom: 120px;
+
+    padding-left: 240px !important;
+    padding-right: 240px !important;
+    padding-bottom: 240px !important;
   }
 }
 
 @media screen and (min-width: 1777px) {
   .portfolio-item-content {
+    width: 1296px;
+    margin: auto !important;
     padding-top:120px;
-    padding-bottom: 120px;
+
+    /* TODO: 계산해야함 */
+    padding-bottom: 250px;
   }
 }
 </style>

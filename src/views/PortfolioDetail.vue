@@ -111,11 +111,6 @@ export default {
   z-index: 10;
 }
 
-.fade-leave-active .portfolio-detail-info {
-  transform: translateY(300px);
-  opacity: 0;
-}
-
 #portfolio-detail-mask {
   position: absolute;
   top: 0;
@@ -124,6 +119,5 @@ export default {
   opacity: 0;
   background-color: white;
   z-index: 1000; /* header 까지 가림. */
-  /* transition: all 1s ease-in-out; */
 }
 </style>

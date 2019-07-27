@@ -2,7 +2,8 @@
     <div id="margin">
         <div id="margin-left" class="margin-vertical"></div>
         <div id="margin-right" class="margin-vertical"></div>
-
+      
+        <div id="margin-top" class="margin-horizontal"></div>
         <div id="margin-bottom" class="margin-horizontal"></div>
     </div>
 </template>
@@ -22,14 +23,14 @@ export default {
         }
     },
     mounted() {
-	  const path = this.$route.name;
-	  if (path == 'home') {
-		$('#margin').addClass('home');
-        $('#margin').removeClass('detail');
-	  } else if (path == 'portfolio detail') {
-		$('#margin').addClass('detail');
-        $('#margin').removeClass('home');
-	  }
+      const path = this.$route.name;
+      if (path == 'home') {
+      $('#margin').addClass('home');
+          $('#margin').removeClass('detail');
+      } else if (path == 'portfolio detail') {
+      $('#margin').addClass('detail');
+          $('#margin').removeClass('home');
+      }
   }
 }
 </script>
@@ -50,62 +51,65 @@ export default {
 
 .margin-vertical {
   height: 100%;
-  width:120px;
-  position: absolute;
+  /* width:120px; */
+  /* position: absolute; */
+  position: fixed;
   /* box-shadow: 5px 5px red inset; */
   z-index: 500;
   transition: all 0.3 ease-in;
 }
 
 .margin-horizontal {
-  height: 120px;
+  /* height: 120px; */
   width: 100%;
-  position: absolute;
+  position: fixed;
   /* box-shadow: 5px 5px red inset; */
-  z-index: 500;
+  z-index: 100;
 }
 
 /* LEFT */
 #margin-left {
-  left:0;    
+  left:0;
+  transition-duration: .3s;
 }
 
 #margin-left::after {
   content: '';
   width: 120px;
   height: 100%;
-  float:left;
-  position: relative;
   background-color: white;
   display: block;
 }
 
-#margin.detail #margin-left::after {
+#margin.detail #margin-left {
   left: -300px;
 }
 
 /* RIGHT */
 #margin-right {
-  right:0;    
+  right:0;
+  transition-duration: .3s;
 }
 
 #margin-right::after {
   content: '';
   width: 120px;
-  float:right;
   height: 100%;
-  position: relative;
+  /* float:right; */
+  /* position: relative;
+  position: fixed; */
   background-color: white;
   display: block;
 }
 
-#margin.detail #margin-right::after {
+#margin.detail #margin-right {
   right: -300px;
 }
 
 /* BOTTOM */
 #margin-bottom {
-  bottom: 0;    
+  bottom: 0;
+  transition-duration: .3s;
 }
 
 #margin-bottom::after {
@@ -125,43 +129,37 @@ export default {
   bottom: -300px;
 }
 
-
-
-/* Aniamations */
-.fade-leave-active #margin.home #margin-left {
-  transform: translateX(-300px);
+/* TOP */
+#margin-top {
+  top: 0;
   transition-duration: .3s;
 }
 
-.fade-leave-active #margin.home #margin-right {
-  transform: translateX(300px);
-  transition-duration: .3s;
+#margin-top::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: white;
+  display: block;
 }
 
-.fade-leave-active #margin.detail #margin-left {
-  transform: translateX(300px);
-  transition-duration: .3s;
+#margin.home #margin-top::after {
+  /* display: none; */
 }
 
-.fade-leave-active #margin.detail #margin-right {
-  transform: translateX(-300px);
-  transition-duration: .3s;
-}
-
-.fade-leave-active #margin.home #margin-bottom {
-  transform: translateY(300px);
-  transition-duration: .3s;
-}
-
-.fade-leave-active #margin.detail #margin-bottom {
-  transform: translateY(-300px);
-  transition-duration: .3s;
+#margin.detail #margin-top::after {
+  top: -300px;
 }
 
 /* Media Queries */
 @media screen and (max-width:767px) {
   .margin-vertical {
     width: 30px;
+  }
+
+  .margin-horizontal {
+    height: 48px;
   }
 
   .v-container-fluid {
@@ -178,14 +176,14 @@ export default {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .margin-vertical {
-    width: 60px;
-  }
-
   .v-container-fluid {
     max-width: 1159px;
     margin-left: 60px;
     margin-right: 60px;
+  }
+
+  .margin-horizontal {
+    height: 80px;
   }
 
   #margin-left::after, #margin-right::after {
@@ -194,10 +192,6 @@ export default {
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
-  .margin-vertical {
-    width: 160px;
-  }
-
   .v-container-fluid {
     max-width: 1119px;
     margin-left: 160px;
@@ -207,14 +201,13 @@ export default {
   #margin-left::after, #margin-right::after {
     width: 80px;
   }
+
+  .margin-horizontal {
+    height: 80px;
+  }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1776px) {
-  .margin-vertical {
-    /* width: 240px; */
-    width: 120px;
-  }
-
   .v-container-fluid {
     /* max-width: 1119px; */
     margin-left: 240px;
@@ -224,13 +217,13 @@ export default {
   #margin-left::after, #margin-right::after {
     width: 120px;
   }
+
+  .margin-horizontal {
+    height: 120px;
+  }
 }
 
 @media screen and (min-width: 1777px) {
-  .margin-vertical {
-    width: initial;
-  }
-
   .v-container-fluid {
     width: 1296px;
     margin: auto;
@@ -238,6 +231,10 @@ export default {
 
   #margin-left::after, #margin-right::after {
     width: 120px;
+  }
+
+  .margin-horizontal {
+    height: 120px;
   }
 }
 
