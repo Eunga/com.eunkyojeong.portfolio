@@ -11,8 +11,10 @@
       <div id="aboutNameAndResume" class="col-xs-12 col-md-6">
         <div id="aboutName">Eunkyo Jeong</div>
         <div id="aboutResumeBtn">
-          <span>RESUME</span>
-          <img src="../assets/img/about/ico-download.png" alt="resume download"/>
+          <a :href="resume" download target="_blank">
+            <span>RESUME</span>
+            <img src="../assets/img/about/ico-download.png" alt="resume download"/>
+          </a>
         </div>
       </div>
 
@@ -54,7 +56,8 @@ export default {
   data: function() {
     return {
       about: this.$store.getters.about,
-      sns: this.$store.getters.snsForAboutPage
+      sns: this.$store.getters.snsForAboutPage,
+      resume: this.$store.getters.about.resume
     }
   },
   computed: {
@@ -96,12 +99,17 @@ export default {
   letter-spacing: -1.4px;
   text-align: left;
   color: #000000;
+  left: -4px;
+  position: relative;
 }
 
+#about #margin {
+  display: none;
+}
 #aboutResumeBtn {
   margin-top: 30px;
-  width: 200px;
-  height: 58px;
+  width: 163px;
+  height: 43px;
   background-color: black;
   color: white;
   display: flex;
@@ -109,16 +117,29 @@ export default {
   text-align: center;
   justify-content: center;
 }
+
+#aboutResumeBtn a {
+  width: 100%;
+  height: 100%;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
 #aboutResumeBtn span {
-  text-align: center;
   font-family: Questrial;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
   letter-spacing: 4px;
-  text-align: left;
+}
+#aboutResumeBtn img {
+  float: right;
+  top: 3px;
+  position: relative;
 }
 
 #introduceHerSelf {
