@@ -170,11 +170,6 @@ export default {
   letter-spacing: -0.8px;
   color: #000000;
   margin-bottom: 10px;
-  transition: opacity .4s ease-out;
-}
-
-.portfolio-item-nav-item:hover .portfolio-item-nav-title {
-    opacity: 0.6;
 }
 
 .portfolio-item-nav-id::before {
