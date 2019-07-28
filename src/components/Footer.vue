@@ -47,10 +47,13 @@ export default {
   padding: 0px 120px;
   background-color: #ffffff !important;
   position: relative;
-  transition: all .3s ease-in;
+  /* transition: all .3s ease-in; */
   height: 120px;
   display: flex;
   align-items: center;
+
+  position: absolute;
+  bottom: 0;
 }
 
 #copyright {
@@ -90,9 +93,38 @@ export default {
   opacity: 1;
 }
 
-@media (max-width: 767px) {
+/* Media Queries */
+@media screen and (max-width:767px) {
   #footer {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  #footer {
+    height: 80px;
+    padding: 0px 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  #footer {
+    height: 80px;
+    padding: 0px 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1776px) {
+  #footer {
+    height: 120px;
+    padding: 0px 120px;
+  }
+}
+
+@media screen and (min-width: 1777px) {
+  #footer {
+    height: 120px;
+    padding: 0px 120px;
   }
 }
 </style>

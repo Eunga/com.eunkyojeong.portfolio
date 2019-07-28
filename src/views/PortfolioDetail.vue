@@ -1,5 +1,7 @@
 <template>
   <div id="portfolio-detail">
+    <app-mask />
+
     <div id="portfolio-meta">
       <portfolio-item
         v-bind:isDetail="true"
@@ -20,6 +22,7 @@
 </template>
 
 <script>
+import Mask from './Mask'
 import PortfolioItem from "@/components/portfolio/PortfolioItem.vue";
 import PortfolioItemDetail from "@/components/portfolio/PortfolioItemDetail.vue";
 
@@ -27,7 +30,8 @@ export default {
   name: 'PortfolioDetail',
   components: {
     "portfolio-item": PortfolioItem,
-    "portfolio-item-detail": PortfolioItemDetail
+    "portfolio-item-detail": PortfolioItemDetail,
+    'app-mask': Mask
   },
   watch: {
     $route (to, from) {
@@ -107,11 +111,6 @@ export default {
   z-index: 10;
 }
 
-.fade-leave-active .portfolio-detail-info {
-  transform: translateY(300px);
-  opacity: 0;
-}
-
 #portfolio-detail-mask {
   position: absolute;
   top: 0;
@@ -120,6 +119,5 @@ export default {
   opacity: 0;
   background-color: white;
   z-index: 1000; /* header 까지 가림. */
-  /* transition: all 1s ease-in-out; */
 }
 </style>

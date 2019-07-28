@@ -9,27 +9,22 @@
         v-bind:work="work"
         v-bind:isDetail="false"
         v-bind:key="work.id"/>
-
-      <div class="portfolio-item-list-padding portfolio-item-list-padding-left"></div>
-      <div class="portfolio-item-list-padding portfolio-item-list-padding-right"></div>
-
     </div>
+    
     <div id="portfolio-carousel-progressbar-wrapper">
       <div id="portfolio-carousel-progressbar"></div>
     </div>
 
-    <div id="portfolio-item-content-mask"></div>
   </div>
 </template>
 
 <script>
 import PortfolioItem from "./PortfolioItem.vue";
 
-
 const carouselBehavior = {
   isCarouselActive: false,
-  shouldPauseWhenHover: true,
-  shouldScrollMoveCarousel: false
+  shouldPauseWhenHover: false,
+  shouldScrollMoveCarousel: true
 };
 
 export default {
@@ -126,15 +121,6 @@ export default {
   background-color: #000000;
   opacity: 0.2;
 }
-#portfolio-item-content-mask {
-  transition: all 0.3 ease-in;
-  height: 100vh;
-}
-
-.fade-leave-active #portfolio-item-content-mask {
-  position: relative;
-  top: 0;
-}
 
 #portfolio-list {
   height: 100%;
@@ -144,48 +130,43 @@ export default {
 .portfolio-carousel {
   width: 100%;
   height: 100%;
-  /* height: calc(100% - 10px); */
 }
 
 .carousel-control-next {
   z-index: 100;
 }
 
-/**
- * [Start] List <-> Detail 전환 시, "item-list-padding left & right" animation
- */
-.portfolio-item-list-padding {
-  position: absolute;
-  width:120px;
-  height:100%;
-  z-index: 10;
-  background-color: white;
-}
-.portfolio-item-list-padding-left {
-  left:0;
-}
-.portfolio-item-list-padding-right {
-  right:0;
-}
-.fade-leave-active .portfolio-item-list-padding-left {
-  transform: translateX(-300px);
-  transition-duration: .3s;
-}
-.fade-leave-active .portfolio-item-list-padding-right {
-  transform: translateX(300px);
-  transition-duration: .3s;
-}
-/**
- * [End] List <-> Detail 전환 시, "item-list-padding left & right" animation
- */
 
-@media (max-width: 767px) {
-  .portfolio-item-list-padding {
-    display: none;
-  }
-
+/* Media Queries */
+@media screen and (max-width:767px) {
   #portfolio-carousel-progressbar-wrapper {
     padding: 0px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  #portfolio-carousel-progressbar-wrapper {
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  #portfolio-carousel-progressbar-wrapper {
+    padding: 0px 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1776px) {
+  #portfolio-carousel-progressbar-wrapper {
+    padding: 0px 120px;
+  }
+}
+
+@media screen and (min-width: 1777px) {
+  #portfolio-carousel-progressbar-wrapper {
+    padding: 0px 120px;
+  }
+}
+
+
 </style>

@@ -1,7 +1,6 @@
 <template>
     <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light"
-      v-bind:class="[theme, {transparent: isTransparent}]">
-      <div id="header-mask"></div>
+      v-bind:class="[theme]">
       <router-link class="navbar-brand" to="/" style="z-index:10">EUNKYO JEONG</router-link>
       <button
         class="navbar-toggler" type="button"
@@ -36,7 +35,6 @@ export default {
     data: function() {
       return {
         theme: 'black',
-        isTransparent: false
       }
     },
     watch: {
@@ -44,10 +42,8 @@ export default {
         if (to.name == 'portfolio detail') {
           const work = this.$store.getters.workFromPath(to.path);
           this.theme = work.theme;
-          this.isTransparent = true;
         } else {
           this.theme = 'black';
-          this.isTransparent = false;
         }
       }
     },
@@ -55,10 +51,8 @@ export default {
       if (this.$route.name == 'portfolio detail') {
           const work = this.$store.getters.workFromPath(this.$route.path);
           this.theme = work.theme;
-          this.isTransparent = true;
         } else {
           this.theme = 'black';
-          this.isTransparent = false;
         }
     },
 }
@@ -70,30 +64,18 @@ export default {
 }
 
 #header {
-  padding: 0px 120px !important;
-  height: 120px;
+  padding: 0px;
   position: absolute;
   top:0;
   left:0;
   right:0;
   left:0;
   z-index:500;
-  transition: all .3s ease-out;
-  background-color: transparent !important;;
+  background-color: transparent !important;
 }
 
-#header-mask {
-  position: absolute;
-  background-color: #ffffff !important;
-  width:100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  transition: all .3s ease-out;
-}
-
-#header.transparent #header-mask {
-  transform: translateY(-300px);
+#navAbout {
+  padding-right: 0;
 }
 
 .navLink {
@@ -145,14 +127,15 @@ export default {
   text-align: left;
 }
 
-@media (max-width: 767px) {
-  #navPortfolio {
-    display: none;
+/* Media Queries */
+@media screen and (max-width:767px) {
+  #header {
+    height: 48px;
+    padding: 0px 30px;
   }
 
-  #header {
-    padding: 0px 30px !important;
-    height: 48px;
+  #navPortfolio {
+    display: none;
   }
 
   .nav-link {
@@ -164,5 +147,32 @@ export default {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  #header {
+    height: 80px;
+    padding: 0px 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  #header {
+    height: 80px;
+    padding: 0px 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1776px) {
+  #header {
+    height: 120px;
+    padding: 0px 120px;
+  }
+}
+
+@media screen and (min-width: 1777px) {
+  #header {
+    height: 120px;
+    padding: 0px 120px;
+  }
+}
 </style>
 

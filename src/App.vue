@@ -5,8 +5,17 @@
     <app-header/>
 
     <!-- Routher View -->
-    <transition
-      :name="shouldTransition ? 'fade' : ''"
+	<transition
+	  @beforeEnter="beforeEnter"
+	  @enter="enter"
+	  @afterEnter="afterEnter"
+
+	  @beforeLeave="beforeLeave"
+	  @leave="leave"
+	  @afterLeave="afterLeave"
+
+	  v-bind:css="false"
+	  :name="shouldTransition ? 'fade' : ''"
       mode="out-in">
 
       <router-view :key="$route.name"></router-view>
@@ -21,7 +30,11 @@
 <script>
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+
+import TransitionEvent from '@/components/TransitionEvent'
+
 import store from './store'
+import { setTimeout } from 'timers';
 
 // Transition을 적용하지 않을 $router.name 
 const exceptTransitionList = ['about'];
@@ -30,11 +43,12 @@ export default {
   name: "App",
   components: {
     'app-header': Header, 
-    'app-footer': Footer
+	'app-footer': Footer
   },
   data: function() {
     return {
-      shouldTransition: true
+	  shouldTransition: true,
+	  transitionEvent: new TransitionEvent()
     }
   },
   watch: {
@@ -57,17 +71,78 @@ export default {
         this.shouldTransition = true;
       }
     }
+  },
+  mounted() {
+	  const path = this.$route.name;
+	  if (path == 'home') {
+		$('body').addClass('overflowHidden')
+	  } else {
+		$('body').removeClass('overflowHidden')
+	  }
+  },
+  methods: {
+	  	// --------
+		// ENTERING
+		// --------
+		beforeEnter: function (el) {
+			const srcPath = $(el).attr('id');
+			const destPath = this.$route.name;
+					
+			this.transitionEvent.beforeEnter(srcPath, destPath);
+			this.$TransitionEventBus.$emit("beforeEnter");
+		},
+		// done 콜백은 CSS와 함께 사용할 때 선택 사항입니다.
+		enter: function (el, done) {
+			const srcPath = $(el).attr('id');
+			const destPath = this.$route.name;
+
+			this.transitionEvent.enter(srcPath, destPath, () => {
+				done();
+			});
+			this.$TransitionEventBus.$emit("enter");
+		},
+		afterEnter: function (el) {
+			const srcPath = $(el).attr('id');
+			const destPath = this.$route.name;
+
+			this.transitionEvent.afterEnter(srcPath, destPath);
+			this.$TransitionEventBus.$emit("afterEnter");
+		},
+
+		// --------
+		// LEAVING
+		// --------
+		beforeLeave: function (el) {
+			const srcPath = $(el).attr('id');
+			const destPath = this.$route.name;
+
+			this.transitionEvent.beforeLeave(srcPath, destPath);
+			this.$TransitionEventBus.$emit("beforeLeave");
+		},
+		
+		// done 콜백은 CSS와 함께 사용할 때 선택 사항입니다.
+		leave: function (el, done) {
+			const srcPath = $(el).attr('id');
+			const destPath = this.$route.name;
+
+			this.transitionEvent.leave(srcPath, destPath, () => {
+				done();
+			});
+			this.$TransitionEventBus.$emit("leave");
+		},
+		afterLeave: function (el) {
+			const srcPath = $(el).attr('id');
+			const destPath = this.$route.name;
+
+			this.transitionEvent.afterLeave(srcPath, destPath);
+			this.$TransitionEventBus.$emit("afterLeave");
+		},
   }
 };
 </script>
 
 <style>
-html {
-  /* scroll-behavior: smooth; */
-}
-
-html,
-body {
+html, body {
   font-family: 'Questrial';
   height: 100%;
 }
@@ -90,55 +165,58 @@ body.overflowHidden {
   margin-right: 120px;
 }
 
-.container {
-  height: 100%;
-  padding: 0px;
-}
-
 ul {
   padding: 0px;
   margin: 0;
 }
 
-/*************
-    Media
-*************/
+/* For fluid */
+.v-container-fluid {
+  max-width: 1296px;
+  margin: auto;
+  /* box-shadow: 5px 5px red inset; */
+}
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
+/* Media Queries */
+@media screen and (max-width:767px) {
+  .v-container-fluid {
+    max-width: 707px;
+	margin-left: 30px;
+	margin-right: 30px;
   }
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .v-container-fluid {
+    max-width: 1159px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .v-container-fluid {
+    max-width: 1119px;
+    margin-left: 160px;
+    margin-right: 160px;
   }
 }
 
-@media (min-width: 1530px) {
-  .container {
-    max-width: 1290px;
+@media screen and (min-width: 1440px) and (max-width: 1776px) {
+  .v-container-fluid {
+    margin-left: 240px;
+    margin-right: 240px;
   }
 }
 
-@media (max-width: 768px) {
-	.container {
-		padding-left:10px;
-		padding-right:10px;
-	}	
+@media screen and (min-width: 1777px) {
+  .v-container-fluid {
+    width: 1296px;
+    margin: auto;
+  }
 }
 
-/* Transistion */
-.fade-enter-active, .fade-leave-active {
-  transition-duration: 0.3s;
-}
+
 
 /* Override Bootstrap */
 .row>[class*="col"] {
@@ -150,8 +228,6 @@ ul {
   margin-right: 0;
   margin-left: 0;
 }
-
-
 
 /* Animatable */
 .animatable {

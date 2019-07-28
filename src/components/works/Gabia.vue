@@ -2,7 +2,7 @@
     <div class="portfolio-works">
         <!-- Overview -->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
                         <div class="portfolio-work-title subtitle-sm">Overview</div>
@@ -29,7 +29,7 @@
 
         <!-- The Problem -->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="portfolio-work-title subtitle-sm">The Problem</div>
@@ -64,7 +64,7 @@
 
         <!-- Challenge -->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="portfolio-work-title subtitle-sm">Challenge</div>
 
                 <div class="row">
@@ -89,7 +89,7 @@
 
         <!-- Ideation-->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="offset-md-3 col-md-9">
                         <div class="portfolio-work-title subtitle-sm">Ideation</div>
@@ -113,7 +113,7 @@
 
         <!-- Goals-->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="offset-md-3 col-md-9">
                         <div class="portfolio-work-title subtitle-sm">Goals</div>
@@ -134,7 +134,7 @@
 
         <!-- Concept -->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="col-md-4">
                         <span class="portfolio-work-title subtitle-sm">Concept</span>
@@ -167,7 +167,7 @@
 
         <!-- Iteration -->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="offset-md-1 col-md-4">
                         <img src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration gif"/>
@@ -201,7 +201,7 @@
 
         <!-- Before & After -->
         <div class="portfolio-work-wrap" style="background-color: black;">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row" style="margin-top: 200px;">
                     <div class="col-md-5">
                         <video style="width:100%; max-height: 900px;" controls>
@@ -239,7 +239,7 @@
         <!-- Solution -->
         <div class="portfolio-work-wrap animatable fadeInUp">
             
-            <!-- <div class="portfolio-work container">
+            <!-- <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="col-md-7" style="display: flex; align-items: center;">
                         <div class="row">
@@ -268,7 +268,7 @@
             </div> -->
 
 
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
 
                 <div style="display:flex; align-items: center;">
                     <div style="flex: 7;">
@@ -377,7 +377,7 @@
 
         <!-- Retrospective-->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work container">
+            <div class="portfolio-work v-container-fluid">
                 <div class="row">
                     <div class="offset-md-3 col-md-9">
                         <div class="portfolio-work-title subtitle-sm">Retrospective</div>
