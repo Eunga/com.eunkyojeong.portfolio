@@ -322,6 +322,10 @@ export default {
     padding-left: 30px !important;
     padding-right: 30px !important;
   }
+
+  .detail .portfolio-item-brief {
+    top: 200px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -331,6 +335,10 @@ export default {
 
     padding-left: 60px !important;
     padding-right: 60px !important;
+  }
+
+  .detail .portfolio-item-brief {
+    top: 200px;
   }
 }
 
