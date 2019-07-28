@@ -338,7 +338,7 @@ export default {
   }
 
   .detail .portfolio-item-brief {
-    top: 200px;
+    top: 110px;
   }
 }
 
