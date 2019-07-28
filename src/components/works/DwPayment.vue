@@ -198,8 +198,7 @@
                     </div>
                 </div>
 
-                <h3>Iteration 수정가능성이 다분하다고 하셔서, 대충 만듦</h3>
-
+                <!-- TODO: Iteration 수정가능성이 다분하다고 하셔서, 대충 만듦 -->
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <!-- Wireframing -->
