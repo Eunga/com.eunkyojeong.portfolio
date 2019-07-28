@@ -12,6 +12,17 @@
                 <div class="portfolio-item-nav-title">
                     {{ prev.title }}
                 </div>
+
+                <div class="portfolio-item-nav-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="20" viewBox="0 0 48 20">
+                        <g transform="translate(1498 14560.582) rotate(180)">
+                            <rect class="a" width="48" height="20" transform="translate(1450 14540.581)" />
+                            <line class="b" x2="44" transform="translate(1451 14551.081)" />
+                            <path class="b" d="M1658.573,18177.992l8.75,8.752-8.75,8.748" transform="translate(-171.219 -3635.91)" />
+                        </g>
+                    </svg>
+                    <!-- <ArrowPrevSvg /> -->
+                </div>
             </div>            
             <div class="portfolio-item-nav-item portfolio-item-nav-next" v-on:click="goOtherWork(next)">
                 <div class="portfolio-item-nav-id">
@@ -21,14 +32,32 @@
                 <div class="portfolio-item-nav-title">
                     {{ next.title }}
                 </div>
+
+                <div class="portfolio-item-nav-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="20" viewBox="0 0 48 20">
+                        <g transform="translate(-1450 -14540.581)">
+                            <rect class="a" width="48" height="20" transform="translate(1450 14540.581)" />
+                            <line class="b" x2="44" transform="translate(1451 14551.081)" />
+                            <path class="b" d="M1658.573,18177.992l8.75,8.752-8.75,8.748" transform="translate(-171.219 -3635.91)" />
+                        </g>
+                    </svg>
+                    <!-- <ArrowNextSvg /> -->
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import ArrowPrevSvg from '@/assets/img/common/ico_arrow_previous.svg';
+import ArrowNextSvg from '@/assets/img/common/ico_arrow_next.svg';
+
 export default {
     name: 'PortfolioItemDetail',
+    components: {
+        ArrowPrevSvg,
+        ArrowNextSvg,  
+    },
     props: {
         work: {
             type: Object,
@@ -85,6 +114,16 @@ export default {
 </script>
 
 <style>
+.portfolio-item-nav-item svg .a {
+    fill:rgba(255,0,0,0);
+}
+
+.portfolio-item-nav-item svg .b {
+    fill:none;
+    stroke:#000;
+    stroke-width:2px;
+}
+
 .portfolio-item-nav {
     padding-top: 120px;
     border-top: solid 1px #dddddd;
