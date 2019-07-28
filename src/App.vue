@@ -177,6 +177,47 @@ ul {
   /* box-shadow: 5px 5px red inset; */
 }
 
+/* Media Queries */
+@media screen and (max-width:767px) {
+  .v-container-fluid {
+    max-width: 707px;
+	margin-left: 30px;
+	margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .v-container-fluid {
+    max-width: 1159px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  .v-container-fluid {
+    max-width: 1119px;
+    margin-left: 160px;
+    margin-right: 160px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1776px) {
+  .v-container-fluid {
+    margin-left: 240px;
+    margin-right: 240px;
+  }
+}
+
+@media screen and (min-width: 1777px) {
+  .v-container-fluid {
+    width: 1296px;
+    margin: auto;
+  }
+}
+
+
+
 /* Override Bootstrap */
 .row>[class*="col"] {
   padding-right:0;

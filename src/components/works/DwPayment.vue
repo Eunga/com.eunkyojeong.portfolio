@@ -4,7 +4,7 @@
         <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work v-container-fluid">
                 <div class="row">
-                    <div class="col-sm-6 col-xs-12">
+                    <div class="order-sm-last order-md-1 col-md-6 col-sm-12 ">
                         <div class="portfolio-work-title subtitle-sm">Overview</div>
                         <div>
                             In 2018 summer, Daum Webtoon has finally introduced the new payment service for users to purchase the paid contents via iOS app as well as web app. For this service, I have designed the UI and the process for purchasing pay contents and recharging Webtoon Cash (Cash). Then, I made some improvements to the existing design as every design should be updated, and eventually I had a chance to present a better idea for the enhanced version of purchasing pay contents.
@@ -13,32 +13,41 @@
                             <i style="color:#bbbbbb;">All information in this case study is my own and does not necessarily reflect the views of Daum Webtoon Company.</i>
                         </div>
                     </div>
-                    <div class="offset-sm-3 col-sm-3 offset-xs-0 col-xs-12">
+
+                    <div class="order-sm-1 order-md-last work-meta-sm offset-md-4 col-md-2 offset-sm-0 col-sm-12 offset-xs-0 col-xs-12">
                         <div class="row" style="margin-bottom: 10px;">
-                            <div class="portfolio-work-title subtitle-sm subtitle col-sm-4">Date</div>
-                            <div class="col-sm-8">December 2018</div>
+                            <div class="portfolio-work-title subtitle-sm subtitle col-md-12 col-sm-3">Date</div>
+                            <div class="col-md-12 col-sm-9">December 2018</div>
                         </div>
 
                         <div class="row">
-                            <div class="portfolio-work-title subtitle-sm subtitle col-sm-4">Role</div>
-                            <div class="col-sm-8">Product Designer</div>
+                            <div class="portfolio-work-title subtitle-sm subtitle col-md-12 col-sm-3">Role</div>
+                            <div class="col-md-12 col-sm-9">Product Designer</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+
+
         <!-- Challenge -->
         <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work v-container-fluid">
-                <div class="portfolio-work-title subtitle-sm">Challenge</div>
-
                 <div class="row">
-                    <div class="col-sm-4">
-                        <div class="portfolio-work-title subtitle-lg" style="width: 315px;">Better usability for heavy users</div>
+                    <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+                        <div class="portfolio-work-title subtitle-sm">Challenge</div>
                     </div>
+                </div>
 
-                    <div class="col-sm-6">
+                <!-- Better usability for heavy users -->
+                <div class="row">
+                    <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+                        <div class="portfolio-work-title subtitle-lg">Better usability for heavy users</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
                         Since the successful launch of Daum Webtoon 2.0, it had provided improvements of the user experience for all users which brought a sharp 200% increase in comics sales. Our next goal was to upgrade the app for heavy users who use every day and purchase a large volume of our pay comics.
                         <br/><br/>
                         and the basic goal was to : <br/>
@@ -53,32 +62,39 @@
         <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work v-container-fluid">
                 <div class="row">
-                    <div class="offset-sm-1 col-sm-4">
+                    <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
                         <div class="portfolio-work-title subtitle-sm">The Problem</div>
                     </div>
-
-                    <div class="col-sm-6">
-                        <div>
-                            <div class="portfolio-work-title subtitle-lg">Right from the user</div>
-                        </div>
-
-                        <div style="margin-bottom:124px;">
-                            "Whenever I was binge-reading the Webtoon, the pop-ups kept popping up asking me to pay 200KRW every time I try to get to the following episodes. Sometimes I gave up reading when I felt lazy to make each purchase for each episode."
-                        </div>
+                </div>
 
 
-                        <div>
-                            <div class="portfolio-work-title subtitle-lg">Pain Point</div>
-                        </div>
+                <!-- Right from the user -->
+                <div class="row">
+                    <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+                        <div class="portfolio-work-title subtitle-lg">Right from the user</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+                        "Whenever I was binge-reading the Webtoon, the pop-ups kept popping up asking me to pay 200KRW every time I try to get to the following episodes. Sometimes I gave up reading when I felt lazy to make each purchase for each episode."
+                    </div>
+                </div>
 
-                        <div>
-                            When you are reading in the view page and if you are willing to make payments for the pay episodes, it can be cumbersome to go through the same payment process over and over again, which usually breaks the flow which is a huge distraction for readers.
-                        </div>
+
+                <!-- Pain Point -->
+                <div class="row" style="margin-top: 120px;">
+                    <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+                        <div class="portfolio-work-title subtitle-lg">Pain Point</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+                        When you are reading in the view page and if you are willing to make payments for the pay episodes, it can be cumbersome to go through the same payment process over and over again, which usually breaks the flow which is a huge distraction for readers.
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="offset-sm-5 col-sm-7 col-xs-12">
+                    <div class="offset-md-1 col-md-10 offset-sm-0 col-sm-12">
                         <img src="../../assets/img/portfolio/dw/portfolio-dw-painpoint.png" alt="painpoint"/>
                     </div>
                 </div>
@@ -90,19 +106,117 @@
         <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work v-container-fluid">
                 <div class="row">
-                    <div class="offset-sm-3 col-sm-9">
+                    <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
                         <div class="portfolio-work-title subtitle-sm">Ideation</div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="offset-sm-3 col-sm-6">
+                    <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
                         Through competitor analysis, I gained an insight that the simpler the process was the easier it felt and looked for customers to make the payment. Simple and easy dialog popups for payment in one service was a good example that showed this insight. This also led me to think that we could skip the redundant step through skipping a confirmation pop-up, or combine the two separate invoices and cash recharge pages into one so that you can check how much cash you have left and make the purchase from the same page.
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="offset-sm-3 col-sm-7 col-xs-12">
+                    <div class="offset-md-1 col-md-10 offset-sm-0 col-sm-12">
+                        <img src="../../assets/img/portfolio/dw/portfolio-dw-ideation.png" alt="ideation"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Goals-->
+        <div class="portfolio-work-wrap animatable fadeInUp">
+            <div class="portfolio-work v-container-fluid">
+                <div class="row">
+                    <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+                        <div class="portfolio-work-title subtitle-sm">Goals</div>
+                    </div>
+                </div>
+
+                <!-- 1. Enable full payment for all or selected episodes at once for each webtoon.  -->
+                <div class="row">
+                    <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+                        <div class="portfolio-work-title subtitle-lg">1. Enable full payment for all or selected episodes at once for each webtoon.</div>
+                    </div>
+                </div>
+
+                <!-- 2. Omit redundant steps to offer faster and easier service.  -->
+                <div class="row">
+                    <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+                        <div class="portfolio-work-title subtitle-lg">2. Omit redundant steps to offer faster and easier service.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Concept -->
+        <div class="portfolio-work-wrap animatable fadeInUp">
+            <div class="portfolio-work v-container-fluid">
+                <div class="row">
+                    <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+                        <div class="portfolio-work-title subtitle-sm">Concept</div>
+                    </div>
+                </div>
+
+                <!-- Distinct and Consistent Color -->
+                <div class="row">
+                    <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+                        <div class="portfolio-work-title subtitle-lg">Distinct and Consistent Color</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+                        The main color of the app is red except gold that is used for all cash-related icons and texts. So the users could easily recognize what they are doing without trying.
+                    </div>
+                </div>
+
+                <!-- Clarity -->
+                <div class="row" style="margin-top: 120px;">
+                    <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+                        <div class="portfolio-work-title subtitle-lg">Clarity</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+                        Since the name of credit is Cash, and I thought this concept could confuse users, so I used ‘C’ as in a distinctive icon for online currency, and mark ‘W’ for the real money for clarification
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Iteration -->
+        <div class="portfolio-work-wrap animatable fadeInUp">
+            <div class="portfolio-work v-container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="portfolio-work-title subtitle-sm">Iteration</div>
+                    </div>
+                </div>
+
+                <h3>Iteration 수정가능성이 다분하다고 하셔서, 대충 만듦</h3>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <!-- Wireframing -->
+                        <div>
+                            <div class="portfolio-work-title subtitle-lg">Wireframing</div>
+                            <span>Based on essential and non-essential information, it was sorted to show readers only the minimal range of information to proceed with the payment.</span>
+                        </div>
+
+                        <!-- Prototyping -->
+                        <div>
+                            <div class="portfolio-work-title subtitle-lg">Prototyping</div>
+                            <span>Prototypes were made to test if each stage smoothly links and proceeds.</span>
+                        </div>
+                    </div>
+
+
+                    <div class="offset-md-1 col-md-7 offset-sm-0 col-sm-6 col-xs-12">
                         <img src="../../assets/img/portfolio/dw/portfolio-dw-ideation.png" alt="ideation"/>
                     </div>
                 </div>
@@ -112,99 +226,11 @@
 
 
 
-        <!-- Goals-->
-        <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work v-container-fluid">
-                <div class="row">
-                    <div class="offset-sm-3 col-sm-9">
-                        <div class="portfolio-work-title subtitle-sm">Goals</div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="offset-sm-3 col-sm-6" style="font-family: Questrial; font-size: 40px; line-height: 48px;">
-                        1. Enable full payment for all or selected episodes at once for each webtoon. 
-                        <br/><br/>
-                        2. Omit redundant steps to offer faster and easier service.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-
-        <!-- Concept -->
-        <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work v-container-fluid">
-                <div class="row">
-                    <div class="offset-sm-1 col-sm-4">
-                        <span class="portfolio-work-title subtitle-sm">Concept</span>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div>
-                            <span class="portfolio-work-title subtitle-lg">Distinct and Consistent Color</span>
-                        </div>
-
-                        <div style="margin-bottom:124px;">
-                            The main color of the app is red except gold that is used for all cash-related icons and texts. So the users could easily recognize what they are doing without trying.
-                        </div>
-
-
-                        <div>
-                            <span class="portfolio-work-title subtitle-lg">Clarity</span>
-                        </div>
-
-                        <div>
-                            Since the name of credit is Cash, and I thought this concept could confuse users, so I used ‘C’ as in a distinctive icon for online currency, and mark ‘W’ for the real money for clarification
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <!-- Iteration -->
-        <div class="portfolio-work-wrap animatable fadeInUp">
-            <div class="portfolio-work v-container-fluid">
-                <div class="row">
-                    <div class="offset-sm-1 col-sm-4 offset-sm-1">
-                        <img src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration gif"/>
-                    </div>
-
-                    <div class="offset-sm-1 col-sm-6">
-
-                        <div>
-                            <div class="portfolio-work-title subtitle-sm">Iteration</div>
-
-                            <div class="portfolio-work-title subtitle-lg">Wireframing</div>
-
-                            <div style="margin-bottom:200px;">
-                                Based on essential and non-essential information, it was sorted to show readers only the minimal range of information to proceed with the payment.
-                            </div>
-                        </div>
-
-
-                        <div>
-                            <div class="portfolio-work-title subtitle-lg">Prototyping</div>
-
-                            <div style="margin-bottom:200px;">
-                                Prototypes were made to test if each stage smoothly links and proceeds.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <!-- Before & After -->
         <div class="portfolio-work-wrap" style="background-color: black;">
             <div class="portfolio-work v-container-fluid">
                 <div class="row" style="margin-top: 200px;">
-                    <div class="col-sm-5">
+                    <div class="col-sm-5 col-xs-12">
                         <video style="width:100%; max-height: 900px;" controls>
                             <source src="../../assets/img/portfolio/dw/portfolio-dw-before.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -215,13 +241,16 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-2" style="display:flex; align-items: center; justify-content: center;">
-                        <div style="color:white; font-size: 40px;">
-                            >
-                        </div>
+                    <div id="arrowAfterAndBefore" class="col-sm-2 hidden-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="80" viewBox="0 0 40 80">
+                            <g transform="translate(-940 -7491)">
+                                <rect class="a" width="40" height="80" transform="translate(940 7491)" />
+                                <path class="b" d="M105.523,9622.243l33.767,33.767-33.767,33.768" transform="translate(837.593 -2124.743)" />
+                            </g>
+                        </svg>
                     </div>
 
-                    <div class="col-sm-5">
+                    <div class="col-sm-5 col-xs-12">
                         <video style="width:100%; max-height: 900px;" controls>
                             <source src="../../assets/img/portfolio/dw/portfolio-dw-before.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -239,166 +268,74 @@
 
         <!-- Solution -->
         <div class="portfolio-work-wrap animatable fadeInUp">
-            
-            <!-- <div class="portfolio-work v-container-fluid">
-                <div class="row">
-                    <div class="col-sm-7" style="display: flex; align-items: center;">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="portfolio-work-title subtitle-sm">Solution</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="portfolio-work-title subtitle-lg">Enabling Multiple purchases at once</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                Allow users to buy multiple episodes at once now also available via View page as well as Title home page.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-5">
-                        <img src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration gif"/>
-                    </div>
-                </div>
-            </div> -->
+            <div class="portfolio-work-wrap animatable fadeInUp">
+                <div class="portfolio-work v-container-fluid">
 
 
-            <div class="portfolio-work v-container-fluid">
-
-                <!-- <div style="display:flex; align-items: center;">
-                    <div style="flex: 7;">
-                        <div class="portfolio-work-title subtitle-sm">Solution</div>
-
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="portfolio-work-title subtitle-lg">Enabling Multiple purchases at once</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                Allow users to buy multiple episodes at once now also available via View page as well as Title home page.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="flex: 5;">
-                        <img src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png" alt="iteration gif"/>
-                    </div>
-                </div> -->
-
-
-                <div class="row">
-                    <div class="col-sm-6" style="display:table-cell">
-                        <div style="vertical-align: middle;">
+                    <!-- Enabling Multiple purchases at once -->
+                    <div class="row work-solution-align">
+                        <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
                             <div class="portfolio-work-title subtitle-sm">Solution</div>
 
-                            <div class="row">
-                                <div class="col-8 portfolio-work-title subtitle-lg">Enabling Multiple purchases at once</div>
-                            </div>
-
+                            
                             <div>
-                                Allow users to buy multiple episodes at once now also available via View page as well as Title home page.
+                                <div class="portfolio-work-title subtitle-lg">Enabling Multiple purchases at once</div>
+                                <span>Allow users to buy multiple episodes at once now also available via View page as well as Title home page.</span>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="offset-sm-2 col-sm-4 col-xs-12">
-                        <img src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png" alt="iteration gif"/>
-                    </div>
-                </div>
 
-<!-- 
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="portfolio-work-title subtitle-sm">Solution</div>
 
-                        <div class="portfolio-work-title subtitle-lg">Enabling Multiple purchases at once</div>
-
-                        <div>
-                            Allow users to buy multiple episodes at once now also available via View page as well as Title home page.
+                        <div class="offset-md-2 col-md-6 offset-md-right-0 offset-sm-2 col-sm-6 offset-xs-0 col-xs-12">
+                            <img src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png" alt="iteration gif"/>
                         </div>
                     </div>
-                    
-                    <div class="offset-sm-2 col-sm-4 col-xs-12">
-                        <img src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png" alt="iteration gif"/>
-                    </div>
-                </div> 
--->
 
+                    <!-- Instant feedback with micro-interactions -->
+                    <div class="row work-solution-align">
+                        <div class="order-md-1 order-sm-last col-md-6 offset-md-0 offset-md-right-2 offset-sm-2 offset-sm-right-0 col-sm-6 offset-xs-0 col-xs-12">
+                            <img src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png" alt="iteration gif"/>
+                        </div>
 
-
-
-                <div style="display:flex; align-items: center;">
-                    <div style="flex: 5;">
-                        <img src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png" alt="iteration gif"/>
-                    </div>
-                    
-                    
-                    <div style="flex: 7;">
-                        <div class="row">
-                            <div class="col-sm-4">
+                        <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+                            
+                            <div>
                                 <div class="portfolio-work-title subtitle-lg">Instant feedback with micro-interactions</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                It’s easy to understand, keeps users engaged in the process, and helps to accomplish the goal, purchasing.
+                                <span>It’s easy to understand, keeps users engaged in the process, and helps to accomplish the goal, purchasing.</span>
                             </div>
                         </div>
                     </div>
-                </div>
 
 
-                <div style="display:flex; align-items: center;">
-                    <div style="flex: 7;">
-                        <div class="row">
-                            <div class="col-sm-4">
+                    <!-- Simplifying the process -->
+                    <div class="row work-solution-align">
+                        <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+                            <div>
                                 <div class="portfolio-work-title subtitle-lg">Simplifying the process</div>
+                                <span>Generally, by omitting unnecessary steps for users, we could make the app to be simpler, thus easier to use for our users.</span>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-sm-6">
-                                Generally, by omitting unnecessary steps for users, we could make the app to be simpler, thus easier to use for our users.
-                            </div>
+
+                        <div class="offset-md-2 col-md-6 offset-md-right-0 offset-sm-2 col-sm-6 offset-xs-0 col-xs-12">
+                            <img src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png" alt="iteration gif"/>
                         </div>
                     </div>
 
-                    <div style="flex: 5;">
-                        <img src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration gif"/>
-                    </div>
-                </div>
+                    <!-- Offering the right choice -->
+                    <div class="row work-solution-align">
+                        <div class="order-md-1 order-sm-last col-md-6 offset-md-0 offset-md-right-2 offset-sm-2 offset-sm-right-0 col-sm-6 offset-xs-0 col-xs-12">
+                            <img src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png" alt="iteration gif"/>
+                        </div>
 
-
-                <div style="display:flex; align-items: center;">
-                    <div style="flex: 5;">
-                        <img src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration gif"/>
-                    </div>
-                    
-                    
-                    <div style="flex: 7;">
-                        <div class="row">
-                            <div class="col-sm-4">
+                        <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+                            
+                            <div>
                                 <div class="portfolio-work-title subtitle-lg">Offering the right choice</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                With the changes, users don’t need to think about how much Cash they have left as we provide the exact amount of cash you need to charge by omitting irrelevant amount based on purchase details.
+                                <span>With the changes, users don’t need to think about how much Cash they have left as we provide the exact amount of cash you need to charge by omitting irrelevant amount based on purchase details.</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -416,33 +353,22 @@
 
 
 
-
         <!-- Retrospective-->
         <div class="portfolio-work-wrap animatable fadeInUp">
             <div class="portfolio-work v-container-fluid">
                 <div class="row">
-                    <div class="offset-sm-3 col-sm-9">
+                    <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
                         <div class="portfolio-work-title subtitle-sm">Retrospective</div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="offset-sm-3 col-sm-6">
+                    <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
                         One day during a meeting, we were having a discussion about things that could be improved, and one thing we covered was some problems with the payment process on the app. This made me feel interested to tackle this in order to upgrade our service and it could have been a great chance for me to study more about the UX regarding the payment portion. So I studied and learned a lot coming up with the proposal with the solution that I shared with our team which then received positive feedback. We decided to kill the project, but it was a nice chance for our team and myself to learn more about the UX in the payment.
                     </div>
                 </div>
-
             </div>
         </div>
-
-
-
-
-
-
-
-
-
 
     </div>
 </template>
@@ -457,5 +383,29 @@ export default {
 </script>
 
 <style lang="scss">
+
+#arrowAfterAndBefore {
+    display:flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+#arrowAfterAndBefore svg .a {
+    fill:rgba(255,255,255,0);
+}
+
+#arrowAfterAndBefore svg .b {
+    fill:none;
+    stroke:#666;
+    stroke-width:2px;
+}
+
+@media screen and (min-width:1280px) {
+    .work-solution-align {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 </style>

@@ -25,11 +25,11 @@ export default {
     mounted() {
       const path = this.$route.name;
       if (path == 'home') {
-      $('#margin').addClass('home');
-          $('#margin').removeClass('detail');
+        $('#margin').addClass('home');
+        $('#margin').removeClass('detail');
       } else if (path == 'portfolio detail') {
-      $('#margin').addClass('detail');
-          $('#margin').removeClass('home');
+        $('#margin').addClass('detail');
+        $('#margin').removeClass('home');
       }
   }
 }
@@ -142,6 +142,10 @@ export default {
   top: -120px;
 }
 
+#portfolio #margin-bottom {
+  display: none;
+}
+
 /* Media Queries */
 @media screen and (max-width:767px) {
   .margin-vertical {
@@ -150,10 +154,6 @@ export default {
 
   .margin-horizontal {
     height: 48px;
-  }
-
-  .v-container-fluid {
-    max-width: 707px;
   }
 
   #margin-left::after, #margin-right::after {
@@ -166,12 +166,6 @@ export default {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .v-container-fluid {
-    max-width: 1159px;
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-
   .margin-horizontal {
     height: 80px;
   }
@@ -182,12 +176,6 @@ export default {
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
-  .v-container-fluid {
-    max-width: 1119px;
-    margin-left: 160px;
-    margin-right: 160px;
-  }
-
   #margin-left::after, #margin-right::after {
     width: 80px;
   }
@@ -198,11 +186,6 @@ export default {
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1776px) {
-  .v-container-fluid {
-    margin-left: 240px;
-    margin-right: 240px;
-  }
-
   #margin-left::after, #margin-right::after {
     width: 120px;
   }
@@ -213,11 +196,6 @@ export default {
 }
 
 @media screen and (min-width: 1777px) {
-  .v-container-fluid {
-    width: 1296px;
-    margin: auto;
-  }
-
   #margin-left::after, #margin-right::after {
     width: 120px;
   }
