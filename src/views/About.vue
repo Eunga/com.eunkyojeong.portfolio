@@ -5,7 +5,7 @@
     <div id="aboutProfileImage">
       <img src="../assets/img/about/img-profile.png">
     </div>
-     -->
+    -->
 
     <div class="row">
       <div id="aboutNameAndResume" class="col-xs-12 col-md-6">
@@ -13,7 +13,7 @@
         <div id="aboutResumeBtn">
           <a :href="resume" download target="_blank">
             <span>RESUME</span>
-            <img src="../assets/img/about/ico-download.png" alt="resume download"/>
+            <img src="../assets/img/about/ico-download.png" alt="resume download" />
           </a>
         </div>
       </div>
@@ -21,20 +21,17 @@
       <div class="col-xs-12 col-md-6">
         <div id="introduceHerSelf" v-html="introduce"></div>
 
-<!-- 
+        <!-- 
         <div id="aboutContact">
           <a href="tel:+821020077774" v-html="phoneNumber"></a>
         </div>
- -->
-<!--  
+        -->
+        <!--  
         <div id="aboutContact" v-html="email"></div>
--->
+        -->
 
         <div id="aboutContact">
-          <span class="aboutContactSns" 
-            v-for="(s, idx ) in sns" 
-            v-bind:key="s.id">
-
+          <span class="aboutContactSns" v-for="(s, idx ) in sns" v-bind:key="s.id">
             <a :href="s.url" :target="s.target" v-html="s.name"></a>
 
             <span class="aboutContactSnsDelimiter" v-if="idx < sns.length - 1 "></span>
@@ -46,23 +43,23 @@
 </template>
 
 <script>
-import Mask from './Mask'
+import Mask from "./Mask";
 
 export default {
   name: "About",
   components: {
-  	'app-mask': Mask
+    "app-mask": Mask
   },
   data: function() {
     return {
       about: this.$store.getters.about,
       sns: this.$store.getters.snsForAboutPage,
       resume: this.$store.getters.about.resume
-    }
+    };
   },
   computed: {
     introduce() {
-      return this.about.introduce.replace(/\n/g, '<br/>');
+      return this.about.introduce.replace(/\n/g, "<br/>");
     },
     email() {
       return this.about.email;
@@ -155,13 +152,13 @@ export default {
 }
 
 #aboutContact {
-  margin-top:30px;
+  margin-top: 30px;
 }
 #aboutContact a {
   font-family: HelveticaNeue;
   font-size: 20px;
   color: #bbbbbb;
-  transition: opacity .4s ease-out;
+  transition: opacity 0.4s ease-out;
   text-decoration: none;
 }
 
@@ -186,9 +183,9 @@ export default {
     margin-top: 60px;
     padding-top: 60px;
   }
-  
+
   #aboutNameAndResume {
-    margin-bottom: 20px
+    margin-bottom: 20px;
   }
 
   #aboutName {
