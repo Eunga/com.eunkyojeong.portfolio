@@ -190,15 +190,10 @@
     <!-- Iteration -->
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
-        <div class="row">
-          <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="row work-solution-align">
+          <div class="col-md-4 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">Iteration</div>
-          </div>
-        </div>
 
-        <!-- TODO: Iteration 수정가능성이 다분하다고 하셔서, 대충 만듦 -->
-        <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12">
             <!-- Wireframing -->
             <div>
               <div class="portfolio-work-title subtitle-lg">Wireframing</div>
@@ -212,18 +207,22 @@
             </div>
           </div>
 
-          <div class="offset-md-1 col-md-7 offset-sm-0 col-sm-6 col-xs-12">
-            <img src="../../assets/img/portfolio/dw/portfolio-dw-ideation.png" alt="ideation" />
+          <div
+            class="col-md-8 col-sm-12"
+          >
+            <img id="dw-ideation-anime" src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration anime" />
+            <img id="dw-ideation-frame" src="../../assets/img/portfolio/dw/portfolio-dw-iteration-frame.png" alt="iteration frame" />
           </div>
         </div>
       </div>
     </div>
 
+
     <!-- Before & After -->
     <div class="portfolio-work-wrap" style="background-color: black;">
       <div class="portfolio-work v-container-fluid">
-        <div class="row" style="margin-top: 200px;">
-          <div class="col-sm-5 col-xs-12">
+        <div class="row">
+          <div class="col-sm-5 offset-xs-2 col-xs-8">
             <video style="width:100%; max-height: 900px;" controls>
               <source src="../../assets/img/portfolio/dw/portfolio-dw-before.mp4" type="video/mp4" />Your browser does not support the video tag.
             </video>
@@ -244,7 +243,7 @@
             </svg>
           </div>
 
-          <div class="col-sm-5 col-xs-12">
+          <div class="col-sm-5 offset-xs-2 col-xs-8">
             <video style="width:100%; max-height: 900px;" controls>
               <source src="../../assets/img/portfolio/dw/portfolio-dw-before.mp4" type="video/mp4" />Your browser does not support the video tag.
             </video>
@@ -254,6 +253,7 @@
         </div>
       </div>
     </div>
+
 
     <!-- Solution -->
     <div class="portfolio-work-wrap animatable fadeInUp">
@@ -271,7 +271,7 @@
             </div>
 
             <div
-              class="offset-md-2 col-md-6 offset-md-right-0 offset-sm-2 col-sm-6 offset-xs-0 col-xs-12"
+              class="offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png"
@@ -283,7 +283,7 @@
           <!-- Instant feedback with micro-interactions -->
           <div class="row work-solution-align">
             <div
-              class="order-md-1 order-sm-last col-md-6 offset-md-0 offset-md-right-2 offset-sm-2 offset-sm-right-0 col-sm-6 offset-xs-0 col-xs-12"
+              class="order-md-1 order-sm-last col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png"
@@ -311,7 +311,7 @@
             </div>
 
             <div
-              class="offset-md-2 col-md-6 offset-md-right-0 offset-sm-2 col-sm-6 offset-xs-0 col-xs-12"
+              class="offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png"
@@ -323,7 +323,7 @@
           <!-- Offering the right choice -->
           <div class="row work-solution-align">
             <div
-              class="order-md-1 order-sm-last col-md-6 offset-md-0 offset-md-right-2 offset-sm-2 offset-sm-right-0 col-sm-6 offset-xs-0 col-xs-12"
+              class="order-md-1 order-sm-last col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png"
@@ -397,6 +397,21 @@ export default {
   stroke-width: 2px;
 }
 
+#dw-ideation-frame {
+  
+}
+
+#dw-ideation-anime {
+  position: absolute;
+  width: 39.5833333333%;
+  margin-left: 47.5694444444%;
+  z-index: 99;
+  margin-top: 11.2970711297%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 @media screen and (min-width: 1280px) {
   .work-solution-align {
     display: flex;
