@@ -144,10 +144,14 @@ html,
 body {
   font-family: "Questrial";
   height: 100%;
+  
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
 }
 
 body.overflowHidden {
   overflow: hidden;
+  
 }
 
 #app {

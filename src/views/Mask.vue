@@ -45,6 +45,7 @@ export default {
   width: 100vw;
   height: 100%;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   top: 0;
   bottom: 0;
   left: 0;
@@ -55,6 +56,7 @@ export default {
 .margin-vertical {
   height: 100%;
   position: fixed;
+  position: absolute;
   /* box-shadow: 5px 5px red inset; */
   z-index: 500;
   transition: all 0.3 ease-in;
@@ -63,6 +65,7 @@ export default {
 .margin-horizontal {
   width: 100%;
   position: fixed;
+  position: absolute;
   /* box-shadow: 5px 5px red inset; */
   z-index: 100;
 }

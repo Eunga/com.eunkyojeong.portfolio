@@ -130,6 +130,7 @@ export default {
   height: 100%;
   width: 100vw;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: fixed;
   left: 0;
   right: 0;
@@ -167,6 +168,8 @@ export default {
 .portfolio-item-content {
   position: relative;
   height: 100vh;
+  width: 100vw;
+  /* height: calc(var(--vh, 1vh) * 100); */
   left: 0;
   right: 0;
   top: 0;
@@ -286,6 +289,7 @@ export default {
   .portfolio-item-stuff {
     width: 100%;
     left: 0%;
+    top: 0%;
   }
 
   .portfolio-item-title {
@@ -312,12 +316,8 @@ export default {
 
 @media (min-width: 500px) and (max-width: 767px) {
   .portfolio-item-stuff {
-    top: 100px;
+    /* top: 100px; */
   }
-}
-
-.portfolio-item-content {
-  width: 100vw;
 }
 
 /* Media Queries */
@@ -327,6 +327,9 @@ export default {
     padding-bottom: 30px;
     padding-left: 30px !important;
     padding-right: 30px !important;
+
+    /* Mobile Browser에서는 Navigation/Addressbar가 있어서 이렇게 처리해줘야 함 */
+    height: calc(var(--vh, 1vh) * 100 - 30px);
   }
 
   .detail .portfolio-item-brief {

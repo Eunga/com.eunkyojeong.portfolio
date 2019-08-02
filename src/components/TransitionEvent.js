@@ -57,6 +57,15 @@ export default class TransitionEvent {
     $('.detail .portfolio-work-count').css({
       'visibility': 'visible'
     });
+
+    $('#portfolio-meta').attr({
+        'style': 'height: 100% !important;'
+    });
+
+    $('.detail .portfolio-item-brief').attr({
+      'style': 'top: initial !important',
+    });
+
     $('.detail .portfolio-item-brief').animate({
       'bottom': '0px'
     }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
@@ -94,8 +103,16 @@ export default class TransitionEvent {
       'visibility': 'hidden'
     });
 
+    const widthOfWindow = window.innerWidth;
+    let topOfPortfolioItemBrief = 0;
+    if (widthOfWindow < 768) {
+      topOfPortfolioItemBrief = 200;
+    } else if ((widthOfWindow >= 768) && (widthOfWindow < 1280))  {
+      topOfPortfolioItemBrief = 110;
+    }
+
     $('.list .portfolio-item-brief').animate({
-      'top': '0px',
+      'top': `${topOfPortfolioItemBrief}px`,
     }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
     $('.list .portfolio-item-subtitle').animate({

@@ -67,6 +67,7 @@ export default {
 @media screen and (max-width: 767px) {
   #portfolio {
     height: 100%;
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 
