@@ -1,8 +1,10 @@
 <template>
-  <div class="portfolio-item carousel-item"
-    v-bind:class="[{ active: isActive(), detail: isDetail, list: !isDetail}, theme() ]">
+  <div
+    class="portfolio-item carousel-item"
+    v-bind:class="[{ active: isActive(), detail: isDetail, list: !isDetail}, theme() ]"
+  >
     <div class="portfolio-item-background">
-      <img class="portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)"/>
+      <img class="portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)" />
     </div>
 
     <div class="portfolio-item-content carousel-caption d-md-block" @click="goPortfolioDetail">
@@ -10,11 +12,11 @@
         <div class="portfolio-item-stuff">
           <img :src="getImgUrl(work.stuff.url)" />
         </div>
-        
+
         <div class="portfolio-item-brief">
           <div class="portfolio-work-count">
-            <span class="portfolio-work-count-current">{{ getWorkIdNumber() }}</span> 
-            <span class="portfolio-work-count-delimeter">  / </span>
+            <span class="portfolio-work-count-current">{{ getWorkIdNumber() }}</span>
+            <span class="portfolio-work-count-delimeter">/</span>
             <span class="portfolio-work-count-all">{{ getCountOfAllWorks() }}</span>
           </div>
 
@@ -32,6 +34,8 @@
 </template>
 
 <script>
+;
+
 export default {
   name: "PortfolioItem",
   props: {
@@ -51,32 +55,36 @@ export default {
     },
     isActive() {
       let obj = {
-        work: this.work,
+        work: this.work
       };
-      this.$store.commit('amIActive', obj);
+      this.$store.commit("amIActive", obj);
       return obj.isActive;
     },
     getWorkTitle() {
-      const title = this.work.title.replace(/\n/g, '<br/>');
+      const title = this.work.title.replace(/\n/g, "<br/>");
       return title;
     },
     getWorkSubtitle() {
-      const subtitle = this.work.subtitle.replace(/\n/g, '<br/>');
+      const subtitle = this.work.subtitle.replace(/\n/g, "<br/>");
       return subtitle;
     },
     getImgUrl(pet) {
       try {
-        const images = require.context('../../assets/img/portfolio', true, /\.png$/);
-        const image = images('./' + pet + '.png');
+        const images = require.context(
+          "../../assets/img/portfolio",
+          true,
+          /\.png$/
+        );
+        const image = images("./" + pet + ".png");
         return image;
       } catch (e) {
         return pet;
       }
     },
     goPortfolioDetail() {
-      $('#portfolio').addClass('transition');
-      this.$store.commit('changeCurrentWorkId', this.work.id);
-      this.$router.push({ path: `/portfolio/${this.work.path}`});
+      $("#portfolio").addClass("transition");
+      this.$store.commit("changeCurrentWorkId", this.work.id);
+      this.$router.push({ path: `/portfolio/${this.work.path}` });
     },
     getWorkIdNumber() {
       return this.numberFormatWithTwoDigits(this.work.id + 1);
@@ -88,16 +96,15 @@ export default {
     numberFormatWithTwoDigits(number) {
       let countStr;
       if (number < 10) {
-        countStr = '0' + number;
+        countStr = "0" + number;
       } else {
-        countStr = '' + number;
+        countStr = "" + number;
       }
 
       return countStr;
     }
-  },
+  }
 };
-
 </script>
 
 <style>
@@ -106,12 +113,16 @@ export default {
   height: 100%;
 }
 
-.portfolio-item.white .portfolio-item-count, .portfolio-item.white .portfolio-item-title, .portfolio-item.white .portfolio-item-subtitle {
-  color:white;
+.portfolio-item.white .portfolio-item-count,
+.portfolio-item.white .portfolio-item-title,
+.portfolio-item.white .portfolio-item-subtitle {
+  color: white;
 }
 
-.portfolio-item.black .portfolio-item-count, .portfolio-item.black .portfolio-item-title, .portfolio-item.black .portfolio-item-subtitle {
-  color:black;
+.portfolio-item.black .portfolio-item-count,
+.portfolio-item.black .portfolio-item-title,
+.portfolio-item.black .portfolio-item-subtitle {
+  color: black;
 }
 
 .portfolio-item-background {
@@ -119,11 +130,12 @@ export default {
   height: 100%;
   width: 100vw;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: fixed;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   overflow: hidden;
-  margin:0;
+  margin: 0;
   transition: all 0.3s ease-in;
 }
 
@@ -143,7 +155,7 @@ export default {
   position: relative;
   float: right;
   width: 50%;
-  top:10%;
+  top: 10%;
 }
 
 .portfolio-item-stuff img {
@@ -156,16 +168,18 @@ export default {
 .portfolio-item-content {
   position: relative;
   height: 100vh;
+  width: 100vw;
+  /* height: calc(var(--vh, 1vh) * 100); */
   left: 0;
   right: 0;
   top: 0;
-  cursor:pointer;
+  cursor: pointer;
   padding: 0px;
 }
 
 .portfolio-item-brief-wrapper {
-  transition: all .3s ease-out;
-  position: relative;;
+  transition: all 0.3s ease-out;
+  position: relative;
   height: 100%;
 }
 
@@ -178,7 +192,6 @@ export default {
 }
 
 .detail .portfolio-item-brief {
-  
 }
 
 .portfolio-item-title {
@@ -215,7 +228,7 @@ export default {
 .detail .portfolio-item-subtitle::before {
   margin-top: 84px;
   margin-bottom: 40px;
-  content: ' ';
+  content: " ";
   width: 50px;
   height: 1px;
   border-bottom: 2px solid black;
@@ -226,7 +239,7 @@ export default {
   border-bottom: 2px solid white;
 }
 
-.portfolio-item.white .portfolio-work-count-current, 
+.portfolio-item.white .portfolio-work-count-current,
 .portfolio-item.white .portfolio-work-count {
   color: white;
 }
@@ -235,12 +248,10 @@ export default {
   color: black;
 }
 
-
-
 .portfolio-work-count {
   position: relative;
 
-  color:black;
+  color: black;
   font-family: Questrial;
   font-size: 24px;
   font-weight: normal;
@@ -249,7 +260,7 @@ export default {
   line-height: 1.04;
   letter-spacing: normal;
   text-align: left;
-  
+
   margin-bottom: 28px;
 }
 
@@ -265,8 +276,9 @@ export default {
   font-weight: bold;
 }
 
-.portfolio-work-count-all, .portfolio-work-count-delimeter {
-  opacity: .3;
+.portfolio-work-count-all,
+.portfolio-work-count-delimeter {
+  opacity: 0.3;
 }
 
 @media (max-width: 767px) {
@@ -277,6 +289,7 @@ export default {
   .portfolio-item-stuff {
     width: 100%;
     left: 0%;
+    top: 0%;
   }
 
   .portfolio-item-title {
@@ -303,24 +316,20 @@ export default {
 
 @media (min-width: 500px) and (max-width: 767px) {
   .portfolio-item-stuff {
-    top: 100px;
+    /* top: 100px; */
   }
 }
 
-
-
-.portfolio-item-content {
-  width: 100vw;
-}
-
-
 /* Media Queries */
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .portfolio-item-content {
-    padding-top:48px;
+    padding-top: 48px;
     padding-bottom: 30px;
     padding-left: 30px !important;
     padding-right: 30px !important;
+
+    /* Mobile Browser에서는 Navigation/Addressbar가 있어서 이렇게 처리해줘야 함 */
+    height: calc(var(--vh, 1vh) * 100 - 30px);
   }
 
   .detail .portfolio-item-brief {
@@ -330,7 +339,7 @@ export default {
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .portfolio-item-content {
-    padding-top:80px;
+    padding-top: 80px;
     padding-bottom: 180px;
 
     padding-left: 60px !important;
@@ -344,7 +353,7 @@ export default {
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
   .portfolio-item-content {
-    padding-top:80px;
+    padding-top: 80px;
     padding-left: 160px !important;
     padding-right: 160px !important;
     padding-bottom: 160px;
@@ -353,7 +362,7 @@ export default {
 
 @media screen and (min-width: 1440px) and (max-width: 1776px) {
   .portfolio-item-content {
-    padding-top:120px;
+    padding-top: 120px;
 
     padding-left: 240px !important;
     padding-right: 240px !important;
@@ -365,7 +374,7 @@ export default {
   .portfolio-item-content {
     width: 1296px;
     margin: auto !important;
-    padding-top:120px;
+    padding-top: 120px;
 
     /* TODO: 계산해야함 */
     padding-bottom: 250px;

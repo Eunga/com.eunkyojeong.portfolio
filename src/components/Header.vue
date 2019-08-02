@@ -1,61 +1,69 @@
 <template>
-    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light"
-      v-bind:class="[theme]">
-      <router-link class="navbar-brand" to="/" style="z-index:10">EUNKYO JEONG</router-link>
-      <button
-        class="navbar-toggler" type="button"
-        data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarNav"></div>
-      <span class="navLink">
-        <router-link id="navPortfolio" to="/" class="nav-link" 
-          :class="{'router-link-exact-active': isActivePortfolio()}">Portfolio</router-link>
-      </span>
-      <span class="navLink">
-        <router-link id="navAbout" to="/about" class="nav-link">About</router-link>
-      </span>
-    </nav>
+  <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light" v-bind:class="[theme]">
+    <router-link class="navbar-brand" to="/" style="z-index:10">EUNKYO JEONG</router-link>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav"></div>
+    <span class="navLink">
+      <router-link
+        id="navPortfolio"
+        to="/"
+        class="nav-link"
+        :class="{'router-link-exact-active': isActivePortfolio()}"
+      >Portfolio</router-link>
+    </span>
+    <span class="navLink">
+      <router-link id="navAbout" to="/about" class="nav-link">About</router-link>
+    </span>
+  </nav>
 </template>
 
 <script>
 export default {
-    name: 'Header',
-    methods: {
-      isActivePortfolio() {
-        const name = this.$route.name;
-        if (name == 'about') {
-          return false;
-        }
-        return true
+  name: "Header",
+  methods: {
+    isActivePortfolio() {
+      const name = this.$route.name;
+      if (name == "about") {
+        return false;
       }
-    },
-    data: function() {
-      return {
-        theme: 'black',
+      return true;
+    }
+  },
+  data: function() {
+    return {
+      theme: "black"
+    };
+  },
+  watch: {
+    $route(to, from) {
+      if (to.name == "portfolio detail") {
+        const work = this.$store.getters.workFromPath(to.path);
+        this.theme = work.theme;
+      } else {
+        this.theme = "black";
       }
-    },
-    watch: {
-      $route(to, from) {
-        if (to.name == 'portfolio detail') {
-          const work = this.$store.getters.workFromPath(to.path);
-          this.theme = work.theme;
-        } else {
-          this.theme = 'black';
-        }
-      }
-    },
-    mounted() {
-      if (this.$route.name == 'portfolio detail') {
-          const work = this.$store.getters.workFromPath(this.$route.path);
-          this.theme = work.theme;
-        } else {
-          this.theme = 'black';
-        }
-    },
-}
+    }
+  },
+  mounted() {
+    if (this.$route.name == "portfolio detail") {
+      const work = this.$store.getters.workFromPath(this.$route.path);
+      this.theme = work.theme;
+    } else {
+      this.theme = "black";
+    }
+  }
+};
 </script>
 
 <style scoped>
@@ -66,11 +74,11 @@ export default {
 #header {
   padding: 0px;
   position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  left:0;
-  z-index:500;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  z-index: 500;
   background-color: transparent !important;
 }
 
@@ -95,16 +103,18 @@ export default {
   line-height: 1.05;
   letter-spacing: -0.4px;
   text-align: left;
-  opacity:0.3;
+  opacity: 0.3;
   color: black;
-  transition: opacity .4s ease-out;
+  transition: opacity 0.4s ease-out;
 }
 
-#header.white .navbar-brand, #header.black .nav-link {
+#header.white .navbar-brand,
+#header.black .nav-link {
   color: black;
 }
 
-#header.white .navbar-brand, #header.white .nav-link {
+#header.white .navbar-brand,
+#header.white .nav-link {
   color: white;
 }
 
@@ -113,7 +123,7 @@ export default {
 }
 
 .nav-link.router-link-exact-active {
-  opacity:1;
+  opacity: 1;
 }
 
 .navbar-brand {
@@ -128,7 +138,7 @@ export default {
 }
 
 /* Media Queries */
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   #header {
     height: 48px;
     padding: 0px 30px;

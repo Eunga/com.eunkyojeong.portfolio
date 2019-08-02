@@ -1,25 +1,23 @@
 <template>
-  <div id='portfolio'>
+  <div id="portfolio">
     <app-mask />
-    <portfolio-list
-      v-on:goPortfolioDetail="goPortfolioDetail($event)"/>
+    <portfolio-list v-on:goPortfolioDetail="goPortfolioDetail($event)" />
 
     <div id="portfolio-bottom-mask"></div>
   </div>
-
 </template>
 
 <script>
-import Mask from './Mask'
-import PortfolioList from '@/components/portfolio/PortfolioList.vue'
+import Mask from "./Mask";
+import PortfolioList from "@/components/portfolio/PortfolioList.vue";
 
 export default {
-  name: 'Portfolio',
-  components: { 
-    'portfolio-list': PortfolioList,
-    'app-mask': Mask
-  },
-}
+  name: "Portfolio",
+  components: {
+    "portfolio-list": PortfolioList,
+    "app-mask": Mask
+  }
+};
 </script>
 
 <!-- Add 'scoped' attribute to limit CSS to this component only -->
@@ -36,10 +34,10 @@ export default {
 
 #portfolio-bottom-mask {
   position: absolute;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   background-color: white;
-  top:100%;
+  top: 100%;
 }
 
 #portfolio-list > ul {
@@ -66,9 +64,10 @@ export default {
 }
 
 /* Media Queries */
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   #portfolio {
     height: 100%;
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 
