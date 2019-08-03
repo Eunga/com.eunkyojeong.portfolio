@@ -157,7 +157,7 @@
       </div>
 
       <div class="row animatable fadeInUp">
-        <div style="max-height:1080px">
+        <div>
           <img src="../../assets/img/portfolio/howser/portfolio-howser-iteration.png" alt="iteration" />
         </div>
       </div>
@@ -182,7 +182,7 @@
 
       <!-- Full size Product image -->
       <div class="row animatable fadeInUp">
-        <div style="max-height:1080px">
+        <div>
           <img src="../../assets/img/portfolio/howser/portfolio-howser-fullsize-background.png" alt="iteration" />
         </div>
       </div>
