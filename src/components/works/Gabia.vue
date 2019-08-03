@@ -211,7 +211,7 @@
 
     <!-- Full size Product image -->
     <div class="portfolio-work-wrap animatable fadeInUp">
-      <div style="max-height:1080px">
+      <div>
         <img
           src="../../assets/img/portfolio/gabia/portfolio-gabia-fullsize-background.png"
           alt="product image"
