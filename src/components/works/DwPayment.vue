@@ -19,7 +19,7 @@
           <div
             class="order-sm-1 order-md-last work-meta-sm offset-md-4 col-md-2 offset-sm-0 col-sm-12 offset-xs-0 col-xs-12"
           >
-            <div class="row" style="margin-bottom: 10px;">
+            <div id="dw-date" class="row">
               <div class="portfolio-work-title subtitle-sm subtitle col-md-12 col-sm-3">Date</div>
               <div class="col-md-12 col-sm-9">December 2018</div>
             </div>
@@ -93,8 +93,8 @@
         </div>
 
         <div class="row">
-          <div class="offset-md-1 col-md-10 offset-sm-0 col-sm-12">
-            <img src="../../assets/img/portfolio/dw/portfolio-dw-painpoint.png" alt="painpoint" />
+          <div style="margin-top: 60px;" class="dw-one-images offset-md-1 col-md-10 offset-sm-0 col-sm-12">
+            <img style="width:100%;" src="../../assets/img/portfolio/dw/portfolio-dw-painpoint.png" alt="painpoint" />
           </div>
         </div>
       </div>
@@ -174,7 +174,7 @@
         </div>
 
         <!-- Clarity -->
-        <div class="row" style="margin-top: 120px;">
+        <div class="row" style="margin-top: 90px;">
           <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
             <div class="portfolio-work-title subtitle-lg">Clarity</div>
           </div>
@@ -195,7 +195,7 @@
             <div class="portfolio-work-title subtitle-sm">Iteration</div>
 
             <!-- Wireframing -->
-            <div>
+            <div style="padding-bottom: 90px;">
               <div class="portfolio-work-title subtitle-lg">Wireframing</div>
               <span>Based on essential and non-essential information, it was sorted to show readers only the minimal range of information to proceed with the payment.</span>
             </div>
@@ -271,7 +271,7 @@
             </div>
 
             <div
-              class="offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
+              class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png"
@@ -283,7 +283,7 @@
           <!-- Instant feedback with micro-interactions -->
           <div class="row work-solution-align">
             <div
-              class="order-md-1 order-sm-last col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
+              class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png"
@@ -311,7 +311,7 @@
             </div>
 
             <div
-              class="offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
+              class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png"
@@ -323,7 +323,7 @@
           <!-- Offering the right choice -->
           <div class="row work-solution-align">
             <div
-              class="order-md-1 order-sm-last col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
+              class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png"
@@ -412,6 +412,21 @@ export default {
   bottom: 0;
   right: 0;
 }
+
+#dw-date {
+  margin-bottom:40px;
+}
+
+.work-solution-align {
+  margin-bottom:30px;
+}
+
+@media screen and (max-width: 1279px) {
+  #dw-date {
+    margin-bottom:0px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .work-solution-align {
     display: flex;
