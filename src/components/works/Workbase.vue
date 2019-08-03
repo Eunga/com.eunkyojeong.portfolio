@@ -132,6 +132,19 @@ export default {
 video:focus {
   outline: none;
 }
+
+.work-solution-align {
+  margin-bottom:30px;
+}
+
+.work-one-image {
+  margin-top: 60px;
+}
+
+.work-date {
+  margin-bottom:40px;
+}
+
 @media (max-width: 767px) {
   .portfolio-works {
     font-size: 14px;
@@ -150,11 +163,31 @@ video:focus {
   }
 }
 
-@media (max-width: 1279px) {
+@media screen and (max-width: 1279px) {
   .portfolio-work-wrap img,
   .portfolio-work img {
     margin-top: 10px;
   }
+
+  .work-date {
+    margin-bottom:0px;
+  }
+
+  .work-one-image {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .work-solution-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1279px) {
+  
 }
 
 

@@ -19,7 +19,7 @@
           <div
             class="order-sm-1 order-md-last work-meta-sm offset-md-4 col-md-2 offset-sm-0 col-sm-12 offset-xs-0 col-xs-12"
           >
-            <div id="dw-date" class="row">
+            <div class="work-date row">
               <div class="portfolio-work-title subtitle-sm subtitle col-md-12 col-sm-3">Date</div>
               <div class="col-md-12 col-sm-9">December 2018</div>
             </div>
@@ -98,7 +98,7 @@
         </div>
 
         <div class="row animatable fadeInUp">
-          <div style="margin-top: 60px;" class="dw-one-images offset-md-1 col-md-10 offset-sm-0 col-sm-12">
+          <div style="margin-top: 60px;" class="work-one-image offset-md-1 col-md-10 offset-sm-0 col-sm-12">
             <img style="width:100%;" src="../../assets/img/portfolio/dw/portfolio-dw-painpoint.png" alt="painpoint" />
           </div>
         </div>
@@ -121,7 +121,7 @@
         </div>
 
         <div class="row animatable fadeInUp">
-          <div class="dw-one-images offset-md-1 col-md-10 offset-sm-0 col-sm-12">
+          <div class="work-one-image offset-md-1 col-md-10 offset-sm-0 col-sm-12">
             <img src="../../assets/img/portfolio/dw/portfolio-dw-ideation.png" alt="ideation" />
           </div>
         </div>
@@ -422,33 +422,4 @@ export default {
   right: 0;
 }
 
-#dw-date {
-  margin-bottom:40px;
-}
-
-.work-solution-align {
-  margin-bottom:30px;
-}
-
-.dw-one-images {
-  margin-top: 60px;
-}
-
-@media screen and (max-width: 1279px) {
-  #dw-date {
-    margin-bottom:0px;
-  }
-
-  .dw-one-images {
-    margin-top: 30px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .work-solution-align {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
 </style>

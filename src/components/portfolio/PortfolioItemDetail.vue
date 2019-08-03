@@ -244,6 +244,7 @@ export default {
     font-size: 22px;
     line-height: 1.18;
     letter-spacing: -0.4px;
+    min-height: 100px;
   }
 }
 </style>

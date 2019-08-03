@@ -19,7 +19,7 @@
           <div
             class="order-sm-1 order-md-last work-meta-sm offset-md-4 col-md-2 offset-sm-0 col-sm-12 offset-xs-0 col-xs-12"
           >
-            <div id="dw-date" class="row">
+            <div class="work-date row">
               <div class="portfolio-work-title subtitle-sm subtitle col-md-12 col-sm-3">Date</div>
               <div class="col-md-12 col-sm-9">December 2018</div>
             </div>
@@ -413,25 +413,4 @@ export default {
   right: 0;
 }
 
-#dw-date {
-  margin-bottom:40px;
-}
-
-.work-solution-align {
-  margin-bottom:30px;
-}
-
-@media screen and (max-width: 1279px) {
-  #dw-date {
-    margin-bottom:0px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .work-solution-align {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
 </style>
