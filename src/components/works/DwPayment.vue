@@ -256,11 +256,11 @@
 
 
     <!-- Solution -->
-    <div class="portfolio-work-wrap animatable fadeInUp">
-      <div class="portfolio-work-wrap animatable fadeInUp">
+    <div class="portfolio-work-wrap">
+      <div class="portfolio-work-wrap">
         <div class="portfolio-work v-container-fluid">
           <!-- Enabling Multiple purchases at once -->
-          <div class="row work-solution-align">
+          <div class="row work-solution-align animatable fadeInUp">
             <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
               <div class="portfolio-work-title subtitle-sm">Solution</div>
 
@@ -281,7 +281,7 @@
           </div>
 
           <!-- Instant feedback with micro-interactions -->
-          <div class="row work-solution-align">
+          <div class="row work-solution-align animatable fadeInUp">
             <div
               class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
             >
@@ -302,7 +302,7 @@
           </div>
 
           <!-- Simplifying the process -->
-          <div class="row work-solution-align">
+          <div class="row work-solution-align animatable fadeInUp">
             <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
               <div>
                 <div class="portfolio-work-title subtitle-lg">Simplifying the process</div>
@@ -321,7 +321,7 @@
           </div>
 
           <!-- Offering the right choice -->
-          <div class="row work-solution-align">
+          <div class="row work-solution-align animatable fadeInUp">
             <div
               class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
             >

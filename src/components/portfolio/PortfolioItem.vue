@@ -24,7 +24,7 @@
             <span v-html="getWorkTitle()"></span>
           </div>
 
-          <div class="portfolio-item-subtitle">
+          <div class="portfolio-item-subtitle animatable fadeInUp">
             <span v-html="getWorkSubtitle()"></span>
           </div>
         </div>

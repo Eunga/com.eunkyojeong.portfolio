@@ -129,6 +129,9 @@ export default {
   letter-spacing: -0.2px;
 }
 
+video:focus {
+  outline: none;
+}
 @media (max-width: 767px) {
   .portfolio-works {
     font-size: 14px;

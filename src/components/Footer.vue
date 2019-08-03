@@ -52,13 +52,9 @@ export default {
   padding: 0px 120px;
   background-color: #ffffff !important;
   position: relative;
-  /* transition: all .3s ease-in; */
   height: 120px;
   display: flex;
   align-items: center;
-
-  position: absolute;
-  bottom: 0;
 }
 
 #copyright {

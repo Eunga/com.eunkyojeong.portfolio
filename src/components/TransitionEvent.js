@@ -62,6 +62,15 @@ export default class TransitionEvent {
         'style': 'height: 100% !important;'
     });
 
+    $('#footer').css({
+      'position': 'absolute',
+      'bottom': '0px'
+    });
+
+    $('#footer div').animate({
+      'opacity': '1'
+    }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
+
     $('.detail .portfolio-item-brief').attr({
       'style': 'top: initial !important',
     });
@@ -102,6 +111,14 @@ export default class TransitionEvent {
     $('.list .portfolio-work-count').css({
       'visibility': 'hidden'
     });
+
+    $('#footer').css({
+      'position': 'relative'
+    });
+
+    $('#footer div').animate({
+      'opacity': '0'
+    }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
     const widthOfWindow = window.innerWidth;
     let topOfPortfolioItemBrief = 0;

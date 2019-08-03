@@ -88,7 +88,7 @@ export default {
 #portfolio-detail {
   position: relative;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 #portfolio-meta {

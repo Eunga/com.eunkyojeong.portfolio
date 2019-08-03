@@ -33,6 +33,14 @@ export default {
     "portfolio-item": PortfolioItem
   },
   mounted() {
+    console.log('LIST MOUNTED');
+    $('#portfolio-carousel-progressbar-wrapper').css({
+      opacity: 0
+    });
+    $('#portfolio-carousel-progressbar-wrapper').animate({
+      'opacity': 1
+    }, 400);
+
     $(document).ready(function() {
       if (carouselBehavior.isCarouselActive) {
         let percent = 0;
