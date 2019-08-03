@@ -14,10 +14,39 @@
     }
   },
   {
-    "name": "Offin",
-    "title": "Offline Fashion Stores \nin Your Phone, Offin",
+    "name": "Rivu",
+    "title": "Rivu\nApp Design",
     "theme": "white",
-    "subtitle": "Easy and Fast Payment\nFor Seamless Reading Experience",
+    "subtitle": "The Most Efficient Way to Memorize Vocabularies",
+    "path": "rivu",
+    "backgroundImage": "offin/portfolio-offin-bg",
+    "shouldBeExposed": true,
+    "stuff": {
+      "url": "offin/portfolio-offin-stuff",
+      "animation": "transitionY 10px",
+      "duration": 1
+    }
+  },
+  {
+    "name": "Howser",
+    "title": "3D Home Planner\nof Howser",
+    "theme": "black",
+    "subtitle": "Launching online open market service",
+    "path": "howser",
+    "backgroundImage": "howser/portfolio-howser-bg",
+    "shouldBeExposed": true,
+    "stuff": {
+      "url": "howser/portfolio-howser-stuff",
+      "animation": "transitionY 10px",
+      "duration": 1
+    }
+  },
+  
+  {
+    "name": "Offin",
+    "title": "Offin—Fashion O2O\nApp Design",
+    "theme": "white",
+    "subtitle": "Offline fashion stores in your phone",
     "path": "offin",
     "backgroundImage": "offin/portfolio-offin-bg",
     "shouldBeExposed": true,

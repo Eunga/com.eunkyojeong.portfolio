@@ -3,38 +3,33 @@
     <app-mask />
 
     <div id="portfolio-meta">
-      <portfolio-item
-        v-bind:isDetail="true"
-        v-bind:work="work()"
-        v-bind:key="work.id"
-      />
+      <portfolio-item v-bind:isDetail="true" v-bind:work="work()" v-bind:key="work.id" />
     </div>
     <div class="portfolio-detail-info">
-      <portfolio-item-detail
-        v-bind:work="work()"
-        v-bind:key="work.id"
-        />
+      <portfolio-item-detail v-bind:work="work()" v-bind:key="work.id" />
     </div>
 
-    <div id="portfolio-detail-mask">
-    </div>
+    <div id="portfolio-detail-mask"></div>
   </div>
 </template>
 
 <script>
-import Mask from './Mask'
+;
+
+import Mask from "./Mask";
 import PortfolioItem from "@/components/portfolio/PortfolioItem.vue";
 import PortfolioItemDetail from "@/components/portfolio/PortfolioItemDetail.vue";
 
 export default {
-  name: 'PortfolioDetail',
+  name: "PortfolioDetail",
   components: {
     "portfolio-item": PortfolioItem,
     "portfolio-item-detail": PortfolioItemDetail,
-    'app-mask': Mask
+    "app-mask": Mask
   },
   watch: {
-    $route (to, from) {
+    // eslint-disable-next-line
+    $route(to, from) {
       const work = this.$store.getters.workFromPath(to.path);
       this.commitCurrentWorkToStore(work);
     }
@@ -42,32 +37,35 @@ export default {
   data: function() {
     return {
       isFirstLoad: false
-    }
+    };
   },
   updated() {
     if (this.isFirstLoad) {
-      $('#portfolio-detail-mask').css({
+      $("#portfolio-detail-mask").css({
         opacity: 0,
-        'z-index': -1000
+        "z-index": -1000
       });
       this.isFirstLoad = false;
     } else {
-      $('#portfolio-detail-mask').css({
+      $("#portfolio-detail-mask").css({
         opacity: 1,
-        'z-index': 1000
+        "z-index": 1000
       });
 
-      $('#portfolio-detail-mask').animate({
-        opacity: 0,
-        'z-index': -1000
-      }, 2000);
+      $("#portfolio-detail-mask").animate(
+        {
+          opacity: 0,
+          "z-index": -1000
+        },
+        2000
+      );
     }
   },
   mounted() {
     this.isFirstLoad = true;
-    $('#portfolio-detail-mask').css({
+    $("#portfolio-detail-mask").css({
       opacity: 0,
-      'z-index': -1000
+      "z-index": -1000
     });
 
     const path = this.$route.path;
@@ -80,7 +78,7 @@ export default {
       return currentWork;
     },
     commitCurrentWorkToStore(work) {
-      this.$store.commit('changeCurrentWorkIdWithWork', work);
+      this.$store.commit("changeCurrentWorkIdWithWork", work);
     }
   }
 };
@@ -89,15 +87,17 @@ export default {
 <style>
 #portfolio-detail {
   position: relative;
-  width:100%;
+  width: 100%;
+  /* height: 100%; */
 }
 
 #portfolio-meta {
   height: 640px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-#portfolio-meta, .portfolio-detail-info {
+#portfolio-meta,
+.portfolio-detail-info {
   position: relative;
   background-color: white;
 }
@@ -107,7 +107,7 @@ export default {
 }
 
 .portfolio-detail-info {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   z-index: 10;
 }
 

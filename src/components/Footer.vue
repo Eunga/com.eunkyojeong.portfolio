@@ -1,13 +1,20 @@
 <template>
   <footer id="footer">
     <div id="copyright">
-      Designed by me & Developed by <a href="https://mrkarl.github.io" target="_blank" class="pankipark"><span>Panki Park</span></a> © 2019 All rights reserved.
+      Designed by me & Developed by
+      <a
+        href="https://mrkarl.github.io"
+        target="_blank"
+        class="pankipark"
+      >
+        <span>Panki Park</span>
+      </a> © 2019 All rights reserved.
     </div>
 
     <div id="contact">
       <span v-for="s in sns" v-bind:key="s.id">
         <a :href="s.url" :target="s.target">
-          <img :src="getContactsUrl(s.icon)" class="contact-icon"/>
+          <img :src="getContactsUrl(s.icon)" class="contact-icon" />
         </a>
       </span>
     </div>
@@ -21,23 +28,21 @@ export default {
     return {
       about: this.$store.getters.about,
       sns: this.$store.getters.snsForFooter
-    }
+    };
   },
 
   methods: {
-    getContacts() {
-
-    },
+    getContacts() {},
     getContactsUrl(pet) {
       try {
-        var images = require.context('../assets/img/common', true, /\.png$/)
-        var image = images('./' + pet + '.png');
+        var images = require.context("../assets/img/common", true, /\.png$/);
+        var image = images("./" + pet + ".png");
         return image;
       } catch (e) {
         return pet;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -47,13 +52,9 @@ export default {
   padding: 0px 120px;
   background-color: #ffffff !important;
   position: relative;
-  /* transition: all .3s ease-in; */
   height: 120px;
   display: flex;
   align-items: center;
-
-  position: absolute;
-  bottom: 0;
 }
 
 #copyright {
@@ -76,25 +77,26 @@ export default {
 .contact-icon {
   width: 16px;
   height: 16px;
-  margin-left:38px;
-  transition: all .2s ease-in;
-  opacity: .3;
+  margin-left: 38px;
+  transition: all 0.2s ease-in;
+  opacity: 0.3;
 }
 
 .pankipark {
   text-decoration: none;
   color: #bbbbbb;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.pankipark:hover, .contact-icon:hover {
+.pankipark:hover,
+.contact-icon:hover {
   cursor: pointer;
   color: black;
   opacity: 1;
 }
 
 /* Media Queries */
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   #footer {
     display: none;
   }
