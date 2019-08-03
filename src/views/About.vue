@@ -113,6 +113,7 @@ export default {
   align-items: center;
   text-align: center;
   justify-content: center;
+  transition: all .3s ease-in-out;
 }
 
 #aboutResumeBtn a {
@@ -122,6 +123,10 @@ export default {
   text-decoration: none;
   color: white;
   text-align: left;
+}
+
+#aboutResumeBtn:hover {
+  opacity: 0.7;
 }
 
 #aboutResumeBtn span {
