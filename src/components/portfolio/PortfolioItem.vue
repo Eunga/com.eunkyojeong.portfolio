@@ -24,7 +24,8 @@
             <span v-html="getWorkTitle()"></span>
           </div>
 
-          <div class="portfolio-item-subtitle animatable fadeInUp">
+          <div class="portfolio-item-subtitle">
+          <!-- <div class="portfolio-item-subtitle animatable fadeInUp"> -->
             <span v-html="getWorkSubtitle()"></span>
           </div>
         </div>
@@ -215,17 +216,30 @@ export default {
   letter-spacing: -0.6px;
   text-align: left;
   color: black;
+
+  transition: all .6s ease-in-out;
 }
 
 .list .portfolio-item-subtitle {
   display: none;
+  opacity: 0;
 }
 
 .detail .portfolio-item-subtitle {
   visibility: visible;
 }
 
-.detail .portfolio-item-subtitle::before {
+/* .detail .portfolio-item-subtitle::before {
+  margin-top: 84px;
+  margin-bottom: 40px;
+  content: " ";
+  width: 50px;
+  height: 1px;
+  border-bottom: 2px solid black;
+  display: block;
+} */
+
+.portfolio-item-subtitle::before {
   margin-top: 84px;
   margin-bottom: 40px;
   content: " ";
@@ -296,11 +310,18 @@ export default {
     font-size: 28px;
   }
 
-  .detail .portfolio-item-subtitle::before {
+  /* .detail .portfolio-item-subtitle::before {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 26px;
+  } */
+
+  .portfolio-item-subtitle::before {
     margin-top: 30px;
     margin-bottom: 10px;
     width: 26px;
   }
+
   .portfolio-item-subtitle {
     font-size: 18px;
   }

@@ -7,8 +7,8 @@ export default class TransitionEvent {
       'easeInOutCubic': 'easeInOutCubic',
     }
 
-    // this.TRANSITION_INTERVAL_IN_MILLIS = 1500; //∏ for debugging
-    this.TRANSITION_INTERVAL_IN_MILLIS = 800;
+    // this.TRANSITION_INTERVAL_IN_MILLIS = 1500; // for debugging
+    this.TRANSITION_INTERVAL_IN_MILLIS = 600;
     this.DEFAULT_EASING_WAY = this.EASING_WAYS.easeOutCubic;
   }
 
@@ -59,7 +59,7 @@ export default class TransitionEvent {
     });
 
     $('#portfolio-meta').attr({
-        'style': 'height: 100% !important;'
+      'style': 'height: 100% !important;'
     });
 
     $('#footer').css({
@@ -127,14 +127,18 @@ export default class TransitionEvent {
     } else if ((widthOfWindow >= 768) && (widthOfWindow < 1280))  {
       topOfPortfolioItemBrief = 110;
     }
-
     $('.list .portfolio-item-brief').animate({
       'top': `${topOfPortfolioItemBrief}px`,
     }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
-    $('.list .portfolio-item-subtitle').animate({
-      opacity: 1,
-    }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
+    $('.list .portfolio-item-subtitle').show();
+
+    $('.list .portfolio-item-subtitle').css({
+      opacity: 1
+    });
+    // $('.list .portfolio-item-subtitle').animate({
+    //   opacity: 1,
+    // }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
     $('.list .portfolio-item-stuff img').transition({
       'scale': '0.8',

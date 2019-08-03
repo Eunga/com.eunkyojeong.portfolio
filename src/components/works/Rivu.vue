@@ -34,22 +34,21 @@
     </div>
 
     <!-- Challenge -->
-    <div class="portfolio-work-wrap">
+    <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
-        <div class="row animatable fadeInUp">
+        <div class="row">
           <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">Challenge</div>
           </div>
         </div>
 
         <!-- Better usability for heavy users -->
-        <div class="row animatable fadeInUp">
+        <div class="row">
           <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
             <div class="portfolio-work-title subtitle-lg">Better usability for heavy users</div>
           </div>
         </div>
-
-        <div class="row animatable fadeInUp">
+        <div class="row">
           <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
             Since the successful launch of Daum Webtoon 2.0, it had provided improvements of the user experience for all users which brought a sharp 200% increase in comics sales. Our next goal was to upgrade the app for heavy users who use every day and purchase a large volume of our pay comics.
             <br />
@@ -61,43 +60,39 @@
     </div>
 
     <!-- The Problem -->
-    <div class="portfolio-work-wrap">
+    <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
-        <div class="row animatable fadeInUp">
+        <div class="row">
           <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">The Problem</div>
           </div>
         </div>
 
         <!-- Right from the user -->
-        <div class="animatable fadeInUp">
-          <div class="row">
-            <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
-              <div class="portfolio-work-title subtitle-lg">Right from the user</div>
-            </div>
+        <div class="row">
+          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+            <div class="portfolio-work-title subtitle-lg">Right from the user</div>
           </div>
-          <div class="row">
-            <div
-              class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
-            >"Whenever I was binge-reading the Webtoon, the pop-ups kept popping up asking me to pay 200KRW every time I try to get to the following episodes. Sometimes I gave up reading when I felt lazy to make each purchase for each episode."</div>
-          </div>
+        </div>
+        <div class="row">
+          <div
+            class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
+          >"Whenever I was binge-reading the Webtoon, the pop-ups kept popping up asking me to pay 200KRW every time I try to get to the following episodes. Sometimes I gave up reading when I felt lazy to make each purchase for each episode."</div>
         </div>
 
         <!-- Pain Point -->
-        <div class="animatable fadeInUp">
-          <div class="row" style="margin-top: 120px;">
-            <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
-              <div class="portfolio-work-title subtitle-lg">Pain Point</div>
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
-            >When you are reading in the view page and if you are willing to make payments for the pay episodes, it can be cumbersome to go through the same payment process over and over again, which usually breaks the flow which is a huge distraction for readers.</div>
+        <div class="row" style="margin-top: 120px;">
+          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+            <div class="portfolio-work-title subtitle-lg">Pain Point</div>
           </div>
         </div>
+        <div class="row">
+          <div
+            class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
+          >When you are reading in the view page and if you are willing to make payments for the pay episodes, it can be cumbersome to go through the same payment process over and over again, which usually breaks the flow which is a huge distraction for readers.</div>
+        </div>
 
-        <div class="row animatable fadeInUp">
+        <div class="row">
           <div style="margin-top: 60px;" class="dw-one-images offset-md-1 col-md-10 offset-sm-0 col-sm-12">
             <img style="width:100%;" src="../../assets/img/portfolio/dw/portfolio-dw-painpoint.png" alt="painpoint" />
           </div>
@@ -106,22 +101,22 @@
     </div>
 
     <!-- Ideation-->
-    <div class="portfolio-work-wrap">
+    <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
-        <div class="row animatable fadeInUp">
+        <div class="row">
           <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">Ideation</div>
           </div>
         </div>
 
-        <div class="row animatable fadeInUp">
+        <div class="row">
           <div
             class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
           >Through competitor analysis, I gained an insight that the simpler the process was the easier it felt and looked for customers to make the payment. Simple and easy dialog popups for payment in one service was a good example that showed this insight. This also led me to think that we could skip the redundant step through skipping a confirmation pop-up, or combine the two separate invoices and cash recharge pages into one so that you can check how much cash you have left and make the purchase from the same page.</div>
         </div>
 
-        <div class="row animatable fadeInUp">
-          <div class="dw-one-images offset-md-1 col-md-10 offset-sm-0 col-sm-12">
+        <div class="row">
+          <div class="offset-md-1 col-md-10 offset-sm-0 col-sm-12">
             <img src="../../assets/img/portfolio/dw/portfolio-dw-ideation.png" alt="ideation" />
           </div>
         </div>
@@ -129,16 +124,16 @@
     </div>
 
     <!-- Goals-->
-    <div class="portfolio-work-wrap">
+    <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
-        <div class="row animatable fadeInUp">
+        <div class="row">
           <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">Goals</div>
           </div>
         </div>
 
         <!-- 1. Enable full payment for all or selected episodes at once for each webtoon.  -->
-        <div class="row animatable fadeInUp">
+        <div class="row">
           <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
             <div
               class="portfolio-work-title subtitle-lg"
@@ -147,7 +142,7 @@
         </div>
 
         <!-- 2. Omit redundant steps to offer faster and easier service.  -->
-        <div class="row animatable fadeInUp">
+        <div class="row">
           <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
             <div
               class="portfolio-work-title subtitle-lg"
@@ -158,67 +153,62 @@
     </div>
 
     <!-- Concept -->
-    <div class="portfolio-work-wrap">
+    <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
-        <div class="row animatable fadeInUp">
+        <div class="row">
           <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">Concept</div>
           </div>
         </div>
 
         <!-- Distinct and Consistent Color -->
-        <div class="animatable fadeInUp">
-          <div class="row">
-            <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
-              <div class="portfolio-work-title subtitle-lg">Distinct and Consistent Color</div>
-            </div>
+        <div class="row">
+          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+            <div class="portfolio-work-title subtitle-lg">Distinct and Consistent Color</div>
           </div>
-          <div class="row">
-            <div
-              class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
-            >The main color of the app is red except gold that is used for all cash-related icons and texts. So the users could easily recognize what they are doing without trying.</div>
-          </div>
+        </div>
+        <div class="row">
+          <div
+            class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
+          >The main color of the app is red except gold that is used for all cash-related icons and texts. So the users could easily recognize what they are doing without trying.</div>
         </div>
 
         <!-- Clarity -->
-        <div class="animatable fadeInUp">
-          <div class="row" style="margin-top: 90px;">
-            <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
-              <div class="portfolio-work-title subtitle-lg">Clarity</div>
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
-            >Since the name of credit is Cash, and I thought this concept could confuse users, so I used ‘C’ as in a distinctive icon for online currency, and mark ‘W’ for the real money for clarification</div>
+        <div class="row" style="margin-top: 90px;">
+          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+            <div class="portfolio-work-title subtitle-lg">Clarity</div>
           </div>
         </div>
-
+        <div class="row">
+          <div
+            class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
+          >Since the name of credit is Cash, and I thought this concept could confuse users, so I used ‘C’ as in a distinctive icon for online currency, and mark ‘W’ for the real money for clarification</div>
+        </div>
       </div>
     </div>
 
     <!-- Iteration -->
-    <div class="portfolio-work-wrap">
+    <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
         <div class="row work-solution-align">
           <div class="col-md-4 col-sm-12">
-            <div class="portfolio-work-title subtitle-sm animatable fadeInUp">Iteration</div>
+            <div class="portfolio-work-title subtitle-sm">Iteration</div>
 
             <!-- Wireframing -->
-            <div class="animatable fadeInUp" style="padding-bottom: 90px;">
+            <div style="padding-bottom: 90px;">
               <div class="portfolio-work-title subtitle-lg">Wireframing</div>
               <span>Based on essential and non-essential information, it was sorted to show readers only the minimal range of information to proceed with the payment.</span>
             </div>
 
             <!-- Prototyping -->
-            <div class="animatable fadeInUp">
+            <div>
               <div class="portfolio-work-title subtitle-lg">Prototyping</div>
               <span>Prototypes were made to test if each stage smoothly links and proceeds.</span>
             </div>
           </div>
 
           <div
-            class="col-md-8 col-sm-12 animatable fadeInUp"
+            class="col-md-8 col-sm-12"
           >
             <img id="dw-ideation-anime" src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration anime" />
             <img id="dw-ideation-frame" src="../../assets/img/portfolio/dw/portfolio-dw-iteration-frame.png" alt="iteration frame" />
@@ -363,15 +353,15 @@
     </div>
 
     <!-- Retrospective-->
-    <div class="portfolio-work-wrap">
+    <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
-        <div class="row animatable fadeInUp">
+        <div class="row">
           <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">Retrospective</div>
           </div>
         </div>
 
-        <div class="row animatable fadeInUp">
+        <div class="row">
           <div
             class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
           >One day during a meeting, we were having a discussion about things that could be improved, and one thing we covered was some problems with the payment process on the app. This made me feel interested to tackle this in order to upgrade our service and it could have been a great chance for me to study more about the UX regarding the payment portion. So I studied and learned a lot coming up with the proposal with the solution that I shared with our team which then received positive feedback. We decided to kill the project, but it was a nice chance for our team and myself to learn more about the UX in the payment.</div>
@@ -386,7 +376,7 @@ import Workbase from "./Workbase.vue";
 
 export default {
   extends: Workbase,
-  name: "DwPayment"
+  name: "Rivu"
 };
 </script>
 
@@ -408,13 +398,14 @@ export default {
 }
 
 #dw-ideation-frame {
-  position: relative;
+  
 }
 
 #dw-ideation-anime {
   position: absolute;
   width: 39.5833333333%;
   margin-left: 47.5694444444%;
+  z-index: 99;
   margin-top: 11.2970711297%;
   top: 0;
   left: 0;
@@ -430,17 +421,9 @@ export default {
   margin-bottom:30px;
 }
 
-.dw-one-images {
-  margin-top: 60px;
-}
-
 @media screen and (max-width: 1279px) {
   #dw-date {
     margin-bottom:0px;
-  }
-
-  .dw-one-images {
-    margin-top: 30px;
   }
 }
 
