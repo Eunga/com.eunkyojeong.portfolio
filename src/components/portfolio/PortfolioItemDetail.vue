@@ -177,6 +177,7 @@ export default {
   letter-spacing: -0.8px;
   color: #000000;
   margin-bottom: 10px;
+  min-height: 140px;
 }
 
 .portfolio-item-nav-id::before {

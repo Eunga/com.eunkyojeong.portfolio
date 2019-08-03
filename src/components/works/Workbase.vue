@@ -90,7 +90,7 @@ export default {
 .subtitle-sm {
   font-weight: bold;
   font-size: 22px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .subtitle-lg {
@@ -98,11 +98,12 @@ export default {
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: -0.4px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .subtitle.subtitle-sm {
-  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .portfolio-work-wrap {
@@ -145,6 +146,15 @@ export default {
     font-size: 28px;
   }
 }
+
+@media (max-width: 1279px) {
+  .portfolio-work-wrap img,
+  .portfolio-work img {
+    margin-top: 10px;
+  }
+}
+
+
 
 /* My Grid */
 .col,
@@ -249,6 +259,80 @@ export default {
 @media screen and (max-width: 1776px) {
   .hidden-lg {
     display: none !important;
+  }
+
+  /* order */
+  .order-lg-1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .order-lg-last {
+    -ms-flex-order: 13;
+    order: 13;
+  }
+
+  /* offset */
+  .offset-lg-0 {
+    margin-left: 0;
+  }
+
+  .offset-lg-1 {
+    margin-left: 8.333333%;
+  }
+
+  .offset-lg-2 {
+    margin-left: 16.66666%;
+  }
+
+  .offset-lg-3 {
+    margin-left: 25%;
+  }
+
+  .offset-lg-4 {
+    margin-left: 33.333333%;
+  }
+
+  /* column */
+  .col-lg-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+
+  .col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-lg-8 {
+    -ms-flex: 0 0 66.666666%;
+    flex: 0 0 66.666666%;
+    max-width: 66.666666%;
+  }
+
+  .col-lg-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
