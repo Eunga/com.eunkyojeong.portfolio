@@ -144,6 +144,28 @@ export default {
   z-index: 100;
 }
 
+.list .portfolio-item-brief {
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.list.portfolio-item.active .portfolio-item-brief {
+  opacity: 1;
+} 
+
+.list .portfolio-item-stuff {
+  transform: translateX(50px);
+  opacity: 0;
+  transition-property: width, opacity, transform;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.list.portfolio-item.active .portfolio-item-stuff {
+  transform: translateX(0px);
+  opacity: 1;
+} 
+
 /* Media Queries */
 @media screen and (max-width: 767px) {
   #portfolio-carousel-progressbar-wrapper {

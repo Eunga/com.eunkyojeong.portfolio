@@ -784,4 +784,10 @@ ul {
   -o-animation-name: moveUp;
   animation-name: moveUp;
 }
+
+/* Customize Bootstrap */
+.carousel-item {
+  transition: transform .8s;
+  transition-timing-function: cubic-bezier(0.140, 0.010, 0.000, 0.930);
+}
 </style>
