@@ -19,9 +19,9 @@ export default class TransitionEvent {
     }
 
     if (srcPath === 'portfolio-detail') {
-      // $('#footer div').animate({
-      //   'opacity': '1'
-      // }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
+      $('#footer div').animate({
+        'opacity': '1'
+      }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
     } else if (srcPath === 'portfolio') {
       // do nothing;
     }
@@ -176,10 +176,6 @@ export default class TransitionEvent {
     $('.list .portfolio-item-subtitle').css({
       opacity: 1
     });
-
-    // $('.list .portfolio-item-subtitle').animate({
-    //   opacity: 1,
-    // }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
     $('.list .portfolio-item-stuff img').transition({
       'scale': '0.8',

@@ -231,7 +231,6 @@ export default {
 
 .portfolio-item-subtitle::before {
   padding-top: 84px;
-  /* margin-top: 84px; */
   margin-bottom: 40px;
   content: " ";
   width: 50px;
