@@ -229,18 +229,9 @@ export default {
   visibility: visible;
 }
 
-/* .detail .portfolio-item-subtitle::before {
-  margin-top: 84px;
-  margin-bottom: 40px;
-  content: " ";
-  width: 50px;
-  height: 1px;
-  border-bottom: 2px solid black;
-  display: block;
-} */
-
 .portfolio-item-subtitle::before {
-  margin-top: 84px;
+  padding-top: 84px;
+  /* margin-top: 84px; */
   margin-bottom: 40px;
   content: " ";
   width: 50px;
@@ -249,7 +240,7 @@ export default {
   display: block;
 }
 
-.detail.white .portfolio-item-subtitle::before {
+.white .portfolio-item-subtitle::before {
   border-bottom: 2px solid white;
 }
 
@@ -310,14 +301,8 @@ export default {
     font-size: 28px;
   }
 
-  /* .detail .portfolio-item-subtitle::before {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    width: 26px;
-  } */
-
   .portfolio-item-subtitle::before {
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 10px;
     width: 26px;
   }

@@ -16,10 +16,10 @@ export default {
   watch: {
     // eslint-disable-next-line
     $route(to, from) {
-      if (to.name == "home") {
+      if (to.name == "home" || to.name == "portfolio") {
         $("#margin").addClass("home");
         $("#margin").removeClass("detail");
-      } else if (to.name == "portfolio detail") {
+      } else if (to.name == "portfolio-detail") {
         $("#margin").addClass("detail");
         $("#margin").removeClass("home");
       }
@@ -27,10 +27,10 @@ export default {
   },
   mounted() {
     const path = this.$route.name;
-    if (path == "home") {
+    if (path == "home" || path == "portfolio") {
       $("#margin").addClass("home");
       $("#margin").removeClass("detail");
-    } else if (path == "portfolio detail") {
+    } else if (path == "portfolio-detail") {
       $("#margin").addClass("detail");
       $("#margin").removeClass("home");
     }

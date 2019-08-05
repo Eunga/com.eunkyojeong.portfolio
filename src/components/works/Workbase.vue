@@ -3,8 +3,6 @@
 </template>
 
 <script>
-;
-
 export default {
   name: "Workbase",
   mounted() {
@@ -21,16 +19,6 @@ export default {
           },
           500
         );
-
-      $("#footer").css({
-        opacity: 0
-      });
-      $("#footer").animate(
-        {
-          opacity: 1
-        },
-        500
-      );
 
       // Function which adds the 'animated' class to any '.animatable' in view
       const doAnimations = function() {
@@ -134,7 +122,7 @@ video:focus {
 }
 
 .work-solution-align {
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 .work-one-image {
@@ -142,7 +130,7 @@ video:focus {
 }
 
 .work-date {
-  margin-bottom:40px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 767px) {
@@ -170,7 +158,7 @@ video:focus {
   }
 
   .work-date {
-    margin-bottom:0px;
+    margin-bottom: 0px;
   }
 
   .work-one-image {
@@ -187,10 +175,7 @@ video:focus {
 }
 
 @media (max-width: 1279px) {
-  
 }
-
-
 
 /* My Grid */
 .col,

@@ -51,13 +51,13 @@ export default {
   },
   watch: {
     $route(to, from) {
-      if (to.name == "home") {
+      if (to.name == "home" || to.name == "portfolio") {
         $("body").addClass("overflowHidden");
       } else {
         $("body").removeClass("overflowHidden");
       }
 
-      if (to.name != "portfolio detail") {
+      if (to.name != "portfolio-detail") {
         var windowHeight = window.innerHeight;
         var metaHeight = windowHeight - 120;
         $("#portfolio-meta").css({ height: metaHeight });

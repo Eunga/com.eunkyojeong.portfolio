@@ -16,7 +16,7 @@ export default new Router({
     },
     {
       path: '/portfolio/:path',
-      name: 'portfolio detail',
+      name: 'portfolio-detail',
       component: PortfolioDetail
     },
     {
