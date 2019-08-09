@@ -65,7 +65,7 @@
     "backgroundImage": "gabia/portfolio-gabia-bg",
     "shouldBeExposed": true,
     "stuff": {
-      "url": "gabia/img-dw-cover-notebook",
+      "url": "gabia/portfolio-gabia-figure",
       "animation": "transitionY 10px",
       "duration": 1
     }
