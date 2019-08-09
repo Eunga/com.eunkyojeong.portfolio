@@ -16,7 +16,7 @@
   {
     "name": "Rivu",
     "title": "Rivu\nApp Design",
-    "theme": "white",
+    "theme": "black",
     "subtitle": "The Most Efficient Way to Memorize Vocabularies",
     "path": "rivu",
     "backgroundImage": "offin/portfolio-offin-bg",
@@ -30,7 +30,7 @@
   {
     "name": "Howser",
     "title": "3D Home Planner\nof Howser",
-    "theme": "black",
+    "theme": "white",
     "subtitle": "Launching online open market service",
     "path": "howser",
     "backgroundImage": "howser/portfolio-howser-bg",
@@ -45,7 +45,7 @@
   {
     "name": "Offin",
     "title": "Offin—Fashion O2O\nApp Design",
-    "theme": "white",
+    "theme": "black",
     "subtitle": "Offline fashion stores in your phone",
     "path": "offin",
     "backgroundImage": "offin/portfolio-offin-bg",
@@ -62,7 +62,7 @@
     "theme": "white",
     "subtitle": "Launching online open market service",
     "path": "gabia",
-    "backgroundImage": "gabia/cover",
+    "backgroundImage": "gabia/portfolio-gabia-bg",
     "shouldBeExposed": true,
     "stuff": {
       "url": "gabia/img-dw-cover-notebook",
