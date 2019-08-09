@@ -100,7 +100,8 @@ export default class TransitionEvent {
     $('.detail .portfolio-item-subtitle').hide();
 
     $('.detail .portfolio-item-stuff img').transition({
-      'scale': '1.3',
+      // 'scale': '1.3',
+      'scale': '1',
     }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
     $('.portfolio-detail-info').transition({
@@ -168,7 +169,7 @@ export default class TransitionEvent {
     });
 
     $('.list .portfolio-item-stuff img').transition({
-      'scale': '0.8',
+      'scale': '0.7',
     }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
     $('#margin.home #margin-left').transition({

@@ -155,18 +155,19 @@ export default {
 .portfolio-item-stuff {
   position: relative;
   float: right;
-  width: 50%;
+  height: 100%;
   top: 10%;
 }
 
 .portfolio-item-stuff img {
   position: relative;
-  transform: scale(1.3);
+  /* transform: scale(1.3); */
   transform-origin: top;
 
   /* width: 100%; */
-  max-height: 350px;
+  /* max-height: 350px; */
   max-width: 100%;
+  max-height: 100%;
 }
 
 .portfolio-item-content {
@@ -276,7 +277,7 @@ export default {
 }
 
 .detail .portfolio-item-stuff img {
-  transform: scale(0.8);
+  transform: scale(0.7);
 }
 
 .portfolio-work-count-current {
