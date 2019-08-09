@@ -120,6 +120,7 @@ export default {
   padding: 0px 120px;
   position: relative;
   top: -10px;
+  z-index: 10;
 }
 #portfolio-carousel-progressbar {
   height: 100%;
