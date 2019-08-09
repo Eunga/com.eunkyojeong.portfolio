@@ -288,6 +288,11 @@ export default {
   opacity: 0.3;
 }
 
+.portfolio-work-count-delimeter {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
 @media (max-width: 767px) {
   #portfolio-meta {
     height: 480px !important;
