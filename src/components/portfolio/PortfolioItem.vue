@@ -155,15 +155,19 @@ export default {
 .portfolio-item-stuff {
   position: relative;
   float: right;
-  width: 50%;
+  height: 100%;
   top: 10%;
 }
 
 .portfolio-item-stuff img {
   position: relative;
-  width: 100%;
-  transform: scale(1.3);
+  /* transform: scale(1.3); */
   transform-origin: top;
+
+  /* width: 100%; */
+  /* max-height: 350px; */
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .portfolio-item-content {
@@ -229,18 +233,8 @@ export default {
   visibility: visible;
 }
 
-/* .detail .portfolio-item-subtitle::before {
-  margin-top: 84px;
-  margin-bottom: 40px;
-  content: " ";
-  width: 50px;
-  height: 1px;
-  border-bottom: 2px solid black;
-  display: block;
-} */
-
 .portfolio-item-subtitle::before {
-  margin-top: 84px;
+  padding-top: 84px;
   margin-bottom: 40px;
   content: " ";
   width: 50px;
@@ -249,7 +243,7 @@ export default {
   display: block;
 }
 
-.detail.white .portfolio-item-subtitle::before {
+.white .portfolio-item-subtitle::before {
   border-bottom: 2px solid white;
 }
 
@@ -283,7 +277,7 @@ export default {
 }
 
 .detail .portfolio-item-stuff img {
-  transform: scale(0.8);
+  transform: scale(0.7);
 }
 
 .portfolio-work-count-current {
@@ -293,6 +287,11 @@ export default {
 .portfolio-work-count-all,
 .portfolio-work-count-delimeter {
   opacity: 0.3;
+}
+
+.portfolio-work-count-delimeter {
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 @media (max-width: 767px) {
@@ -310,14 +309,8 @@ export default {
     font-size: 28px;
   }
 
-  /* .detail .portfolio-item-subtitle::before {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    width: 26px;
-  } */
-
   .portfolio-item-subtitle::before {
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 10px;
     width: 26px;
   }

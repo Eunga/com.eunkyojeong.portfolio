@@ -47,7 +47,7 @@ export default {
   },
   watch: {
     $route(to, from) {
-      if (to.name == "portfolio detail") {
+      if (to.name == "portfolio-detail") {
         const work = this.$store.getters.workFromPath(to.path);
         this.theme = work.theme;
       } else {
@@ -56,7 +56,7 @@ export default {
     }
   },
   mounted() {
-    if (this.$route.name == "portfolio detail") {
+    if (this.$route.name == "portfolio-detail") {
       const work = this.$store.getters.workFromPath(this.$route.path);
       this.theme = work.theme;
     } else {

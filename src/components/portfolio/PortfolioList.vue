@@ -120,6 +120,7 @@ export default {
   padding: 0px 120px;
   position: relative;
   top: -10px;
+  z-index: 10;
 }
 #portfolio-carousel-progressbar {
   height: 100%;
@@ -143,6 +144,28 @@ export default {
 .carousel-control-next {
   z-index: 100;
 }
+
+.list .portfolio-item-brief {
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.list.portfolio-item.active .portfolio-item-brief {
+  opacity: 1;
+} 
+
+.list .portfolio-item-stuff {
+  transform: translateX(50px);
+  opacity: 0;
+  transition-property: width, opacity, transform;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.list.portfolio-item.active .portfolio-item-stuff {
+  transform: translateX(0px);
+  opacity: 1;
+} 
 
 /* Media Queries */
 @media screen and (max-width: 767px) {

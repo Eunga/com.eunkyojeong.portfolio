@@ -55,6 +55,8 @@ export default {
   height: 120px;
   display: flex;
   align-items: center;
+
+  z-index: 10;
 }
 
 #copyright {

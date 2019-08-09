@@ -51,13 +51,13 @@ export default {
   },
   watch: {
     $route(to, from) {
-      if (to.name == "home") {
+      if (to.name == "home" || to.name == "portfolio") {
         $("body").addClass("overflowHidden");
       } else {
         $("body").removeClass("overflowHidden");
       }
 
-      if (to.name != "portfolio detail") {
+      if (to.name != "portfolio-detail") {
         var windowHeight = window.innerHeight;
         var metaHeight = windowHeight - 120;
         $("#portfolio-meta").css({ height: metaHeight });
@@ -783,5 +783,11 @@ ul {
   -moz-animation-name: moveUp;
   -o-animation-name: moveUp;
   animation-name: moveUp;
+}
+
+/* Customize Bootstrap */
+.carousel-item {
+  transition: transform .8s;
+  transition-timing-function: cubic-bezier(0.140, 0.010, 0.000, 0.930);
 }
 </style>
