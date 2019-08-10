@@ -99,9 +99,12 @@ export default class TransitionEvent {
 
     $('.detail .portfolio-item-subtitle').hide();
 
-    $('.detail .portfolio-item-stuff img').transition({
-      // 'scale': '1.3',
-      'scale': '1',
+    $('.detail.portfolio-item').transition({
+      'height': '100vh'
+    }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
+
+    $('.detail .portfolio-item-stuff').transition({
+      'height': '100vh'
     }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
     $('.portfolio-detail-info').transition({
@@ -130,6 +133,7 @@ export default class TransitionEvent {
     $('#portfolio-meta').transition({
       'height': '100%'
     }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
+    
   }
 
   _beforeLeaveList() {
@@ -168,8 +172,17 @@ export default class TransitionEvent {
       opacity: 1
     });
 
-    $('.list .portfolio-item-stuff img').transition({
-      'scale': '0.7',
+    let toWithPortfolioItemStuff = 640;
+    if (widthOfWindow < 768) {
+      toWithPortfolioItemStuff = 480;
+    }
+
+    $('.list .portfolio-item-stuff').transition({
+      'height': `${toWithPortfolioItemStuff}px`
+    }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
+
+    $('#portfolio-bottom-mask').animate({
+      'top': `${toWithPortfolioItemStuff}px`
     }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
     $('#margin.home #margin-left').transition({
@@ -188,8 +201,5 @@ export default class TransitionEvent {
       'y': '-120',
     }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
 
-    $('#portfolio-bottom-mask').animate({
-      'top': '640px',
-    }, this.TRANSITION_INTERVAL_IN_MILLIS, this.DEFAULT_EASING_WAY);
   }
 }

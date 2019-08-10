@@ -7,12 +7,16 @@
       <img class="portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)" />
     </div>
 
+    <!-- <div class="container portfolio-item-stuff"> -->
+    <div class="v-container-fluid portfolio-item-stuff">
+      <div class="portfolio-item-stuff-img-wrapper">
+        <img :src="getImgUrl(work.stuff.url)" />
+      </div>
+    </div>
+    
     <div class="portfolio-item-content carousel-caption d-md-block" @click="goPortfolioDetail">
+      
       <div class="portfolio-item-brief-wrapper">
-        <div class="portfolio-item-stuff">
-          <img :src="getImgUrl(work.stuff.url)" />
-        </div>
-
         <div class="portfolio-item-brief">
           <div class="portfolio-work-count">
             <span class="portfolio-work-count-current">{{ getWorkIdNumber() }}</span>
@@ -112,6 +116,7 @@ export default {
 .portfolio-item {
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 .portfolio-item.white .portfolio-item-count,
@@ -149,25 +154,21 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
 }
 
 .portfolio-item-stuff {
-  position: relative;
-  float: right;
+  position: absolute;
+  left: 0;
+  right: 0;
   height: 100%;
-  top: 10%;
+  transition-property: all;
+  transform-origin: top;
 }
 
 .portfolio-item-stuff img {
   position: relative;
-  /* transform: scale(1.3); */
-  transform-origin: top;
-
-  /* width: 100%; */
-  /* max-height: 350px; */
-  max-width: 100%;
-  max-height: 100%;
+  height: 100%;
 }
 
 .portfolio-item-content {
@@ -277,11 +278,11 @@ export default {
 }
 
 .detail .portfolio-item-stuff img {
-  transform: scale(0.7);
+  
 }
 
 .portfolio-work-count-current {
-  font-weight: bold;
+  
 }
 
 .portfolio-work-count-all,
@@ -324,13 +325,24 @@ export default {
   }
 
   .portfolio-item-stuff img {
-    /* transform: scale(1.45); */
+
   }
+}
+
+.detail.portfolio-item {
+  height: 100%;
+}
+
+.portfolio-item-stuff-img-wrapper {
+  position:relative; 
+  width:50%; 
+  height: 100%; 
+  float: right;
 }
 
 @media (min-width: 500px) and (max-width: 767px) {
   .portfolio-item-stuff {
-    /* top: 100px; */
+    
   }
 }
 
@@ -348,6 +360,12 @@ export default {
 
   .detail .portfolio-item-brief {
     top: 200px;
+  }
+
+  .portfolio-item-stuff-img-wrapper {
+    float: initial;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -389,8 +407,6 @@ export default {
     width: 1296px;
     margin: auto !important;
     padding-top: 120px;
-
-    /* TODO: 계산해야함 */
     padding-bottom: 250px;
   }
 }
