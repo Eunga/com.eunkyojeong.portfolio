@@ -71,13 +71,13 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   #portfolio {
-    height: calc(100vh - 80px);
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   #portfolio {
     height: calc(100vh - 80px);
   }

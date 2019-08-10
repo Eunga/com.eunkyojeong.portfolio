@@ -104,14 +104,13 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   #footer {
-    height: 80px;
-    padding: 0px 60px;
+    display: none;
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   #footer {
     height: 80px;
     padding: 0px 80px;

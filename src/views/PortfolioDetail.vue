@@ -120,4 +120,13 @@ export default {
   background-color: white;
   z-index: 1000; /* header 까지 가림. */
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #portfolio-meta {
+    height: 736px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+
 </style>
