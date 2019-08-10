@@ -203,7 +203,7 @@ export default {
 .portfolio-item-title {
   text-align: left;
   font-family: Questrial;
-  font-size: 70px;
+  font-size: 52px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -279,7 +279,7 @@ export default {
 }
 
 .detail .portfolio-item-stuff img {
-  
+
 }
 
 .portfolio-work-count-current {
@@ -326,7 +326,7 @@ export default {
   }
 
   .portfolio-item-stuff img {
-
+    height: 70%;
   }
 }
 
@@ -344,6 +344,10 @@ export default {
 @media (min-width: 500px) and (max-width: 767px) {
   .portfolio-item-stuff {
     
+  }
+
+  .portfolio-item-stuff img {
+    height: 90%;
   }
 }
 
@@ -373,14 +377,29 @@ export default {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .portfolio-item-content {
     padding-top: 80px;
-    padding-bottom: 180px;
+    padding-bottom: 80px;
 
     padding-left: 60px !important;
     padding-right: 60px !important;
   }
 
+  .portfolio-item-subtitle::before {
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+
   .detail .portfolio-item-brief {
-    top: 110px;
+    top: 270px;
+  }
+  
+  .portfolio-item-stuff {
+    padding-top: 60px;
+  }
+
+  .portfolio-item-stuff-img-wrapper {
+    width: 100%;
+    height: 60%;
+    text-align: center;
   }
 }
 
@@ -409,6 +428,10 @@ export default {
     margin: auto !important;
     padding-top: 120px;
     padding-bottom: 250px;
+  }
+
+  .portfolio-item-title {
+    font-size: 70px;
   }
 }
 </style>
