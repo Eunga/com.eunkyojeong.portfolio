@@ -155,15 +155,15 @@ export default {
 } 
 
 .list .portfolio-item-stuff {
-  transform: translateX(50px);
   opacity: 0;
-  transition-property: width, opacity, transform;
+  transition-property: height, width, opacity, transform;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
+
+  height: 100vh;
 }
 
 .list.portfolio-item.active .portfolio-item-stuff {
-  transform: translateX(0px);
   opacity: 1;
 } 
 
