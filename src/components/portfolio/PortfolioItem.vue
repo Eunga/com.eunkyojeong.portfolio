@@ -267,10 +267,11 @@ export default {
   font-style: normal;
   font-stretch: normal;
   line-height: 1.04;
-  letter-spacing: normal;
+  letter-spacing: -0.7px;
   text-align: left;
 
-  margin-bottom: 28px;
+  margin-bottom: 38px;
+  margin-left:4px;
 }
 
 .detail .portfolio-work-count {

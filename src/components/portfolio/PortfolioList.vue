@@ -155,6 +155,7 @@ export default {
 } 
 
 .list .portfolio-item-stuff {
+  transform: translateX(50px);
   opacity: 0;
   transition-property: height, width, opacity, transform;
   transition-duration: .3s;
@@ -164,6 +165,7 @@ export default {
 }
 
 .list.portfolio-item.active .portfolio-item-stuff {
+  transform: translateX(0px);
   opacity: 1;
 } 
 

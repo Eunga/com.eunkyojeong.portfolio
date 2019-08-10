@@ -13,7 +13,14 @@
         <div id="aboutResumeBtn">
           <a :href="resume" download target="_blank">
             <span>RESUME</span>
-            <img src="../assets/img/about/ico-download.png" alt="resume download" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.193" height="16" viewBox="0 0 16.193 16">
+              <g transform="translate(0 0)">
+                  <rect class="a" width="16" height="16" />
+                  <path class="b" d="M647.514,754.523v3.262h14.677v-3.262" transform="translate(-646.698 -744.272)" />
+                  <path class="b" d="M496.908-871.2v7.339" transform="translate(-488.754 872.834)" />
+                  <path class="b" d="M498.5-865.32l2.854,2.854,2.854-2.854" transform="translate(-493.2 871.815)" />
+              </g>
+            </svg>
           </a>
         </div>
       </div>
@@ -138,10 +145,27 @@ export default {
   line-height: 1;
   letter-spacing: 4px;
 }
+
 #aboutResumeBtn img {
   float: right;
   top: 3px;
   position: relative;
+}
+
+#aboutResumeBtn svg {
+  top: 3px;
+  position: relative;
+  float: right;
+}
+
+#aboutResumeBtn svg .a {
+  fill:rgba(255,0,0,0);
+}
+
+#aboutResumeBtn svg .b {
+  fill:none;
+  stroke:#fff;
+  stroke-width:1.4px;
 }
 
 #introduceHerSelf {
