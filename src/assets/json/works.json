@@ -20,7 +20,7 @@
     "subtitle": "The Most Efficient Way to Memorize Vocabularies",
     "path": "rivu",
     "backgroundImage": "offin/portfolio-offin-bg",
-    "shouldBeExposed": true,
+    "shouldBeExposed": false,
     "stuff": {
       "url": "offin/portfolio-offin-stuff",
       "animation": "transitionY 10px",
