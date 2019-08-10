@@ -151,7 +151,7 @@ video:focus {
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1023px) {
   .portfolio-work-wrap img,
   .portfolio-work img {
     margin-top: 10px;
@@ -166,7 +166,7 @@ video:focus {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   .work-solution-align {
     display: flex;
     align-items: center;
@@ -174,7 +174,7 @@ video:focus {
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
 }
 
 /* My Grid */
@@ -439,7 +439,7 @@ video:focus {
 }
 
 /* sm */
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1023px) {
   .hidden-sm {
     display: none !important;
   }
@@ -730,7 +730,7 @@ video:focus {
     margin-right: 0;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .offset-md-right-12 {
     margin-right: 100%;
   }

@@ -370,7 +370,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .portfolio-item-content {
     padding-top: 80px;
     padding-bottom: 180px;
@@ -384,7 +384,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .portfolio-item-content {
     padding-top: 80px;
     padding-left: 160px !important;

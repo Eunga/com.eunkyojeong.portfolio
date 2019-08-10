@@ -159,7 +159,7 @@ export default class TransitionEvent {
     let topOfPortfolioItemBrief = 0;
     if (widthOfWindow < 768) {
       topOfPortfolioItemBrief = 200;
-    } else if ((widthOfWindow >= 768) && (widthOfWindow < 1280))  {
+    } else if ((widthOfWindow >= 768) && (widthOfWindow < 1024))  {
       topOfPortfolioItemBrief = 110;
     }
     $('.list .portfolio-item-brief').animate({
