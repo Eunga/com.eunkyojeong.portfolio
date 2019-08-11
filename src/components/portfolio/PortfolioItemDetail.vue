@@ -135,6 +135,7 @@ export default {
   padding-top: 120px;
   border-top: solid 1px #dddddd;
   height: 410px;
+  margin-top: 120px;
 }
 
 .portfolio-item-nav-item {
@@ -245,6 +246,11 @@ export default {
     line-height: 1.18;
     letter-spacing: -0.4px;
     min-height: 100px;
+  }
+
+  .portfolio-item-nav {
+    padding-top: 60px;
+    margin-top: 0px;
   }
 }
 </style>

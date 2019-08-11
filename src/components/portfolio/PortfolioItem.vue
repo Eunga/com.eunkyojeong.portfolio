@@ -7,7 +7,6 @@
       <img class="portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)" />
     </div>
 
-    <!-- <div class="container portfolio-item-stuff"> -->
     <div class="v-container-fluid portfolio-item-stuff">
       <div class="portfolio-item-stuff-img-wrapper">
         <img :src="getImgUrl(work.stuff.url, work.stuff.ext)" />
@@ -29,7 +28,6 @@
           </div>
 
           <div class="portfolio-item-subtitle">
-          <!-- <div class="portfolio-item-subtitle animatable fadeInUp"> -->
             <span v-html="getWorkSubtitle()"></span>
           </div>
         </div>
@@ -340,9 +338,12 @@ export default {
 
 .portfolio-item-stuff-img-wrapper {
   position:relative; 
-  width:50%; 
-  height: 100%; 
+  height: 100%;
   float: right;
+}
+
+.list .portfolio-item-stuff-img-wrapper {
+  height: 100vh;
 }
 
 @media (min-width: 500px) and (max-width: 767px) {
@@ -396,14 +397,13 @@ export default {
     top: 270px;
   }
   
-  .portfolio-item-stuff {
-    padding-top: 60px;
-  }
-
   .portfolio-item-stuff-img-wrapper {
     width: 100%;
-    height: 60%;
     text-align: center;
+  }
+
+  .portfolio-item-stuff img {
+    height: 70%;
   }
 }
 
@@ -438,4 +438,5 @@ export default {
     font-size: 70px;
   }
 }
+
 </style>
