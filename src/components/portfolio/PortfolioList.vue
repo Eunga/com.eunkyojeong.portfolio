@@ -22,7 +22,7 @@
 import PortfolioItem from "./PortfolioItem.vue";
 
 const carouselBehavior = {
-  isCarouselActive: false,
+  isCarouselActive: true,
   shouldPauseWhenHover: false,
   shouldScrollMoveCarousel: true
 };

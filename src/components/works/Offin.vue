@@ -4,24 +4,27 @@
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
         <div class="row">
-          <div class="col-md-6 col-xs-12">
+          <div class="order-sm-last order-md-1 col-md-6 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">Overview</div>
-
             <div class="portfolio-work-title subtitle-lg">What is 'Offin'</div>
-            <div>‘Offin’ is an app on a platform for an online open market available only for offline stores. It’s like an ‘online showroom’ but you can also make payments for the purchase. I joined the team as the one and only designer. I could work with the developers very closely as we built iOS and Android apps and a website. We were very thrilled and inspired to create a new shopping experience.</div>
+            <div>
+              'Offin' is an app on a platform for an online open market available only for offline stores. It’s like an ‘online showroom’ but you can also make payments for the purchase. I joined the team as the one and only designer. I could work with the developers very closely as we built iOS and Android apps and a website. We were very thrilled and inspired to create a new shopping experience.
+              </div>
           </div>
 
-          <div class="offset-md-1 col-md-5 col-xs-12">
-            <div class="row" style="margin-bottom: 15px;">
-              <div class="portfolio-work-title subtitle-sm subtitle col-md-2 col-xs-3">Date</div>
-              <div class="col-md-10 col-xs-9">June 2014</div>
+          <div
+            class="order-sm-1 order-md-last work-meta-sm offset-md-4 col-md-2 offset-sm-0 col-sm-12 offset-xs-0 col-xs-12"
+          >
+            <div class="work-date row">
+              <div class="portfolio-work-title subtitle-sm subtitle col-md-12 col-sm-3">Date</div>
+              <div class="col-md-12 col-sm-9">June 2014</div>
             </div>
 
             <div class="row">
-              <div class="portfolio-work-title subtitle-sm subtitle col-md-2 col-xs-3">Role</div>
-              <div class="col-md-10 col-xs-9">
+              <div class="portfolio-work-title subtitle-sm subtitle col-md-12 col-sm-3">Role</div>
+              <div class="col-md-12 col-sm-9">
                 UI/UX Design
-                <br />Brand Design
+                <br/>Brand Design
               </div>
             </div>
           </div>
