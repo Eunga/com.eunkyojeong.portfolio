@@ -25,7 +25,7 @@
         </div>
       </div>
 
-      <div class="col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-6 animatable fadeInUp">
         <div id="introduceHerSelf" v-html="introduce"></div>
 
         <!-- 
@@ -63,6 +63,36 @@ export default {
       sns: this.$store.getters.snsForAboutPage,
       resume: this.$store.getters.about.resume
     };
+  },
+  mounted() {
+    $(".portfolio-item-detail-temp").hide();
+
+    window.scrollTo(0, 0);
+    $(document).ready(function($) {
+      // Function which adds the 'animated' class to any '.animatable' in view
+      const doAnimations = function() {
+        // Calc current offset and get all animatables
+        const offset = $(window).scrollTop() + $(window).height(),
+          $animatables = $(".animatable");
+
+        // Unbind scroll handler if we have no animatables
+        if ($animatables.length == 0) {
+          $(window).off("scroll", doAnimations);
+        }
+
+        // Check all animatables and animate them if necessary
+        $animatables.each(function(i) {
+          const $animatable = $(this);
+          if ($animatable.offset().top + 150 < offset) {
+            $animatable.removeClass("animatable").addClass("animated");
+          }
+        });
+      };
+
+      // Hook doAnimations on scroll, and trigger a scroll
+      $(window).on("scroll", doAnimations);
+      $(window).trigger("scroll");
+    });
   },
   computed: {
     introduce() {
@@ -105,6 +135,7 @@ export default {
   color: #000000;
   left: -4px;
   position: relative;
+  line-height: 74px;
 }
 
 #about #margin {
@@ -186,7 +217,8 @@ export default {
 #aboutContact a {
   font-family: HelveticaNeue;
   font-size: 20px;
-  color: #bbbbbb;
+  color: black;
+  opacity: 0.3;
   transition: opacity 0.4s ease-out;
   text-decoration: none;
 }
@@ -200,7 +232,7 @@ export default {
 }
 
 #aboutContact a:hover {
-  color: black;
+  opacity: 1;
 }
 
 #aboutNameAndResume {
