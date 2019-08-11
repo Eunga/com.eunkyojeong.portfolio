@@ -1,28 +1,39 @@
 # Eunkyo Jeong's Portfolio
 
 ## Project setup
-```
-npm install
+```shell
+$ npm install
 ```
 
+
+> If you do not have a node environment or npm, please try this first.
+> Download link : https://www.npmjs.com/get-npm
+>
+> Mac User : $ brew install node
+
 ### Compiles and hot-reloads for development
-```
-npm run serve
+```shell
+$ npm run serve
 ```
 
 ### Compiles and minifies for production
-```
-npm run build
+```shell
+$ npm run build
 ```
 
 ### Run your tests
-```
-npm run test
+```shell
+$ npm run test
 ```
 
 ### Lints and fixes files
+```shell
+$ npm run lint
 ```
-npm run lint
+
+### Run Vue UI
+```shell
+$ vue ui
 ```
 
 ### Customize configuration
