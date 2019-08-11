@@ -355,7 +355,7 @@
 
     <!-- Full size Product image -->
     <div class="portfolio-work-wrap animatable fadeInUp">
-      <div style="max-height:1080px">
+      <div>
         <img
           src="../../assets/img/portfolio/dw/portfolio-dw-fullsize-background.jpg"
           alt="product image"
