@@ -256,7 +256,7 @@
 
           <div class="col-sm-5 offset-xs-2 col-xs-8">
             <video style="width:100%; max-height: 900px;" controls>
-              <source src="../../assets/img/portfolio/dw/portfolio-dw-before.mp4" type="video/mp4" />Your browser does not support the video tag.
+              <source src="../../assets/img/portfolio/dw/portfolio-dw-after.mp4" type="video/mp4" />Your browser does not support the video tag.
             </video>
 
             <div style="color:#666666; font-size: 22px; text-align:center; font-weight: bold;">After</div>
@@ -357,7 +357,7 @@
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div style="max-height:1080px">
         <img
-          src="../../assets/img/portfolio/dw/portfolio-dw-fullsize-background.png"
+          src="../../assets/img/portfolio/dw/portfolio-dw-fullsize-background.jpg"
           alt="product image"
         />
       </div>

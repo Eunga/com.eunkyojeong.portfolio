@@ -10,7 +10,7 @@
     <!-- <div class="container portfolio-item-stuff"> -->
     <div class="v-container-fluid portfolio-item-stuff">
       <div class="portfolio-item-stuff-img-wrapper">
-        <img :src="getImgUrl(work.stuff.url)" />
+        <img :src="getImgUrl(work.stuff.url, work.stuff.ext)" />
       </div>
     </div>
     
@@ -73,14 +73,18 @@ export default {
       const subtitle = this.work.subtitle.replace(/\n/g, "<br/>");
       return subtitle;
     },
-    getImgUrl(pet) {
+    getImgUrl(pet, ext) {
+      if (!ext) {
+        ext = 'png';
+      }
+
       try {
         const images = require.context(
           "../../assets/img/portfolio",
           true,
           /\.png$/
         );
-        const image = images("./" + pet + ".png");
+        const image = images("./" + pet + `.${ext}`);
         return image;
       } catch (e) {
         return pet;

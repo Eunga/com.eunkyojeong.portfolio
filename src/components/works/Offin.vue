@@ -413,7 +413,7 @@
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div>
         <img
-          src="../../assets/img/portfolio/offin/portfolio-offin-fullsize-background.png"
+          src="../../assets/img/portfolio/offin/portfolio-offin-fullsize-background.jpg"
           alt="product image"
         />
       </div>

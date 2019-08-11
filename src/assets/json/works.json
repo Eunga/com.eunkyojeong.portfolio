@@ -9,6 +9,7 @@
     "shouldBeExposed": true,
     "stuff": {
       "url": "dw/portfolio-dw-stuff",
+      "ext": "png",
       "animation": "transitionY 10px",
       "duration": 1
     }
@@ -23,6 +24,7 @@
     "shouldBeExposed": false,
     "stuff": {
       "url": "offin/portfolio-offin-stuff",
+      "ext": "png",
       "animation": "transitionY 10px",
       "duration": 1
     }
@@ -37,6 +39,7 @@
     "shouldBeExposed": true,
     "stuff": {
       "url": "howser/portfolio-howser-stuff",
+      "ext": "png",
       "animation": "transitionY 10px",
       "duration": 1
     }
@@ -52,6 +55,7 @@
     "shouldBeExposed": true,
     "stuff": {
       "url": "offin/portfolio-offin-stuff",
+      "ext": "png",
       "animation": "transitionY 10px",
       "duration": 1
     }
@@ -66,6 +70,7 @@
     "shouldBeExposed": true,
     "stuff": {
       "url": "gabia/portfolio-gabia-stuff",
+      "ext": "png",
       "animation": "transitionY 10px",
       "duration": 1
     }
