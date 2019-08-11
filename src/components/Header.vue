@@ -14,7 +14,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav"></div>
-    <span class="navLink">
+    <!-- <span class="navLink">
       <router-link
         id="navPortfolio"
         to="/"
@@ -24,7 +24,20 @@
     </span>
     <span class="navLink">
       <router-link id="navAbout" to="/about" class="nav-link">About</router-link>
-    </span>
+    </span> -->
+    <div>
+      <span class="navLink">
+        <router-link
+          id="navPortfolio"
+          to="/"
+          class="nav-link"
+          :class="{'router-link-exact-active': isActivePortfolio()}"
+        >Portfolio</router-link>
+      </span>
+      <span class="navLink">
+        <router-link id="navAbout" to="/about" class="nav-link">About</router-link>
+      </span>
+    </div>
   </nav>
 </template>
 
@@ -88,6 +101,7 @@ export default {
 
 .navLink {
   z-index: 1;
+  display: inline-block;
 }
 
 .navbar-toggler {
