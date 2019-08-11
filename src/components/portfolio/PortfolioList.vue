@@ -160,8 +160,6 @@ export default {
   transition-property: height, width, opacity, transform;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
-
-  height: 100vh;
 }
 
 .list.portfolio-item.active .portfolio-item-stuff {
