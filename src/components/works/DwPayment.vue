@@ -98,7 +98,7 @@
         </div>
 
         <div class="row animatable fadeInUp">
-          <div style="margin-top: 60px;" class="work-one-image offset-md-1 col-md-10 offset-sm-0 col-sm-12">
+          <div style="margin-top: 60px;" class="work-one-image offset-xl-2 col-xl-8 offset-lg-1 col-lg-10 offset-md-1 col-md-10 offset-sm-0 col-sm-12">
             <img style="width:100%;" src="../../assets/img/portfolio/dw/portfolio-dw-painpoint.png" alt="painpoint" />
           </div>
         </div>
@@ -121,7 +121,7 @@
         </div>
 
         <div class="row animatable fadeInUp">
-          <div class="work-one-image offset-md-1 col-md-10 offset-sm-0 col-sm-12">
+          <div class="work-one-image offset-xl-2 col-xl-8 offset-lg-1 col-lg-10 offset-md-1 col-md-10 offset-sm-0 col-sm-12">
             <img src="../../assets/img/portfolio/dw/portfolio-dw-ideation.png" alt="ideation" />
           </div>
         </div>
