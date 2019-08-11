@@ -53,21 +53,19 @@ export default {
           });
           percent = percent + 1;
           if (percent > 100) {
-            percent = 0;
             $crsl.carousel("next");
+            // percent = 0;
           }
         }
 
+        let barInterval = setInterval(progressBarCarousel, 40);        
         $crsl
           .carousel({ interval: false, pause: true })
           .on("slid.bs.carousel", function() {
             // 다음 슬라이드 보일 때마다 호출 됨. 프로그레스바 초기화.
-            console.log("hello");
             percent = 0;
           });
-
-        let barInterval = setInterval(progressBarCarousel, 40);
-
+        
         if (carouselBehavior.shouldPauseWhenHover) {
           $crsl.hover(
             function() {
