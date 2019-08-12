@@ -287,7 +287,7 @@
               class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
-                src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png"
+                src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.gif"
                 alt="iteration gif"
               />
             </div>
@@ -299,7 +299,7 @@
               class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
-                src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png"
+                src="../../assets/img/portfolio/dw/portfolio-dw-solution-2.png"
                 alt="iteration gif"
               />
             </div>
@@ -327,7 +327,7 @@
               class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
-                src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png"
+                src="../../assets/img/portfolio/dw/portfolio-dw-solution-3.png"
                 alt="iteration gif"
               />
             </div>
@@ -339,7 +339,7 @@
               class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
-                src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.png"
+                src="../../assets/img/portfolio/dw/portfolio-dw-solution-4.png"
                 alt="iteration gif"
               />
             </div>
