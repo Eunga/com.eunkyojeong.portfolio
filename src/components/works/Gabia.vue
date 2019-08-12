@@ -70,9 +70,8 @@
             </div>
           </div>
                     
-          <div class="order-md-1 order-sm-last col-md-6">
-            <!-- TODO: FIX ME ! -->
-            <img src="#" style="width:300px; background-color: gray"/>
+          <div class="order-md-1 order-sm-last col-md-4 offset-md-right-2 col-sm-12 offset-sm-right-0">
+            <img style="border: 1px solid #eeeeee" src="../../assets/img/portfolio/gabia/portfolio-gabia-problem-home.png" alt="before home" />
           </div>
         </div>
 
@@ -94,9 +93,8 @@
             </div>
           </div>
                     
-          <div class="order-md-1 order-sm-last col-md-6">
-            <!-- TODO: FIX ME ! -->
-            <img src="#" style="width:300px;" />
+          <div class="order-md-1 order-sm-last col-md-4 offset-md-right-2 col-sm-12 offset-sm-right-0">
+            <img style="border: 1px solid #eeeeee" src="../../assets/img/portfolio/gabia/portfolio-gabia-problem-sub.png" alt="before sub" />
           </div>
         </div>
       </div>
@@ -141,7 +139,31 @@
       </div>
     </div>
 
-    
+
+    <!-- Ideation -->
+    <div class="portfolio-work-wrap">
+      <div class="portfolio-work v-container-fluid">
+        <div class="row animatable fadeInUp">
+          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+            <div class="portfolio-work-title subtitle-sm">Ideation</div>
+          </div>
+        </div>
+
+        <!-- Site map -->
+        <div class="row animatable fadeInUp">
+          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+            <div class="portfolio-work-title subtitle-lg">Site map</div>
+          </div>
+        </div>
+
+        <div class="row animatable fadeInUp">
+          <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+            <img src="../../assets/img/portfolio/gabia/portfolio-gabia-sitemap.png" alt="sitemap" />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Solution -->
     <div class="portfolio-work-wrap">
       <div class="portfolio-work-wrap">
