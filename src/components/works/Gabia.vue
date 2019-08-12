@@ -7,7 +7,7 @@
           <div class="order-sm-last order-md-1 col-md-6 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">Overview</div>
             <div>
-              Gabia is the biggest Internet business solution company in Korea, which provides all the groundwork for the infrastructure like domains and hostings. I was given a task to redesign the website of Gabia for the proposal. The website hadn’t been changed since 2010 and over time it became obsolete. Thus they were eagerly searching for new ideas. So, I proposed a design that would best fit Gabia.
+              Gabia is the biggest Internet business solution company in Korea, which provides all the groundwork for the infrastructure like domains and hostings. I was given a task to redesign the website of Gabia for the proposal. The website looked obsolete, so they were eagerly searching for new ideas. So, I proposed a design that would best fit Gabia.
             </div>
           </div>
 
