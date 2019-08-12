@@ -10,7 +10,7 @@
         </div>
 
         <div class="portfolio-item-nav-title">
-          <span>{{ prev.title }}</span>
+          <span v-html="getWorkTitle(prev.title)"></span>
         </div>
 
         <div class="portfolio-item-nav-icon">
@@ -34,7 +34,7 @@
         </div>
 
         <div class="portfolio-item-nav-title">
-          <span>{{ next.title }}</span>
+          <span v-html="getWorkTitle(next.title)"></span>
         </div>
 
         <div class="portfolio-item-nav-icon">
@@ -103,6 +103,10 @@ export default {
     }
   },
   methods: {
+    getWorkTitle(_title) {
+      const title = _title.replace(/\n/g, "<br/>");
+      return title;
+    },
     goOtherWork(work) {
       this.$router.push({ path: `/portfolio/${work.path}` });
     },
@@ -140,7 +144,7 @@ export default {
 
 .portfolio-item-nav-item {
   display: inline-block;
-  max-width: 300px;
+  max-width: 320px;
 }
 
 .portfolio-item-nav-item:hover {
@@ -229,7 +233,7 @@ export default {
 @media (max-width: 767px) {
   .portfolio-item-nav {
     padding-top: 40px;
-    height: 250px;
+    height: 270px;
   }
 
   .portfolio-item-nav-item {
