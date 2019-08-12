@@ -237,7 +237,21 @@
           <div class="row">
             <div
               class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
-            >‘Offin’ sounds similar to ‘Oatpin’ which means ‘clothing pins’ in Korea. So, it became a motif for brand design. This logo enabled people to recognize at a glance that it’s got something to do with the fashion business. As well, since we provide a location-based service on the map to find the closest stores from your location, we put the pin on a map icon.</div>
+            >
+            ‘Offin’ sounds similar to ‘Oatpin’ which means ‘clothing pins’ in Korea. So, it became a motif for brand design. This logo enabled people to recognize at a glance that it’s got something to do with the fashion business. As well, since we provide a location-based service on the map to find the closest stores from your location, we put the pin on a map icon.
+            </div>
+          </div>
+
+          <div class="row">
+            <div
+              class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
+            >
+              <img
+                src="../../assets/img/portfolio/offin/portfolio-offin-branding.png"
+                alt="iteration gif"
+              />
+            
+            </div>
           </div>
         </div>
 
@@ -267,16 +281,12 @@
         <div class="row animatable fadeInUp">
           <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12" style="padding-bottom: 30px;">
             <div class="portfolio-work-title subtitle-sm">Iteration</div>
-
             <div>
               <span>
                 At first, we provided a hamburger menu, but we thought there could be a better way so what we did here is to change the hamburger menu to a tab bar at the bottom mainly for 2 reasons listed down below.
               </span>
             </div>
           </div>
-
-          
-
         </div>
 
         <!-- Lower Discoverability -->
@@ -311,6 +321,22 @@
             </div>
           </div>
         </div>
+
+
+        <!-- Image -->
+        <div class="animatable fadeInUp" style="margin-top: 50px;">
+          <div class="row">
+            <div
+              class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
+            >
+              <img
+                src="../../assets/img/portfolio/offin/portfolio-offin-iteration.png"
+                alt="iteration gif"
+              />
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -346,7 +372,7 @@
               class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
-                src="../../assets/img/portfolio/offin/portfolio-offin-solution-1.png"
+                src="../../assets/img/portfolio/offin/portfolio-offin-solution-2.png"
                 alt="iteration gif"
               />
             </div>
@@ -383,7 +409,7 @@
               class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
-                src="../../assets/img/portfolio/offin/portfolio-offin-solution-1.png"
+                src="../../assets/img/portfolio/offin/portfolio-offin-solution-3.png"
                 alt="iteration gif"
               />
             </div>
@@ -395,7 +421,7 @@
               class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
             >
               <img
-                src="../../assets/img/portfolio/offin/portfolio-offin-solution-1.png"
+                src="../../assets/img/portfolio/offin/portfolio-offin-solution-4.png"
                 alt="iteration gif"
               />
             </div>
