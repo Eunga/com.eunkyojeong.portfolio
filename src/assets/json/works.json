@@ -1,9 +1,9 @@
 [
   {
     "name": "DwPayment",
-    "title": "Payment Renewal\nof Daum Webtoon",
+    "title": "DAUM WEBTOON\nPayment Renewal",
     "theme": "black",
-    "subtitle": "Easy and Fast Payment\nFor Seamless Reading Experience",
+    "subtitle": "Easy and Fast Payment\nfor Seamless Reading Experience",
     "path": "daum_payment",
     "backgroundImage": "dw/portfolio-dw-bg",
     "shouldBeExposed": true,
@@ -16,9 +16,9 @@
   },
   {
     "name": "Rivu",
-    "title": "Rivu\nApp Design",
+    "title": "RIVU\nVocabulary Building App Design",
     "theme": "black",
-    "subtitle": "The Most Efficient Way to Memorize Vocabularies",
+    "subtitle": "The Laziest And Most Efficient Way\nTo Memorize Vocabularies",
     "path": "rivu",
     "backgroundImage": "offin/portfolio-offin-bg",
     "shouldBeExposed": false,
@@ -31,9 +31,9 @@
   },
   {
     "name": "Howser",
-    "title": "3D Home Planner\nof Howser",
+    "title": "HOWSER\n3D Home Planner",
     "theme": "white",
-    "subtitle": "Launching online open market service",
+    "subtitle": "The Easiest Way to Create 3D Floor Plans",
     "path": "howser",
     "backgroundImage": "howser/portfolio-howser-bg",
     "shouldBeExposed": true,
@@ -47,9 +47,9 @@
   
   {
     "name": "Offin",
-    "title": "Offin—Fashion O2O\nApp Design",
+    "title": "OFFIN\nFashion O2O App",
     "theme": "black",
-    "subtitle": "Offline fashion stores in your phone",
+    "subtitle": "Offline Fashion Stores in Your Phone",
     "path": "offin",
     "backgroundImage": "offin/portfolio-offin-bg",
     "shouldBeExposed": true,
@@ -62,9 +62,9 @@
   },
   {
     "name": "Gabia",
-    "title": "Gabia\nWebsite Redesign",
+    "title": "GABIA\nWebsite Renewal",
     "theme": "white",
-    "subtitle": "Launching online open market service",
+    "subtitle": "Clear and Easy Website for IT Businesses",
     "path": "gabia",
     "backgroundImage": "gabia/portfolio-gabia-bg",
     "shouldBeExposed": true,

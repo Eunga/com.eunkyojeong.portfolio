@@ -21,12 +21,14 @@
           >
             <div class="work-date row">
               <div class="portfolio-work-title subtitle-sm subtitle col-md-12 col-sm-3">Date</div>
-              <div class="col-md-12 col-sm-9">December 2018</div>
+              <div class="col-md-12 col-sm-9">February 2019</div>
             </div>
 
             <div class="row">
               <div class="portfolio-work-title subtitle-sm subtitle col-md-12 col-sm-3">Role</div>
-              <div class="col-md-12 col-sm-9">Product Designer</div>
+              <div class="col-md-12 col-sm-9">
+                Product Design
+              </div>
             </div>
           </div>
         </div>
