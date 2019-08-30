@@ -386,9 +386,6 @@
                   The app provides users with an exact location to nearby stores.
                   <br/>
                   Users can search and find stores in remote areas that can be difficult to find online. Users can find clothes they pinned at the offline store and try them on before they make the purchase or vice versa.
-                  <br/>
-                  <br/>
-                  It’s a win-win for both customers and store owners since customers can look around the items freely before they pick items they like, and once they visit the store, it’s beneficial for store owners as well since they can visit and pick up more clothes so they could expect potential sales profit.
                 </div>
               </div>
             </div>
