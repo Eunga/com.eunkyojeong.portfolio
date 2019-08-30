@@ -223,8 +223,8 @@
           <div
             class="col-md-8 col-sm-12 animatable fadeInUp"
           >
-            <img id="dw-ideation-anime" src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="iteration anime" />
-            <img id="dw-ideation-frame" src="../../assets/img/portfolio/dw/portfolio-dw-iteration-frame.png" alt="iteration frame" />
+            <img id="dw-ideation-anime" src="../../assets/img/portfolio/dw/portfolio-dw-iteration.gif" alt="daum webtoon iteration anime" />
+            <img id="dw-ideation-frame" src="../../assets/img/portfolio/dw/portfolio-dw-iteration-frame.png" alt="daum webtoon iteration frame" />
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@
             >
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.gif"
-                alt="iteration gif"
+                alt="daum webtoon solution gif"
               />
             </div>
           </div>
@@ -300,7 +300,7 @@
             >
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-2.gif"
-                alt="iteration gif"
+                alt="daum webtoon solution gif"
               />
             </div>
 
@@ -328,7 +328,7 @@
             >
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-3.gif"
-                alt="iteration gif"
+                alt="daum webtoon solution gif"
               />
             </div>
           </div>
@@ -340,7 +340,7 @@
             >
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-4.gif"
-                alt="iteration gif"
+                alt="daum webtoon solution gif"
               />
             </div>
 

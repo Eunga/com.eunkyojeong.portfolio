@@ -248,7 +248,7 @@
             >
               <img
                 src="../../assets/img/portfolio/offin/portfolio-offin-branding.png"
-                alt="iteration gif"
+                alt="offin branding"
               />
             
             </div>
@@ -331,7 +331,7 @@
             >
               <img
                 src="../../assets/img/portfolio/offin/portfolio-offin-iteration.png"
-                alt="iteration gif"
+                alt="offin iteration"
               />
             </div>
           </div>
@@ -361,7 +361,7 @@
             >
               <img
                 src="../../assets/img/portfolio/offin/portfolio-offin-solution-1.png"
-                alt="iteration gif"
+                alt="offin solution"
               />
             </div>
           </div>
@@ -373,7 +373,7 @@
             >
               <img
                 src="../../assets/img/portfolio/offin/portfolio-offin-solution-2.png"
-                alt="iteration gif"
+                alt="offin solution"
               />
             </div>
 
@@ -407,7 +407,7 @@
             >
               <img
                 src="../../assets/img/portfolio/offin/portfolio-offin-solution-3.png"
-                alt="iteration gif"
+                alt="offin solution"
               />
             </div>
           </div>
@@ -419,7 +419,7 @@
             >
               <img
                 src="../../assets/img/portfolio/offin/portfolio-offin-solution-4.png"
-                alt="iteration gif"
+                alt="offin solution"
               />
             </div>
 

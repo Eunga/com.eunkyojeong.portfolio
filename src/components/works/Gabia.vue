@@ -185,7 +185,7 @@
               <img
                 style="margin-top: 30px; border-radius: 8px; box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 30px 0px;"
                 src="../../assets/img/portfolio/gabia/portfolio-gabia-solution-mainpage.png"
-                alt="iteration gif"
+                alt="gabia solution mainpage"
               />
             </div>
           </div>
@@ -217,7 +217,7 @@
               <img
                 style="margin-top: 30px; border-radius: 8px; box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 30px 0px;"
                 src="../../assets/img/portfolio/gabia/portfolio-gabia-solution-subpage.png"
-                alt="iteration gif"
+                alt="gabia solution subpage"
               />
             </div>
           </div>
@@ -233,7 +233,7 @@
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div>
         <img
-          src="../../assets/img/portfolio/gabia/portfolio-gabia-fullsize-background.png"
+          src="../../assets/img/portfolio/gabia/portfolio-gabia-fullsize-background.jpg"
           alt="product image"
         />
       </div>
