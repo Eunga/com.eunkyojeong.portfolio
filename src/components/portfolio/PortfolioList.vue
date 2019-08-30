@@ -160,6 +160,10 @@ export default {
   transition-timing-function: ease-in-out;
 }
 
+.mobileAnim .list .portfolio-item-stuff {
+  transition-duration: .2s;
+}
+
 .list.portfolio-item.active .portfolio-item-stuff {
   transform: translateX(0px);
   opacity: 1;

@@ -140,6 +140,7 @@ export default {
 #about #margin {
   display: none;
 }
+
 #aboutResumeBtn {
   margin-top: 30px;
   width: 163px;

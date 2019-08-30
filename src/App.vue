@@ -77,6 +77,26 @@ export default {
     } else {
       $("body").removeClass("overflowHidden");
     }
+
+    $(document).ready(function() {
+      const widthOfWindow = window.innerWidth;
+      if (widthOfWindow < 768) {
+          $('body').addClass('mobileAnim');
+      } else {
+          $('body').removeClass('mobileAnim');
+      }
+
+      window.addEventListener("resize", function(e) {
+        const widthOfWindow = window.innerWidth;
+        // 모바일일 경우에는 모든 animation 속도를 30% 빠르게 한다.
+        // animation 속도는 .3s 로 대개 고정되었기 때문에 0.2s 로 줄인다.
+        if (widthOfWindow < 768) {
+          $('body').addClass('mobileAnim');
+        } else {
+          $('body').removeClass('mobileAnim');
+        }
+      });
+    });
   },
   methods: {
     // --------
@@ -155,7 +175,7 @@ body.overflowHidden {
 }
 
 #app {
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in-out;
   height: 100%;
 }
 
@@ -262,6 +282,14 @@ ul {
   -ms-animation-play-state: running;
   -o-animation-play-state: running;
   animation-play-state: running;
+}
+
+.mobileAnim .animated {
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  -ms-animation-duration: 0.7s;
+  -o-animation-duration: 0.7s;
+  animation-duration: 0.7s;
 }
 
 /* CSS Animations (extracted from http://glifo.uiparade.com/) */
@@ -789,5 +817,9 @@ ul {
 .carousel-item {
   transition: transform .8s;
   transition-timing-function: cubic-bezier(0.140, 0.010, 0.000, 0.930);
+}
+
+.mobileAnim .carousel-item {
+  transition-duration: 0.56s;
 }
 </style>

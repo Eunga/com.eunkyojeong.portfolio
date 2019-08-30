@@ -197,11 +197,11 @@ export default {
   height: 100%;
   width: 100%;
   top: -100%;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .portfolio-item-nav-id span {
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
   height: 100%;
   width: 100%;
   backface-visibility: hidden;

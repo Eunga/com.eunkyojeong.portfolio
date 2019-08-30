@@ -107,7 +107,7 @@ export default {
 }
 
 .portfolio-detail-info {
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   z-index: 10;
 }
 

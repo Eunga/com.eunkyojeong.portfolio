@@ -144,7 +144,11 @@ export default {
   right: 0;
   overflow: hidden;
   margin: 0;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobileAnim .portfolio-item-background {
+  transition-duration: 0.2s;
 }
 
 .detail {
@@ -186,9 +190,13 @@ export default {
 }
 
 .portfolio-item-brief-wrapper {
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in-out;
   position: relative;
   height: 100%;
+}
+
+.mobileAnim .portfolio-item-brief-wrapper {
+  transition-duration: 0.2s;
 }
 
 .portfolio-item-brief {
