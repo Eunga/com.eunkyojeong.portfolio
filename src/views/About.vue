@@ -110,10 +110,9 @@ export default {
 
 <style>
 #about {
-  padding-top: 120px;
-  margin-top: 120px;
+  padding-top: 240px;
   position: relative;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 240px);
 }
 
 #aboutProfileImage {
@@ -239,10 +238,9 @@ export default {
   margin-bottom: 40px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   #about {
-    margin-top: 60px;
-    padding-top: 60px;
+    padding-top: 120px;
   }
 
   #aboutNameAndResume {
@@ -264,6 +262,25 @@ export default {
 
   #introduceHerSelf {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #about {
+    height: calc(100vh - 48px);
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  #about {
+    height: calc(100vh - 80px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #about {
+    height: calc(100vh - 120px);
   }
 }
 </style>
