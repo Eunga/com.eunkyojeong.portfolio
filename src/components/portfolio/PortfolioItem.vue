@@ -307,6 +307,7 @@ export default {
     width: 100%;
     left: 0%;
     top: 0%;
+    margin-left: 0px !important;
   }
 
   .portfolio-item-title {
