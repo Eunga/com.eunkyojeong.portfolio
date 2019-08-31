@@ -39,7 +39,6 @@ export default {
     }
   },
   mounted() {
-    console.log('LIST MOUNTED');
     $('#portfolio-carousel-progressbar-wrapper').css({
       opacity: 0
     });

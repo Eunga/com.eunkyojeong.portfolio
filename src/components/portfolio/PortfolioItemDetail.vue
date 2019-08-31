@@ -96,7 +96,7 @@ export default {
       try {
         comp = () => import(`@/components/works/${name}.vue`);
       } catch (e) {
-        // console.log(e);
+
       }
 
       return comp;

@@ -43,7 +43,7 @@
 
         <!-- Hard to access to offline retail stores -->
         <div class="row animatable fadeInUp">
-          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+          <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
             <div class="portfolio-work-title subtitle-lg">Hard to access to offline retail stores</div>
           </div>
         </div>
