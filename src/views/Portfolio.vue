@@ -1,7 +1,8 @@
 <template>
   <div id="portfolio">
     <app-mask />
-    <portfolio-list v-on:goPortfolioDetail="goPortfolioDetail($event)" />
+    <portfolio-list 
+      v-on:goPortfolioDetail="goPortfolioDetail($event)" />
 
     <div id="portfolio-bottom-mask"></div>
   </div>
@@ -16,6 +17,11 @@ export default {
   components: {
     "portfolio-list": PortfolioList,
     "app-mask": Mask
+  },
+  methods: {
+    goPortfolioDetail(work) {
+      $("#portfolio").addClass("transition");
+    }
   }
 };
 </script>

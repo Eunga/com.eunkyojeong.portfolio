@@ -13,7 +13,9 @@
       </div>
     </div>
     
-    <div class="portfolio-item-content carousel-caption d-md-block" @click="goPortfolioDetail">
+    <div 
+      class="portfolio-item-content carousel-caption d-md-block"
+      @click="goPortfolioDetail">
       
       <div class="portfolio-item-brief-wrapper">
         <div class="portfolio-item-brief">
@@ -89,9 +91,7 @@ export default {
       }
     },
     goPortfolioDetail() {
-      $("#portfolio").addClass("transition");
-      this.$store.commit("changeCurrentWorkId", this.work.id);
-      this.$router.push({ path: `/portfolio/${this.work.path}` });
+      this.$emit('goPortfolioDetail', this.work);
     },
     getWorkIdNumber() {
       return this.numberFormatWithTwoDigits(this.work.id + 1);

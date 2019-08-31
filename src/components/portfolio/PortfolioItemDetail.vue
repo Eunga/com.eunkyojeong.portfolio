@@ -182,7 +182,7 @@ export default {
   letter-spacing: -0.8px;
   color: #000000;
   margin-bottom: 10px;
-  min-height: 140px;
+  min-height: 100px;
 }
 
 .portfolio-item-nav-id::before {
@@ -249,7 +249,7 @@ export default {
     font-size: 22px;
     line-height: 1.18;
     letter-spacing: -0.4px;
-    min-height: 100px;
+    min-height: 50px;
   }
 
   .portfolio-item-nav {
