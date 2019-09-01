@@ -161,6 +161,18 @@ export default {
   text-align: right;
 }
 
+.portfolio-item-nav-next .portfolio-item-nav-icon {
+  top: 8px;
+  right: 2px;
+  position: relative;
+}
+
+.portfolio-item-nav-prev .portfolio-item-nav-icon {
+  top: 8px;
+  left: 2px;
+  position: relative;
+}
+
 .portfolio-item-nav-id {
   font-size: 20px;
   font-weight: normal;
