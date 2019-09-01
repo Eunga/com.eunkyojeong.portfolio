@@ -43,7 +43,7 @@
 
         <!-- Hard to access to offline retail stores -->
         <div class="row animatable fadeInUp">
-          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+          <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
             <div class="portfolio-work-title subtitle-lg">Hard to access to offline retail stores</div>
           </div>
         </div>
@@ -248,7 +248,7 @@
             >
               <img
                 src="../../assets/img/portfolio/offin/portfolio-offin-branding.png"
-                alt="iteration gif"
+                alt="offin branding"
               />
             
             </div>
@@ -331,7 +331,7 @@
             >
               <img
                 src="../../assets/img/portfolio/offin/portfolio-offin-iteration.png"
-                alt="iteration gif"
+                alt="offin iteration"
               />
             </div>
           </div>
@@ -361,7 +361,7 @@
             >
               <img
                 src="../../assets/img/portfolio/offin/portfolio-offin-solution-1.png"
-                alt="iteration gif"
+                alt="offin solution"
               />
             </div>
           </div>
@@ -373,7 +373,7 @@
             >
               <img
                 src="../../assets/img/portfolio/offin/portfolio-offin-solution-2.png"
-                alt="iteration gif"
+                alt="offin solution"
               />
             </div>
 
@@ -386,9 +386,6 @@
                   The app provides users with an exact location to nearby stores.
                   <br/>
                   Users can search and find stores in remote areas that can be difficult to find online. Users can find clothes they pinned at the offline store and try them on before they make the purchase or vice versa.
-                  <br/>
-                  <br/>
-                  It’s a win-win for both customers and store owners since customers can look around the items freely before they pick items they like, and once they visit the store, it’s beneficial for store owners as well since they can visit and pick up more clothes so they could expect potential sales profit.
                 </div>
               </div>
             </div>
@@ -410,7 +407,7 @@
             >
               <img
                 src="../../assets/img/portfolio/offin/portfolio-offin-solution-3.png"
-                alt="iteration gif"
+                alt="offin solution"
               />
             </div>
           </div>
@@ -422,7 +419,7 @@
             >
               <img
                 src="../../assets/img/portfolio/offin/portfolio-offin-solution-4.png"
-                alt="iteration gif"
+                alt="offin solution"
               />
             </div>
 

@@ -158,7 +158,7 @@
 
       <div class="row animatable fadeInUp">
         <div>
-          <img src="../../assets/img/portfolio/howser/portfolio-howser-iteration.png" alt="iteration" />
+          <img src="../../assets/img/portfolio/howser/portfolio-howser-iteration.jpg" alt="howser iteration" />
         </div>
       </div>
     </div>
@@ -183,7 +183,7 @@
       <!-- Full size Product image -->
       <div class="row animatable fadeInUp">
         <div>
-          <img src="../../assets/img/portfolio/howser/portfolio-howser-fullsize-background.png" alt="iteration" />
+          <img src="../../assets/img/portfolio/howser/portfolio-howser-fullsize-background.jpg" alt="howser" />
         </div>
       </div>
     </div>

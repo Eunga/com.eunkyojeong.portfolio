@@ -57,23 +57,21 @@ export default {
   height: 100%;
   position: fixed;
   position: absolute;
-  /* box-shadow: 5px 5px red inset; */
   z-index: 500;
-  transition: all 0.3 ease-in;
+  transition: all 0.3s ease-in-out;
 }
 
 .margin-horizontal {
   width: 100%;
   position: fixed;
   position: absolute;
-  /* box-shadow: 5px 5px red inset; */
   z-index: 100;
+  transition: all 0.3s ease-in-out;
 }
 
 /* LEFT */
 #margin-left {
   left: 0;
-  transition-duration: 0.3s;
 }
 
 #margin-left::after {
@@ -91,7 +89,6 @@ export default {
 /* RIGHT */
 #margin-right {
   right: 0;
-  transition-duration: 0.3s;
 }
 
 #margin-right::after {
@@ -109,7 +106,6 @@ export default {
 /* BOTTOM */
 #margin-bottom {
   bottom: 0;
-  transition-duration: 0.3s;
 }
 
 #margin-bottom::after {
@@ -132,7 +128,6 @@ export default {
 /* TOP */
 #margin-top {
   top: 0;
-  transition-duration: 0.3s;
 }
 
 #margin-top::after {

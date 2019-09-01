@@ -88,7 +88,6 @@ export default {
 #portfolio-detail {
   position: relative;
   width: 100%;
-  /* height: 100%; */
 }
 
 #portfolio-meta {
@@ -107,7 +106,7 @@ export default {
 }
 
 .portfolio-detail-info {
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   z-index: 10;
 }
 

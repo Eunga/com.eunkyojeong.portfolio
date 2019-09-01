@@ -1,52 +1,155 @@
 <template>
   <div id="about" class="v-container-fluid">
-    <app-mask />
-    <!-- 
-    <div id="aboutProfileImage">
-      <img src="../assets/img/about/img-profile.png">
-    </div>
-    -->
+    <!-- Desktop -->
+    <div id="aboutOffset"></div>
 
-    <div class="row">
-      <div id="aboutNameAndResume" class="col-xs-12 col-md-6">
-        <div id="aboutName">Eunkyo Jeong</div>
-        <div id="aboutResumeBtn">
-          <a :href="resume" download target="_blank">
-            <span>RESUME</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16.193" height="16" viewBox="0 0 16.193 16">
-              <g transform="translate(0 0)">
-                  <rect class="a" width="16" height="16" />
-                  <path class="b" d="M647.514,754.523v3.262h14.677v-3.262" transform="translate(-646.698 -744.272)" />
-                  <path class="b" d="M496.908-871.2v7.339" transform="translate(-488.754 872.834)" />
-                  <path class="b" d="M498.5-865.32l2.854,2.854,2.854-2.854" transform="translate(-493.2 871.815)" />
-              </g>
-            </svg>
-          </a>
-        </div>
+    <div class="hidden-xs row tab">
+      <div class="tabtitle col-6">
+        <ul>
+          <li class="tabtitle-item active" data-tabcontent-idx="0">
+            <div class="tabtitle-item-title">Introduction</div>
+            <div class="tabtitle-divider"></div>
+          </li>
+
+          <li class="tabtitle-item" data-tabcontent-idx="1">
+            <div class="tabtitle-item-title">Background</div>
+            <div class="tabtitle-divider"></div>
+          </li>
+        </ul>
+
       </div>
 
-      <div class="col-xs-12 col-md-6 animatable fadeInUp">
-        <div id="introduceHerSelf" v-html="introduce"></div>
+      <div class="tabcontent col-6">
+        
+        <!-- Introduction -->
+        <div class="aboutIntroductionContent tabcontent-item active">
+          <div class="aboutName animatable fadeInUp">
+            <span>Hi, I'm Kyo!</span>
+          </div>
 
-        <!-- 
-        <div id="aboutContact">
-          <a href="tel:+821020077774" v-html="phoneNumber"></a>
+          <div 
+            class="introduceHerSelf animatable fadeInUp" 
+            v-html="introduce">
+          </div>
+
+          <div class="aboutResumeBtn animatable fadeInUp">
+            <a :href="resume" download target="_blank">
+              <span>RESUME</span>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <g id="ico-download">
+                    <path id="area" d="M0 0h16v16H0z" class="cls-1"/>
+                    <path id="Path_10" d="M647.514 754.523v3.262h14.677v-3.262" class="cls-2" data-name="Path 10" transform="translate(-646.698 -744.272)"/>
+                    <path id="Path_8" d="M496.908-871.2v7.339" class="cls-2" data-name="Path 8" transform="translate(-488.754 872.834)"/>
+                    <path id="Path_9" d="M498.5-865.32l2.854 2.854 2.854-2.854" class="cls-2" data-name="Path 9" transform="translate(-493.2 871.815)"/>
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <div class="animatable fadeInUp">
+            <div class="aboutAdobeCreateType">
+              <a :href="myCreativeType">
+                Adobe says this is #MyCreativeType
+              </a>
+            </div>
+
+            <div class="aboutPersonalType">
+              <a :href="myPersonality">
+                Here, more of my personality
+              </a>
+            </div>
+          </div>
         </div>
-        -->
-        <!--  
-        <div id="aboutContact" v-html="email"></div>
-        -->
+        
 
-        <div id="aboutContact">
-          <span class="aboutContactSns" v-for="(s, idx ) in sns" v-bind:key="s.id">
-            <a :href="s.url" :target="s.target" v-html="s.name"></a>
-
-            <span class="aboutContactSnsDelimiter" v-if="idx < sns.length - 1 "></span>
-          </span>
+        <!-- Background -->
+        <div class="aboutBackgroundContent tabcontent-item animatable fadeInUp">
+          I have over six years of experience in the industry.<br/>
+          I majored in Visual Communication Design at Hongik University, South Korea’s top art university.
+          <br/><br/>
+          Prior to graduation I had the opportunity to work as an intern at LG Electronics, where I worked on smart home technology. I had so much fun thinking about users and their needs, which sparked my passion for UX design. 
+          <br/><br/>
+          After graduating, I worked at a startup, at which I launched an app called Offin. I was solely responsible for the design of the app. As a new designer, I decided to move to a larger, more established company to expand my skillset. 
+          <br/><br/>
+          At my most recent job, Kakao’s Daum Webtoon Company, my main job was redesigning the mobile app. I gained insight into how a visually pleasing interface creates a smoother user experience, and also developed an understanding of how to make apps more user-friendly overall. 
+          <br/><br/>
+          At my next job, I hope to continue developing my UX design skills while bringing in aesthetically pleasing interface designs.
+          
         </div>
       </div>
     </div>
+
+    <!-- Mobile -->
+    <div class="visible-xs-block">
+        <!-- Introduction -->
+        <div class="aboutIntroductionContent">
+          <div class="tabtitle-item-title">Introduction</div>
+          <div class="tabtitle-divider"></div>
+          
+          <div class="aboutName animatable fadeInUp">
+            <span>Hi, I'm Kyo!</span>
+          </div>
+
+          <div 
+            class="introduceHerSelf animatable fadeInUp" 
+            v-html="introduce">
+          </div>
+
+          <div class="aboutResumeBtn animatable fadeInUp">
+            <a :href="resume" download target="_blank">
+              <span>RESUME</span>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <g id="ico-download">
+                    <path id="area" d="M0 0h16v16H0z" class="cls-1"/>
+                    <path id="Path_10" d="M647.514 754.523v3.262h14.677v-3.262" class="cls-2" data-name="Path 10" transform="translate(-646.698 -744.272)"/>
+                    <path id="Path_8" d="M496.908-871.2v7.339" class="cls-2" data-name="Path 8" transform="translate(-488.754 872.834)"/>
+                    <path id="Path_9" d="M498.5-865.32l2.854 2.854 2.854-2.854" class="cls-2" data-name="Path 9" transform="translate(-493.2 871.815)"/>
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <div class="animatable fadeInUp">
+            <div class="aboutAdobeCreateType">
+              <a :href="myCreativeType">
+                Adobe says this is #MyCreativeType
+              </a>
+            </div>
+
+            <div class="aboutPersonalType">
+              <a :href="myPersonality">
+                Here, more of my personality
+              </a>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Background -->
+        <div class="aboutBackgroundContent tabcontent-item animatable fadeInUp">
+          <div class="tabtitle-item-title">Background</div>
+          <div class="tabtitle-divider"></div>
+
+          <div>
+          I have over six years of experience in the industry.<br/>
+          I majored in Visual Communication Design at Hongik University, South Korea’s top art university.
+          <br/><br/>
+          Prior to graduation I had the opportunity to work as an intern at LG Electronics, where I worked on smart home technology. I had so much fun thinking about users and their needs, which sparked my passion for UX design. 
+          <br/><br/>
+          After graduating, I worked at a startup, at which I launched an app called Offin. I was solely responsible for the design of the app. As a new designer, I decided to move to a larger, more established company to expand my skillset. 
+          <br/><br/>
+          At my most recent job, Kakao’s Daum Webtoon Company, my main job was redesigning the mobile app. I gained insight into how a visually pleasing interface creates a smoother user experience, and also developed an understanding of how to make apps more user-friendly overall. 
+          <br/><br/>
+          At my next job, I hope to continue developing my UX design skills while bringing in aesthetically pleasing interface designs.
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
+
 </template>
 
 <script>
@@ -61,37 +164,37 @@ export default {
     return {
       about: this.$store.getters.about,
       sns: this.$store.getters.snsForAboutPage,
-      resume: this.$store.getters.about.resume
+      resume: this.$store.getters.about.resume,
     };
   },
   mounted() {
     $(".portfolio-item-detail-temp").hide();
 
-    window.scrollTo(0, 0);
-    $(document).ready(function($) {
-      // Function which adds the 'animated' class to any '.animatable' in view
-      const doAnimations = function() {
-        // Calc current offset and get all animatables
-        const offset = $(window).scrollTop() + $(window).height(),
-          $animatables = $(".animatable");
+    $('.tabtitle-item').click(function() {
+      const idxOfContent = $(this).attr('data-tabcontent-idx');
 
-        // Unbind scroll handler if we have no animatables
-        if ($animatables.length == 0) {
-          $(window).off("scroll", doAnimations);
-        }
+      const $contentItem = $('.tabcontent-item');
+      $contentItem.hide();
+      $contentItem.eq(idxOfContent).show();
 
-        // Check all animatables and animate them if necessary
-        $animatables.each(function(i) {
-          const $animatable = $(this);
-          if ($animatable.offset().top + 150 < offset) {
-            $animatable.removeClass("animatable").addClass("animated");
-          }
-        });
-      };
+      $('.tabtitle-item').removeClass('active');
+      $(this).addClass('active');
 
-      // Hook doAnimations on scroll, and trigger a scroll
-      $(window).on("scroll", doAnimations);
-      $(window).trigger("scroll");
+    });
+
+    $(document).ready(function() {
+      const $animatables = $("#about .animatable");
+
+      const timeIntervalInMillis = 100;
+      let timeIntervalAccumulator = 0;
+      $animatables.each(function(i) {
+        const $animatable = $(this);
+        const timeCount = i;
+        const interval = timeIntervalInMillis * timeCount;
+        setTimeout(function() {
+          $animatable.removeClass("animatable").addClass("animated");
+        }, timeIntervalInMillis * (timeCount));
+      });
     });
   },
   computed: {
@@ -103,28 +206,112 @@ export default {
     },
     phoneNumber() {
       return this.about.phoneNumber;
-    }
-  }
+    },
+    myCreativeType() {
+      return this.about.myCreativeType;
+    },
+    myPersonality() {
+      return this.about.myPersonality;
+    },
+  },
+  methods: {
+    
+  },
 };
 </script>
 
 <style>
 #about {
-  padding-top: 120px;
-  margin-top: 120px;
   position: relative;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 240px);
+  overflow-y: hidden;
 }
 
-#aboutProfileImage {
-  padding-top: 131px;
+.tabcontent {
+  overflow-y: scroll;
 }
 
-.about-contact-sns {
-  margin-right: 10px;
+#aboutOffset {
+  position: relative;
+  height: 120px;
 }
 
-#aboutName {
+.tab {
+  width: 100%;
+}
+
+.tabcontent-item {
+  display: none;
+}
+
+.tabcontent-item.active {
+  display: block;
+}
+
+.tabtitle ul {
+  list-style: none;
+}
+
+.tabtitle-item-title {
+  font-family: Questrial;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  /* line-height: 1.6; */
+  letter-spacing: -0.2px;
+  text-align: left;
+  width: 125px;
+  display: inline-block;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.tabtitle-item {
+  opacity: 0.3;
+  transition: opacity .3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.tabtitle-item:hover {
+  opacity: 1;
+}
+
+.tabtitle-item.active {
+  opacity: 1;
+}
+
+.tabtitle-divider {
+  width: 0px;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  top: -6px;
+  position: relative;
+  opacity: 1;
+  transition: width 0.3s ease-in-out;
+}
+
+.tabtitle-item.active .tabtitle-divider {
+  width: 100px;
+}
+
+
+.tabtitle-item span {
+  cursor: pointer;
+}
+
+.aboutBackgroundContent {
+  font-family: HelveticaNeue;
+  font-size: 19px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  /* line-height: 1.79; */
+  letter-spacing: -0.38px;
+  text-align: left;
+}
+
+.aboutName {
   font-family: Questrial;
   font-size: 70px;
   font-weight: normal;
@@ -135,39 +322,58 @@ export default {
   color: #000000;
   left: -4px;
   position: relative;
-  line-height: 74px;
+  line-height: 1;
+  margin-bottom: 60px;
 }
 
-#about #margin {
-  display: none;
+.introduceHerSelf {
+  font-family: HelveticaNeue;
+  font-size: 19px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  /* line-height: 1.68; */
+  letter-spacing: -0.38px;
+  text-align: left;
 }
-#aboutResumeBtn {
-  margin-top: 30px;
+
+.aboutResumeBtn {
+  margin-top: 60px;
   width: 163px;
   height: 43px;
-  background-color: black;
-  color: white;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  transition: all .3s ease-in-out;
+  transition-property: opacity, background-color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
-#aboutResumeBtn a {
+.aboutResumeBtn a {
   width: 100%;
   height: 100%;
   padding: 10px 18px;
   text-decoration: none;
-  color: white;
+  color: black;
   text-align: left;
+  transition-property: opacity, background-color, color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
-#aboutResumeBtn:hover {
-  opacity: 0.7;
+.aboutResumeBtn:hover {
+  background-color: black;
 }
 
-#aboutResumeBtn span {
+.aboutResumeBtn:hover a {
+  color: white;
+}
+
+.aboutResumeBtn span {
   font-family: Questrial;
   font-size: 16px;
   font-weight: normal;
@@ -177,93 +383,173 @@ export default {
   letter-spacing: 4px;
 }
 
-#aboutResumeBtn img {
+.aboutResumeBtn img {
   float: right;
   top: 3px;
   position: relative;
 }
 
-#aboutResumeBtn svg {
+.aboutResumeBtn svg {
   top: 3px;
   position: relative;
   float: right;
 }
 
-#aboutResumeBtn svg .a {
-  fill:rgba(255,0,0,0);
+.aboutResumeBtn svg .cls-1 {
+  fill:rgba(255,0,0,0)
 }
 
-#aboutResumeBtn svg .b {
+.aboutResumeBtn svg .cls-2 {
   fill:none;
-  stroke:#fff;
-  stroke-width:1.4px;
+  stroke:#000;
+  transition-property: stroke;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
-#introduceHerSelf {
-  font-family: HelveticaNeue;
+.aboutResumeBtn:hover svg .cls-2{
+  stroke:#fff
+}
+
+.aboutAdobeCreateType a, .aboutPersonalType a {
+  font-family: Questrial;
   font-size: 20px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.7;
+  /* line-height: 1.6; */
   letter-spacing: -0.2px;
   text-align: left;
-  color: #000000;
-}
-
-#aboutContact {
-  margin-top: 30px;
-}
-#aboutContact a {
-  font-family: HelveticaNeue;
-  font-size: 20px;
-  color: black;
   opacity: 0.3;
-  transition: opacity 0.4s ease-out;
+  color: black;
   text-decoration: none;
+  transition: opacity .3s ease-in-out;
 }
 
-.aboutContactSnsDelimiter {
-  width: 14px;
-  height: 14px;
-  margin-right: 14px;
-  border-right: 1px solid #bbbbbb;
-  display: inline-block;
+.aboutAdobeCreateType:hover a , .aboutPersonalType:hover a {
+  opacity: 1.0;
 }
 
-#aboutContact a:hover {
-  opacity: 1;
+.aboutAdobeCreateType {
+  margin-top: 60px;
 }
 
-#aboutNameAndResume {
-  margin-bottom: 40px;
-}
-
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   #about {
-    margin-top: 60px;
-    padding-top: 60px;
+    overflow: unset;
   }
 
-  #aboutNameAndResume {
+  .visible-xs-block {
+    margin-bottom: 90px;
+  }
+
+  .tabtitle-item-title {
+    font-family: Questrial;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    text-align: left;
+    width: 84px;
+  }
+  .tabtitle-divider {
+    width: 50px;
+  }
+
+  .tabcontent-item {
+    display: block;
+  }
+
+  .aboutName {
+    font-family: Questrial;
+    font-size: 36px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    /* line-height: 2.06; */
+    letter-spacing: -0.72px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+
+  .introduceHerSelf {
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: -0.28px;
+    text-align: left;
+  }
+  
+  .aboutResumeBtn {
+    margin-top: 30px;
+  }
+
+  .aboutAdobeCreateType {
+    margin-top: 30px;
+  }
+
+  .aboutPersonalType {
+    margin-bottom: 60px;
+  }
+
+  .aboutAdobeCreateType a, .aboutPersonalType a {
+    font-family: Questrial;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.14px;
+    text-align: left;
+  }
+
+  .aboutBackgroundContent .tabtitle-item-title {
     margin-bottom: 20px;
   }
 
-  #aboutName {
-    font-size: 50px;
-  }
-
-  #aboutResumeBtn {
-    margin-top: 15px;
-    width: 180px;
-  }
-
-  #aboutResumeBtn span {
-    font-size: 18px;
-  }
-
-  #introduceHerSelf {
-    font-size: 16px;
+  .aboutBackgroundContent {
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: -0.28px;
+    text-align: left;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  #about {
+    height: 100vh;
+  }
+  #aboutOffset {
+    height: 48px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  #about {
+    /* footer is 80px; */
+    height: calc(100vh - 80px);
+  }
+  #aboutOffset {
+    height: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #about {
+    /* footer is 120px; */
+    height: calc(100vh - 120px);
+  }
+  #aboutOffset {
+    height: 120px;
+    margin-bottom: 100px;
+  }
+}
+
 </style>

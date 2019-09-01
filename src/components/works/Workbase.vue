@@ -24,7 +24,9 @@ export default {
       const doAnimations = function() {
         // Calc current offset and get all animatables
         const offset = $(window).scrollTop() + $(window).height(),
-          $animatables = $(".animatable");
+          $animatables = $(".portfolio-item-detail .animatable");
+
+        const $autoPlayVideos = $('.autoPlayVideo video');
 
         // Unbind scroll handler if we have no animatables
         if ($animatables.length == 0) {
@@ -36,6 +38,18 @@ export default {
           const $animatable = $(this);
           if ($animatable.offset().top + 150 < offset) {
             $animatable.removeClass("animatable").addClass("animated");
+          }
+        });
+
+        $autoPlayVideos.each(function() {
+          const $autoPlayVideo = $(this);
+          const heightOfThis = $autoPlayVideo.height();
+          // 60% 정도 보였을 때만 play하도록 한다.
+          if ($autoPlayVideo.offset().top + heightOfThis/1.6 < offset &&
+              $autoPlayVideo.offset().top + heightOfThis/0.6 > offset) {
+            $autoPlayVideo[0].play();
+          } else {
+            $autoPlayVideo[0].pause();
           }
         });
       };
@@ -625,6 +639,9 @@ video:focus {
 
 /* xs */
 @media screen and (max-width: 767px) {
+  /* .visible-xs {
+    display: block !important;
+  } */
   .hidden-xs {
     display: none !important;
   }

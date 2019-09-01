@@ -96,7 +96,7 @@ export default {
       try {
         comp = () => import(`@/components/works/${name}.vue`);
       } catch (e) {
-        // console.log(e);
+
       }
 
       return comp;
@@ -161,6 +161,18 @@ export default {
   text-align: right;
 }
 
+.portfolio-item-nav-next .portfolio-item-nav-icon {
+  top: 8px;
+  right: 2px;
+  position: relative;
+}
+
+.portfolio-item-nav-prev .portfolio-item-nav-icon {
+  top: 8px;
+  left: 2px;
+  position: relative;
+}
+
 .portfolio-item-nav-id {
   font-size: 20px;
   font-weight: normal;
@@ -182,7 +194,7 @@ export default {
   letter-spacing: -0.8px;
   color: #000000;
   margin-bottom: 10px;
-  min-height: 140px;
+  min-height: 100px;
 }
 
 .portfolio-item-nav-id::before {
@@ -197,11 +209,11 @@ export default {
   height: 100%;
   width: 100%;
   top: -100%;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .portfolio-item-nav-id span {
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
   height: 100%;
   width: 100%;
   backface-visibility: hidden;
@@ -249,7 +261,7 @@ export default {
     font-size: 22px;
     line-height: 1.18;
     letter-spacing: -0.4px;
-    min-height: 100px;
+    min-height: 50px;
   }
 
   .portfolio-item-nav {

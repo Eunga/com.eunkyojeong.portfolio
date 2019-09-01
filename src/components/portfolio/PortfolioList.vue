@@ -32,14 +32,21 @@ export default {
   components: {
     "portfolio-item": PortfolioItem
   },
+  data: function() {
+    return {
+      barInterval: null,
+      isOnMoving: false
+    }
+  },
   mounted() {
-    console.log('LIST MOUNTED');
     $('#portfolio-carousel-progressbar-wrapper').css({
       opacity: 0
     });
     $('#portfolio-carousel-progressbar-wrapper').animate({
       'opacity': 1
     }, 400);
+
+    const _this = this;
 
     $(document).ready(function() {
       if (carouselBehavior.isCarouselActive) {
@@ -52,15 +59,19 @@ export default {
             width: percent + "%"
           });
           percent = percent + 1;
-          if (percent > 100) {
-            $crsl.carousel("next");
+          if (percent > 110) {
+            if (!_this.isOnMoving) {
+              $crsl.carousel("next");
+            }
             // percent = 0;
           }
         }
 
-        let barInterval = setInterval(progressBarCarousel, 40);        
+        _this.barInterval = setInterval(progressBarCarousel, 40);
         $crsl
-          .carousel({ interval: false, pause: true })
+          .carousel({ 
+            interval: false, pause: true 
+          })
           .on("slid.bs.carousel", function() {
             // 다음 슬라이드 보일 때마다 호출 됨. 프로그레스바 초기화.
             percent = 0;
@@ -69,26 +80,17 @@ export default {
         if (carouselBehavior.shouldPauseWhenHover) {
           $crsl.hover(
             function() {
-              clearInterval(barInterval);
+              clearInterval(_this.barInterval);
             },
             function() {
-              barInterval = setInterval(progressBarCarousel, 30);
+              _this.barInterval = setInterval(progressBarCarousel, 30);
             }
           );
         }
       }
 
       if (carouselBehavior.shouldScrollMoveCarousel) {
-        window.addEventListener("mousewheel", function(e) {
-          const wheelDelta = e.deltaY;
-          const $crsl = $("#portfolio-list");
-          if (wheelDelta > 50) {
-            $crsl.carousel("next");
-          } else if (wheelDelta < -50) {
-            $crsl.carousel("prev");
-          }
-          e.stopPropagation();
-        });
+        window.addEventListener("mousewheel", _this.mouseWheelEventForCarousel);
       }
     });
   },
@@ -98,8 +100,32 @@ export default {
     }
   },
   methods: {
+    mouseWheelEventForCarousel(e) {
+      if (this.isOnMoving) {
+        return;
+      }
+
+      const wheelDelta = e.deltaY;
+      const $crsl = $("#portfolio-list");
+      if (wheelDelta > 50) {
+        $crsl.carousel("next");
+      } else if (wheelDelta < -50) {
+        $crsl.carousel("prev");
+      }
+      e.stopPropagation();
+    },
     goPortfolioDetail(work) {
       this.$emit("goPortfolioDetail", work);
+      
+      this.isOnMoving = true;
+      
+      const $crsl = $("#portfolio-list");
+      $crsl.carousel('pause');
+      window.removeEventListener("mousewheel", this.mouseWheelEventForCarousel);
+      clearInterval(this.barInterval);
+      
+      this.$store.commit("changeCurrentWorkId", work.id);
+      this.$router.push({ path: `/portfolio/${work.path}` });
     },
     next() {
       $("#portfolio-list").carousel("next");
@@ -158,6 +184,10 @@ export default {
   transition-property: height, width, opacity, transform;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
+}
+
+.mobileAnim .list .portfolio-item-stuff {
+  transition-duration: .2s;
 }
 
 .list.portfolio-item.active .portfolio-item-stuff {
