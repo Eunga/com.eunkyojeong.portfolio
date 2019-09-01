@@ -24,7 +24,7 @@ export default {
       const doAnimations = function() {
         // Calc current offset and get all animatables
         const offset = $(window).scrollTop() + $(window).height(),
-          $animatables = $(".animatable");
+          $animatables = $(".portfolio-item-detail .animatable");
 
         const $autoPlayVideos = $('.autoPlayVideo video');
 
@@ -639,6 +639,9 @@ video:focus {
 
 /* xs */
 @media screen and (max-width: 767px) {
+  /* .visible-xs {
+    display: block !important;
+  } */
   .hidden-xs {
     display: none !important;
   }
