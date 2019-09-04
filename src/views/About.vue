@@ -3,7 +3,7 @@
     <!-- Desktop -->
     <div id="aboutOffset"></div>
 
-    <div class="hidden-xs row tab">
+    <div id="aboutDesktop" class="hidden-xs row tab">
       <div class="tabtitle col-6">
         <ul>
           <li class="tabtitle-item active" data-tabcontent-idx="0">
@@ -81,7 +81,7 @@
     </div>
 
     <!-- Mobile -->
-    <div class="visible-xs-block">
+    <div id="aboutMobile" class="visible-xs-block">
         <!-- Introduction -->
         <div class="aboutIntroductionContent">
           <div class="tabtitle-item-title">Introduction</div>
@@ -195,6 +195,23 @@ export default {
           $animatable.removeClass("animatable").addClass("animated");
         }, timeIntervalInMillis * (timeCount));
       });
+
+
+
+      const setAboutContentHeight = function() {
+        const heightOfAbout = $('#about').height();
+        const heightOfAboutOffset = $('#aboutOffset').height();
+        const marginBottomOfAboutOffset = $('#aboutOffset').css('margin-bottom').replace('px', '');
+
+        const heightOfAboutContent = heightOfAbout - heightOfAboutOffset - parseInt(marginBottomOfAboutOffset);
+        $('#aboutDesktop').height(heightOfAboutContent);
+      }
+
+      setAboutContentHeight();
+      window.addEventListener('resize', function() {
+        setAboutContentHeight();
+      });
+
     });
   },
   computed: {
@@ -234,6 +251,10 @@ export default {
 #aboutOffset {
   position: relative;
   height: 120px;
+}
+
+#aboutDesktop {
+  overflow-y: scroll;
 }
 
 .tab {
