@@ -173,7 +173,7 @@ export default {
     $('.tabtitle-item').click(function() {
       const idxOfContent = $(this).attr('data-tabcontent-idx');
 
-      const $contentItem = $('.tabcontent-item');
+      const $contentItem = $('#aboutDesktop .tabcontent-item');
       $contentItem.hide();
       $contentItem.eq(idxOfContent).show();
 
@@ -195,8 +195,6 @@ export default {
           $animatable.removeClass("animatable").addClass("animated");
         }, timeIntervalInMillis * (timeCount));
       });
-
-
 
       const setAboutContentHeight = function() {
         const heightOfAbout = $('#about').height();
