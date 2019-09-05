@@ -3,7 +3,7 @@
     <!-- Desktop -->
     <div id="aboutOffset"></div>
 
-    <div id="aboutDesktop" class="hidden-xs row tab">
+    <div id="aboutDesktop" class="hidden-sm row tab">
       <div class="tabtitle col-6">
         <ul>
           <li class="tabtitle-item active" data-tabcontent-idx="0">
@@ -81,69 +81,68 @@
     </div>
 
     <!-- Mobile -->
-    <div id="aboutMobile" class="visible-xs-block">
-        <!-- Introduction -->
-        <div class="aboutIntroductionContent">
-          <div class="tabtitle-item-title">Introduction</div>
-          <div class="tabtitle-divider"></div>
-          
-          <div class="aboutName animatable fadeInUp">
-            <span>Hi, I'm Kyo!</span>
-          </div>
+    <div id="aboutMobile" class="visible-sm-block">
+      <!-- Introduction -->
+      <div class="aboutIntroductionContent">
+        <div class="tabtitle-item-title">Introduction</div>
+        <div class="tabtitle-divider"></div>
+        
+        <div class="aboutName animatable fadeInUp">
+          <span>Hi, I'm Kyo!</span>
+        </div>
 
-          <div 
-            class="introduceHerSelf animatable fadeInUp" 
-            v-html="introduce">
-          </div>
+        <div 
+          class="introduceHerSelf animatable fadeInUp" 
+          v-html="introduce">
+        </div>
 
-          <div class="aboutResumeBtn animatable fadeInUp">
-            <a :href="resume" download target="_blank">
-              <span>RESUME</span>
+        <div class="aboutResumeBtn animatable fadeInUp">
+          <a :href="resume" download target="_blank">
+            <span>RESUME</span>
 
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <g id="ico-download">
-                    <path id="area" d="M0 0h16v16H0z" class="cls-1"/>
-                    <path id="Path_10" d="M647.514 754.523v3.262h14.677v-3.262" class="cls-2" data-name="Path 10" transform="translate(-646.698 -744.272)"/>
-                    <path id="Path_8" d="M496.908-871.2v7.339" class="cls-2" data-name="Path 8" transform="translate(-488.754 872.834)"/>
-                    <path id="Path_9" d="M498.5-865.32l2.854 2.854 2.854-2.854" class="cls-2" data-name="Path 9" transform="translate(-493.2 871.815)"/>
-                </g>
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <g id="ico-download">
+                  <path id="area" d="M0 0h16v16H0z" class="cls-1"/>
+                  <path id="Path_10" d="M647.514 754.523v3.262h14.677v-3.262" class="cls-2" data-name="Path 10" transform="translate(-646.698 -744.272)"/>
+                  <path id="Path_8" d="M496.908-871.2v7.339" class="cls-2" data-name="Path 8" transform="translate(-488.754 872.834)"/>
+                  <path id="Path_9" d="M498.5-865.32l2.854 2.854 2.854-2.854" class="cls-2" data-name="Path 9" transform="translate(-493.2 871.815)"/>
+              </g>
+            </svg>
+          </a>
+        </div>
+
+        <div class="animatable fadeInUp">
+          <div class="aboutAdobeCreateType">
+            <a :href="myCreativeType">
+              Adobe says this is #MyCreativeType
             </a>
           </div>
 
-          <div class="animatable fadeInUp">
-            <div class="aboutAdobeCreateType">
-              <a :href="myCreativeType">
-                Adobe says this is #MyCreativeType
-              </a>
-            </div>
-
-            <div class="aboutPersonalType">
-              <a :href="myPersonality">
-                Here, more of my personality
-              </a>
-            </div>
+          <div class="aboutPersonalType">
+            <a :href="myPersonality">
+              Here, more of my personality
+            </a>
           </div>
         </div>
-        
+      </div>
+      
 
-        <!-- Background -->
-        <div class="aboutBackgroundContent tabcontent-item animatable fadeInUp">
-          <div class="tabtitle-item-title">Background</div>
-          <div class="tabtitle-divider"></div>
+      <!-- Background -->
+      <div class="aboutBackgroundContent tabcontent-item animatable fadeInUp">
+        <div class="tabtitle-item-title">Background</div>
+        <div class="tabtitle-divider"></div>
 
-          <div>
-          I have over six years of experience in the industry.<br/>
-          I majored in Visual Communication Design at Hongik University, South Korea’s top art university.
-          <br/><br/>
-          Prior to graduation I had the opportunity to work as an intern at LG Electronics, where I worked on smart home technology. I had so much fun thinking about users and their needs, which sparked my passion for UX design. 
-          <br/><br/>
-          After graduating, I worked at a startup, at which I launched an app called Offin. I was solely responsible for the design of the app. As a new designer, I decided to move to a larger, more established company to expand my skillset. 
-          <br/><br/>
-          At my most recent job, Kakao’s Daum Webtoon Company, my main job was redesigning the mobile app. I gained insight into how a visually pleasing interface creates a smoother user experience, and also developed an understanding of how to make apps more user-friendly overall. 
-          <br/><br/>
-          At my next job, I hope to continue developing my UX design skills while bringing in aesthetically pleasing interface designs.
-          </div>
+        <div>
+        I have over six years of experience in the industry.<br/>
+        I majored in Visual Communication Design at Hongik University, South Korea’s top art university.
+        <br/><br/>
+        Prior to graduation I had the opportunity to work as an intern at LG Electronics, where I worked on smart home technology. I had so much fun thinking about users and their needs, which sparked my passion for UX design. 
+        <br/><br/>
+        After graduating, I worked at a startup, at which I launched an app called Offin. I was solely responsible for the design of the app. As a new designer, I decided to move to a larger, more established company to expand my skillset. 
+        <br/><br/>
+        At my most recent job, Kakao’s Daum Webtoon Company, my main job was redesigning the mobile app. I gained insight into how a visually pleasing interface creates a smoother user experience, and also developed an understanding of how to make apps more user-friendly overall. 
+        <br/><br/>
+        At my next job, I hope to continue developing my UX design skills while bringing in aesthetically pleasing interface designs.
         </div>
       </div>
     </div>
@@ -197,12 +196,39 @@ export default {
       });
 
       const setAboutContentHeight = function() {
-        const heightOfAbout = $('#about').height();
-        const heightOfAboutOffset = $('#aboutOffset').height();
-        const marginBottomOfAboutOffset = $('#aboutOffset').css('margin-bottom').replace('px', '');
+        const heightOfHeader = $('#header').height();
+        const heightOfFooter = $('#footer').height();
+        const heightOfWindow = window.innerHeight;
+        const widthOfWindow = window.innerWidth;
 
-        const heightOfAboutContent = heightOfAbout - heightOfAboutOffset - parseInt(marginBottomOfAboutOffset);
-        $('#aboutDesktop').height(heightOfAboutContent);
+        const heightOfContent = heightOfWindow - heightOfHeader - heightOfFooter;
+
+        // Mobile
+        if (heightOfHeader < 49) {
+          $('#aboutOffset').height(heightOfHeader + 20);
+          return;
+        } else if (heightOfHeader < 81 && widthOfWindow < 1025) {
+          $('#aboutOffset').height(heightOfHeader + 30);
+          return;
+        }
+
+        let maxHeight = 0;
+        $('#aboutDesktop .tabcontent-item').each(function(i, v) {
+            const h = $(v).height();
+
+            if (maxHeight < h) {
+                maxHeight = h;
+            }
+        });
+        const heightOfAboutContent = maxHeight;
+
+        if (heightOfContent >= heightOfAboutContent) {
+          const offset = (heightOfContent - heightOfAboutContent)/2;
+          $('#aboutOffset').height(heightOfHeader + offset);;
+        } else {
+          $('#aboutOffset').height(heightOfHeader);
+          $('#aboutDesktop').height(heightOfContent);
+        }
       }
 
       setAboutContentHeight();
@@ -248,11 +274,16 @@ export default {
 
 #aboutOffset {
   position: relative;
-  height: 120px;
+  /* height: 120px; */
 }
 
 #aboutDesktop {
   overflow-y: auto;
+}
+
+
+#aboutMobile {
+  display: none;
 }
 
 .tab {
@@ -539,13 +570,40 @@ export default {
   }
 }
 
+#aboutMobile .aboutBackgroundContent {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .aboutName {
+    margin-bottom: 15px;
+  }
+
+  .aboutResumeBtn {
+    margin-top:30px;
+  }
+
+  .aboutAdobeCreateType {
+    margin-top:30px;
+  }
+
+  .aboutPersonalType {
+    margin-bottom: 60px;
+  }
+  
+  .tabtitle-divider {
+      width: 80px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   #about {
-    height: 100vh;
+    height: unset;
+    height: initial;
   }
-  #aboutOffset {
-    height: 48px;
-    margin-bottom: 50px;
+
+  .tabcontent-item {
+    display: block;
   }
 }
 
@@ -554,20 +612,12 @@ export default {
     /* footer is 80px; */
     height: calc(100vh - 80px);
   }
-  #aboutOffset {
-    height: 80px;
-    margin-bottom: 80px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
   #about {
     /* footer is 120px; */
     height: calc(100vh - 120px);
-  }
-  #aboutOffset {
-    height: 120px;
-    margin-bottom: 100px;
   }
 }
 
