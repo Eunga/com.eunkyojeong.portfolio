@@ -8,10 +8,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "babel-polyfill": "^6.26.0",
     "core-js": "^2.6.5",
     "es6-promise": "^4.2.8",
-    "jquery": "^3.4.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6",
     "vue-svg-loader": "^0.12.0",

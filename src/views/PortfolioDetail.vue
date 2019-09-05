@@ -88,6 +88,12 @@ export default {
 #portfolio-detail {
   position: relative;
   width: 100%;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+#portfolio-detail::-webkit-scrollbar {
+  display: none;
 }
 
 #portfolio-meta {

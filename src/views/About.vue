@@ -243,7 +243,7 @@ export default {
 }
 
 .tabcontent {
-  overflow-y: scroll;
+  
 }
 
 #aboutOffset {
@@ -252,7 +252,7 @@ export default {
 }
 
 #aboutDesktop {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .tab {

@@ -179,9 +179,17 @@ export default {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
+  #margin-left::after {
+    left: -30px;
+  }
+
+  #margin-right::after {
+    right: -30px;
+  }
   #margin-left::after,
   #margin-right::after {
-    width: 80px;
+    position: relative;
+    width: 110px;
   }
 
   .margin-horizontal {
@@ -189,10 +197,36 @@ export default {
   }
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1776px) {
+@media screen and (min-width: 1440px) {
+  #margin-left::after {
+    left: -30px;
+  }
+
+  #margin-right::after {
+    right: -30px;
+  }
   #margin-left::after,
   #margin-right::after {
-    width: 120px;
+    position: relative;
+    width: 150px;
+  }
+
+  .margin-horizontal {
+    height: 120px;
+  }
+}
+/* @media screen and (min-width: 1440px) and (max-width: 1776px) {
+  #margin-left::after {
+    left: -30px;
+  }
+
+  #margin-right::after {
+    right: -30px;
+  }
+  #margin-left::after,
+  #margin-right::after {
+    position: relative;
+    width: 150px;
   }
 
   .margin-horizontal {
@@ -201,13 +235,21 @@ export default {
 }
 
 @media screen and (min-width: 1777px) {
+  #margin-left::after {
+    left: -30px;
+  }
+
+  #margin-right::after {
+    right: -30px;
+  }
   #margin-left::after,
   #margin-right::after {
-    width: 120px;
+    position: relative;
+    width: 150px;
   }
 
   .margin-horizontal {
     height: 120px;
   }
-}
+} */
 </style>
