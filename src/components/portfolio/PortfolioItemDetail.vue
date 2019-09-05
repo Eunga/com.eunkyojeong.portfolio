@@ -57,15 +57,8 @@
 </template>
 
 <script>
-import ArrowPrevSvg from "@/assets/img/common/ico_arrow_previous.svg";
-import ArrowNextSvg from "@/assets/img/common/ico_arrow_next.svg";
-
 export default {
   name: "PortfolioItemDetail",
-  components: {
-    ArrowPrevSvg,
-    ArrowNextSvg
-  },
   props: {
     work: {
       type: Object,

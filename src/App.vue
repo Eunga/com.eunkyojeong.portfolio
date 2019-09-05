@@ -1179,6 +1179,10 @@ ul {
 
 /* sm */
 @media screen and (max-width: 1023px) {
+  .visible-sm-block {
+    display: block !important;
+  }
+
   .hidden-sm {
     display: none !important;
   }

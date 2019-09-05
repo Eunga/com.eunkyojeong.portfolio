@@ -175,6 +175,7 @@ export default {
 .portfolio-item-stuff img {
   position: relative;
   height: 100%;
+  right: 0px;
 }
 
 .portfolio-item-content {
@@ -348,7 +349,7 @@ export default {
 .portfolio-item-stuff-img-wrapper {
   position:relative; 
   height: 100%;
-  float: right;
+  text-align: right;
 }
 
 .list .portfolio-item-stuff-img-wrapper {

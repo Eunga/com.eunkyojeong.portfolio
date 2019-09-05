@@ -412,7 +412,7 @@
             </div>
           </div>
 
-          <!-- Management of Regular Customers -->
+          <!-- Management of Pinned Stores and Items -->
           <div class="row work-solution-align animatable fadeInUp">
             <div
               class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
@@ -425,8 +425,8 @@
 
             <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
               <div>
-                <div class="portfolio-work-title subtitle-lg">Management of Regular Customers</div>
-                <span>Store owners can post sales and new items at any time they want wherever they are via their smartphones.</span>
+                <div class="portfolio-work-title subtitle-lg">Management of Pinned Stores and Items</div>
+                <span>The stores are location-based, so users can easily visit their favorite stores they “pinned” and also go over “pinned” items again on My page.</span>
               </div>
             </div>
           </div>
