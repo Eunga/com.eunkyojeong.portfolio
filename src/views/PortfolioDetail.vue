@@ -40,26 +40,19 @@ export default {
     };
   },
   updated() {
-    if (this.isFirstLoad) {
-      $("#portfolio-detail-mask").css({
-        opacity: 0,
-        "z-index": -1000
-      });
-      this.isFirstLoad = false;
-    } else {
-      $("#portfolio-detail-mask").css({
-        opacity: 1,
-        "z-index": 1000
-      });
+    $("#portfolio-detail-mask").css({
+      opacity: 1,
+      "z-index": 1000
+    });
 
-      $("#portfolio-detail-mask").animate(
-        {
+    setTimeout(() => {
+      $("#portfolio-detail-mask").animate({
           opacity: 0,
           "z-index": -1000
         },
-        2000
+        300
       );
-    }
+    }, 300);
   },
   mounted() {
     this.isFirstLoad = true;
