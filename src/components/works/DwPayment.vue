@@ -412,13 +412,14 @@ export default {
 
 #dw-ideation-frame {
   position: relative;
+  margin-top:0px !important;
 }
 
 #dw-ideation-anime {
   position: absolute;
   width: 39.5833333333%;
   margin-left: 47.5694444444%;
-  margin-top: 11.2970711297%;
+  margin-top: 12.197071%;
   top: 0;
   left: 0;
   bottom: 0;
