@@ -1,4 +1,8 @@
 # Eunkyo Jeong's Portfolio
+## Project clone
+```shell
+$ git clone https://github.com/Eunga/com.eunkyojeong.portfolio.git
+```
 
 ## Project setup
 ```shell
@@ -29,6 +33,12 @@ $ npm run test
 ### Lints and fixes files
 ```shell
 $ npm run lint
+```
+
+
+### Deploy
+```shell
+$ npm run deploy
 ```
 
 ### Run Vue UI
