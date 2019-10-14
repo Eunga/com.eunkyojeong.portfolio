@@ -359,10 +359,13 @@
             <div
               class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
             >
-              <img
-                src="../../assets/img/portfolio/offin/portfolio-offin-solution-1.png"
-                alt="offin solution"
-              />
+              <img class="offin-solution-anime" 
+                src="../../assets/img/portfolio/offin/portfolio-offin-solution-anime-01.gif" 
+                alt="offin solution anime" />
+              <img class="offin-solution-frame" 
+                src="../../assets/img/portfolio/offin/portfolio-offin-solution-frame.png" 
+                alt="offin solution frame" />
+
             </div>
           </div>
 
@@ -371,10 +374,12 @@
             <div
               class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
             >
-              <img
-                src="../../assets/img/portfolio/offin/portfolio-offin-solution-2.png"
-                alt="offin solution"
-              />
+              <img class="offin-solution-anime" 
+                src="../../assets/img/portfolio/offin/portfolio-offin-solution-anime-02.gif" 
+                alt="offin solution anime" />
+              <img class="offin-solution-frame" 
+                src="../../assets/img/portfolio/offin/portfolio-offin-solution-frame.png" 
+                alt="offin solution frame" />
             </div>
 
             <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
@@ -405,10 +410,13 @@
             <div
               class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
             >
-              <img
-                src="../../assets/img/portfolio/offin/portfolio-offin-solution-3.png"
-                alt="offin solution"
-              />
+              <img class="offin-solution-anime" 
+                src="../../assets/img/portfolio/offin/portfolio-offin-solution-anime-03.gif" 
+                alt="offin solution anime" />
+              <img class="offin-solution-frame" 
+                src="../../assets/img/portfolio/offin/portfolio-offin-solution-frame.png" 
+                alt="offin solution frame" />
+
             </div>
           </div>
 
@@ -417,10 +425,12 @@
             <div
               class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
             >
-              <img
-                src="../../assets/img/portfolio/offin/portfolio-offin-solution-4.png"
-                alt="offin solution"
-              />
+              <img class="offin-solution-anime" 
+                src="../../assets/img/portfolio/offin/portfolio-offin-solution-anime-04.gif" 
+                alt="offin solution anime" />
+              <img class="offin-solution-frame" 
+                src="../../assets/img/portfolio/offin/portfolio-offin-solution-frame.png" 
+                alt="offin solution frame" />
             </div>
 
             <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
@@ -441,7 +451,7 @@
         <img
           src="../../assets/img/portfolio/offin/portfolio-offin-fullsize-background.jpg"
           alt="product image"
-        />
+          />
       </div>
     </div>
 
@@ -485,4 +495,20 @@ export default {
 .offin-interview-profile svg .c {
   clip-path: url(#a);
 }
+
+.offin-solution-anime {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto !important;
+  width: 64.5% !important;
+}
+
+.offin-solution-frame {
+  position: relative;
+  margin-top: 0px !important;
+}
+
 </style>
