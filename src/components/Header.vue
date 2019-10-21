@@ -198,5 +198,15 @@ export default {
     padding: 0px 120px;
   }
 }
+
+nav.white a.navbar-brand {
+  text-shadow: 0px 0px 30px rgba(0,0,0,.3);
+}
+
+nav.white .navLink>a {
+  text-shadow: 0px 0px 30px rgba(0,0,0,.3);
+}
+
+
 </style>
 

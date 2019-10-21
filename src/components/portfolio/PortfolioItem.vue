@@ -123,8 +123,10 @@ export default {
 
 .portfolio-item.white .portfolio-item-count,
 .portfolio-item.white .portfolio-item-title,
-.portfolio-item.white .portfolio-item-subtitle {
+.portfolio-item.white .portfolio-item-subtitle,
+.portfolio-item.white .portfolio-work-count {
   color: white;
+  text-shadow: 0px 0px 30px rgba(0,0,0,.3);
 }
 
 .portfolio-item.black .portfolio-item-count,

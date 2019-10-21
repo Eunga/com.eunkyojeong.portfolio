@@ -7,8 +7,7 @@
           <div class="order-sm-last order-md-1 col-md-6 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">Overview</div>
             <div>
-              <br />
-              Rivu는 영어 공부를 할 때, 영단어 및 영숙어를 외우기 위한 어플리케이션입니다. 사용자가 스스로 단어를 입력할 수 있는 기능을 제공하며, 설정된 시간에 Notification 등을 통하여 주기적으로 반복 학습을 할 수 있습니다.
+              RIVU is a learning app that helps you to effectively memorize English vocabulary. The biggest advantage of utilizing this app is that you don’t have to take any effort to review notes, instead, the app can send you push alarms to review whenever you set the time for the alarm. Using the app, memorizing vocabulary would no longer be a big task or stress you have to bare with you. 
             </div>
           </div>
 
@@ -17,105 +16,467 @@
           >
             <div class="work-date row">
               <div class="portfolio-work-title subtitle-sm subtitle col-md-12 col-sm-3">Date</div>
-              <div class="col-md-12 col-sm-9">December 2018</div>
+              <div class="col-md-12 col-sm-9">June 2019</div>
             </div>
 
             <div class="row">
               <div class="portfolio-work-title subtitle-sm subtitle col-md-12 col-sm-3">Role</div>
-              <div class="col-md-12 col-sm-9">Project Owner<br/>UI Designer<br/>UX Designer</div>
+              <div class="col-md-12 col-sm-9">
+                Product Design
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Challenge -->
-    <div class="portfolio-work-wrap animatable fadeInUp">
+    <!-- Situation -->
+    <div class="portfolio-work-wrap">
       <div class="portfolio-work v-container-fluid">
-        <div class="row">
+        <div class="row animatable fadeInUp">
           <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
-            <div class="portfolio-work-title subtitle-sm">Challenge</div>
+            <div class="portfolio-work-title subtitle-sm">Situation</div>
           </div>
         </div>
 
-        <!-- Better usability for heavy users -->
-        <div class="row">
-          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
-            <div class="portfolio-work-title subtitle-lg">Easy to save words</div>
-          </div>
-        </div>
-        <div class="row">
+        <div class="row animatable fadeInUp">
           <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
-            쉽게 영단어, 영숙어를 입력 할 수 있어야합니다.
+            Unfortunately, and just like many others, it always seemed impossible to find time to review them ever. Knowing that there is never “later”, I needed to find a way to review so the new vocabs I learned will stick. This way, I will constantly be reviewed and be able to use words or expressions I learned right away when in need in sentences I write or speak.
           </div>
         </div>
       </div>
     </div>
 
-    <!-- The Problem -->
-    <div class="portfolio-work-wrap animatable fadeInUp">
+    <!-- Research -->
+    <div class="portfolio-work-wrap">
       <div class="portfolio-work v-container-fluid">
-        <div class="row">
+        <div class="row animatable fadeInUp">
           <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
-            <div class="portfolio-work-title subtitle-sm">The Problem</div>
+            <div class="portfolio-work-title subtitle-sm">Research</div>
           </div>
         </div>
 
-        <!-- Right from the user -->
-        <div class="row">
-          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
-            <div class="portfolio-work-title subtitle-lg">수많은 경쟁사</div>
+        <div class="row animatable fadeInUp">
+          <div class="research offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+            Before I started working on making this app, I tried to find a service among existing apps that would fulfill my needs. But I couldn’t.
           </div>
         </div>
+
+        <!-- Push alert with random words - “Must Master” -->
+        <div class="animatable fadeInUp">
+          <div class="row">
+            <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+              <div class="portfolio-work-title subtitle-lg">Push alert with random words - “Must Master”</div>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
+            >Some vocab memorizing apps sent me push-alerts of some random vocabularies from the vocab list of Must Master. The problem was that it was too random and it had nothing to do with what I have already studied so I was totally uninterested. Thus it didn’t mean much when I checked those words, and of course, it all became meaningless.</div>
+          </div>
+        </div>
+
+        <!-- It’s cumbersome to go to the words list -->
+        <div class="animatable fadeInUp">
+          <div class="cumbersome row">
+            <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+              <div class="portfolio-work-title subtitle-lg">It’s cumbersome to go to the words list</div>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
+            >On existing vocabulary apps, I have to travel through many clicks to get to my vocab list, and if I could do that, I would have not had any challenges. I know myself, so I knew that I wasn’t going to get to the note for the review, thus here I am.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Goals-->
+    <div class="portfolio-work-wrap">
+      <div class="portfolio-work v-container-fluid">
+        <div class="row animatable fadeInUp">
+          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+            <div class="portfolio-work-title subtitle-sm">Goals</div>
+          </div>
+        </div>
+
+        <!-- Allow users to review the vocabulary they newly learned conveniently. -->
+        <div class="row animatable fadeInUp">
+          <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+            <div
+              class="portfolio-work-title subtitle-lg"
+            >Allow users to review the vocabulary they newly learned conveniently.</div>
+          </div>
+        </div>
+
         <div class="row">
           <div
             class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
-          >
-            경쟁사 앱들이 너무 많았습니다.
-          </div>
+          >Make the words come to me instead of me finding them to review every time.</div>
         </div>
+        
+      </div>
+    </div>
 
-        <!-- Pain Point -->
-        <div class="row" style="margin-top: 120px;">
+    <!-- Concept -->
+    <div class="portfolio-work-wrap">
+      <div class="portfolio-work v-container-fluid">
+        <div class="row animatable fadeInUp">
           <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
-            <div class="portfolio-work-title subtitle-lg">Pain Point</div>
-          </div>
-        </div>
-        <div class="row">
-          <div
-            class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
-          >
-            만들어주는 개발자 역량이 다소 부족하였습니다 흐규ㅠ
+            <div class="portfolio-work-title subtitle-sm">Concept</div>
           </div>
         </div>
 
-        <div class="row">
-          <div style="margin-top: 60px;" class="dw-one-images offset-md-1 col-md-10 offset-sm-0 col-sm-12">
-            <img style="width:100%;" src="../../assets/img/portfolio/dw/portfolio-dw-painpoint.png" alt="painpoint" />
+        <div class="animatable fadeInUp">
+          <div class="row">
+            <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+              I would like a push alert of random vocabs but from my own list to refresh my memory.<br/>
+              We set alarms to remind us to take pills, so why shouldn’t we for vocabs?!
+            </div>
           </div>
         </div>
       </div>
     </div>
 
 
-    <!-- Ideation -->
+    <!-- Persona -->
+    <div class="persona row animatable fadeInUp">
+      <div class="portfolio-work v-container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="row animatable fadeInUp">
+              <div class="portfolio-work-title subtitle-sm">Persona</div>
+            </div>
+          </div>
+
+          <div class="persona-content col-md-4 col-sm-6 col-xs-12">
+            <div>
+              <div class="rivu-interview-profile">
+                <img src="../../assets/img/portfolio/rivu/portfolio-rivu-persona-01.jpg" alt="persona" />
+              </div>
+              <div class="portfolio-work-title subtitle-lg">
+                Meet Seo-Hyeon
+              </div>
+              <div class="persona-job">
+                College student in Korea
+              </div>
+              <div>
+                Although English is a second language for her, Seo-Hyeon loves studying English through pop music or American television shows. But she always has things to do all the time, so she never has the time to review what she has learned even if she makes time to study English.
+              </div>
+            </div>
+          </div>
+
+          <div class="persona-content col-md-4 col-sm-6 col-xs-12">
+            <div>
+              <div class="rivu-interview-profile">
+                <img src="../../assets/img/portfolio/rivu/portfolio-rivu-persona-02.jpg" alt="persona" />
+              </div>
+              <div class="portfolio-work-title subtitle-lg">
+                Meet Ji-Hoon
+              </div>
+              <div class="persona-job">
+                Software Engineer in Korea
+              </div>
+              <div>
+                Ji-Hoon always tries to keep up with fast-changing trends in the field of Technology, so he reads articles in English online all the time. Because English is his second language, he is eager to learn English as hard as he can.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Storyboard -->
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
         <div class="row">
-          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
-            <div class="portfolio-work-title subtitle-sm">Ideation</div>
+          <div class="order-sm-last order-md-1 col-md-6 col-sm-12">
+            <div class="portfolio-work-title subtitle-sm">Storyboard</div>
           </div>
         </div>
 
         <div class="row">
-          <div style="margin-top: 60px;" class="dw-one-images offset-md-1 col-md-10 offset-sm-0 col-sm-12">
-            <img style="width:100%;" src="../../assets/img/portfolio/rivu/portfolio-rivu-ideation-1.png" alt="ideation1" />
-            <img style="width:100%;" src="../../assets/img/portfolio/rivu/portfolio-rivu-ideation-2.png" alt="ideation2" />
+          <div style="margin-top: 60px;" class="col-xs-12 col-sm-6">
+            <img src="../../assets/img/portfolio/rivu/portfolio-rivu-ideation-1.png" alt="ideation1" />
+          </div>
+          <div style="margin-top: 60px;" class="col-xs-12 col-sm-6">
+            <img src="../../assets/img/portfolio/rivu/portfolio-rivu-ideation-2.png" alt="ideation2" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Features -->
+    <div class="portfolio-work-wrap">
+      <div class="portfolio-work v-container-fluid">
+        <div class="row animatable fadeInUp">
+          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+            <div class="portfolio-work-title subtitle-sm">Features</div>
           </div>
         </div>
 
+        <div class="row animatable fadeInUp">
+          <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+            Since there is a clear target for this app, detailed needs for the target could be found, thus came up with a list of needs to perfect the review app for memorizing vocabulary.
+          </div>
+        </div>        
+
+        <!-- 1. Read and review the vocabs on the list. -->
+        <div class="row animatable fadeInUp">
+          <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+            <div
+              class="portfolio-work-title subtitle-lg"
+            >1. Read and review the vocabs on the list.</div>
+          </div>
+        </div>
+
+        <!-- 2. A quick review of randomly selected vocabs through push alarms and on the widget. -->
+        <div class="row animatable fadeInUp">
+          <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+            <div
+              class="portfolio-work-title subtitle-lg"
+            >2. A quick review of randomly selected vocabs through push alarms and on the widget.</div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Rivu flow -->
+    <div class="portfolio-work-wrap">
+      <div class="portfolio-work v-container-fluid">
+        <img src="../../assets/img/portfolio/rivu/portfolio-rivu-flow.png" alt="rivu flow"/>
+      </div>
+    </div>
+
+
+    <!-- Prototyping -->
+    <!-- TODO: temporarily disabled -->
+    <div class="portfolio-work-wrap" style="display:none;">
+      <div class="portfolio-work v-container-fluid">
+        <div class="row">
+          <div class="order-sm-last order-md-1 col-md-6 col-sm-12">
+            <div class="portfolio-work-title subtitle-sm">Prototyping</div>
+          </div>
+        </div>
+
+        <div class="row animatable fadeInUp">
+          <img src="../../assets/img/portfolio/rivu/portfolio-rivu-flow.png" alt="rivu flow"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Branding -->
+    <!-- TODO: temporarily disabled -->
+    <div class="portfolio-work-wrap" style="display:none;">
+      <div class="portfolio-work v-container-fluid">
+        <div class="row">
+          <div class="order-sm-last order-md-1 col-md-6 col-sm-12">
+            <div class="portfolio-work-title subtitle-sm">Branding</div>
+          </div>
+        </div>
+
+        <!-- Help to remember what is fading away over time. -->
+        <div class="row animatable fadeInUp">
+          <div class="col-md-6 col-sm-12">
+            <div class="portfolio-work-title subtitle-lg">
+              Help to remember what is fading away over time.
+            </div>
+          </div>
+        </div>
+
+        <div class="row animatable fadeInUp" style="margin-top: 60px;">
+          <img src="../../assets/img/portfolio/rivu/portfolio-rivu-visual.jpg" alt="rivu visual"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solution -->
+    <div class="portfolio-work-wrap">
+      <div class="portfolio-work-wrap">
+        <div class="portfolio-work v-container-fluid">
+          <!-- Add 1 Easy-to-add steps  -->
+          <div class="row work-solution-align animatable fadeInUp">
+            <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+              <div class="portfolio-work-title subtitle-sm">Solution</div>
+
+              <div>
+                <div class="portfolio-work-title subtitle-lg">
+                  Add 1<br/>
+                  Easy-to-add steps 
+                </div>
+                <span>
+                  Instead of clicking into dictionary app and keeping a separate note for reviewing later, you can easily cover all steps through RIVU app, so it simplifies the process of keeping the list which could be potentially a motivation for users to keep learning. RIVU app shows the definition of words, just like a dictionary app, which means you can skip looking up words on a dictionary app. 
+                </span>
+              </div>
+            </div>
+
+            <div class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8">
+              <img class="rivu-solution-anime" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-01.gif"
+                alt="rivu solution anime" />
+              <img class="rivu-solution-frame" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-frame.png" 
+                alt="rivu solution frame" />
+            </div>
+          </div>
+
+          <!-- Add 2 Auto-check repeated vocabs -->
+          <div class="row work-solution-align animatable fadeInUp">
+            <div
+              class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
+            >
+              <img class="rivu-solution-anime" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-02.gif"
+                alt="rivu solution anime" />
+              <img class="rivu-solution-frame" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-frame.png" 
+                alt="rivu solution frame" />
+            </div>
+
+            <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+              <div>
+                <div
+                  class="portfolio-work-title subtitle-lg"
+                >
+                  Add 2<br/>
+                  Auto-check repeated vocabs
+                </div>
+                <span>When you are yet to have those vocabs memorized, you can add the same word on the list. In order to prevent these repeated vocabs on the list, the app detects the word that I already have on the list as I type in the word again on RIVU. Furthermore, this record will be saved in the algorithm resulting a more frequent review of that word for the push alarm.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add 3 Saving steps -->
+          <div class="row work-solution-align animatable fadeInUp">
+            <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+              <div>
+                <div class="portfolio-work-title subtitle-lg">
+                  Add 3<br/>
+                  Saving steps
+                </div>
+                <span>
+                  If you were looking up some words on a dictionary app, and wanted to save those words to memorize and study them, you can copy the word and it will automatically be pasted once you activate RIVU app, saving the effort to type in the word repeatedly.
+                </span>
+              </div>
+            </div>
+
+            <div
+              class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
+            >
+              <img class="rivu-solution-anime" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-03.gif"
+                alt="rivu solution anime" />
+              <img class="rivu-solution-frame" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-frame.png" 
+                alt="rivu solution frame" />
+            </div>
+          </div>
+
+          <!-- Review 1 List, Timeline -->
+          <div class="row work-solution-align animatable fadeInUp">
+            <div
+              class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
+            >
+              <img class="rivu-solution-anime" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-04.gif"
+                alt="rivu solution anime" />
+              <img class="rivu-solution-frame" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-frame.png" 
+                alt="rivu solution frame" />
+            </div>
+
+            <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+              <div>
+                <div class="portfolio-work-title subtitle-lg">
+                  Review 1<br/>List, Timeline
+                </div>
+                <span>
+                  It shows the progress of my review visually so that I know where I am, how many more  I have to memorize, and in case I have much to memorize, it could motivate users to review harder with extra effort of reviewing the list apart from reviewing from the push alarm.  
+                </span>
+                <br/><br/>
+                <span>
+                  Apart from reviewing through the push alarm, you can also review the whole list at once, and when you are reviewing these words, you can also go to the setting on top of the screen, and hide definitions of the words you are studying like flash cards.
+                </span>
+                <br/><br/>
+                <span>
+                  As well, you can access the history of the words you reviewed through push alarm from timeline.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 Push Alarm, Widget -->
+          <div class="row work-solution-align animatable fadeInUp">
+            <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+              <div>
+                <div class="portfolio-work-title subtitle-lg">
+                  Review 2<br/>
+                  Push Alarm, Widget
+                </div>
+                <span>
+                  You can set how many times a day and at what time of the day you want to get these push alarm. In a way, it’s like a self-made spam! Once you click the alert, you get a full screen filled with the word and the definition of it. The ones that you have already memorized can be excluded from the list once you hit the button that says ‘I already know.’ On widgets, the words renew every time you see it, and once you hit it, you can see the details of the word.
+                </span>
+              </div>
+            </div>
+
+            <div
+              class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
+            >
+              <img class="rivu-solution-anime" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-05.gif"
+                alt="rivu solution anime" />
+              <img class="rivu-solution-frame" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-frame.png" 
+                alt="rivu solution frame" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Full size Product image -->
+    <div class="portfolio-work-wrap animatable fadeInUp">
+      <div>
+        <img
+          src="../../assets/img/portfolio/rivu/portfolio-rivu-fullsize-background.jpg"
+          alt="product image"
+        />
+      </div>
+    </div>
+
+    
+    <!-- Retrospective-->
+    <div class="portfolio-work-wrap animatable fadeInUp">
+      <div class="portfolio-work v-container-fluid">
+        <div class="row">
+          <div class="offset-md-3 col-md-9 offset-xs-0 col-xs-12">
+            <div class="portfolio-work-title subtitle-sm">Retrospective</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="offset-md-3 col-md-6 offset-xs-0 col-xs-12">
+            It all started from my love for English as a person who studies English as a second language. I pick up and study new words from articles on Medium or American TV shows, then keep a list of vocabs for myself. 
+          </div>
+
+          <div class="offset-md-3 col-md-6 offset-xs-0 col-xs-12" style="display:none;">
+            이 프로젝트는 내 자신이 좋아하고 관심있어 하는 대상에 대하여, 요구사항을 수집하고 디자인을 하여 제품을 만들었던 정말 의미있는 프로젝트였다.
+            사용자의 입장과 제작자로서의 두 가지 역할으로 두 관점을 심도깊게 고민 할 수 있는 프로젝트였기 때문이다.<br/><br/>
+            또한, 나 자신의 요구사항으로 시작한 앱이지만 다른 사람들에게도 앱을 사용하게 해봄으로써, 다양한 사용자의 관점과 내 스스로의 관점의 차이를
+            발견하는 재미도 있었다. 이렇듯 서비스는 여러 사람들의 요구사항을 최대로 만족하게 하여야 한다는 점도 배웠다.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </template>
 
@@ -124,7 +485,7 @@ import Workbase from "./Workbase.vue";
 
 export default {
   extends: Workbase,
-  name: "Rivu"
+  name: "DwPayment"
 };
 </script>
 
@@ -146,19 +507,103 @@ export default {
 }
 
 #dw-ideation-frame {
-  
+  position: relative;
+  margin-top:0px !important;
 }
 
 #dw-ideation-anime {
   position: absolute;
   width: 39.5833333333%;
   margin-left: 47.5694444444%;
-  z-index: 99;
-  margin-top: 11.2970711297%;
+  margin-top: 12.197071%;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
 }
 
+.rivu-interview-profile img {
+  width: 108px;
+  margin-bottom: 60px;
+}
+
+.rivu-solution-anime {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto !important;
+  width: 73% !important;
+}
+
+.rivu-solution-frame {
+  position: relative;
+  margin-top: 0px !important;
+}
+
+.persona-content>div {
+  padding: 0px 20px;
+}
+
+.persona-content .portfolio-work-title {
+  padding: 0px; 
+  margin-bottom: 10px;
+}
+
+.persona-content .persona-job {
+  font-size:20px; 
+  line-height: 1.7; 
+  letter-spacing: -0.2px; 
+  margin-bottom: 30px;
+}
+
+.research {
+  margin-bottom: 80px;
+}
+
+.cumbersome {
+  margin-top: 80px;
+}
+
+.persona {
+  margin-top: 50px;
+}
+
+/* sm */
+@media screen and (max-width: 1023px) {
+  .persona-content>div {
+    padding: 0px;
+    padding-right: 10px;
+  }
+  
+  .research {
+    margin-bottom: 20px;
+  }
+
+  .cumbersome {
+    margin-top: 40px;
+  }
+
+  .persona {
+    margin-top: 25px;
+  }
+
+  .persona-content .persona-job {
+    font-size:20px; 
+    line-height: 1.7; 
+    letter-spacing: -0.2px; 
+    margin-bottom: 10px;
+  }
+
+  .rivu-interview-profile img {
+    width: 88px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  .persona-content .portfolio-work-title {
+    padding: 0px;
+  }
+}
 </style>
