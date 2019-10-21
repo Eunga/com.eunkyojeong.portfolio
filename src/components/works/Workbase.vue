@@ -180,6 +180,19 @@ video:focus {
   .work-one-image {
     margin-top: 30px;
   }
+
+  .portfolio-work {
+    padding-bottom: 20px;
+  }
+
+  .subtitle-lg {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .subtitle-sm {
+    padding-bottom: 15px;
+  }
 }
 
 @media screen and (min-width: 1024px) {

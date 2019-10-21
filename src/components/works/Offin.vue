@@ -459,15 +459,15 @@
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
         <div class="row">
-          <div class="offset-md-3 col-md-9">
+          <div class="offset-md-3 col-md-9 offset-xs-0 col-xs-12">
             <div class="portfolio-work-title subtitle-sm">Retrospective</div>
           </div>
         </div>
 
         <div class="row">
-          <div
-            class="offset-md-3 col-md-6"
-          >We presented the app at Korea’s biggest start-up and technology conference and was featured as the top 20 the most promising startups in 2014 conducted by Digital Inside Media.</div>
+          <div class="offset-md-3 col-md-6 offset-xs-0 col-xs-12">
+            We presented the app at Korea’s biggest start-up and technology conference and was featured as the top 20 the most promising startups in 2014 conducted by Digital Inside Media.
+          </div>
         </div>
       </div>
     </div>

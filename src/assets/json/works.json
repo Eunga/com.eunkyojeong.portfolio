@@ -1,5 +1,20 @@
 [
   {
+    "name": "Rivu",
+    "title": "RIVU\nApp Design",
+    "theme": "white",
+    "subtitle": "The Most Efficient Way\nto Memorize Vocabularies",
+    "path": "rivu",
+    "backgroundImage": "rivu/portfolio-rivu-bg",
+    "shouldBeExposed": true,
+    "stuff": {
+      "url": "rivu/portfolio-rivu-stuff",
+      "ext": "png",
+      "animation": "transitionY 10px",
+      "duration": 1
+    }
+  },
+  {
     "name": "DwPayment",
     "title": "DAUM WEBTOON\nPayment Renewal",
     "theme": "black",
@@ -9,21 +24,6 @@
     "shouldBeExposed": true,
     "stuff": {
       "url": "dw/portfolio-dw-stuff",
-      "ext": "png",
-      "animation": "transitionY 10px",
-      "duration": 1
-    }
-  },
-  {
-    "name": "Rivu",
-    "title": "RIVU\nVocabulary Building App Design",
-    "theme": "black",
-    "subtitle": "The Laziest And Most Efficient Way\nTo Memorize Vocabularies",
-    "path": "rivu",
-    "backgroundImage": "offin/portfolio-offin-bg",
-    "shouldBeExposed": false,
-    "stuff": {
-      "url": "offin/portfolio-offin-stuff",
       "ext": "png",
       "animation": "transitionY 10px",
       "duration": 1

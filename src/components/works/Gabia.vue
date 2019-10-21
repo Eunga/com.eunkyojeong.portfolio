@@ -243,15 +243,15 @@
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
         <div class="row">
-          <div class="offset-md-3 col-md-9">
+          <div class="offset-md-3 col-md-9 offset-xs-0 col-xs-12">
             <div class="portfolio-work-title subtitle-sm">Retrospective</div>
           </div>
         </div>
 
         <div class="row">
-          <div
-            class="offset-md-3 col-md-6"
-          >I presented the website to the whole members of the company along with internal stakeholders. I got good feedback and they agreed with the ideas I suggested. Some of it was reflected in the redesigned website.</div>
+          <div class="offset-md-3 col-md-6 offset-xs-0 col-xs-12">
+            I presented the website to the whole members of the company along with internal stakeholders. I got good feedback and they agreed with the ideas I suggested. Some of it was reflected in the redesigned website.
+          </div>
         </div>
       </div>
     </div>
