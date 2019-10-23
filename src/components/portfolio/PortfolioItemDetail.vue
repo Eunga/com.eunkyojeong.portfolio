@@ -168,11 +168,13 @@ export default {
 
 .portfolio-item-nav-id {
   font-size: 20px;
+  line-height: 1.2;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
   color: #aaaaaa;
+  margin-bottom: 50px;
 
   position: relative;
   overflow: hidden;
@@ -245,13 +247,17 @@ export default {
     width: 50%;
   }
 
+  .portfolio-item-nav-id::before {
+    font-size: 14px;
+  }
+
   .portfolio-item-nav-id {
     font-size: 14px;
-    line-height: 4.29;
+    margin-bottom: 20px; 
   }
 
   .portfolio-item-nav-title {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.18;
     letter-spacing: -0.4px;
     min-height: 50px;
@@ -260,6 +266,11 @@ export default {
   .portfolio-item-nav {
     padding-top: 60px;
     margin-top: 0px;
+  }
+
+  .portfolio-item-nav-icon svg {
+    height: 7.5px;
+    width: 18px;
   }
 }
 </style>

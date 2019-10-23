@@ -377,7 +377,7 @@
             </div>
           </div>
 
-          <!-- Review 1 List, Timeline -->
+          <!-- Review 1 List -->
           <div class="row work-solution-align animatable fadeInUp">
             <div
               class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
@@ -393,33 +393,26 @@
             <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
               <div>
                 <div class="portfolio-work-title subtitle-lg">
-                  Review 1<br/>List, Timeline
+                  Review 1<br/>
+                  List
                 </div>
                 <span>
-                  It shows the progress of my review visually so that I know where I am, how many more  I have to memorize, and in case I have much to memorize, it could motivate users to review harder with extra effort of reviewing the list apart from reviewing from the push alarm.  
-                </span>
-                <br/><br/>
-                <span>
-                  Apart from reviewing through the push alarm, you can also review the whole list at once, and when you are reviewing these words, you can also go to the setting on top of the screen, and hide definitions of the words you are studying like flash cards.
-                </span>
-                <br/><br/>
-                <span>
-                  As well, you can access the history of the words you reviewed through push alarm from timeline.
+                  It shows the progress of my review visually so that I know where I am, how many more  I have to memorize, and in case I have much to memorize, it could motivate users to review harder with extra effort of reviewing the list. Apart from reviewing through the push alarm, you can also review the whole list at once, and when you are reviewing these words, you can also go to the setting on top of the screen, and hide definitions of the words you are studying like flash cards. 
                 </span>
               </div>
             </div>
           </div>
 
-          <!-- Review 2 Push Alarm, Widget -->
+          <!-- Review 2 Timeline -->
           <div class="row work-solution-align animatable fadeInUp">
             <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
               <div>
                 <div class="portfolio-work-title subtitle-lg">
                   Review 2<br/>
-                  Push Alarm, Widget
+                  Timeline
                 </div>
                 <span>
-                  You can set how many times a day and at what time of the day you want to get these push alarm. In a way, it’s like a self-made spam! Once you click the alert, you get a full screen filled with the word and the definition of it. The ones that you have already memorized can be excluded from the list once you hit the button that says ‘I already know.’ On widgets, the words renew every time you see it, and once you hit it, you can see the details of the word.
+                  You can access the history of the words you reviewed through push alarm from timeline so that you can trace them in case you missed them. As well, you can find how much progress you have made at a glance.
                 </span>
               </div>
             </div>
@@ -429,6 +422,58 @@
             >
               <img class="rivu-solution-anime" 
                 src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-05.gif"
+                alt="rivu solution anime" />
+              <img class="rivu-solution-frame" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-frame.png" 
+                alt="rivu solution frame" />
+            </div>
+          </div>
+
+          <!-- Review 3 Push Alarm -->
+          <div class="row work-solution-align animatable fadeInUp">
+            <div
+              class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
+            >
+              <img class="rivu-solution-anime" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-06.gif"
+                alt="rivu solution anime" />
+              <img class="rivu-solution-frame" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-frame.png" 
+                alt="rivu solution frame" />
+            </div>
+
+            <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+              <div>
+                <div class="portfolio-work-title subtitle-lg">
+                  Review 3<br/>
+                  Push Alarm
+                </div>
+                <span>
+                  You can set how many times a day and at what time of the day you want to get these push alarm. In a way, it’s like a self-made spam! Once you click the alert, you get a full screen filled with the word and the definition of it. The ones that you have already memorized can be excluded from the list once you hit the button that says ‘Memorized’.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 4 Widget -->
+          <div class="row work-solution-align animatable fadeInUp">
+            <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+              <div>
+                <div class="portfolio-work-title subtitle-lg">
+                  Review 4<br/>
+                  Widget
+                </div>
+                <span>
+                  On widgets, the words get renewed every time you see it, and this allows users to get a constant reminder to study the words they have listed so that they can actually review repeatedly throughout the day making it possible to memorize them effortlessly which is the whole point of this app. once you hit check icon or ‘pass’, the words get refreshed as well.
+                </span>
+              </div>
+            </div>
+
+            <div
+              class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
+            >
+              <img class="rivu-solution-anime" 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-07.gif"
                 alt="rivu solution anime" />
               <img class="rivu-solution-frame" 
                 src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-frame.png" 

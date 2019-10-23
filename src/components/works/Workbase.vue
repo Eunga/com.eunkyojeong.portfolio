@@ -112,11 +112,13 @@ export default {
 
 .portfolio-work-wrap {
   position: relative;
-}
-
-.portfolio-work-wrap {
   background-color: white;
 }
+
+.portfolio-work-wrap:last-child {
+  margin-bottom: 0px;
+}
+
 
 .portfolio-work-meta-label {
   font-weight: bold;
@@ -192,6 +194,10 @@ video:focus {
 
   .subtitle-sm {
     padding-bottom: 15px;
+  }
+
+  .portfolio-work-wrap:last-child {
+    margin-bottom: 60px;
   }
 }
 
