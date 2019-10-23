@@ -254,18 +254,17 @@
     </div>
 
 
-    <!-- Prototyping -->
-    <!-- TODO: temporarily disabled -->
-    <div class="portfolio-work-wrap" style="display:none;">
+    <!-- Wireframing -->
+    <div class="portfolio-work-wrap">
       <div class="portfolio-work v-container-fluid">
         <div class="row">
           <div class="order-sm-last order-md-1 col-md-6 col-sm-12">
-            <div class="portfolio-work-title subtitle-sm">Prototyping</div>
+            <div class="portfolio-work-title subtitle-sm">Wireframing</div>
           </div>
         </div>
 
         <div class="row animatable fadeInUp">
-          <img src="../../assets/img/portfolio/rivu/portfolio-rivu-flow.png" alt="rivu flow"/>
+          <img src="../../assets/img/portfolio/rivu/portfolio-rivu-wireframing.jpg" alt="rivu flow"/>
         </div>
       </div>
     </div>
@@ -508,14 +507,7 @@
 
         <div class="row">
           <div class="offset-md-3 col-md-6 offset-xs-0 col-xs-12">
-            It all started from my love for English as a person who studies English as a second language. I pick up and study new words from articles on Medium or American TV shows, then keep a list of vocabs for myself. 
-          </div>
-
-          <div class="offset-md-3 col-md-6 offset-xs-0 col-xs-12" style="display:none;">
-            이 프로젝트는 내 자신이 좋아하고 관심있어 하는 대상에 대하여, 요구사항을 수집하고 디자인을 하여 제품을 만들었던 정말 의미있는 프로젝트였다.
-            사용자의 입장과 제작자로서의 두 가지 역할으로 두 관점을 심도깊게 고민 할 수 있는 프로젝트였기 때문이다.<br/><br/>
-            또한, 나 자신의 요구사항으로 시작한 앱이지만 다른 사람들에게도 앱을 사용하게 해봄으로써, 다양한 사용자의 관점과 내 스스로의 관점의 차이를
-            발견하는 재미도 있었다. 이렇듯 서비스는 여러 사람들의 요구사항을 최대로 만족하게 하여야 한다는 점도 배웠다.
+            It all started from my love for English as a person who studies English as a second language. I pick up and study new words from articles on Medium or American TV shows, then keep a list of vocabs for myself. All the progress I’ve made from making Rivu was really fun. The project is still ongoing as it is being developed at the moment. I will continuously try to make a better user experience if there is room for improvement.
           </div>
         </div>
       </div>
