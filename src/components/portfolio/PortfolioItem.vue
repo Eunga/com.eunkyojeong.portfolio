@@ -39,8 +39,6 @@
 </template>
 
 <script>
-;
-
 export default {
   name: "PortfolioItem",
   props: {
