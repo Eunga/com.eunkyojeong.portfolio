@@ -164,6 +164,7 @@ export default {
 
   .nav-link {
     font-size: 13px;
+    opacity: 1;
   }
 
   .navbar-brand {
