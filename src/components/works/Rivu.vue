@@ -111,7 +111,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row row animatable fadeInUp">
           <div
             class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
           >Make the words come to me instead of me finding them to review every time.</div>
@@ -247,7 +247,7 @@
     </div>
 
     <!-- Rivu flow -->
-    <div class="portfolio-work-wrap">
+    <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
         <img src="../../assets/img/portfolio/rivu/portfolio-rivu-flow.png" alt="rivu flow"/>
       </div>
