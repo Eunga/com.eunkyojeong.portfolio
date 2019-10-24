@@ -255,42 +255,18 @@
 
 
     <!-- Wireframing -->
-    <div class="portfolio-work-wrap">
+    <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
         <div class="row">
           <div class="order-sm-last order-md-1 col-md-6 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">Wireframing</div>
           </div>
         </div>
-
-        <div class="row animatable fadeInUp">
-          <img src="../../assets/img/portfolio/rivu/portfolio-rivu-wireframing.jpg" style="width:100%; height: 100%; object-fit: contain;" alt="rivu flow"/>
-        </div>
       </div>
-    </div>
-
-    <!-- Branding -->
-    <!-- TODO: temporarily disabled -->
-    <div class="portfolio-work-wrap" style="display:none;">
-      <div class="portfolio-work v-container-fluid">
-        <div class="row">
-          <div class="order-sm-last order-md-1 col-md-6 col-sm-12">
-            <div class="portfolio-work-title subtitle-sm">Branding</div>
-          </div>
-        </div>
-
-        <!-- Help to remember what is fading away over time. -->
-        <div class="row animatable fadeInUp">
-          <div class="col-md-6 col-sm-12">
-            <div class="portfolio-work-title subtitle-lg">
-              Help to remember what is fading away over time.
-            </div>
-          </div>
-        </div>
-
-        <div class="row animatable fadeInUp" style="margin-top: 60px;">
-          <img src="../../assets/img/portfolio/rivu/portfolio-rivu-visual.jpg" alt="rivu visual"/>
-        </div>
+      <div>
+        <img 
+          src="../../assets/img/portfolio/rivu/portfolio-rivu-wireframing.jpg" 
+          alt="rivu flow"/>
       </div>
     </div>
 
