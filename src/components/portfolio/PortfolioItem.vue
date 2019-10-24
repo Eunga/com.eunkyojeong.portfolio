@@ -308,10 +308,6 @@ export default {
 }
 
 @media (max-width: 767px) {
-  #portfolio-meta {
-    height: 480px !important;
-  }
-
   .portfolio-item-stuff {
     width: 100%;
     left: 0%;

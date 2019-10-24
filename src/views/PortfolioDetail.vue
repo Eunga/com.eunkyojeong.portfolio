@@ -119,10 +119,28 @@ export default {
   z-index: 1000; /* header 까지 가림. */
 }
 
+@media (max-width: 767px) {
+  #portfolio-meta {
+    height: 480px !important;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #portfolio-meta {
     height: 736px;
     transition: all 0.3s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  #portfolio-meta {
+    height: 562px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1776px) {
+  #portfolio-meta {
+    height: 602px;
   }
 }
 
