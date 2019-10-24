@@ -16,7 +16,7 @@
           >
             <div class="work-date row">
               <div class="portfolio-work-title subtitle-sm subtitle col-md-12 col-sm-3">Date</div>
-              <div class="col-md-12 col-sm-9">June 2019</div>
+              <div class="col-md-12 col-sm-9">August 2019</div>
             </div>
 
             <div class="row">
