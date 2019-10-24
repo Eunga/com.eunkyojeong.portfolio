@@ -264,7 +264,7 @@
         </div>
 
         <div class="row animatable fadeInUp">
-          <img src="../../assets/img/portfolio/rivu/portfolio-rivu-wireframing.jpg" alt="rivu flow"/>
+          <img src="../../assets/img/portfolio/rivu/portfolio-rivu-wireframing.jpg" style="width:100%; height: 100%; object-fit: contain;" alt="rivu flow"/>
         </div>
       </div>
     </div>
