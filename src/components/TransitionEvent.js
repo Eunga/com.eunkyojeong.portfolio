@@ -174,8 +174,12 @@ export default class TransitionEvent {
     let toWithPortfolioItemStuff = 640;
     if (widthOfWindow < 768) {
       toWithPortfolioItemStuff = 480;
-    } else if ((widthOfWindow >= 768) && (widthOfWindow < 1024))  {
+    } else if ((widthOfWindow >= 768) && (widthOfWindow < 1024)) {
       toWithPortfolioItemStuff = 736;
+    } else if ((widthOfWindow >= 1024) && (widthOfWindow < 1439)) {
+      toWithPortfolioItemStuff = 562;
+    } else if ((widthOfWindow >= 1440) && (widthOfWindow < 1776)) {
+      toWithPortfolioItemStuff = 602;
     }
 
     $('#portfolio-list').animate({

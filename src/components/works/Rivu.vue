@@ -536,7 +536,7 @@ export default {
 }
 
 .rivu-interview-profile img {
-  width: 108px;
+  width: 108px !important;
   margin-bottom: 60px;
 }
 
@@ -610,7 +610,7 @@ export default {
   }
 
   .rivu-interview-profile img {
-    width: 88px;
+    width: 88px !important;
     margin-bottom: 10px;
     margin-top: 30px;
   }
