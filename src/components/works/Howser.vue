@@ -131,12 +131,11 @@
             class="work-one-image offset-md-1 col-md-5 offset-sm-3 col-sm-6"
           >
             <img src="../../assets/img/portfolio/howser/portfolio-howser-concept.png" alt="concept" />
-            
           </div>
         </div>
 
 
-        <div class="row">
+        <div class="row" style="text-align: center;">
           <div class="col-md-4 col-sm-12">
             <img 
               id="howser-branding-sketch"
@@ -148,6 +147,10 @@
             <img 
               src="../../assets/img/portfolio/howser/portfolio-howser-branding-proposals.jpg"
               alt="portfolio-howser-branding-proposals" />
+          </div>
+
+          <div class="col-xs-12" style="margin-top: 15px;">
+            <span class="work-image-footnote work-image-footnote-lg">Logo Sketches &amp; Design Proposals</span>
           </div>
         </div>
       </div>
@@ -245,11 +248,5 @@ export default {
     padding-bottom: 30px;
   }
 }
-
-// @media screen and (min-width: 768px) and (max-width: 1023px) {
-//   #footer {
-//     display: none;
-//   }
-// }
 
 </style>

@@ -135,6 +135,25 @@ export default {
   letter-spacing: -0.2px;
 }
 
+.work-image-footnote {
+  color:#bbbbbb; 
+  text-align:center;
+}
+
+.work-image-footnote-xl {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.work-image-footnote-lg {
+  font-size: 16px; 
+  font-weight: bold;
+}
+
+.work-image-footnote-sm {
+  font-size: 14px;
+}
+
 video:focus {
   outline: none;
 }
