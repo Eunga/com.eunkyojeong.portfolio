@@ -239,8 +239,7 @@
             <video style="width:100%; max-height: 900px;" controls>
               <source src="../../assets/img/portfolio/dw/portfolio-dw-before.mp4" type="video/mp4" />Your browser does not support the video tag.
             </video>
-
-            <div style="color:#666666; font-size: 22px; text-align:center; font-weight: bold;">Before</div>
+            <div class="work-image-footnote work-image-footnote-xl" style="color:#666666;">Before</div>
           </div>
 
           <div id="arrowAfterAndBefore" class="col-sm-2 hidden-xs">
@@ -261,7 +260,7 @@
               <source src="../../assets/img/portfolio/dw/portfolio-dw-after.mp4" type="video/mp4" />Your browser does not support the video tag.
             </video>
 
-            <div style="color:#666666; font-size: 22px; text-align:center; font-weight: bold;">After</div>
+            <div class="work-image-footnote work-image-footnote-xl" style="color:#666666;">After</div>
           </div>
         </div>
       </div>

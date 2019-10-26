@@ -7,7 +7,7 @@
           <div class="order-sm-last order-md-1 col-md-6 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">Overview</div>
             <div>
-              RIVU is a learning app that helps you to effectively memorize English vocabulary. The biggest advantage of utilizing this app is that you don’t have to take any effort to review notes, instead, the app can send you push alarms to review whenever you set the time for the alarm. Using the app, memorizing vocabulary would no longer be a big task or stress you have to bare with you. 
+              RIVU is a learning app that helps you to effectively memorize English vocabulary. The biggest advantage of utilizing this app is that you don’t have to take any effort to review notes, instead, the app can send you push alarms to review whenever you set the time for the alarm. Using the app, memorizing vocabulary would no longer be a big task or stress you have to bare with.
             </div>
           </div>
 
@@ -44,6 +44,27 @@
             Unfortunately, and just like many others, it always seemed impossible to find time to review them ever. Knowing that there is never “later”, I needed to find a way to review so the new vocabs I learned will stick. This way, I will constantly be reviewed and be able to use words or expressions I learned right away when in need in sentences I write or speak.
           </div>
         </div>
+
+
+        <div class="row animatable fadeInUp">
+          <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+            <div style="margin-top: 60px; margin-bottom: 30px;">
+              <img 
+                src="../../assets/img/portfolio/rivu/portfolio-rivu-situation.png" 
+                alt="situation graph" />
+            </div>
+            <div style="text-align: center;">
+              <div>
+                <span class="work-image-footnote work-image-footnote-lg">Ebbinghaus' Forgetting Curve</span>
+              </div>
+
+              <div style="line-height: 6px;">
+                <span class="work-image-footnote work-image-footnote-sm">Without reviewing them, I might hardly make them mine</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -250,6 +271,10 @@
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
         <img src="../../assets/img/portfolio/rivu/portfolio-rivu-flow.png" alt="rivu flow"/>
+
+        <div style="text-align: center;">
+          <span class="work-image-footnote work-image-footnote-lg">Feature Flows</span>
+        </div>
       </div>
     </div>
 
