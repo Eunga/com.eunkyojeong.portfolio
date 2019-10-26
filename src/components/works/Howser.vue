@@ -106,15 +106,21 @@
     </div>
 
 
-    <!-- Concept -->
+    <!-- Branding -->
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
-        <div class="row">
+        <div class="row animatable fadeInUp">
+          <div class="col-xs-12">
+            <div class="portfolio-work-title subtitle-sm">Branding</div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 120px;">
           <div class="col-md-6 col-sm-12">
-            <div class="portfolio-work-title subtitle-sm">Concept</div>
+            <div class="portfolio-work-title subtitle-sm"></div>
             
             <!-- It’s ‘furniture’, it’s ‘3D’, and it’s ‘H’ as in Howser! -->
-            <div class="portfolio-work-title subtitle-lg">It’s ‘furniture’, it’s ‘3D’, and it’s ‘H’ as in Howser!</div>
+            <div class="portfolio-work-title subtitle-lg">Concept: It’s ‘furniture’, it’s ‘3D’, and it’s ‘H’ as in Howser!</div>
 
             <div>
               Howser is a 3D modeler, so I wanted to design a 3-dimensional logo. As well, I made the letter “H” to look like a chair which is furniture since it’s highly relevant to what we are selling.
@@ -122,13 +128,37 @@
           </div>
 
           <div
-            class="work-one-image offset-md-1 col-md-5 offset-sm-0 col-sm-12"
+            class="work-one-image offset-md-1 col-md-5 offset-sm-3 col-sm-6"
           >
             <img src="../../assets/img/portfolio/howser/portfolio-howser-concept.png" alt="concept" />
             
           </div>
         </div>
+
+
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <img 
+              id="howser-branding-sketch"
+              src="../../assets/img/portfolio/howser/portfolio-howser-branding-sketch.jpg"
+              alt="portfolio-howser-branding-sketch" />
+          </div>
+
+          <div class="col-md-8 col-sm-12">
+            <img 
+              src="../../assets/img/portfolio/howser/portfolio-howser-branding-proposals.jpg"
+              alt="portfolio-howser-branding-proposals" />
+          </div>
+        </div>
       </div>
+
+      <!-- Full size Product image -->
+      <div class="row animatable fadeInUp">
+        <div>
+          <img src="../../assets/img/portfolio/howser/portfolio-howser-branding-application.jpg" alt="portfolio-howser-branding-application" />
+        </div>
+      </div>
+
     </div>
 
 
@@ -201,5 +231,25 @@ export default {
 </script>
 
 <style lang="scss">
+
+#howser-branding-sketch {
+  height: 100%; 
+  position: relative; 
+  object-fit: cover;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 1023px) { //767px) {
+  #howser-branding-sketch {
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+}
+
+// @media screen and (min-width: 768px) and (max-width: 1023px) {
+//   #footer {
+//     display: none;
+//   }
+// }
 
 </style>

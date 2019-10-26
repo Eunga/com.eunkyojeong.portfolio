@@ -250,6 +250,10 @@
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
         <img src="../../assets/img/portfolio/rivu/portfolio-rivu-flow.png" alt="rivu flow"/>
+
+        <div style="text-align: center;">
+          <span style="color:#bbbbbb; font-size: 22px; text-align:center; font-weight: bold;">Feature Flows</span>
+        </div>
       </div>
     </div>
 
