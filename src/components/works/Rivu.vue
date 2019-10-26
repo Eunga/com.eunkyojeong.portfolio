@@ -7,7 +7,7 @@
           <div class="order-sm-last order-md-1 col-md-6 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">Overview</div>
             <div>
-              RIVU is a learning app that helps you to effectively memorize English vocabulary. The biggest advantage of utilizing this app is that you don’t have to take any effort to review notes, instead, the app can send you push alarms to review whenever you set the time for the alarm. Using the app, memorizing vocabulary would no longer be a big task or stress you have to bare with you. 
+              RIVU is a learning app that helps you to effectively memorize English vocabulary. The biggest advantage of utilizing this app is that you don’t have to take any effort to review notes, instead, the app can send you push alarms to review whenever you set the time for the alarm. Using the app, memorizing vocabulary would no longer be a big task or stress you have to bare with.
             </div>
           </div>
 
