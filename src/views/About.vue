@@ -49,13 +49,13 @@
 
           <div class="animatable fadeInUp">
             <div class="aboutAdobeCreateType">
-              <a :href="myCreativeType">
+              <a :href="myCreativeType" target="_blank">
                 Adobe says this is #MyCreativeType
               </a>
             </div>
 
             <div class="aboutPersonalType">
-              <a :href="myPersonality">
+              <a :href="myPersonality" target="_blank">
                 Here, more of my personality
               </a>
             </div>
@@ -113,13 +113,13 @@
 
         <div class="animatable fadeInUp">
           <div class="aboutAdobeCreateType">
-            <a :href="myCreativeType">
+            <a :href="myCreativeType" target="_blank">
               Adobe says this is #MyCreativeType
             </a>
           </div>
 
           <div class="aboutPersonalType">
-            <a :href="myPersonality">
+            <a :href="myPersonality" target="_blank">
               Here, more of my personality
             </a>
           </div>
