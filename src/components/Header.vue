@@ -14,20 +14,10 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav"></div>
-    <!-- <span class="navLink">
-      <router-link
-        id="navPortfolio"
-        to="/"
-        class="nav-link"
-        :class="{'router-link-exact-active': isActivePortfolio()}"
-      >Portfolio</router-link>
-    </span>
-    <span class="navLink">
-      <router-link id="navAbout" to="/about" class="nav-link">About</router-link>
-    </span> -->
     <div>
       <span class="navLink">
         <router-link
+          onclick="ga('send', 'event', 'Home', 'Page', 'Header Navigation Button Click')"
           id="navPortfolio"
           to="/"
           class="nav-link"
@@ -35,7 +25,11 @@
         >Portfolio</router-link>
       </span>
       <span class="navLink">
-        <router-link id="navAbout" to="/about" class="nav-link">About</router-link>
+        <router-link 
+          onclick="ga('send', 'event', 'About', 'Page', 'Header Navigation Button Click')"
+          id="navAbout" 
+          to="/about" 
+          class="nav-link">About</router-link>
       </span>
     </div>
   </nav>
