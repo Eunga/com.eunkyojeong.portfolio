@@ -190,6 +190,8 @@ export default {
     $(".portfolio-item-detail-temp").hide();
 
     $('.tabtitle-item').click(function() {
+      const title = $(this).find('.tabtitle-item-title').html();
+    
       const idxOfContent = $(this).attr('data-tabcontent-idx');
 
       const $contentItem = $('#aboutDesktop .tabcontent-item');
@@ -199,6 +201,8 @@ export default {
       $('.tabtitle-item').removeClass('active');
       $(this).addClass('active');
 
+
+      gtag('event', 'About', {'event_category': 'Click', 'event_label': `${title} Click.`});
     });
 
     $(document).ready(function() {
