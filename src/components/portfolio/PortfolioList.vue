@@ -125,8 +125,7 @@ export default {
       clearInterval(this.barInterval);
       
       this.$store.commit("changeCurrentWorkId", work.id);
-      
-      gtag('send', 'event', 'Portfolio', `${work.name}`, 'Move to the page from the home.')
+      gtag('event', `PortfolioDetail|${work.name}`, {'event_category': 'Page', 'event_label': 'Move to the page from the home.'})
       this.$router.push({ path: `/portfolio/${work.path}` });
     },
     next() {
