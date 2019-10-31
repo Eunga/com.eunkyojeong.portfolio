@@ -33,7 +33,11 @@
           </div>
 
           <div class="aboutResumeBtn animatable fadeInUp">
-            <a :href="resume" download target="_blank">
+            <a
+              onclick="ga('send', 'event', 'About', 'Resume', 'Resume Donwload Button Click')" 
+              :href="resume" 
+              download 
+              target="_blank">
               <span>RESUME</span>
 
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
@@ -49,13 +53,19 @@
 
           <div class="animatable fadeInUp">
             <div class="aboutAdobeCreateType">
-              <a :href="myCreativeType" target="_blank">
+              <a 
+                onclick="ga('send', 'event', 'About', 'CreativeType', 'MyCreativeType Button Click')" 
+                :href="myCreativeType" 
+                target="_blank">
                 Adobe says this is #MyCreativeType
               </a>
             </div>
 
             <div class="aboutPersonalType">
-              <a :href="myPersonality" target="_blank">
+              <a 
+                onclick="ga('send', 'event', 'About', 'Personality', 'Personality Button Click')" 
+                :href="myPersonality" 
+                target="_blank">
                 Here, more of my personality
               </a>
             </div>
@@ -97,7 +107,11 @@
         </div>
 
         <div class="aboutResumeBtn animatable fadeInUp">
-          <a :href="resume" download target="_blank">
+          <a
+            onclick="ga('send', 'event', 'About', 'Resume', 'Resume Donwload Button Click')" 
+            :href="resume" 
+            download 
+            target="_blank">
             <span>RESUME</span>
 
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
@@ -113,13 +127,19 @@
 
         <div class="animatable fadeInUp">
           <div class="aboutAdobeCreateType">
-            <a :href="myCreativeType" target="_blank">
+            <a 
+              onclick="ga('send', 'event', 'About', 'CreativeType', 'MyCreativeType Button Click')" 
+              :href="myCreativeType" 
+              target="_blank">
               Adobe says this is #MyCreativeType
             </a>
           </div>
 
           <div class="aboutPersonalType">
-            <a :href="myPersonality" target="_blank">
+            <a 
+              onclick="ga('send', 'event', 'About', 'Personality', 'Personality Button Click')" 
+              :href="myPersonality" 
+              target="_blank">
               Here, more of my personality
             </a>
           </div>
