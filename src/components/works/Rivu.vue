@@ -100,7 +100,7 @@
         <!-- It’s cumbersome to go to the words list -->
         <div class="animatable fadeInUp">
           <div class="cumbersome row">
-            <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+            <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
               <div class="portfolio-work-title subtitle-lg">It’s cumbersome to go to the words list</div>
             </div>
           </div>
