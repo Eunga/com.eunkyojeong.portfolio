@@ -126,7 +126,7 @@ export default {
       
       this.$store.commit("changeCurrentWorkId", work.id);
       
-      ga('send', 'event', 'Portfolio', `${work.name}`, 'Move to the page from the home.')
+      gtag('send', 'event', 'Portfolio', `${work.name}`, 'Move to the page from the home.')
       this.$router.push({ path: `/portfolio/${work.path}` });
     },
     next() {

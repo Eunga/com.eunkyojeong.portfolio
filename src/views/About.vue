@@ -34,7 +34,7 @@
 
           <div class="aboutResumeBtn animatable fadeInUp">
             <a
-              onclick="ga('send', 'event', 'About', 'Resume', 'Resume Donwload Button Click')" 
+              onclick="gtag('send', 'event', 'About', 'Resume', 'Resume Donwload Button Click')" 
               :href="resume" 
               download 
               target="_blank">
@@ -54,7 +54,7 @@
           <div class="animatable fadeInUp">
             <div class="aboutAdobeCreateType">
               <a 
-                onclick="ga('send', 'event', 'About', 'CreativeType', 'MyCreativeType Button Click')" 
+                onclick="gtag('send', 'event', 'About', 'CreativeType', 'MyCreativeType Button Click')" 
                 :href="myCreativeType" 
                 target="_blank">
                 Adobe says this is #MyCreativeType
@@ -63,7 +63,7 @@
 
             <div class="aboutPersonalType">
               <a 
-                onclick="ga('send', 'event', 'About', 'Personality', 'Personality Button Click')" 
+                onclick="gtag('send', 'event', 'About', 'Personality', 'Personality Button Click')" 
                 :href="myPersonality" 
                 target="_blank">
                 Here, more of my personality
@@ -108,7 +108,7 @@
 
         <div class="aboutResumeBtn animatable fadeInUp">
           <a
-            onclick="ga('send', 'event', 'About', 'Resume', 'Resume Donwload Button Click')" 
+            onclick="gtag('send', 'event', 'About', 'Resume', 'Resume Donwload Button Click')" 
             :href="resume" 
             download 
             target="_blank">
@@ -128,7 +128,7 @@
         <div class="animatable fadeInUp">
           <div class="aboutAdobeCreateType">
             <a 
-              onclick="ga('send', 'event', 'About', 'CreativeType', 'MyCreativeType Button Click')" 
+              onclick="gtag('send', 'event', 'About', 'CreativeType', 'MyCreativeType Button Click')" 
               :href="myCreativeType" 
               target="_blank">
               Adobe says this is #MyCreativeType
@@ -137,7 +137,7 @@
 
           <div class="aboutPersonalType">
             <a 
-              onclick="ga('send', 'event', 'About', 'Personality', 'Personality Button Click')" 
+              onclick="gtag('send', 'event', 'About', 'Personality', 'Personality Button Click')" 
               :href="myPersonality" 
               target="_blank">
               Here, more of my personality

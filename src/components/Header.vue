@@ -1,6 +1,10 @@
 <template>
   <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light" v-bind:class="[theme]">
-    <router-link class="navbar-brand" to="/" style="z-index:10">EUNKYO JEONG</router-link>
+    <router-link 
+      onclick="gtag('send', 'event', 'Home', 'Page', 'Header Navigation Button Click')"
+      class="navbar-brand" 
+      to="/" 
+      style="z-index:10">EUNKYO JEONG</router-link>
     <button
       class="navbar-toggler"
       type="button"
@@ -17,7 +21,7 @@
     <div>
       <span class="navLink">
         <router-link
-          onclick="ga('send', 'event', 'Home', 'Page', 'Header Navigation Button Click')"
+          onclick="gtag('send', 'event', 'Home', 'Page', 'Header Navigation Button Click')"
           id="navPortfolio"
           to="/"
           class="nav-link"
@@ -26,7 +30,7 @@
       </span>
       <span class="navLink">
         <router-link 
-          onclick="ga('send', 'event', 'About', 'Page', 'Header Navigation Button Click')"
+          onclick="gtag('send', 'event', 'About', 'Page', 'Header Navigation Button Click')"
           id="navAbout" 
           to="/about" 
           class="nav-link">About</router-link>
