@@ -236,7 +236,8 @@
       <div class="portfolio-work v-container-fluid">
         <div class="row">
           <div class="col-sm-5 offset-xs-2 col-xs-8 animatable fadeInUp autoPlayVideo">
-            <video controls style="width:100%; max-height: 900px;">
+            <video controls style="width:100%; max-height: 900px;"
+              poster="../../assets/img/portfolio/dw/portfolio-dw-before.jpg">>
               <source src="../../assets/img/portfolio/dw/portfolio-dw-before.mp4" type="video/mp4" />Your browser does not support the video tag.
             </video>
             <div class="work-image-footnote work-image-footnote-xl" style="color:#666666;">Before</div>
@@ -256,7 +257,8 @@
           </div>
 
           <div class="col-sm-5 offset-xs-2 col-xs-8 animatable fadeInUp autoPlayVideo">
-            <video controls style="width:100%; max-height: 900px;">
+            <video controls style="width:100%; max-height: 900px;"
+              poster="../../assets/img/portfolio/dw/portfolio-dw-after.jpg">
               <source src="../../assets/img/portfolio/dw/portfolio-dw-after.mp4" type="video/mp4" />Your browser does not support the video tag.
             </video>
 
