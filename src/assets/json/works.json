@@ -1,12 +1,41 @@
 [
   {
+    "name": "LockedProject1",
+    "title": "Locked Project\nRequest Access",
+    "theme": "white",
+    "subtitle": "Please request access",
+    "path": "lockedproject1",
+    "backgroundImage": "https://dispatch.cdnser.be/cms-content/uploads/2019/03/19/ecb6faf5-afba-469a-8fd7-b399dfcff278.jpg",
+    "shouldBeExposed": true,
+    "stuff": {
+      "url": "http://postfiles12.naver.net/MjAxNzAzMjNfMTM5/MDAxNDkwMjMyNDAwMjQx.Hc9OagVVeodrgK0K-15L6UJnaEFiu0I8JJOgLhUBxekg.fmmgftX626w2ovGjzub51HSxOcfDILQUsO1ZQJQXFxgg.GIF.gwanggeun/EAB491EB9E80EC9D98ECB6A4EC82ACEC9C84.gif?type=w2",
+      "ext": "png",
+      "animation": "transitionY 10px",
+      "duration": 1
+    },
+    "isLockedProject": true,
+    "unlockedInfo": {
+      "password": " ",
+      "title": "iSTOX\nTitle",
+      "theme": "white",
+      "subtitle": "iSTOX Project Subtitle",
+      "backgroundImage": "howser/portfolio-howser-bg",
+      "stuff": {
+        "url": "howser/portfolio-howser-stuff",
+        "ext": "png",
+        "animation": "transitionY 10px",
+        "duration": 1
+      }
+    }
+  },
+  {
     "name": "Rivu",
     "title": "RIVU\nApp Design",
     "theme": "white",
     "subtitle": "The Most Efficient Way\nto Memorize Vocabularies",
     "path": "rivu",
     "backgroundImage": "rivu/portfolio-rivu-bg",
-    "shouldBeExposed": false,
+    "shouldBeExposed": true,
     "stuff": {
       "url": "rivu/portfolio-rivu-stuff",
       "ext": "png",
@@ -21,7 +50,7 @@
     "subtitle": "Easy and Fast Payment\nfor Seamless Reading Experience",
     "path": "daum_payment",
     "backgroundImage": "dw/portfolio-dw-bg",
-    "shouldBeExposed": false,
+    "shouldBeExposed": true,
     "stuff": {
       "url": "dw/portfolio-dw-stuff",
       "ext": "png",
@@ -36,7 +65,7 @@
     "subtitle": "The Easiest Way to Create 3D Floor Plans",
     "path": "howser",
     "backgroundImage": "howser/portfolio-howser-bg",
-    "shouldBeExposed": false,
+    "shouldBeExposed": true,
     "stuff": {
       "url": "howser/portfolio-howser-stuff",
       "ext": "png",
@@ -52,7 +81,7 @@
     "subtitle": "Offline Fashion Stores in Your Phone",
     "path": "offin",
     "backgroundImage": "offin/portfolio-offin-bg",
-    "shouldBeExposed": false,
+    "shouldBeExposed": true,
     "stuff": {
       "url": "offin/portfolio-offin-stuff",
       "ext": "png",
@@ -73,35 +102,6 @@
       "ext": "png",
       "animation": "transitionY 10px",
       "duration": 1
-    }
-  },
-  {
-    "name": "LockedProject1",
-    "title": "Locked Project1\nTitle",
-    "theme": "white",
-    "subtitle": "Locked Project Subtitle",
-    "path": "lockedproject1",
-    "backgroundImage": "gabia/portfolio-gabia-bg",
-    "shouldBeExposed": true,
-    "stuff": {
-      "url": "gabia/portfolio-gabia-stuff",
-      "ext": "png",
-      "animation": "transitionY 10px",
-      "duration": 1
-    },
-    "isLockedProject": true,
-    "unlockedInfo": {
-      "password": " ",
-      "title": "iSTOX\nTitle",
-      "theme": "white",
-      "subtitle": "iSTOX Project Subtitle",
-      "backgroundImage": "howser/portfolio-howser-bg",
-      "stuff": {
-        "url": "howser/portfolio-howser-stuff",
-        "ext": "png",
-        "animation": "transitionY 10px",
-        "duration": 1
-      }
     }
   }
 ]

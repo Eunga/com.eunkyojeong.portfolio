@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio-item-detail">
     <div class="portfolio-item-detail-temp"></div>
-    <component :is="comp" />
+    <component :is="comp" v-if="work.isUnlocked"/>
 
     <div class="portfolio-item-nav v-container-fluid">
       <div class="portfolio-item-nav-item portfolio-item-nav-prev" v-on:click="goOtherWork(prev)">
