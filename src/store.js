@@ -12,6 +12,13 @@ const store = new Vuex.Store({
     allWorks: allWorks,
     works: allWorks.filter(work => work.shouldBeExposed).map((work, idx, arr) => {
       work.id = idx;
+
+      if (work.isLockedProject) {
+        work.isUnlocked = false;
+      } else {
+        work.isUnlocked = true
+      }
+
       return work;
     }),
     about: about,

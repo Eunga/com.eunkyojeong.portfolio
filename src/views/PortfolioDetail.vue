@@ -14,7 +14,6 @@
 </template>
 
 <script>
-;
 
 import Mask from "./Mask";
 import PortfolioItem from "@/components/portfolio/PortfolioItem.vue";
@@ -45,6 +44,12 @@ export default {
       "z-index": 1000
     });
 
+    const work = this.work();
+    if (work.isLockedProject && !work.isUnlocked) {
+        this.askToUnlockTheProjectIfItIsLockedProject(work);
+        return;
+    }
+
     setTimeout(() => {
       $("#portfolio-detail-mask").animate({
           opacity: 0,
@@ -64,8 +69,30 @@ export default {
     const path = this.$route.path;
     const work = this.$store.getters.workFromPath(path);
     this.commitCurrentWorkToStore(work);
+
+    if (work.isLockedProject && !work.isUnlocked) {
+        this.askToUnlockTheProjectIfItIsLockedProject(work);
+        return;
+    }
   },
   methods: {
+    askToUnlockTheProjectIfItIsLockedProject(work) {
+      if (work.isLockedProject && !work.isUnlocked) {
+          if (prompt("비밀번호를 입력해주세요.") == work.unlockedInfo.password) {  
+            work.isUnlocked = true;
+            setTimeout(() => {
+              $("#portfolio-detail-mask").animate({
+                  opacity: 0,
+                  "z-index": -1000
+                },
+                300
+              );
+            }, 300);
+          } else {
+            this.askToUnlockTheProjectIfItIsLockedProject(work)
+          }
+      }
+    },
     work() {
       const currentWork = this.$store.getters.currentWork;
       return currentWork;

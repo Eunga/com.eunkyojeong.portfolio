@@ -18,7 +18,7 @@
 </template>
 
 <script>
-;
+
 import PortfolioItem from "./PortfolioItem.vue";
 
 const carouselBehavior = {
@@ -100,6 +100,17 @@ export default {
     }
   },
   methods: {
+    askToUnlockTheProjectIfItIsLockedProject(work, callback) {
+      if (work.isLockedProject && !work.isUnlocked) {
+          if (prompt("비밀번호를 입력해주세요.") == work.unlockedInfo.password) {  
+            work.isUnlocked = true;
+            
+            callback()
+          } else {
+            this.askToUnlockTheProjectIfItIsLockedProject(work, callback)
+          }
+      }
+    },
     mouseWheelEventForCarousel(e) {
       if (this.isOnMoving) {
         return;
@@ -115,6 +126,11 @@ export default {
       e.stopPropagation();
     },
     goPortfolioDetail(work) {
+      if (work.isLockedProject && !work.isUnlocked) {
+        this.askToUnlockTheProjectIfItIsLockedProject(work, () => { this.goPortfolioDetail(work) });
+        return;
+      }
+
       this.$emit("goPortfolioDetail", work);
       
       this.isOnMoving = true;

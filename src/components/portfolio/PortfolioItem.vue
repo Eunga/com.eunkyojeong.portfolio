@@ -4,12 +4,13 @@
     v-bind:class="[{ active: isActive(), detail: isDetail, list: !isDetail}, theme() ]"
   >
     <div class="portfolio-item-background">
-      <img class="portfolio-item-background-image" :src="getImgUrl(work.backgroundImage)" />
+      <img class="portfolio-item-background-image" 
+        :src="getImgUrl(computeWorkBackgroundImageWhetherWorkIsLocked())" />
     </div>
 
     <div class="v-container-fluid portfolio-item-stuff">
       <div class="portfolio-item-stuff-img-wrapper">
-        <img :src="getImgUrl(work.stuff.url, work.stuff.ext)" />
+        <img :src="getImgUrl(computeWorkStuffUrlWhetherWorkIsLocked(), computeWorkStuffExtWhetherWorkIsLocked())" />
       </div>
     </div>
     
@@ -53,6 +54,27 @@ export default {
     }
   },
   methods: {
+    computeWorkBackgroundImageWhetherWorkIsLocked() {
+      if (this.work.isLockedProject && this.work.isUnlocked) {
+        return this.work.unlockedInfo.backgroundImage
+      }
+
+      return this.work.backgroundImage
+    },
+    computeWorkStuffUrlWhetherWorkIsLocked() {
+      if (this.work.isLockedProject && this.work.isUnlocked) {
+        return this.work.unlockedInfo.stuff.url;
+      }
+
+      return this.work.stuff.url;
+    },
+    computeWorkStuffExtWhetherWorkIsLocked() {
+      if (this.work.isLockedProject && this.work.isUnlocked) {
+        return this.work.unlockedInfo.stuff.ext;
+      }
+
+      return this.work.stuff.ext;
+    },
     theme() {
       return this.work.theme;
     },
@@ -64,10 +86,20 @@ export default {
       return obj.isActive;
     },
     getWorkTitle() {
+      if (this.work.isLockedProject && this.work.isUnlocked) {
+        const title = this.work.unlockedInfo.title.replace(/\n/g, "<br/>");
+        return title;
+      }
+
       const title = this.work.title.replace(/\n/g, "<br/>");
       return title;
     },
     getWorkSubtitle() {
+      if (this.work.isLockedProject && this.work.isUnlocked) {
+        const subtitle = this.work.unlockedInfo.subtitle.replace(/\n/g, "<br/>");
+        return subtitle;
+      }
+
       const subtitle = this.work.subtitle.replace(/\n/g, "<br/>");
       return subtitle;
     },
