@@ -11,7 +11,8 @@
             <div class="tabtitle-divider"></div>
           </li>
 
-          <li class="tabtitle-item" data-tabcontent-idx="1">
+          <!-- For eunkyo's request, the background section will be hidden. -->
+          <li style="display: none;" class="tabtitle-item" data-tabcontent-idx="1">
             <div class="tabtitle-item-title">Background</div>
             <div class="tabtitle-divider"></div>
           </li>
@@ -375,6 +376,8 @@ export default {
 }
 
 .aboutBackgroundContent {
+  /* For eunkyo's request, the background section will be hidden. */
+  display: none !important;
   font-family: HelveticaNeue;
   font-size: 19px;
   font-weight: normal;
