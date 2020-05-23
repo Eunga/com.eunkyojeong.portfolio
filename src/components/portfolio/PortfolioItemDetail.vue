@@ -3,6 +3,8 @@
     <div class="portfolio-item-detail-temp"></div>
     <component :is="comp" />
 
+    <back-to-top />
+
     <div class="portfolio-item-nav v-container-fluid">
       <div class="portfolio-item-nav-item portfolio-item-nav-prev" v-on:click="goOtherWork(prev)">
         <div class="portfolio-item-nav-id">
@@ -57,8 +59,13 @@
 </template>
 
 <script>
+import BackToTop from "../common/BackToTop.vue";
+
 export default {
   name: "PortfolioItemDetail",
+  components: {
+    "back-to-top": BackToTop
+  },
   props: {
     work: {
       type: Object,
@@ -132,7 +139,7 @@ export default {
   padding-top: 120px;
   border-top: solid 1px #dddddd;
   height: 410px;
-  margin-top: 120px;
+  /* margin-top: 120px; */
 }
 
 .portfolio-item-nav-item {
@@ -239,7 +246,7 @@ export default {
 
 @media (max-width: 767px) {
   .portfolio-item-nav {
-    padding-top: 40px;
+    padding-top: 60px;
     height: 270px;
   }
 
@@ -261,11 +268,6 @@ export default {
     line-height: 1.18;
     letter-spacing: -0.4px;
     min-height: 50px;
-  }
-
-  .portfolio-item-nav {
-    padding-top: 60px;
-    margin-top: 0px;
   }
 
   .portfolio-item-nav-icon svg {
