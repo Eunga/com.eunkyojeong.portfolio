@@ -158,7 +158,7 @@ export default {
 .portfolio-detail-info {
   transition: all 0.3s ease-in-out;
   z-index: 10;
-  min-height: 500px;
+  min-height: 2000px;
 }
 
 #portfolio-detail-mask {

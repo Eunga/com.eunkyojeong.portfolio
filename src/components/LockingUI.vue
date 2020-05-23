@@ -18,13 +18,16 @@
         
         <h1>Protected<br/>Page</h1>
         <p>Please ask me for the password<br/>if you wish to proceed</p>
-        <br/>
-        <label>Password</label>
         
         <div style="position: relative;">
-          <input type="password" id="lockingPassword"/>
+          <div style="display: inline-block;">
+            <label>Password</label>
+            <div>
+              <input type="password" id="lockingPassword"/>
+            </div>
+          </div>
 
-          <div style="display: inline-block; position: absolute; right: 0;">
+          <div style="display: inline-block; position: absolute; right: 0; bottom: 0">
             <div id="lockingSubmit">
               <!-- gtag 손볼 것 -->
               <a onclick="gtag('event', 'Project', {'event_category': 'Click', 'event_label': 'Unlock Project.'})">
@@ -192,6 +195,7 @@ export default {
   letter-spacing: -0.38px;
   color: #000000;
   opacity: 0.3;
+  margin-bottom: 43px;
 }
 
 #lockingForm label {
@@ -209,7 +213,6 @@ export default {
   border: none;
   border-bottom: 1px solid black;
   margin-right: 30px;
-  height: 42px;
 }
 
 #lockingPassword.error {
@@ -260,29 +263,34 @@ export default {
   overflow: hidden;
 }
 
+#lockingUI input:focus{
+  outline: none;
+}
+
 @media (max-width: 767px) {
   #lockingFormWrapper {
     width: 100%;
     height: 100%;
+    margin: 0;
   }
 
   #lockingForm {
     width: 100%;
     height: 100%;
     border: none;
-    padding-top:60px;
+    padding: 30px;
+    padding-top: 80px;
   }
 
   #lockingClose {
-    top: 10px;
-  }
-
-  #lockingPassword {
-    width: 170px;
+    top: 30px;
   }
 }
 
-#lockingUI input:focus{
-  outline: none;
+#lockingUI input {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius:0px;
 }
+
 </style>
