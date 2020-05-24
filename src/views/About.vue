@@ -4,15 +4,16 @@
     <div id="aboutOffset"></div>
 
     <div id="aboutDesktop" class="hidden-sm row tab">
-      <div class="tabtitle col-6">
+
+      <!-- For eunkyo's request, the background section will be hidden. -->
+      <div class="tabtitle col-6" style="display: none;" >
         <ul>
           <li class="tabtitle-item active" data-tabcontent-idx="0">
             <div class="tabtitle-item-title">Introduction</div>
             <div class="tabtitle-divider"></div>
           </li>
 
-          <!-- For eunkyo's request, the background section will be hidden. -->
-          <li style="display: none;" class="tabtitle-item" data-tabcontent-idx="1">
+          <li class="tabtitle-item" data-tabcontent-idx="1">
             <div class="tabtitle-item-title">Background</div>
             <div class="tabtitle-divider"></div>
           </li>
@@ -20,7 +21,7 @@
 
       </div>
 
-      <div class="tabcontent col-6">
+      <div class="tabcontent offset-sm-6 col-6">
         
         <!-- Introduction -->
         <div class="aboutIntroductionContent tabcontent-item active">
@@ -95,8 +96,9 @@
     <div id="aboutMobile" class="visible-sm-block">
       <!-- Introduction -->
       <div class="aboutIntroductionContent">
-        <div class="tabtitle-item-title">Introduction</div>
-        <div class="tabtitle-divider"></div>
+        <!-- For eunkyo's request, the background section will be hidden. -->
+        <div class="tabtitle-item-title" style="display: none;">Introduction</div>
+        <div class="tabtitle-divider" style="display: none;"></div>
         
         <div class="aboutName animatable fadeInUp">
           <span>Hi, I'm Kyo!</span>
