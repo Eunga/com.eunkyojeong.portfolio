@@ -159,7 +159,7 @@ video:focus {
 }
 
 .work-solution-align {
-  margin-bottom: 60px;
+  margin-bottom: 160px;
 }
 
 .work-one-image {
