@@ -2,10 +2,10 @@
   {
     "name": "LockedProject1",
     "title": "Locked Project\nRequest Access",
-    "theme": "white",
+    "theme": "black",
     "subtitle": "Please request access",
     "path": "lockedproject1",
-    "backgroundImage": "https://dispatch.cdnser.be/cms-content/uploads/2019/03/19/ecb6faf5-afba-469a-8fd7-b399dfcff278.jpg",
+    "backgroundImage": "https://www.howtogeek.com/wp-content/uploads/2013/06/android-lock-screen.png",
     "shouldBeExposed": true,
     "stuff": {
       "url": "http://postfiles12.naver.net/MjAxNzAzMjNfMTM5/MDAxNDkwMjMyNDAwMjQx.Hc9OagVVeodrgK0K-15L6UJnaEFiu0I8JJOgLhUBxekg.fmmgftX626w2ovGjzub51HSxOcfDILQUsO1ZQJQXFxgg.GIF.gwanggeun/EAB491EB9E80EC9D98ECB6A4EC82ACEC9C84.gif",
@@ -17,11 +17,11 @@
     "unlockedInfo": {
       "password": " ",
       "title": "iSTOX\nTitle",
-      "theme": "white",
+      "theme": "black",
       "subtitle": "iSTOX Project Subtitle",
-      "backgroundImage": "howser/portfolio-howser-bg",
+      "backgroundImage": "https://trello-attachments.s3.amazonaws.com/5d385e1a9c68ea134a96280c/5ece1fe6f146ae576448ba53/2e714c06bc0873ca4f5b7a580a52e310/iSTOX_BG.png",
       "stuff": {
-        "url": "howser/portfolio-howser-stuff",
+        "url": "https://trello-attachments.s3.amazonaws.com/5ece7b7422f952577f21ff9e/840x1360/916024be9ec22e1c3fbcb064bd589aec/img_cover_main_is.png",
         "ext": "png",
         "animation": "transitionY 10px",
         "duration": 1
