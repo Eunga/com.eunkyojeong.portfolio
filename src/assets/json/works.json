@@ -1,14 +1,14 @@
 [
   {
     "name": "LockedProject1",
-    "title": "Locked Project\nRequest Access",
+    "title": "Protected\nProject",
     "theme": "black",
     "subtitle": "Please request access",
     "path": "lockedproject1",
-    "backgroundImage": "https://www.howtogeek.com/wp-content/uploads/2013/06/android-lock-screen.png",
+    "backgroundImage": "https://trello-attachments.s3.amazonaws.com/5d385e1a9c68ea134a96280c/5ed347e047081d0189fecafd/3dc52e0b2bbe77dbf485a484d9fa47ab/img_cover_BG_locked.png",
     "shouldBeExposed": true,
     "stuff": {
-      "url": "http://postfiles12.naver.net/MjAxNzAzMjNfMTM5/MDAxNDkwMjMyNDAwMjQx.Hc9OagVVeodrgK0K-15L6UJnaEFiu0I8JJOgLhUBxekg.fmmgftX626w2ovGjzub51HSxOcfDILQUsO1ZQJQXFxgg.GIF.gwanggeun/EAB491EB9E80EC9D98ECB6A4EC82ACEC9C84.gif",
+      "url": "https://trello-attachments.s3.amazonaws.com/5ed347e047081d0189fecafd/840x1360/60edaf3b07e3bfd21fcec8727f4d5b41/img_cover_main_locked.png",
       "ext": "png",
       "animation": "transitionY 10px",
       "duration": 1
