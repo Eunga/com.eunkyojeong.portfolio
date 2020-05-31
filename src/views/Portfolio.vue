@@ -2,25 +2,52 @@
   <div id="portfolio">
     <app-mask />
     <portfolio-list 
+      v-on:showLockingUI="showLockingUI($event)"
       v-on:goPortfolioDetail="goPortfolioDetail($event)" />
 
     <div id="portfolio-bottom-mask"></div>
+
+    <locking-ui 
+      v-if="shouldShowLockingUI"
+      v-on:doUnlock="doUnlock($event)" 
+      :wantToShowProjectWork="lockedWorkWantToSee" />
   </div>
 </template>
 
 <script>
 import Mask from "./Mask";
 import PortfolioList from "@/components/portfolio/PortfolioList.vue";
+import LockingUI from "@/components/LockingUI.vue";
 
 export default {
   name: "Portfolio",
   components: {
     "portfolio-list": PortfolioList,
-    "app-mask": Mask
+    "app-mask": Mask,
+    "locking-ui": LockingUI
+  },
+  data: function() {
+    return {
+      shouldShowLockingUI: false,
+      lockedWorkWantToSee: null,
+      tempLockingCallback: null
+    };
   },
   methods: {
+    doUnlock(isUnlocked) {
+      if (this.tempLockingCallback != null) {
+        this.tempLockingCallback(isUnlocked)
+        this.tempLockingCallback = null
+        this.shouldShowLockingUI = false
+      }
+    },
     goPortfolioDetail(work) {
       $("#portfolio").addClass("transition");
+    },
+    showLockingUI(event) {
+      this.tempLockingCallback = event.callback
+      this.lockedWorkWantToSee = event.work
+      this.shouldShowLockingUI = true
     }
   }
 };

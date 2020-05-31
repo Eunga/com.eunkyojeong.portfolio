@@ -6,26 +6,35 @@
       <portfolio-item v-bind:isDetail="true" v-bind:work="work()" v-bind:key="work.id" />
     </div>
     <div class="portfolio-detail-info">
-      <portfolio-item-detail v-bind:work="work()" v-bind:key="work.id" />
+      <portfolio-item-detail 
+        v-bind:work="work()" v-bind:key="work.id" 
+        v-if="showProjectDetails" />
+
     </div>
 
     <div id="portfolio-detail-mask"></div>
+
+    <locking-ui 
+      v-if="shouldShowLockingUI"
+      v-on:doUnlock="doUnlock($event)" 
+      :wantToShowProjectWork="lockedWorkWantToSee" />
   </div>
 </template>
 
 <script>
-;
 
 import Mask from "./Mask";
 import PortfolioItem from "@/components/portfolio/PortfolioItem.vue";
 import PortfolioItemDetail from "@/components/portfolio/PortfolioItemDetail.vue";
+import LockingUI from "@/components/LockingUI.vue";
 
 export default {
   name: "PortfolioDetail",
   components: {
     "portfolio-item": PortfolioItem,
     "portfolio-item-detail": PortfolioItemDetail,
-    "app-mask": Mask
+    "app-mask": Mask,
+    "locking-ui": LockingUI
   },
   watch: {
     // eslint-disable-next-line
@@ -36,10 +45,33 @@ export default {
   },
   data: function() {
     return {
-      isFirstLoad: false
+      isFirstLoad: false,
+      showProjectDetails: true, // default
+
+      shouldShowLockingUI: false,
+      lockedWorkWantToSee: null,
+      tempLockingCallback: null,
     };
   },
   updated() {
+    const path = this.$route.path;
+    const work = this.$store.getters.workFromPath(path);
+    
+    if (work.isLockedProject && !work.isUnlocked) {
+      this.showProjectDetails = false
+      $("#footer").hide();
+      this.askToUnlockTheProjectIfItIsLockedProject(work, (isSuccess) => {
+        work.isUnlocked = isSuccess
+        this.showProjectDetails = isSuccess
+
+        if (!isSuccess) {
+          window.location.href = "/";
+        } else {
+          $("#footer").show();
+        }
+      });
+    }
+
     $("#portfolio-detail-mask").css({
       opacity: 1,
       "z-index": 1000
@@ -55,7 +87,6 @@ export default {
     }, 300);
   },
   mounted() {
-    this.isFirstLoad = true;
     $("#portfolio-detail-mask").css({
       opacity: 0,
       "z-index": -1000
@@ -64,8 +95,28 @@ export default {
     const path = this.$route.path;
     const work = this.$store.getters.workFromPath(path);
     this.commitCurrentWorkToStore(work);
+
+    if (work.isLockedProject && !work.isUnlocked) {
+      this.showProjectDetails = false;
+    } else {
+      this.showProjectDetails = true;
+    }
   },
   methods: {
+    doUnlock(isUnlocked) {
+      if (this.tempLockingCallback != null) {
+        this.tempLockingCallback(isUnlocked)
+        this.tempLockingCallback = null
+        this.shouldShowLockingUI = false
+      }
+    },
+    askToUnlockTheProjectIfItIsLockedProject(work, callback) {
+      if (work.isLockedProject && !work.isUnlocked) {
+        this.tempLockingCallback = callback
+        this.lockedWorkWantToSee = work
+        this.shouldShowLockingUI = true
+      }
+    },
     work() {
       const currentWork = this.$store.getters.currentWork;
       return currentWork;
@@ -107,6 +158,7 @@ export default {
 .portfolio-detail-info {
   transition: all 0.3s ease-in-out;
   z-index: 10;
+  min-height: 2000px;
 }
 
 #portfolio-detail-mask {

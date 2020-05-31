@@ -1,5 +1,5 @@
 <template>
-  <div id="portfolio-list" class="carousel slide" data-interval="false" data-ride="carousel">
+  <div id="portfolio-list" data-id="0" class="carousel slide" data-interval="false" data-ride="carousel">
     <!-- Carousel !! -->
     <div v-if="works.length" class="portfolio-carousel carousel-inner">
       <portfolio-item
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-;
+
 import PortfolioItem from "./PortfolioItem.vue";
 
 const carouselBehavior = {
@@ -34,8 +34,9 @@ export default {
   },
   data: function() {
     return {
+      percent: 0,
       barInterval: null,
-      isOnMoving: false
+      isOnMoving: false,
     }
   },
   mounted() {
@@ -47,34 +48,28 @@ export default {
     }, 400);
 
     const _this = this;
-
     $(document).ready(function() {
       if (carouselBehavior.isCarouselActive) {
-        let percent = 0;
-        const $bar = $("#portfolio-carousel-progressbar");
         const $crsl = $("#portfolio-list");
-
-        function progressBarCarousel() {
-          $bar.css({
-            width: percent + "%"
-          });
-          percent = percent + 1;
-          if (percent > 110) {
-            if (!_this.isOnMoving) {
-              $crsl.carousel("next");
-            }
-            // percent = 0;
-          }
+        
+        const originalInterval = _this.getCurrentCarouselInvervalId()
+        if (originalInterval != 0) {
+          clearInterval(originalInterval);
         }
 
-        _this.barInterval = setInterval(progressBarCarousel, 40);
+        if (_this.barInterval != null) {
+          clearInterval(_this.barInterval);
+        }
+        _this.barInterval = setInterval(_this.progressBarCarousel, 30);
+        _this.saveCarouselInvervalId(_this.barInterval);
+
         $crsl
           .carousel({ 
             interval: false, pause: true 
           })
           .on("slid.bs.carousel", function() {
             // 다음 슬라이드 보일 때마다 호출 됨. 프로그레스바 초기화.
-            percent = 0;
+            _this.percent = 0;
           });
         
         if (carouselBehavior.shouldPauseWhenHover) {
@@ -83,7 +78,11 @@ export default {
               clearInterval(_this.barInterval);
             },
             function() {
-              _this.barInterval = setInterval(progressBarCarousel, 30);
+              if (_this.barInterval != null) {
+                clearInterval(_this.barInterval);
+              }
+              _this.barInterval = setInterval(_this.progressBarCarousel, 30);
+              _this.saveCarouselInvervalId(_this.barInterval);
             }
           );
         }
@@ -100,21 +99,72 @@ export default {
     }
   },
   methods: {
+    saveCarouselInvervalId(carouselId) {
+      this.$store.commit("saveCarouselInvervalId", carouselId);
+    },
+    getCurrentCarouselInvervalId() {
+      return this.$store.getters.currentCarouselId;
+    },
+    progressBarCarousel() {
+      const $bar = $("#portfolio-carousel-progressbar");
+      const $crsl = $("#portfolio-list");
+
+      $bar.css({
+        width: this.percent + "%"
+      });
+      this.percent = this.percent + 1;
+      if (this.percent > 110) {
+        if (!this.isOnMoving) {
+          $crsl.carousel("next");
+        }
+      }
+    },
+    askToUnlockTheProjectIfItIsLockedProject(work, callback) {
+      this.$emit('showLockingUI', {
+        work: work, 
+        callback: (isSuccess) => {
+          callback(isSuccess)
+        }
+      });
+    },
     mouseWheelEventForCarousel(e) {
+      e.stopPropagation();
       if (this.isOnMoving) {
         return;
       }
 
       const wheelDelta = e.deltaY;
       const $crsl = $("#portfolio-list");
-      if (wheelDelta > 50) {
+      if (wheelDelta > 30) {
         $crsl.carousel("next");
-      } else if (wheelDelta < -50) {
+      } else if (wheelDelta < -30) {
         $crsl.carousel("prev");
       }
-      e.stopPropagation();
     },
+
     goPortfolioDetail(work) {
+      if (work.isLockedProject && !work.isUnlocked) {
+        // stop carousel
+        clearInterval(this.barInterval);
+        
+        this.askToUnlockTheProjectIfItIsLockedProject(work, (isSuccess) => { 
+          work.isUnlocked = isSuccess
+
+          if (isSuccess) {
+            this.goPortfolioDetail(work)
+          } else {
+            // resume carousel
+            if (this.barInterval != null) {
+              clearInterval(this.barInterval);
+            }
+            this.barInterval = setInterval(this.progressBarCarousel, 30);
+            this.saveCarouselInvervalId(this.barInterval);
+          }
+        });
+
+        return;
+      }
+
       this.$emit("goPortfolioDetail", work);
       
       this.isOnMoving = true;

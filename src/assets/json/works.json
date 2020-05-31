@@ -1,5 +1,34 @@
 [
   {
+    "name": "LockedProject1",
+    "title": "Protected\nProject",
+    "theme": "black",
+    "subtitle": "Please request access",
+    "path": "lockedproject1",
+    "backgroundImage": "https://trello-attachments.s3.amazonaws.com/5d385e1a9c68ea134a96280c/5ed347e047081d0189fecafd/3dc52e0b2bbe77dbf485a484d9fa47ab/img_cover_BG_locked.png",
+    "shouldBeExposed": true,
+    "stuff": {
+      "url": "https://trello-attachments.s3.amazonaws.com/5ed347e047081d0189fecafd/840x1360/60edaf3b07e3bfd21fcec8727f4d5b41/img_cover_main_locked.png",
+      "ext": "png",
+      "animation": "transitionY 10px",
+      "duration": 1
+    },
+    "isLockedProject": true,
+    "unlockedInfo": {
+      "password": " ",
+      "title": "iSTOX\nTitle",
+      "theme": "black",
+      "subtitle": "iSTOX Project Subtitle",
+      "backgroundImage": "https://trello-attachments.s3.amazonaws.com/5d385e1a9c68ea134a96280c/5ece1fe6f146ae576448ba53/2e714c06bc0873ca4f5b7a580a52e310/iSTOX_BG.png",
+      "stuff": {
+        "url": "https://trello-attachments.s3.amazonaws.com/5ece7b7422f952577f21ff9e/840x1360/916024be9ec22e1c3fbcb064bd589aec/img_cover_main_is.png",
+        "ext": "png",
+        "animation": "transitionY 10px",
+        "duration": 1
+      }
+    }
+  },
+  {
     "name": "Rivu",
     "title": "RIVU\nApp Design",
     "theme": "white",
