@@ -301,7 +301,7 @@
         <div class="portfolio-work v-container-fluid">
           <!-- Add 1 Easy-to-add steps  -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div class="portfolio-work-title subtitle-sm">Solution</div>
 
               <div>
@@ -315,7 +315,7 @@
               </div>
             </div>
 
-            <div class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8">
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img class="rivu-solution-anime" 
                 src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-01.gif"
                 alt="rivu solution anime" />
@@ -327,9 +327,7 @@
 
           <!-- Add 2 Auto-check repeated vocabs -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div
-              class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img class="rivu-solution-anime" 
                 src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-02.gif"
                 alt="rivu solution anime" />
@@ -338,7 +336,7 @@
                 alt="rivu solution frame" />
             </div>
 
-            <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+            <div class="order-md-last order-sm-1 offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div>
                 <div
                   class="portfolio-work-title subtitle-lg"
@@ -353,7 +351,7 @@
 
           <!-- Add 3 Saving steps -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div>
                 <div class="portfolio-work-title subtitle-lg">
                   Add 3<br/>
@@ -365,9 +363,7 @@
               </div>
             </div>
 
-            <div
-              class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img class="rivu-solution-anime" 
                 src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-03.gif"
                 alt="rivu solution anime" />
@@ -379,9 +375,7 @@
 
           <!-- Review 1 List -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div
-              class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img class="rivu-solution-anime" 
                 src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-04.gif"
                 alt="rivu solution anime" />
@@ -390,7 +384,7 @@
                 alt="rivu solution frame" />
             </div>
 
-            <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+            <div class="order-md-last order-sm-1 offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div>
                 <div class="portfolio-work-title subtitle-lg">
                   Review 1<br/>
@@ -405,7 +399,7 @@
 
           <!-- Review 2 Push Alarm -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div>
                 <div class="portfolio-work-title subtitle-lg">
                   Review 2<br/>
@@ -417,9 +411,7 @@
               </div>
             </div>
 
-            <div
-              class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img class="rivu-solution-anime" 
                 src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-06.gif"
                 alt="rivu solution anime" />
@@ -431,9 +423,7 @@
 
           <!-- Review 3 Widget -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div
-              class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img class="rivu-solution-anime" 
                 src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-07.gif"
                 alt="rivu solution anime" />
@@ -442,7 +432,7 @@
                 alt="rivu solution frame" />
             </div>
 
-            <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+           <div class="order-md-last order-sm-1 offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div>
                 <div class="portfolio-work-title subtitle-lg">
                   Review 3<br/>
@@ -457,7 +447,7 @@
 
           <!-- Review 4 Timeline -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div>
                 <div class="portfolio-work-title subtitle-lg">
                   Review 4<br/>
@@ -469,9 +459,7 @@
               </div>
             </div>
 
-            <div
-              class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img class="rivu-solution-anime" 
                 src="../../assets/img/portfolio/rivu/portfolio-rivu-solution-anime-05.gif"
                 alt="rivu solution anime" />
