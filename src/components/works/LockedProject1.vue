@@ -372,7 +372,7 @@
                       <li>• Get alert about recent investment and trades.</li>
                       <li>• Notification alarm so that he doesn’t even have to open the app and dismiss it when the stock price fluctuates.</li>
                       <li>• When he checks his daily newsfeed, he also wants to check movements on the related stocks that he owns.</li>
-                      <li>• Receive personalised recommendation about preferred type and returns.</li>
+                      <li>• Receive personalized recommendation about preferred type and returns.</li>
                     </ul>
                   </div>
                 </div>
@@ -540,7 +540,7 @@
                       <li>• Wants to find valuable products worth investing in and companies that he believes in.</li>
                       <li>• To be part of a successful company by investing in startups that at some point can become big companies. Wants to feel like his investment matters.</li>
                       <li>• To secure financial security for family and loved ones.</li>
-                      <li>• To prepare for retirement: Invest in the long term to prepare for the future when retiring. </li>
+                      <li>• To prepare for retirement and the future: Invest in the long term. </li>
                     </ul>
                   </div>
                 </div>
@@ -555,7 +555,7 @@
                       <li>• Fear of giving personal data; Very careful about who he gives this financial data to.</li>
                       <li>• Not tech-savvy and more comfortable on traditional way.</li>
                       <li>• Because he should secure his fund for his older age, he feels uncertain about STO, which is not conventional.</li>
-                      <li>• He allocates only a small portion of his total portfolio to high-risk high-return products.</li>
+                      <li>• Allocates only a small portion of his total portfolio to high-risk high-return products.</li>
                       <li>• Doesn’t have much time researching the company matter most.</li>
                       <li>• Fear on investing to a wrong company and damage reputation.</li>
                       <li>• Depends on networks, referral and friends to find new opportunity. </li>
