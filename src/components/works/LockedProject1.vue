@@ -23,9 +23,7 @@
             </div>
           </div>
 
-          <div
-            class="order-sm-1 order-md-last work-meta-sm offset-md-4 col-md-2 offset-sm-0 col-sm-12 offset-xs-0 col-xs-12"
-          >
+          <div class="order-sm-1 order-md-last work-meta-sm offset-md-4 col-md-2 offset-sm-0 col-sm-12 offset-xs-0 col-xs-12">
             <div class="work-date row">
               <div class="portfolio-work-title subtitle-sm subtitle col-md-12 col-sm-3">Date</div>
               <div class="col-md-12 col-sm-9">June 2020</div>
@@ -48,22 +46,21 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="portfolio-work-wrap animatable fadeInUp">
-      <div class="portfolio-work v-container-fluid">
-        <div class="row animatable fadeInUp">
-          <div class="offset-md-2 col-md-8 offset-sm-0 col-sm-12">
-            <div style="margin-bottom: 30px;">
-              <img 
-                src="../../assets/img/portfolio/locked1/portfolio-overview.png" 
-                alt="istox overview" />
+        <div class="portfolio-work" style="padding-top: 60px; padding-bottom: 0px;">
+          <div class="row animatable fadeInUp">
+            <div class="offset-md-2 col-md-8 offset-sm-0 col-sm-12">
+              <div>
+                <img 
+                  src="../../assets/img/portfolio/locked1/portfolio-overview.png" 
+                  alt="istox overview" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
 
     <!-- User Research -->
     <div class="portfolio-work-wrap animatable fadeInUp">
@@ -229,7 +226,7 @@
 
     <!-- Persona -->
     <!-- Group A- -->
-    <div class="portfolio-work-wrap animatable fadeInUp" style="background-color:#F6F7F9;">
+    <div class="portfolio-work-wrap animatable fadeInUp" style="background-color:#F6F7F9; padding-bottom: 90px;">
       <div class="portfolio-work v-container-fluid">
         
         <div class="row" style="margin-bottom: 120px;">
@@ -381,7 +378,7 @@
                 </div>
     <br/>
                 <div class="row group-desc-image-wrapper">
-                  <div class="col-sm-4 col-xs-12">
+                  <div class="col-md-4">
                     <div>
                       <div class="profile-subtitle">
                         Technology Literacy
@@ -397,7 +394,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-4 col-xs-12">
+                  <div class="col-md-4">
                     <div>
                       <div class="profile-subtitle">
                         Financial Literacy 
@@ -413,7 +410,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-4 col-xs-12">
+                  <div class="col-md-4">
                     <div>
                       <div class="profile-subtitle">
                         Type of Investor 
@@ -436,11 +433,11 @@
         </div>
 
       </div>
-    </div>
+    <!-- </div> -->
 
     <!-- Persona -->
     <!-- Group B- -->
-    <div class="portfolio-work-wrap animatable fadeInUp" style="background-color:#F6F7F9;">
+    <!-- <div class="portfolio-work-wrap animatable fadeInUp" style="background-color:#F6F7F9;"> -->
       <div class="portfolio-work v-container-fluid" style="padding-top: 0px;">
         <div class="row animatable fadeInUp">
           <div class="portfolio-work-title subtitle-lg">
@@ -539,7 +536,7 @@
                   <div>
                     <ul>
                       <li>• Interests and coupons that come in regularly.</li>
-                      <li>• Fee-conscious and wants a higher return without having to pay for management fees.</li>
+                      <li>• Fee-conscious and wants a higher return without having to pay management fees.</li>
                       <li>• Wants to find valuable products worth investing in and companies that he believes in.</li>
                       <li>• To be part of a successful company by investing in startups that at some point can become big companies. Wants to feel like his investment matters.</li>
                       <li>• To secure financial security for family and loved ones.</li>
@@ -723,7 +720,7 @@
             </div>
 
 
-            <div class="row">
+            <div class="row" style="margin-top: 120px;">
               <div class="portfolio-work-title subtitle-lg">
                 Elegant and unobtrusive design
               </div>
@@ -941,19 +938,14 @@
     <!-- Ideation -->
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
-        <div class="row">
+        <div class="row animatable fadeInUp">
           <div class="col-md-6 col-sm-12">
-            <div class="row animatable fadeInUp">
-              <div class="portfolio-work-title subtitle-sm">Ideation</div>
-            </div>
+            <div class="portfolio-work-title subtitle-sm">Ideation</div>
           </div>
 
           <div class="col-md-10 col-sm-12">
-            <div>
-              <img src="../../assets/img/portfolio/locked1/portfolio-locked1-ideation-01.png" alt="ideation" />
-            </div>
+            <img src="../../assets/img/portfolio/locked1/portfolio-locked1-ideation-01.png" alt="ideation" />
           </div>
-
         </div>
       </div>
     </div>
@@ -986,7 +978,7 @@
                 <img src="../../assets/img/portfolio/locked1/portfolio-locked1-iterations-01.png" alt="iterations" />
               </div>
 
-              <div class="iterations-pro-con">
+              <div class="row animatable fadeInUp iterations-pro-con">
                 <div class="profile-subtitle">
                   Pros
                 </div>
@@ -996,7 +988,7 @@
                 </div>
               </div>
 
-              <div class="iterations-pro-con">
+              <div class="row animatable fadeInUp iterations-pro-con">
                 <div class="profile-subtitle">
                   Cons
                 </div>
@@ -1018,7 +1010,7 @@
                 <img src="../../assets/img/portfolio/locked1/portfolio-locked1-iterations-02.png" alt="iterations" />
               </div>
 
-              <div class="iterations-pro-con">
+              <div class="row animatable fadeInUp iterations-pro-con">
                 <div class="profile-subtitle">
                   Pros
                 </div>
@@ -1028,7 +1020,7 @@
                 </div>
               </div>
 
-              <div class="iterations-pro-con">
+              <div class="row animatable fadeInUp iterations-pro-con">
                 <div class="profile-subtitle">
                   Cons
                 </div>
@@ -1064,7 +1056,7 @@
                 <img src="../../assets/img/portfolio/locked1/portfolio-locked1-iterations-03.png" alt="iterations" />
               </div>
 
-              <div class="iterations-pro-con">
+              <div class="row animatable fadeInUp iterations-pro-con">
                 <div class="profile-subtitle">
                   Pros
                 </div>
@@ -1074,7 +1066,7 @@
                 </div>
               </div>
 
-              <div class="iterations-pro-con">
+              <div class="row animatable fadeInUp iterations-pro-con">
                 <div class="profile-subtitle">
                   Cons
                 </div>
@@ -1098,7 +1090,7 @@
                 <img src="../../assets/img/portfolio/locked1/portfolio-locked1-iterations-04.png" alt="iterations" />
               </div>
 
-              <div class="iterations-pro-con">
+              <div class="row animatable fadeInUp iterations-pro-con">
                 <div class="profile-subtitle">
                   Pros
                 </div>
@@ -1108,7 +1100,7 @@
                 </div>
               </div>
 
-              <div class="iterations-pro-con">
+              <div class="row animatable fadeInUp iterations-pro-con">
                 <div class="profile-subtitle">
                   Cons
                 </div>
@@ -1124,14 +1116,12 @@
 
         <div class="row animatable fadeInUp" style="margin-top:120px; margin-bottom: 120px;">
           <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
-             <div class="row animatable fadeInUp">
-              <div class="portfolio-work-title subtitle-lg">
-                Both B– Put users and<br/>
-                the easiest UX first
-              </div>
+            <div class="portfolio-work-title subtitle-lg">
+              Both B– Put users and<br/>
+              the easiest UX first
             </div>
           
-            <div class="row animatable fadeInUp">
+            <div>
               After internal and external usability testings, we chose both Bs. because we put the easy usability the most. Even though there’s a possibility that users don’t see other deals, it matters the most to let urgent needs users fulfill their needs first without effort for finding where is what they want. As well, we didn’t want to confuse the users with combined STO and Trade because those are new concepts of investing.
             </div>
           </div>
@@ -1141,17 +1131,15 @@
 
     <!-- Full size Product image -->
     <div class="portfolio-work-wrap animatable fadeInUp" style="background-color:black;">
-      <div class="portfolio-work v-container-fluid" style="padding-bottom: 0px;">
-        <div class="row">
+      <div class="portfolio-work v-container-fluid" style="padding-bottom: 10px;">
+        <div class="row animatable fadeInUp">
           <div class="col-md-6 col-sm-12">
-            <div class="row animatable fadeInUp">
-              <div class="portfolio-work-title subtitle-sm" style="color: white; padding-bottom: 0px;">Designs</div>
-            </div>
+            <div class="portfolio-work-title subtitle-sm" style="color: white; padding-bottom: 0px;">Designs</div>
           </div>
         </div>
       </div>
       
-      <div>
+      <div class="row animatable fadeInUp">
         <img
           src="../../assets/img/portfolio/locked1/portfolio-locked1-fullsize-background-design.jpg"
           alt="product image"
@@ -1287,6 +1275,7 @@
         </div>
 
         <!-- Seamless flow by providing relevant suggestions -->
+<!-- TBD
         <div class="row work-solution-align animatable fadeInUp">
           <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
             <img class="locked-solution-anime" 
@@ -1310,8 +1299,9 @@
             </div>
           </div>
         </div>
-
+-->
         <!-- Facilitation of communication -->
+<!-- TBD
         <div class="row work-solution-align animatable fadeInUp">
           <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
             <div>
@@ -1333,7 +1323,8 @@
               alt="rivu solution frame" />
           </div>
         </div>
-        
+-->     
+
       </div>
     </div>
 
@@ -1390,12 +1381,12 @@ export default {
 
       $("#myCarousel").carousel({interval : false});
       
-      (function() {
-        const intervalOfCarousel = setInterval(function() {
-          $('#myCarousel').carousel("next");
-        }, CAROUSEL_INTERVAL);
-        carouselIntervals.push({id: intervalOfCarousel, enabled: true});
-      })();
+      // (function() {
+      //   const intervalOfCarousel = setInterval(function() {
+      //     $('#myCarousel').carousel("next");
+      //   }, CAROUSEL_INTERVAL);
+      //   carouselIntervals.push({id: intervalOfCarousel, enabled: true});
+      // })();
 
       $(".gallery-static-thumbnail-item").mouseover(function() {
         $(this).trigger("click");
@@ -1508,15 +1499,15 @@ export default {
 }
 
 .group-desc-image-wrapper {
-  height: 120px;
+  height: 100px;
 }
 
 .group-desc-image-wrapper>div {
-  padding-right: 10px !important
+  padding-right: 15px !important
 }
 
 .group-desc-image {
-  padding-right: 15px; 
+  padding-right: 30px; 
   position: absolute; 
   bottom: 0;
 }
@@ -1556,7 +1547,7 @@ export default {
 }
 
 .carousel-indicators {
-  width: 43%;
+  /* width: 43%; */
   top: 0;
   left: 0;
   bottom: initial;
@@ -1576,26 +1567,10 @@ export default {
   position: relative;
 }
 
-.gallery-static-thumbnail-item:hover {
-  opacity: .5;
-}
-
-.gallery-static-thumbnail-item:hover::after, .gallery-static-thumbnail-item.active::after {
-  content: ' ';
-  width: 95%;
-  position: absolute;
-  background-color: black;
-  opacity: .5;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-
 .gallery-static-thumbnail-item img {
-  border: 1px solid black;
-  width: 95%;
+  width: 90%;
+  position: relative;
+  margin-top: 0px;
 }
 
 /* md */
@@ -1634,10 +1609,73 @@ export default {
   }
 }
 
+.gallery-static-thumbnail-item {
+  padding: 1px;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EEEEEE;
+}
+
+.carousel-indicators {
+  display: block;
+}
+.gallery-static-thumbnail-item:hover::after, 
+.gallery-static-thumbnail-item.active::after {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: .5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* lg ~ */
+@media screen and (min-width: 1440px) {
+  .gallery-static-thumbnail-item {
+    height: 65px;
+    width: 65px;
+  }
+}
+
+/* md ~ lg */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .gallery-static-thumbnail-item {
+    height: 45px;
+    width: 45px;
+  }
+}
+
+/* sm ~ md */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .gallery-static-thumbnail-item {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+
 /* xs */
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 767px) {
   .group-desc-image-wrapper {
     height: 110px;
+  }
+
+  .profile-subtitle {
+    font-size: 15px;
+  }
+
+  .gallery-static-thumbnail-item {
+    height: 53px;
+    width: 53px;
   }
 }
 
