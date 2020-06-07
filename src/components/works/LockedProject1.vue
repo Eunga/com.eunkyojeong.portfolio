@@ -2,7 +2,7 @@
   <div class="portfolio-works" id="locked1">
     <!-- Overview -->
     <div class="portfolio-work-wrap animatable fadeInUp">
-      <div class="portfolio-work v-container-fluid">
+      <div class="portfolio-work v-container-fluid" style="padding-bottom: 0px;">
         <div class="row">
           <div class="order-sm-last order-md-1 col-md-6 col-sm-12">
             <div class="portfolio-work-title subtitle-sm">Overview</div>
@@ -1230,7 +1230,7 @@
         <div class="row work-solution-align animatable fadeInUp">
           <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
             <img class="locked-solution-anime" 
-              src="../../assets/img/portfolio/locked1/locked-solution-2.gif"
+              src="../../assets/img/portfolio/locked1/locked-solution-4.gif"
               alt="rivu solution anime" />
             <img class="solution-frame" 
               src="../../assets/img/portfolio/locked1/locked-solution-frame.png" 
@@ -1266,7 +1266,7 @@
 
           <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
             <img class="locked-solution-anime" 
-              src="../../assets/img/portfolio/locked1/locked-solution-3.gif"
+              src="../../assets/img/portfolio/locked1/locked-solution-5.gif"
               alt="rivu solution anime" />
             <img class="solution-frame" 
               src="../../assets/img/portfolio/locked1/locked-solution-frame.png" 
@@ -1279,7 +1279,7 @@
         <div class="row work-solution-align animatable fadeInUp">
           <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
             <img class="locked-solution-anime" 
-              src="../../assets/img/portfolio/locked1/locked-solution-2.gif"
+              src="../../assets/img/portfolio/locked1/locked-solution-6.gif"
               alt="rivu solution anime" />
             <img class="solution-frame" 
               src="../../assets/img/portfolio/locked1/locked-solution-frame.png" 
@@ -1316,7 +1316,7 @@
 
           <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
             <img class="locked-solution-anime" 
-              src="../../assets/img/portfolio/locked1/locked-solution-3.gif"
+              src="../../assets/img/portfolio/locked1/locked-solution-7.gif"
               alt="rivu solution anime" />
             <img class="solution-frame" 
               src="../../assets/img/portfolio/locked1/locked-solution-frame.png" 
@@ -1381,23 +1381,23 @@ export default {
 
       $("#myCarousel").carousel({interval : false});
       
-      // (function() {
-      //   const intervalOfCarousel = setInterval(function() {
-      //     $('#myCarousel').carousel("next");
-      //   }, CAROUSEL_INTERVAL);
-      //   carouselIntervals.push({id: intervalOfCarousel, enabled: true});
-      // })();
-
-      $(".gallery-static-thumbnail-item").mouseover(function() {
-        $(this).trigger("click");
-        clearAllIntervals();
-      }).mouseout(function() {
-        clearAllIntervals();
+      (function() {
         const intervalOfCarousel = setInterval(function() {
           $('#myCarousel').carousel("next");
         }, CAROUSEL_INTERVAL);
         carouselIntervals.push({id: intervalOfCarousel, enabled: true});
-      });;
+      })();
+
+      // $(".gallery-static-thumbnail-item").mouseover(function() {
+      //   $(this).trigger("click");
+      //   clearAllIntervals();
+      // }).mouseout(function() {
+      //   clearAllIntervals();
+      //   const intervalOfCarousel = setInterval(function() {
+      //     $('#myCarousel').carousel("next");
+      //   }, CAROUSEL_INTERVAL);
+      //   carouselIntervals.push({id: intervalOfCarousel, enabled: true});
+      // });;
     })
   },
 };
