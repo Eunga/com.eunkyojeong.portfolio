@@ -26,7 +26,7 @@ const store = new Vuex.Store({
     // TODO: 슬라이드가 바뀌거나, 특정 포트폴리오 페이지로 이동할 때 변경되어야합니다.
     currentWorkId: 0,
 
-    currentCarouselId: 0
+    currentCarouselIntervalId: 0
   },
   getters: {
     about: state => {
@@ -68,8 +68,8 @@ const store = new Vuex.Store({
     currentWorkId: (state) => {
       return state.currentWorkId;
     },
-    currentCarouselId: (state) => {
-      return state.currentCarouselId;
+    currentCarouselIntervalId: (state) => {
+      return state.currentCarouselIntervalId;
     },
     workFromPath: (state, getters) => (path) => {
       const work = getters.works.filter(work => {
@@ -90,9 +90,9 @@ const store = new Vuex.Store({
     amIActive(state, obj) {
       obj.isActive = obj.work.id === state.currentWorkId;
     },
-    saveCarouselInvervalId (state, carouselId) {
-      state.currentCarouselId = carouselId;
-    },
+    saveCarouselInvervalId (state, carouselIntervalId) {
+      state.currentCarouselIntervalId = carouselIntervalId;
+    }
   },
   actions: {
     

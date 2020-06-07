@@ -105,7 +105,6 @@ export default {
     beforeEnter: function(el) {
       const srcPath = $(el).attr("id");
       const destPath = this.$route.name;
-
       this.transitionEvent.beforeEnter(srcPath, destPath);
       this.$TransitionEventBus.$emit("beforeEnter");
     },
@@ -134,12 +133,26 @@ export default {
       const srcPath = $(el).attr("id");
       const destPath = this.$route.name;
 
-      this.transitionEvent.beforeLeave(srcPath, destPath);
+      var needAnim = true;
+      try {
+        const workPathFromPortfolioCarousel = $('.portfolio-item.active').attr('work-path');
+        if (workPathFromPortfolioCarousel != null) {
+          const whereToGo = this.$route.params.path
+          const projName = whereToGo.replace("/portfolio/", "");
+
+          if (projName != workPathFromPortfolioCarousel) {
+            needAnim = false
+          }
+        }
+      } catch (e) { }
+
+      this.transitionEvent.beforeLeave(srcPath, destPath, needAnim);
       this.$TransitionEventBus.$emit("beforeLeave");
     },
 
     // done 콜백은 CSS와 함께 사용할 때 선택 사항입니다.
     leave: function(el, done) {
+      const router = this.$route;
       const srcPath = $(el).attr("id");
       const destPath = this.$route.name;
 

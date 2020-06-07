@@ -35,7 +35,15 @@ export default class TransitionEvent {
 
   }
 
-  beforeLeave(srcPath, destPath) {
+  beforeLeave(srcPath, destPath, needAnim) {
+    if (needAnim == false) {
+      return;
+    }
+
+    if (needAnim == null || needAnim == undefined) {
+      needAnim = true;
+    }
+    
     if (destPath === 'about') {
       // do nothing
       return;

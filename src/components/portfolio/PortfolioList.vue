@@ -3,6 +3,8 @@
     <!-- Carousel !! -->
     <div v-if="works.length" class="portfolio-carousel carousel-inner">
       <portfolio-item
+        :work-id="work.id"
+        :work-path="work.path"
         v-on:goPortfolioDetail="goPortfolioDetail($event)"
         v-for="work in works"
         v-bind:work="work"
@@ -68,7 +70,6 @@ export default {
             interval: false, pause: true 
           })
           .on("slid.bs.carousel", function() {
-            // 다음 슬라이드 보일 때마다 호출 됨. 프로그레스바 초기화.
             _this.percent = 0;
           });
         
@@ -103,7 +104,7 @@ export default {
       this.$store.commit("saveCarouselInvervalId", carouselId);
     },
     getCurrentCarouselInvervalId() {
-      return this.$store.getters.currentCarouselId;
+      return this.$store.getters.currentCarouselIntervalId;
     },
     progressBarCarousel() {
       const $bar = $("#portfolio-carousel-progressbar");
