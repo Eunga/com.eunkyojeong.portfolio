@@ -1565,7 +1565,7 @@ export default {
   margin-top: 0px !important;
 }
 
-.carousel-inner {
+#locked1 .carousel-inner {
   border: 1px solid #EEEEEE;
 }
 

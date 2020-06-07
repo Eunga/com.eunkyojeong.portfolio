@@ -19,7 +19,7 @@
 
     <div class="collapse navbar-collapse" id="navbarNav"></div>
     <div>
-      <span class="navLink">
+      <span class="navLink" id="portfolio-header">
         <router-link
           onclick="gtag('event', 'Home', {'event_category': 'Page', 'event_label': 'Header Navigation Button Click.'})"
           id="navPortfolio"
@@ -27,6 +27,25 @@
           class="nav-link"
           :class="{'router-link-exact-active': isActivePortfolio()}"
         >Portfolio</router-link>
+
+        <div id="portfolio-project-list">
+          <div>
+            <div class="arrow-up"></div>
+            <ul v-if="works.length" class="portfolio-carousel carousel-inner">
+              <li v-for="work in works"
+                :class="{'active': isActivePortfolioDetailWork(work)}">
+                <router-link
+                  onclick="gtag('event', 'Header', {'event_category': 'Page', 'event_label': 'Header Navigation Button Click.'})"
+                  :to="retreiveWorkDetailPath(work)">
+                
+                  <span class="portfolio-project-number">{{ makeTwoDigitFromWorkId(work) }}</span>
+                  <span class="portfolio-project-title">{{ extractCapTitleFromTitle(work) }}</span>
+                </router-link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </span>
       <span class="navLink">
         <router-link 
@@ -43,12 +62,59 @@
 export default {
   name: "Header",
   methods: {
+    retreiveWorkDetailPath(work) {
+      const relativePath = work.path;
+      if (this.isActivePortfolioDetailPage()) {
+        return relativePath;
+      }
+
+      return `/portfolio/${relativePath}`
+    },
     isActivePortfolio() {
       const name = this.$route.name;
       if (name == "about") {
         return false;
       }
       return true;
+    },
+    isActivePortfolioDetailWork(work) {
+      const route = this.$route;
+      const name = this.$route.name;
+      if (name != "portfolio-detail") {
+        return false;
+      }
+
+      const workPath = work.path;
+      const path = this.$route.params.path;
+
+      if (workPath != path) {
+        return false;
+      }
+
+      return true;
+    },
+    isActivePortfolioDetailPage() {
+      const name = this.$route.name;
+      if (name != "portfolio-detail") {
+        return false;
+      }
+
+      return true;
+    },
+    extractCapTitleFromTitle(work) {
+      // TODO: if unlocked -> unlocked title. or not, locking title.
+      if (work.isLockedProject && work.isUnlocked) {
+        return work.unlockedInfo.title.substring(0, work.unlockedInfo.title.indexOf("\n"));
+      }
+
+      return work.title.substring(0, work.title.indexOf("\n"));
+    },
+    makeTwoDigitFromWorkId(work) {
+      if (work.id < 10) {
+        return `0${work.id + 1}`
+      } else {
+        return `${work.id + 1}`
+      }
     }
   },
   data: function() {
@@ -66,6 +132,11 @@ export default {
       }
     }
   },
+  computed: {
+    works() {
+      return this.$store.getters.works;
+    }
+  },
   mounted() {
     if (this.$route.name == "portfolio-detail") {
       const work = this.$store.getters.workFromPath(this.$route.path);
@@ -73,6 +144,10 @@ export default {
     } else {
       this.theme = "black";
     }
+
+    $('#portfolio-header').mouseover(function() {
+
+    });
   }
 };
 </script>
@@ -100,6 +175,7 @@ export default {
 .navLink {
   z-index: 1;
   display: inline-block;
+  position: relative;
 }
 
 .navbar-toggler {
@@ -206,6 +282,74 @@ nav.white .navLink>a {
   text-shadow: 0px 0px 30px rgba(0,0,0,.3);
 }
 
+#portfolio-header:hover #portfolio-project-list {
+  display: block;
+}
 
+#portfolio-project-list {
+  display: none;
+  position: absolute;
+  left: -70px;
+}
+
+#portfolio-project-list>div {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  background-color: black;
+  width: 255px;
+  height: 240px;
+}
+
+#portfolio-project-list ul {
+  list-style: none;
+  height: auto;
+}
+
+#portfolio-project-list li {
+  transform: opacity .4 ease-in-out;
+  cursor: pointer;
+}
+
+#portfolio-project-list li a {
+  text-decoration: none;
+}
+
+#portfolio-project-list li:hover {
+  opacity: .6;
+}
+
+#portfolio-project-list li.active {
+  opacity: .3;
+}
+
+#portfolio-project-list span {
+  color: white;
+  font-family: Questrial;
+  letter-spacing: -0.4px;
+  opacity: 1;
+}
+
+.portfolio-project-number {
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.portfolio-project-title {
+  font-size: 20px;
+}
+
+.arrow-up {
+  position: absolute;
+  top: -7px;
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid black;
+}
 </style>
 
