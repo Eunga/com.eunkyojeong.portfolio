@@ -343,7 +343,7 @@ nav.white .navLink>a {
 }
 
 #portfolio-header:hover .nav-link svg {
-  transform: translateY(1px);
+  transform: translateY(2px);
 }
 
 #portfolio-project-list li.active {
