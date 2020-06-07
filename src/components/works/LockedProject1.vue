@@ -5,21 +5,25 @@
       <div class="portfolio-work v-container-fluid" style="padding-bottom: 0px;">
         <div class="row">
           <div class="order-sm-last order-md-1 col-md-6 col-sm-12">
-            <div class="portfolio-work-title subtitle-sm">Overview</div>
-            <div class="portfolio-work-title subtitle-lg">
-               What does iSTOX do?
-            </div>
-              
-            <div>
-              iSTOX is a platform that connects investors and companies that want to raise money. Before a company goes public, it can get investment through private markets. Although investors can get high returns, private capital markets are still opaque, fragmented, and open to very few. iSTOX enables companies to issue bonds, funds, and stock tokens called STO (Security token offering). This allows investors to participate in STOs or to buy and sell the tokens without having their assets to be locked up for years. iSTOX is now the first fully regulated capital market platform that enables both issuance and trading features.
-            </div>
+            <div class="animatable fadeInUp">
+              <div class="portfolio-work-title subtitle-sm">Overview</div>
 
-            <div class="portfolio-work-title subtitle-lg" style="margin-top: 80px;">
-               Role: End to end design process
+              <div class="portfolio-work-title subtitle-lg">
+                What does iSTOX do?
+              </div>
+                
+              <div>
+                iSTOX is a platform that connects investors and companies that want to raise money. Before a company goes public, it can get investment through private markets. Although investors can get high returns, private capital markets are still opaque, fragmented, and open to very few. iSTOX enables companies to issue bonds, funds, and stock tokens called STO (Security token offering). This allows investors to participate in STOs or to buy and sell the tokens without having their assets to be locked up for years. iSTOX is now the first fully regulated capital market platform that enables both issuance and trading features.
+              </div>
             </div>
-              
-            <div>
-              I’m the sole Mobile UX designer and I create iOS and Android apps. At iSTOX, I am responsible for coordinating the mobile UX with the UX of the web platform. My goal is to constantly improve the UX of both the Mobile and Web platforms.
+            <div class="animatable fadeInUp">
+              <div class="portfolio-work-title subtitle-lg" style="margin-top: 80px;">
+                Role: End to end design process
+              </div>
+                
+              <div>
+                I’m the sole Mobile UX designer and I create iOS and Android apps. At iSTOX, I am responsible for coordinating the mobile UX with the UX of the web platform. My goal is to constantly improve the UX of both the Mobile and Web platforms.
+              </div>
             </div>
           </div>
 
@@ -67,7 +71,7 @@
       <div class="portfolio-work v-container-fluid">
         <div class="row animatable fadeInUp">
           <div class="col-md-4 col-sm-12">
-            <div class="row animatable fadeInUp">
+            <div class="row">
               <div class="portfolio-work-title subtitle-sm">User research</div>
             </div>
 
@@ -151,15 +155,17 @@
     <!-- User segments -->
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
-        <div class="row animatable fadeInUp">
-          <div class="portfolio-work-title subtitle-lg">
-            User segments
+        <div class="animatable fadeInUp">
+          <div class="row">
+            <div class="portfolio-work-title subtitle-lg">
+              User segments
+            </div>
           </div>
-        </div>
 
-        <div class="row animatable fadeInUp">
-          <div class="col-md-6 col-sm-12">
-            From our user research and user interviews, we divided the user segment into two groups. A: Accredited investor who barely pass the $20K requirement., B: The crazy wealthy. If you are wealthy just like Group B, they are more likely to invest through a wealth manager, but if they use iSTOX directly, they are 1) cost-conscious and 2) confident with their financial decisions.
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              From our user research and user interviews, we divided the user segment into two groups. A: Accredited investor who barely pass the $20K requirement., B: The crazy wealthy. If you are wealthy just like Group B, they are more likely to invest through a wealth manager, but if they use iSTOX directly, they are 1) cost-conscious and 2) confident with their financial decisions.
+            </div>
           </div>
         </div>
 
@@ -229,9 +235,9 @@
     <div class="portfolio-work-wrap animatable fadeInUp" style="background-color:#F6F7F9; padding-bottom: 90px;">
       <div class="portfolio-work v-container-fluid">
         
-        <div class="row" style="margin-bottom: 120px;">
+        <div class="row animatable fadeInUp" style="margin-bottom: 120px;">
           <div class="col-md-6 col-sm-12">
-            <div class="row animatable fadeInUp">
+            <div class="row">
               <div class="portfolio-work-title subtitle-sm">Persona</div>
             </div>
 
@@ -638,15 +644,17 @@
     <!-- Challenge -->
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
-        <div class="row animatable fadeInUp">
-          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
-            <div class="portfolio-work-title subtitle-sm">Challenge</div>
+        <div class="animatable fadeInUp">
+          <div class="row">
+            <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+              <div class="portfolio-work-title subtitle-sm">Challenge</div>
+            </div>
           </div>
-        </div>
 
-        <div class="row animatable fadeInUp">
-          <div class="research offset-md-3 col-md-6 offset-sm-0 col-sm-12">
-            A user wanted to buy product X from STO, but got confused and bought Y from Trade on our platform. Why did this happen?
+          <div class="row">
+            <div class="research offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+              A user wanted to buy product X from STO, but got confused and bought Y from Trade on our platform. Why did this happen?
+            </div>
           </div>
         </div>
 
@@ -672,31 +680,30 @@
     <!-- Goals -->
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div class="portfolio-work v-container-fluid">
-        <div class="row animatable fadeInUp">
-          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
-            <div class="portfolio-work-title subtitle-sm">Goal</div>
+        <div class="animatable fadeInUp">
+          <div class="row">
+            <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+              <div class="portfolio-work-title subtitle-sm">Goal</div>
+            </div>
           </div>
-        </div>
 
-        <!-- Easy and clear user experience -->
-        <div class="row animatable fadeInUp">
-          <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
-            <div
-              class="portfolio-work-title subtitle-lg"
-            >Easy and clear user experience</div>
+          <!-- Easy and clear user experience -->
+          <div class="row">
+            <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+              <div
+                class="portfolio-work-title subtitle-lg"
+              >Easy and clear user experience</div>
+            </div>
           </div>
-        </div>
 
-        <div class="row row animatable fadeInUp">
-          <div
-            class="offset-md-3 col-md-6 offset-sm-0 col-sm-12"
-          >
-          1. We present each required action, one at a time, to avoid information overload.
-          <br/>
-          2. Provide relevant information that prevents hesitation.
+          <div class="row">
+            <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
+            1. We present each required action, one at a time, to avoid information overload.
+            <br/>
+            2. Provide relevant information that prevents hesitation.
+            </div>
           </div>
         </div>
-        
       </div>
     </div>
 
