@@ -3,7 +3,7 @@
     <!-- Desktop -->
     <div id="aboutOffset"></div>
 
-    <div id="aboutDesktop" class="hidden-sm row tab">
+    <div id="aboutDesktop" class="hidden-to-sm row tab">
 
       <!-- For eunkyo's request, the background section will be hidden. -->
       <div class="tabtitle col-6" style="display: none;" >
@@ -93,7 +93,7 @@
     </div>
 
     <!-- Mobile -->
-    <div id="aboutMobile" class="visible-sm-block">
+    <div id="aboutMobile" class="visible-to-sm">
       <!-- Introduction -->
       <div class="aboutIntroductionContent">
         <!-- For eunkyo's request, the background section will be hidden. -->
@@ -518,7 +518,7 @@ export default {
     overflow: unset;
   }
 
-  .visible-xs-block {
+  .visible-to-xs {
     margin-bottom: 90px;
   }
 
