@@ -1147,6 +1147,7 @@
       
       <div class="row animatable fadeInUp">
         <img
+          style="width:100%; height:100%; position: relative;"
           src="../../assets/img/portfolio/locked1/portfolio-locked1-fullsize-background-design.jpg"
           alt="product image"
           />
