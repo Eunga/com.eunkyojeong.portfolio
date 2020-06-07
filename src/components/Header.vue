@@ -203,7 +203,7 @@ export default {
   transition: opacity 0.4s ease-out;
 }
 
-#header.white .navbar-brand,
+#header.black .navbar-brand,
 #header.black .nav-link {
   color: black;
 }
@@ -213,6 +213,13 @@ export default {
   color: white;
 }
 
+#header.black #navPortfolio .b {
+  stroke: black;
+}
+
+#header.white #navPortfolio .b {
+  stroke: white;
+}
 .nav-link:hover {
   opacity: 1;
 }
@@ -300,7 +307,7 @@ nav.white .navLink>a {
 }
 
 #portfolio-project-list>div {
-  margin-top: 30px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,6 +336,14 @@ nav.white .navLink>a {
 
 #portfolio-project-list li:hover {
   opacity: .6;
+}
+
+#portfolio-header .nav-link svg {
+  transition: all 0.3s ease-in-out;
+}
+
+#portfolio-header:hover .nav-link svg {
+  transform: translateY(1px);
 }
 
 #portfolio-project-list li.active {
