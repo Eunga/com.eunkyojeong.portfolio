@@ -275,18 +275,18 @@
         <div class="portfolio-work v-container-fluid">
           <!-- Enabling Multiple purchases at once -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div class="portfolio-work-title subtitle-sm">Solution</div>
 
               <div>
-                <div class="portfolio-work-title subtitle-lg">Enabling Multiple purchases at once</div>
+                <div class="portfolio-work-title subtitle-lg">
+                  Enabling Multiple purchases at once
+                </div>
                 <span>Allow users to buy multiple episodes at once now also available via View page as well as Title home page.</span>
               </div>
             </div>
 
-            <div
-              class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-1.gif"
                 alt="daum webtoon solution gif"
@@ -296,20 +296,20 @@
 
           <!-- Instant feedback with micro-interactions -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div
-              class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-2.gif"
                 alt="daum webtoon solution gif"
               />
             </div>
 
-            <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+            <div class="order-md-last order-sm-1 offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div>
                 <div
                   class="portfolio-work-title subtitle-lg"
-                >Instant feedback with micro-interactions</div>
+                >
+                  Instant feedback with micro-interactions
+                </div>
                 <span>It’s easy to understand, keeps users engaged in the process, and helps to accomplish the goal, purchasing.</span>
               </div>
             </div>
@@ -317,16 +317,16 @@
 
           <!-- Simplifying the process -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div>
-                <div class="portfolio-work-title subtitle-lg">Simplifying the process</div>
+                <div class="portfolio-work-title subtitle-lg">
+                  Simplifying the process
+                </div>
                 <span>Generally, by omitting unnecessary steps for users, we could make the app to be simpler, thus easier to use for our users.</span>
               </div>
             </div>
 
-            <div
-              class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-3.gif"
                 alt="daum webtoon solution gif"
@@ -336,25 +336,26 @@
 
           <!-- Offering the right choice -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div
-              class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img
                 src="../../assets/img/portfolio/dw/portfolio-dw-solution-4.gif"
                 alt="daum webtoon solution gif"
               />
             </div>
 
-            <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+            <div class="order-md-last order-sm-1 offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div>
-                <div class="portfolio-work-title subtitle-lg">Offering the right choice</div>
+                <div class="portfolio-work-title subtitle-lg">
+                  Offering the right choice
+                </div>
                 <span>With the changes, users don’t need to think about how much Cash they have left as we provide the exact amount of cash you need to charge by omitting irrelevant amount based on purchase details.</span>
               </div>
             </div>
           </div>
-        </div>
+        </div>  
       </div>
     </div>
+
 
     <!-- Full size Product image -->
     <div class="portfolio-work-wrap animatable fadeInUp">

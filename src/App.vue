@@ -837,7 +837,6 @@ ul {
 }
 
 /* My Grid */
-/* My Grid */
 .col,
 .col-1,
 .col-10,
@@ -932,6 +931,10 @@ ul {
   display: none;
 }
 
+.visible-from-sm {
+  display: none !important;
+}
+
 /* Media Queries */
 /* xl */
 @media screen and (min-width: 1777px) {
@@ -988,6 +991,12 @@ ul {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
+  }
+
+  .col-xl-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
   }
 
   .col-xl-6 {
@@ -1077,6 +1086,12 @@ ul {
     max-width: 33.333333%;
   }
 
+  .col-lg-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+
   .col-lg-6 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -1162,6 +1177,12 @@ ul {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
+  }
+
+  .col-md-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
   }
 
   .col-md-6 {
@@ -1253,6 +1274,12 @@ ul {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
+  }
+
+  .col-sm-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
   }
 
   .col-sm-6 {
@@ -1350,6 +1377,12 @@ ul {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
+  }
+
+  .col-xs-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
   }
 
   .col-xs-6 {
@@ -1507,7 +1540,7 @@ ul {
 
 @media (min-width: 1024px) {
   .visible-from-sm {
-    display: block;
+    display: block !important;
   }
   .offset-md-right-12 {
     margin-right: 100%;

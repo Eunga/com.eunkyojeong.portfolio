@@ -215,41 +215,4 @@ export default {
     height: 120px;
   }
 }
-/* @media screen and (min-width: 1440px) and (max-width: 1776px) {
-  #margin-left::after {
-    left: -30px;
-  }
-
-  #margin-right::after {
-    right: -30px;
-  }
-  #margin-left::after,
-  #margin-right::after {
-    position: relative;
-    width: 150px;
-  }
-
-  .margin-horizontal {
-    height: 120px;
-  }
-}
-
-@media screen and (min-width: 1777px) {
-  #margin-left::after {
-    left: -30px;
-  }
-
-  #margin-right::after {
-    right: -30px;
-  }
-  #margin-left::after,
-  #margin-right::after {
-    position: relative;
-    width: 150px;
-  }
-
-  .margin-horizontal {
-    height: 120px;
-  }
-} */
 </style>

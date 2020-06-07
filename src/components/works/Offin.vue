@@ -347,7 +347,7 @@
         <div class="portfolio-work v-container-fluid">
           <!-- Constant Live Feed from Favorite Stores -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div class="portfolio-work-title subtitle-sm">Solution</div>
 
               <div>
@@ -356,9 +356,7 @@
               </div>
             </div>
 
-            <div
-              class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img class="offin-solution-anime" 
                 src="../../assets/img/portfolio/offin/portfolio-offin-solution-anime-01.gif" 
                 alt="offin solution anime" />
@@ -371,9 +369,7 @@
 
           <!-- Searching Nearby Stores -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div
-              class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img class="offin-solution-anime" 
                 src="../../assets/img/portfolio/offin/portfolio-offin-solution-anime-02.gif" 
                 alt="offin solution anime" />
@@ -382,7 +378,7 @@
                 alt="offin solution frame" />
             </div>
 
-            <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+            <div class="order-md-last order-sm-1 offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div>
                 <div
                   class="portfolio-work-title subtitle-lg"
@@ -398,7 +394,7 @@
 
           <!-- Personalized Recommendation and Curation Service -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div>
                 <div class="portfolio-work-title subtitle-lg">Personalized Recommendation and Curation Service</div>
                 <span>Offin can recommend items according to the users’ tastes in fashion.
@@ -407,9 +403,7 @@
               </div>
             </div>
 
-            <div
-              class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img class="offin-solution-anime" 
                 src="../../assets/img/portfolio/offin/portfolio-offin-solution-anime-03.gif" 
                 alt="offin solution anime" />
@@ -422,9 +416,7 @@
 
           <!-- Management of Pinned Stores and Items -->
           <div class="row work-solution-align animatable fadeInUp">
-            <div
-              class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
-            >
+            <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
               <img class="offin-solution-anime" 
                 src="../../assets/img/portfolio/offin/portfolio-offin-solution-anime-04.gif" 
                 alt="offin solution anime" />
@@ -433,7 +425,7 @@
                 alt="offin solution frame" />
             </div>
 
-            <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+            <div class="order-md-last order-sm-1 offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
               <div>
                 <div class="portfolio-work-title subtitle-lg">Management of Pinned Stores and Items</div>
                 <span>The stores are location-based, so users can easily visit their favorite stores they “pinned” and also go over “pinned” items again on My page.</span>

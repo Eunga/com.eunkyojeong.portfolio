@@ -85,7 +85,7 @@
           </div>
 
           <div class="offset-md-1 col-md-7 offset-sm-0 col-sm-12">
-            <div style="height: 100%;position: relative;display: flex;justify-content: center;align-items: center;">
+            <div style="height: 100%; position: relative; display: flex; justify-content: center; align-items: center;">
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -94,19 +94,19 @@
                     <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-01.png" alt="chart1" />
                   </div>
 
-                  <div data-target="#myCarousel" data-slide-to="1" class="gallery-static-thumbnail-item active">
+                  <div data-target="#myCarousel" data-slide-to="1" class="gallery-static-thumbnail-item">
                     <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-02.png" alt="chart2" />
                   </div>
 
-                  <div data-target="#myCarousel" data-slide-to="2" class="gallery-static-thumbnail-item active">
+                  <div data-target="#myCarousel" data-slide-to="2" class="gallery-static-thumbnail-item">
                     <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-03.png" alt="chart3" />
                   </div>
 
-                  <div data-target="#myCarousel" data-slide-to="3" class="gallery-static-thumbnail-item active">
+                  <div data-target="#myCarousel" data-slide-to="3" class="gallery-static-thumbnail-item">
                     <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-04.png" alt="chart4" />
                   </div>
 
-                  <div data-target="#myCarousel" data-slide-to="4" class="gallery-static-thumbnail-item active">
+                  <div data-target="#myCarousel" data-slide-to="4" class="gallery-static-thumbnail-item">
                     <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-05.png" alt="chart5" />
                   </div>
 
@@ -135,8 +135,8 @@
                   </div>
                 </div>
 
-                <div>
-                  <span class="work-image-footnote work-image-footnote-lg">
+                <div style="margin-top: 15px;">
+                  <span class="work-image-footnote work-image-footnote-lg" style="font-weight: 300;">
                     For confidentiality reasons, the values have been omitted.
                   </span>
                 </div>
@@ -228,9 +228,11 @@
     </div>
 
     <!-- Persona -->
-    <div class="portfolio-work-wrap animatable fadeInUp">
+    <!-- Group A- -->
+    <div class="portfolio-work-wrap animatable fadeInUp" style="background-color:#F6F7F9;">
       <div class="portfolio-work v-container-fluid">
-        <div class="row">
+        
+        <div class="row" style="margin-bottom: 120px;">
           <div class="col-md-6 col-sm-12">
             <div class="row animatable fadeInUp">
               <div class="portfolio-work-title subtitle-sm">Persona</div>
@@ -241,13 +243,7 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-
-    <!-- Group A- -->
-    <div class="portfolio-work-wrap animatable fadeInUp" style="background-color:#F6F7F9;">
-      <div class="portfolio-work v-container-fluid">
         <div class="row animatable fadeInUp">
           <div class="portfolio-work-title subtitle-lg">
             Group A–<br/>
@@ -442,12 +438,7 @@
       </div>
     </div>
 
-
-
-
-
-
-
+    <!-- Persona -->
     <!-- Group B- -->
     <div class="portfolio-work-wrap animatable fadeInUp" style="background-color:#F6F7F9;">
       <div class="portfolio-work v-container-fluid" style="padding-top: 0px;">
@@ -569,7 +560,7 @@
                       <li>• Because he should secure his fund for his older age, he feels uncertain about STO, which is not conventional.</li>
                       <li>• He allocates only a small portion of his total portfolio to high-risk high-return products.</li>
                       <li>• Doesn’t have much time researching the company matter most.</li>
-                      <li>• Fear on investing to a wrong company and damage reputation./li>
+                      <li>• Fear on investing to a wrong company and damage reputation.</li>
                       <li>• Depends on networks, referral and friends to find new opportunity. </li>
                     </ul>
                   </div>
@@ -978,7 +969,7 @@
             <div class="portfolio-work-title subtitle-sm">Iterations</div>
         
             <div class="portfolio-work-title subtitle-lg">
-              Accessing the tradeoffs–
+              Accessing the trade-offs–
               <br/>
               Homepage
             </div>
@@ -997,7 +988,7 @@
 
               <div class="iterations-pro-con">
                 <div class="profile-subtitle">
-                  Pro
+                  Pros
                 </div>
 
                 <div>
@@ -1007,7 +998,7 @@
 
               <div class="iterations-pro-con">
                 <div class="profile-subtitle">
-                  Con
+                  Cons
                 </div>
 
                 <div>
@@ -1029,7 +1020,7 @@
 
               <div class="iterations-pro-con">
                 <div class="profile-subtitle">
-                  Pro
+                  Pros
                 </div>
 
                 <div>
@@ -1039,7 +1030,7 @@
 
               <div class="iterations-pro-con">
                 <div class="profile-subtitle">
-                  Con
+                  Cons
                 </div>
 
                 <div>
@@ -1055,7 +1046,7 @@
           <div class="col-md-6 col-sm-12">
             <div class="row animatable fadeInUp">
               <div class="portfolio-work-title subtitle-lg">
-                Accessing the tradeoffs–
+                Accessing the trade-offs–
                 <br/>
                 Investment product
               </div>
@@ -1075,7 +1066,7 @@
 
               <div class="iterations-pro-con">
                 <div class="profile-subtitle">
-                  Pro
+                  Pros
                 </div>
 
                 <div>
@@ -1085,7 +1076,7 @@
 
               <div class="iterations-pro-con">
                 <div class="profile-subtitle">
-                  Con
+                  Cons
                 </div>
 
                 <div>
@@ -1109,7 +1100,7 @@
 
               <div class="iterations-pro-con">
                 <div class="profile-subtitle">
-                  Pro
+                  Pros
                 </div>
 
                 <div>
@@ -1119,7 +1110,7 @@
 
               <div class="iterations-pro-con">
                 <div class="profile-subtitle">
-                  Con
+                  Cons
                 </div>
 
                 <div>
@@ -1176,7 +1167,7 @@
 
         <!-- More inviting start  -->
         <div class="row work-solution-align animatable fadeInUp">
-          <div class="offset-md-right-0 col-md-4 offset-sm-right-4 col-sm-8 offset-xs-0 col-xs-12">
+          <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
             <div class="portfolio-work-title subtitle-sm">Solution</div>
 
             <div>
@@ -1189,9 +1180,7 @@
             </div>
           </div>
 
-          <div
-            class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
-          >
+          <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
             <img class="locked-solution-anime" 
               src="../../assets/img/portfolio/locked1/locked-solution-1.gif"
               alt="rivu solution anime" />
@@ -1203,9 +1192,7 @@
 
         <!-- Personalized and anticipatory home page -->
         <div class="row work-solution-align animatable fadeInUp">
-          <div
-            class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
-          >
+          <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
             <img class="locked-solution-anime" 
               src="../../assets/img/portfolio/locked1/locked-solution-2.gif"
               alt="rivu solution anime" />
@@ -1214,7 +1201,7 @@
               alt="rivu solution frame" />
           </div>
 
-          <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+          <div class="order-md-last order-sm-1 offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
             <div>
               <div
                 class="portfolio-work-title subtitle-lg"
@@ -1230,7 +1217,7 @@
 
         <!-- Portfolio for skimming faster and easier -->
         <div class="row work-solution-align animatable fadeInUp">
-          <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+          <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
             <div>
               <div class="portfolio-work-title subtitle-lg">
                 Portfolio for skimming faster and easier
@@ -1241,9 +1228,7 @@
             </div>
           </div>
 
-          <div
-            class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
-          >
+          <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
             <img class="locked-solution-anime" 
               src="../../assets/img/portfolio/locked1/locked-solution-3.gif"
               alt="rivu solution anime" />
@@ -1255,9 +1240,7 @@
 
         <!-- Easy-to-follow steps for making orders -->
         <div class="row work-solution-align animatable fadeInUp">
-          <div
-            class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
-          >
+          <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
             <img class="locked-solution-anime" 
               src="../../assets/img/portfolio/locked1/locked-solution-2.gif"
               alt="rivu solution anime" />
@@ -1266,7 +1249,7 @@
               alt="rivu solution frame" />
           </div>
 
-          <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+          <div class="order-md-last order-sm-1 offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
             <div>
               <div
                 class="portfolio-work-title subtitle-lg"
@@ -1282,7 +1265,7 @@
 
         <!-- Informing intuitively and encouraging investing -->
         <div class="row work-solution-align animatable fadeInUp">
-          <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+          <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
             <div>
               <div class="portfolio-work-title subtitle-lg">
                 Informing intuitively and encouraging investing
@@ -1293,9 +1276,7 @@
             </div>
           </div>
 
-          <div
-            class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
-          >
+          <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
             <img class="locked-solution-anime" 
               src="../../assets/img/portfolio/locked1/locked-solution-3.gif"
               alt="rivu solution anime" />
@@ -1307,9 +1288,7 @@
 
         <!-- Seamless flow by providing relevant suggestions -->
         <div class="row work-solution-align animatable fadeInUp">
-          <div
-            class="order-md-1 order-sm-last col-lg-4 offset-lg-0 offset-lg-right-4 col-md-6 offset-md-0 offset-md-right-2 offset-sm-3 offset-sm-right-0 col-sm-6 offset-xs-2 col-xs-8"
-          >
+          <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
             <img class="locked-solution-anime" 
               src="../../assets/img/portfolio/locked1/locked-solution-2.gif"
               alt="rivu solution anime" />
@@ -1318,7 +1297,7 @@
               alt="rivu solution frame" />
           </div>
 
-          <div class="order-md-last order-sm-1 col-md-4 col-sm-8 col-xs-12">
+          <div class="order-md-last order-sm-1 offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
             <div>
               <div
                 class="portfolio-work-title subtitle-lg"
@@ -1334,7 +1313,7 @@
 
         <!-- Facilitation of communication -->
         <div class="row work-solution-align animatable fadeInUp">
-          <div class="offset-md-right-0 col-md-4 col-sm-8 offset-sm-right-4 col-xs-12">
+          <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
             <div>
               <div class="portfolio-work-title subtitle-lg">
                 Facilitation of communication
@@ -1345,9 +1324,7 @@
             </div>
           </div>
 
-          <div
-            class="offset-lg-4 col-lg-4 offset-md-2 col-md-6 offset-md-right-0 offset-sm-3 col-sm-6 offset-xs-2 col-xs-8"
-          >
+          <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-1 col-md-5 offset-md-right-0 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
             <img class="locked-solution-anime" 
               src="../../assets/img/portfolio/locked1/locked-solution-3.gif"
               alt="rivu solution anime" />
@@ -1365,7 +1342,7 @@
     <div class="portfolio-work-wrap animatable fadeInUp">
       <div>
         <img
-          src="../../assets/img/portfolio/locked1/portfolio-locked1-fullsize-background.png"
+          src="../../assets/img/portfolio/locked1/portfolio-locked1-fullsize-background.jpg"
           alt="product image"
           />
       </div>
@@ -1401,7 +1378,7 @@ export default {
   name: "LockedProject1",
   mounted() {
     $(document).ready(function() { 
-      const CAROUSEL_INTERVAL = 3000;
+      const CAROUSEL_INTERVAL = 5000;
       window.carouselIntervals = [];
       
       function clearAllIntervals() {
@@ -1594,14 +1571,27 @@ export default {
 
 .gallery-static-thumbnail-item {
   cursor: pointer;
-  opacity: 0.5;
   display: table-cell;
-  transform: opacity .4 ease-in-out;
+  transition: opacity .3s ease-in-out;
+  position: relative;
 }
 
 .gallery-static-thumbnail-item:hover {
-  opacity: .7;
+  opacity: .5;
 }
+
+.gallery-static-thumbnail-item:hover::after, .gallery-static-thumbnail-item.active::after {
+  content: ' ';
+  width: 95%;
+  position: absolute;
+  background-color: black;
+  opacity: .5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 
 .gallery-static-thumbnail-item img {
   border: 1px solid black;

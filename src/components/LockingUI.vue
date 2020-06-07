@@ -27,7 +27,7 @@
             </div>
           </div>
 
-          <div style="display: inline-block; position: absolute; right: 0; bottom: 0">
+          <div id="lockingSubmitWrapper">
             <div id="lockingSubmit">
               <!-- gtag 손볼 것 -->
               <a onclick="gtag('event', 'Project', {'event_category': 'Click', 'event_label': 'Unlock Project.'})">
@@ -212,7 +212,6 @@ export default {
   width: 190px;
   border: none;
   border-bottom: 1px solid black;
-  margin-right: 30px;
 }
 
 #lockingPassword.error {
@@ -292,5 +291,23 @@ export default {
   -webkit-appearance: none;
   -webkit-border-radius:0px;
 }
+
+#lockingSubmitWrapper {
+  display: inline-block; 
+  position: absolute; 
+  right: 0; 
+  bottom: 0;
+  margin-left: 30px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  #lockingPassword {
+
+  }
+
+
+}
+
 
 </style>
