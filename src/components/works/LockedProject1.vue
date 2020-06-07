@@ -780,23 +780,26 @@
           </div>
         </div>
 
-        <div class="row animatable fadeInUp" style="margin-top: 120px;">
-          <div class="col-md-6 col-sm-12">
-            <div class="half-first">
-              <img src="../../assets/img/portfolio/locked1/portfolio-locked1-interview-opportunities.png" alt="principle" />
+
+        <div class="animatable fadeInUp" style="margin-top: 120px;">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="half-first">
+                <img src="../../assets/img/portfolio/locked1/portfolio-locked1-interview-opportunities.png" alt="principle" />
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <div class="half-second">
+                <img src="../../assets/img/portfolio/locked1/portfolio-locked1-interview-painpoints.png" alt="principle" />
+              </div>
             </div>
           </div>
 
-          <div class="col-md-6 col-sm-12">
-            <div class="half-second">
-              <img src="../../assets/img/portfolio/locked1/portfolio-locked1-interview-painpoints.png" alt="principle" />
+          <div class="row" style="margin-top: 60px;">
+            <div class="portfolio-work-title subtitle-sm" style="color: #666666; text-align:center;">
+              Interview Key-findings
             </div>
-          </div>
-        </div>
-
-        <div class="row animatable fadeInUp" style="margin-top: 80px;">
-          <div class="portfolio-work-title subtitle-sm" style="color: #666666; text-align:center;">
-            Interview Key-findings
           </div>
         </div>
 
@@ -969,9 +972,7 @@
             <div class="portfolio-work-title subtitle-sm">Iterations</div>
         
             <div class="portfolio-work-title subtitle-lg">
-              Accessing the trade-offs–
-              <br/>
-              Homepage
+              Homescreen Impression
             </div>
           </div>
         </div>
@@ -1012,7 +1013,7 @@
           <div class="col-md-5 offset-md-right-1 col-sm-12 offset-sm-right-0">
             <div>
               <div>
-                <span>B. Dashboard style</span>
+                <span>B. Dashboard</span>
               </div>
               <div>
                 <img src="../../assets/img/portfolio/locked1/portfolio-locked1-iterations-02.png" alt="iterations" />
@@ -1024,7 +1025,7 @@
                 </div>
 
                 <div>
-                  We can provide personalized information on the first page they see.
+                  Personalized summary helps users overview their current investment state at a glance.
                 </div>
               </div>
 
@@ -1046,9 +1047,7 @@
           <div class="col-md-6 col-sm-12">
             <div class="row animatable fadeInUp">
               <div class="portfolio-work-title subtitle-lg">
-                Accessing the trade-offs–
-                <br/>
-                Investment product
+                Browsing investment products
               </div>
             </div>
           </div>
@@ -1058,7 +1057,7 @@
           <div class="col-md-5 offset-md-right-1 col-sm-12 offset-sm-right-0">
             <div>
               <div>
-                <span>A. Explore tab (STO and Trade combined)</span>
+                <span>A. Combining STO + Trade</span>
               </div>
               <div>
                 <img src="../../assets/img/portfolio/locked1/portfolio-locked1-iterations-03.png" alt="iterations" />
@@ -1080,7 +1079,7 @@
                 </div>
 
                 <div>
-                  It might confuse users because users very likely don’t know the difference between STO and Trade when they first start our service.
+                  It might confuse users because users very likely don’t know the difference between STO and Trade.
                 </div>
               </div>
               
@@ -1092,7 +1091,7 @@
           <div class="col-md-5 offset-md-right-1 col-sm-12 offset-sm-right-0">
             <div>
               <div>
-                <span>B. Separated STO and Trade tabs</span>
+                <span>B. Separating into STO / Trade  </span>
               </div>
               <div>
                 <img src="../../assets/img/portfolio/locked1/portfolio-locked1-iterations-04.png" alt="iterations" />
@@ -1125,8 +1124,7 @@
         <div class="row animatable fadeInUp" style="margin-top:120px; margin-bottom: 120px;">
           <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
             <div class="portfolio-work-title subtitle-lg">
-              Both B– Put users and<br/>
-              the easiest UX first
+              B for both to prioritize user-centric experience
             </div>
           
             <div>
@@ -1507,7 +1505,7 @@ export default {
 }
 
 .group-desc-image-wrapper {
-  height: 100px;
+  height: 110px;
 }
 
 .group-desc-image-wrapper>div {
