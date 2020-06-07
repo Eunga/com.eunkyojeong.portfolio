@@ -243,7 +243,7 @@
             <div class="work-image-footnote work-image-footnote-xl" style="color:#666666;">Before</div>
           </div>
 
-          <div id="arrowAfterAndBefore" class="col-sm-2 hidden-xs">
+          <div id="arrowAfterAndBefore" class="col-sm-2 hidden-to-xs">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="80" viewBox="0 0 40 80">
               <g transform="translate(-940 -7491)">
                 <rect class="a" width="40" height="80" transform="translate(940 7491)" />

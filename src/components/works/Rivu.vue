@@ -53,12 +53,12 @@
                 src="../../assets/img/portfolio/rivu/portfolio-rivu-situation.png" 
                 alt="situation graph" />
             </div>
-            <div style="text-align: center;">
+            <div style="text-align: center; line-height:26px;">
               <div>
                 <span class="work-image-footnote work-image-footnote-lg">Ebbinghaus' Forgetting Curve</span>
               </div>
 
-              <div style="line-height: 6px;">
+              <div style="line-height: 17px;">
                 <span class="work-image-footnote work-image-footnote-sm">Without reviewing them, I might hardly make them mine</span>
               </div>
             </div>
