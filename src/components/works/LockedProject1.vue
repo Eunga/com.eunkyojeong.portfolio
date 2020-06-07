@@ -695,6 +695,7 @@
               >Easy and clear user experience</div>
             </div>
           </div>
+          
 
           <div class="row">
             <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
