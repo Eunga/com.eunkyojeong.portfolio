@@ -55,7 +55,7 @@
       <div class="portfolio-work v-container-fluid">
         <div class="row animatable fadeInUp">
           <div class="offset-md-2 col-md-8 offset-sm-0 col-sm-12">
-            <div style="margin-top: 60px; margin-bottom: 30px;">
+            <div style="margin-bottom: 30px;">
               <img 
                 src="../../assets/img/portfolio/locked1/portfolio-overview.png" 
                 alt="istox overview" />
@@ -1108,7 +1108,7 @@
               </div>
 
               <div class="iterations-pro-con">
-                <div style="profile-subtitle">
+                <div class="profile-subtitle">
                   Pro
                 </div>
 
@@ -1118,7 +1118,7 @@
               </div>
 
               <div class="iterations-pro-con">
-                <div style="profile-subtitle">
+                <div class="profile-subtitle">
                   Con
                 </div>
 
@@ -1383,7 +1383,7 @@
 
         <div class="row">
           <div class="offset-md-3 col-md-6 offset-xs-0 col-xs-12">
-            It all started from my love for English as a person who studies English as a second language. I pick up and study new words from articles on Medium or American TV shows, then keep a list of vocabs for myself. All the progress I’ve made from making Rivu was really fun. The project is still ongoing as it is being developed at the moment. I will continuously try to make a better user experience if there is room for improvement.
+            This is the first time I have worked at a Fintech company. Although the learning curve was steep, I now feel confident I can handle new domains, as I realized the importance of learning quickly and enjoying challenges.
           </div>
         </div>
       </div>
@@ -1402,19 +1402,34 @@ export default {
   mounted() {
     $(document).ready(function() { 
       const CAROUSEL_INTERVAL = 3000;
-      const intervalOfCarousel = setInterval(function() {
-        $('#myCarousel').carousel("next");
-      }, CAROUSEL_INTERVAL);
-    
-      $(".gallery-static-thumbnail-item").on("click", function() {
+      window.carouselIntervals = [];
+      
+      function clearAllIntervals() {
+        window.carouselIntervals.forEach(function(value,idx,arr) {
+            clearInterval(value.id);
+            value.enabled = false;
+        });
+      }
 
-        $(".gallery-static-thumbnail-item").removeClass("active");
-        $(this).addClass("active");
+      $("#myCarousel").carousel({interval : false});
+      
+      (function() {
+        const intervalOfCarousel = setInterval(function() {
+          $('#myCarousel').carousel("next");
+        }, CAROUSEL_INTERVAL);
+        carouselIntervals.push({id: intervalOfCarousel, enabled: true});
+      })();
 
-        const orderOfItem = $(this).attr("data-item-order");
-        $(".gallery-static-item").removeClass("active");
-        $(".gallery-static-item").eq(orderOfItem-1).addClass("active");
-      });
+      $(".gallery-static-thumbnail-item").mouseover(function() {
+        $(this).trigger("click");
+        clearAllIntervals();
+      }).mouseout(function() {
+        clearAllIntervals();
+        const intervalOfCarousel = setInterval(function() {
+          $('#myCarousel').carousel("next");
+        }, CAROUSEL_INTERVAL);
+        carouselIntervals.push({id: intervalOfCarousel, enabled: true});
+      });;
     })
   },
 };
@@ -1474,7 +1489,7 @@ export default {
 
 .profile-subtitle {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 20px;
   font-family: HelveticaNeue;
   font-style: normal;
   font-stretch: normal;
