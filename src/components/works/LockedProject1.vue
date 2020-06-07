@@ -85,7 +85,7 @@
           </div>
 
           <div class="offset-md-1 col-md-7 offset-sm-0 col-sm-12">
-            <div style="height: 100%;position: relative;display: flex;justify-content: center;align-items: center;">
+            <div style="height: 100%; position: relative; display: flex; justify-content: center; align-items: center;">
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -94,19 +94,19 @@
                     <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-01.png" alt="chart1" />
                   </div>
 
-                  <div data-target="#myCarousel" data-slide-to="1" class="gallery-static-thumbnail-item active">
+                  <div data-target="#myCarousel" data-slide-to="1" class="gallery-static-thumbnail-item">
                     <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-02.png" alt="chart2" />
                   </div>
 
-                  <div data-target="#myCarousel" data-slide-to="2" class="gallery-static-thumbnail-item active">
+                  <div data-target="#myCarousel" data-slide-to="2" class="gallery-static-thumbnail-item">
                     <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-03.png" alt="chart3" />
                   </div>
 
-                  <div data-target="#myCarousel" data-slide-to="3" class="gallery-static-thumbnail-item active">
+                  <div data-target="#myCarousel" data-slide-to="3" class="gallery-static-thumbnail-item">
                     <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-04.png" alt="chart4" />
                   </div>
 
-                  <div data-target="#myCarousel" data-slide-to="4" class="gallery-static-thumbnail-item active">
+                  <div data-target="#myCarousel" data-slide-to="4" class="gallery-static-thumbnail-item">
                     <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-05.png" alt="chart5" />
                   </div>
 
@@ -1571,14 +1571,27 @@ export default {
 
 .gallery-static-thumbnail-item {
   cursor: pointer;
-  opacity: 0.5;
   display: table-cell;
-  transform: opacity .4 ease-in-out;
+  transition: opacity .3s ease-in-out;
+  position: relative;
 }
 
 .gallery-static-thumbnail-item:hover {
-  opacity: .7;
+  opacity: .5;
 }
+
+.gallery-static-thumbnail-item:hover::after, .gallery-static-thumbnail-item.active::after {
+  content: ' ';
+  width: 95%;
+  position: absolute;
+  background-color: black;
+  opacity: .5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 
 .gallery-static-thumbnail-item img {
   border: 1px solid black;

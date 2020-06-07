@@ -25,8 +25,15 @@
           id="navPortfolio"
           to="/"
           class="nav-link"
-          :class="{'router-link-exact-active': isActivePortfolio()}"
-        >Portfolio</router-link>
+          :class="{'router-link-exact-active': isActivePortfolio()}">
+          Portfolio 
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12">
+              <rect class="a" width="20" height="12"/>
+              <path class="b" d="M-1135.7-362.133l8,8,8-8" transform="translate(1137.705 364.133)"/>
+            </svg>
+          </span>
+        </router-link>
 
         <div id="portfolio-project-list">
           <div>
@@ -310,8 +317,10 @@ nav.white .navLink>a {
 }
 
 #portfolio-project-list li {
-  transform: opacity .4 ease-in-out;
+  transition: opacity .3s ease-in-out;
   cursor: pointer;
+  margin-bottom: 1px;
+  opacity: 1;
 }
 
 #portfolio-project-list li a {
@@ -334,7 +343,7 @@ nav.white .navLink>a {
 }
 
 .portfolio-project-number {
-  padding-right: 10px;
+  padding-right: 20px;
   font-size: 14px;
 }
 
@@ -351,5 +360,8 @@ nav.white .navLink>a {
   border-right: 7px solid transparent;
   border-bottom: 7px solid black;
 }
+
+#navPortfolio .a{fill:rgba(255,0,0,0);}
+#navPortfolio .b{fill:none;stroke:#000;stroke-width:1.4px;}
 </style>
 
