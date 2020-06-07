@@ -1358,7 +1358,7 @@
 
         <div class="row">
           <div class="offset-md-3 col-md-6 offset-xs-0 col-xs-12">
-            This is the first time I have worked at a Fintech company. Although the learning curve was steep, I now feel confident I can handle new domains, as I realized the importance of learning quickly and enjoying challenges.
+            This project was challenging because there was a huge learning curve on understanding user priorities and behaviors as I haven't had any investment experience. By asking around people who are currently investing, and consistently seeking for relevant articles around it, I was able to identify what users value most and what I can offer. This project helped me learn different aspects and user environments, which will be one of my assets in developing a user-centric product design skillset.
           </div>
         </div>
       </div>
