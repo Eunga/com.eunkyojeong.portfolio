@@ -1131,7 +1131,7 @@
           </div>
         </div>
 
-        <div class="row animatable fadeInUp" style="margin-top:120px;">
+        <div class="row animatable fadeInUp" style="margin-top:120px; margin-bottom: 120px;">
           <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
              <div class="row animatable fadeInUp">
               <div class="portfolio-work-title subtitle-lg">
@@ -1162,7 +1162,7 @@
       
       <div>
         <img
-          src="../../assets/img/portfolio/locked1/portfolio-locked1-fullsize-background-design.png"
+          src="../../assets/img/portfolio/locked1/portfolio-locked1-fullsize-background-design.jpg"
           alt="product image"
           />
       </div>
@@ -1484,7 +1484,9 @@ export default {
   -ms-flex: 1;
   flex: 1;
 }
-
+.group-desc-image-wrapper .profile-subtitle {
+    line-height: 25px;
+}
 .locked-circle-image {
   max-width: 120px;
 }
@@ -1514,7 +1516,11 @@ export default {
 }
 
 .group-desc-image-wrapper {
-  height: 170px;
+  height: 120px;
+}
+
+.group-desc-image-wrapper>div {
+  padding-right: 10px !important
 }
 
 .group-desc-image {
@@ -1587,6 +1593,13 @@ export default {
   width: 95%;
 }
 
+/* md */
+@media screen and (max-width: 1439px) {
+  .group-desc-image-wrapper {
+    height: 125px;
+  }
+}
+
 /* sm */
 @media screen and (max-width: 1023px) {
   .group-first {
@@ -1611,53 +1624,15 @@ export default {
     position: relative;
   }
 
-  
-
-  // .persona-content>div {
-  //   padding: 0px;
-  //   padding-right: 10px;
-  // }
-  
-  // .research {
-  //   margin-bottom: 20px;
-  // }
-
-  // .cumbersome {
-  //   margin-top: 40px;
-  // }
-
-  // .persona {
-  //   margin-top: 25px;
-  // }
-
-  // .persona-content .persona-job {
-  //   font-size:20px; 
-  //   line-height: 1.7; 
-  //   letter-spacing: -0.2px; 
-  //   margin-bottom: 10px;
-  // }
-
-  // .locked-interview-profile img {
-  //   width: 88px !important;
-  //   margin-bottom: 10px;
-  //   margin-top: 30px;
-  // }
-
-  // .persona-content .portfolio-work-title {
-  //   padding: 0px;
-  // }
+  .group-desc-image-wrapper {
+    height: 105px;
+  }
 }
 
 /* xs */
 @media screen and (max-width: 757px) {
   .group-desc-image-wrapper {
-    height: auto;
-  }
-  
-  .group-desc-image {
-    padding-right: 0px; 
-    margin-bottom: 20px;
-    position: relative;
+    height: 110px;
   }
 }
 
