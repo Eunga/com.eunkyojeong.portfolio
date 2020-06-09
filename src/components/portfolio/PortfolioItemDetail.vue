@@ -6,13 +6,13 @@
     <back-to-top />
 
     <div class="portfolio-item-nav v-container-fluid">
-      <div class="portfolio-item-nav-item portfolio-item-nav-prev" v-on:click="goOtherWork(prev)">
+      <div class="portfolio-item-nav-item portfolio-item-nav-prev" v-on:click="goOtherWork(prevWork)">
         <div class="portfolio-item-nav-id">
-          <span>{{ formatedNumber(prev.id + 1) }}</span>
+          <span>{{ formatedNumber(prevWork.id + 1) }}</span>
         </div>
 
         <div class="portfolio-item-nav-title">
-          <span v-html="getWorkTitle(prev.title)"></span>
+          <span v-html="getWorkTitle(prevWork)"></span>
         </div>
 
         <div class="portfolio-item-nav-icon">
@@ -30,13 +30,13 @@
           <!-- <ArrowPrevSvg /> -->
         </div>
       </div>
-      <div class="portfolio-item-nav-item portfolio-item-nav-next" v-on:click="goOtherWork(next)">
+      <div class="portfolio-item-nav-item portfolio-item-nav-next" v-on:click="goOtherWork(nextWork)">
         <div class="portfolio-item-nav-id">
-          <span>{{ formatedNumber(next.id + 1) }}</span>
+          <span>{{ formatedNumber(nextWork.id + 1) }}</span>
         </div>
 
         <div class="portfolio-item-nav-title">
-          <span v-html="getWorkTitle(next.title)"></span>
+          <span v-html="getWorkTitle(nextWork)"></span>
         </div>
 
         <div class="portfolio-item-nav-icon">
@@ -76,11 +76,11 @@ export default {
     currentId: function() {
       return this.work.id;
     },
-    prev: function() {
+    prevWork: function() {
       const prevWork = this.$store.getters.prevWork;
       return prevWork;
     },
-    next: function() {
+    nextWork: function() {
       const nextWork = this.$store.getters.nextWork;
       return nextWork;
     },
@@ -103,7 +103,11 @@ export default {
     }
   },
   methods: {
-    getWorkTitle(_title) {
+    getWorkTitle(work) {
+      var _title = work.title;
+      if (work.isUnlocked && work.isLockedProject && work.unlockedInfo) {
+        _title = work.unlockedInfo.title;
+      }
       const title = _title.replace(/\n/g, "<br/>");
       return title;
     },
