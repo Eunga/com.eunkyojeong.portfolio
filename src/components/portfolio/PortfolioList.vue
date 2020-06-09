@@ -165,6 +165,9 @@ export default {
           work.isUnlocked = isSuccess
 
           if (isSuccess) {
+            gtag('event', `PortfolioDetail|${work.name}`, {'event_category': 'Page', 'event_label': 'Move to the page from the home. + Unlock Success'});
+            gtag('event', `UnlockSuccess|${work.name}`, {'event_category': 'Lock', 'event_label': 'Move to the page from the home. + Unlock Success'});
+
             const _this = this;
             this.forceChildRerender(function() {
               _this.goPortfolioDetail(work);

@@ -204,7 +204,6 @@ export default {
       $('.tabtitle-item').removeClass('active');
       $(this).addClass('active');
 
-
       gtag('event', 'About', {'event_category': 'Click', 'event_label': `${title} Click.`});
     });
 

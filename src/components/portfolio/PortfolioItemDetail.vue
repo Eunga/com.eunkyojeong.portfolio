@@ -112,6 +112,7 @@ export default {
       return title;
     },
     goOtherWork(work) {
+      gtag('event', `PortfolioDetail|${work.name}`, {'event_category': 'Page', 'event_label': 'Move to the page from the other detail.'})
       this.$router.push({ path: `/portfolio/${work.path}` });
     },
     formatedNumber(number) {

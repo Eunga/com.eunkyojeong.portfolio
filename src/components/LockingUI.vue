@@ -5,7 +5,7 @@
       <div id="lockingForm">
         <div id="lockingClose">
           <a
-            onclick="gtag('event', 'Project', {'event_category': 'Click', 'event_label': 'Cancel to Unlock Project.'})">
+            @click="clickToCancel">
             <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39">
               <g transform="translate(-1041 -732)">
                   <rect class="a" width="39" height="39" transform="translate(1041 732)"/>
@@ -29,8 +29,8 @@
 
           <div id="lockingSubmitWrapper">
             <div id="lockingSubmit">
-              <!-- gtag 손볼 것 -->
-              <a onclick="gtag('event', 'Project', {'event_category': 'Click', 'event_label': 'Unlock Project.'})">
+              <a 
+                @click="clickToTryToUnlock">
                 <span>G O&nbsp;&nbsp;</span>
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="17.417" height="12" viewBox="0 0 17.417 12">
@@ -103,6 +103,14 @@ export default {
   },
 
   methods: {
+    clickToCancel() {
+      gtag('event', 'LockedProject', {'event_category': 'Page', 'event_label': 'Cancel to unlock project.'})
+      gtag('event', `UnlockCancel`, {'event_category': 'Lock', 'event_label': 'Cancel to unlock project.'});
+    },
+    clickToTryToUnlock() {
+      gtag('event', 'LockedProject', {'event_category': 'Click', 'event_label': 'Try to unlock Project.'})
+      gtag('event', `UnlockTry`, {'event_category': 'Lock', 'event_label': ''});
+    },
     closeLockUI(isSuccess) {
       this.reset()
       $('body').unbind('touchmove')

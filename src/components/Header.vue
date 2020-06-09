@@ -1,7 +1,7 @@
 <template>
   <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light" v-bind:class="[theme]">
     <router-link 
-      onclick="gtag('event', 'Home', {'event_category': 'Page', 'event_label': 'Header Navigation Button Click.'})"
+      @click="clickToGoToHome"
       class="navbar-brand" 
       to="/" 
       style="z-index:10">EUNKYO JEONG</router-link>
@@ -21,7 +21,7 @@
     <div>
       <span class="navLink" id="portfolio-header">
         <router-link
-          onclick="gtag('event', 'Home', {'event_category': 'Page', 'event_label': 'Header Navigation Button Click.'})"
+          @click="clickToGoToPortfolio"
           id="navPortfolio"
           to="/"
           class="nav-link"
@@ -42,7 +42,7 @@
               <li v-for="work in works"
                 :class="{'active': isActivePortfolioDetailWork(work)}">
                 <router-link
-                  onclick="gtag('event', 'Header', {'event_category': 'Page', 'event_label': 'Header Navigation Button Click.'})"
+                  @click="clickToGoToPortfolioDetailPage(work)"
                   :to="retreiveWorkDetailPath(work)">
                 
                   <span class="portfolio-project-number">{{ makeTwoDigitFromWorkId(work) }}</span>
@@ -56,7 +56,7 @@
       </span>
       <span class="navLink">
         <router-link 
-          onclick="gtag('event', 'About', {'event_category': 'Page', 'event_label': 'Header Navigation Button Click.'})"
+          @click="clickToGoToAbout"
           id="navAbout" 
           to="/about" 
           class="nav-link">About</router-link>
@@ -69,6 +69,18 @@
 export default {
   name: "Header",
   methods: {
+    clickToGoToHome() {
+      gtag('event', 'Home', {'event_category': 'Page', 'event_label': 'Header Navigation Button Click.'})
+    },
+    clickToGoToPortfolio() {
+      gtag('event', 'Home', {'event_category': 'Page', 'event_label': 'Header Navigation Button Click.'})
+    },
+    clickToGoToPortfolioDetailPage(work) {
+      gtag('event', `PortfolioDetail|${work.name}`, {'event_category': 'Page', 'event_label': `Header Navigation Button Click to. ${work.name}`})
+    },
+    clickToGoToAbout() {
+      gtag('event', 'About', {'event_category': 'Page', 'event_label': 'Header Navigation Button Click.'})
+    },
     retreiveWorkDetailPath(work) {
       const relativePath = work.path;
       if (this.isActivePortfolioDetailPage()) {
