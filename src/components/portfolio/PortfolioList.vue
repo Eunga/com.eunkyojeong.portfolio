@@ -10,6 +10,8 @@
         v-bind:work="work"
         v-bind:isDetail="false"
         v-bind:key="work.id"
+
+        v-if="shouldRenderIt"
       />
     </div>
 
@@ -39,6 +41,7 @@ export default {
       percent: 0,
       barInterval: null,
       isOnMoving: false,
+      shouldRenderIt: true,
     }
   },
   mounted() {
@@ -100,6 +103,16 @@ export default {
     }
   },
   methods: {
+    forceChildRerender(callback) {
+      this.shouldRenderIt = false;
+      this.$nextTick(() => {
+          // Add the component back in
+          this.shouldRenderIt = true;
+          this.$nextTick(() => {
+            callback();
+          });
+        });
+    },
     saveCarouselInvervalId(carouselId) {
       this.$store.commit("saveCarouselInvervalId", carouselId);
     },
@@ -152,7 +165,14 @@ export default {
           work.isUnlocked = isSuccess
 
           if (isSuccess) {
-            this.goPortfolioDetail(work)
+            gtag('event', `PortfolioDetail|${work.name}`, {'event_category': 'Page', 'event_label': 'Move to the page from the home. + Unlock Success'});
+            gtag('event', `UnlockSuccess|${work.name}`, {'event_category': 'Lock', 'event_label': 'Move to the page from the home. + Unlock Success'});
+
+            const _this = this;
+            this.forceChildRerender(function() {
+              _this.goPortfolioDetail(work);
+            });
+            
           } else {
             // resume carousel
             if (this.barInterval != null) {

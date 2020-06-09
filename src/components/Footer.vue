@@ -1,7 +1,7 @@
 <template>
   <footer id="footer">
     <div id="copyright">
-      Designed by me & Developed by
+      Designed by me &amp; Developed by
       <a
         href="https://mrkarl.github.io"
         target="_blank"

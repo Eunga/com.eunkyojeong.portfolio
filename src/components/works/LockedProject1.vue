@@ -87,53 +87,56 @@
 
           <div class="offset-md-1 col-md-7 offset-sm-0 col-sm-12">
             <div style="height: 100%; position: relative; display: flex; justify-content: center; align-items: center;">
-              <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
+              <div>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
 
-                  <div data-target="#myCarousel" data-slide-to="0" class="gallery-static-thumbnail-item active">
-                    <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-01.png" alt="chart1" />
-                  </div>
+                    <div data-target="#myCarousel" data-slide-to="0" class="gallery-static-thumbnail-item active">
+                      <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-01.png" alt="chart1" />
+                    </div>
 
-                  <div data-target="#myCarousel" data-slide-to="1" class="gallery-static-thumbnail-item">
-                    <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-02.png" alt="chart2" />
-                  </div>
+                    <div data-target="#myCarousel" data-slide-to="1" class="gallery-static-thumbnail-item">
+                      <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-02.png" alt="chart2" />
+                    </div>
 
-                  <div data-target="#myCarousel" data-slide-to="2" class="gallery-static-thumbnail-item">
-                    <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-03.png" alt="chart3" />
-                  </div>
+                    <div data-target="#myCarousel" data-slide-to="2" class="gallery-static-thumbnail-item">
+                      <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-03.png" alt="chart3" />
+                    </div>
 
-                  <div data-target="#myCarousel" data-slide-to="3" class="gallery-static-thumbnail-item">
-                    <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-04.png" alt="chart4" />
-                  </div>
+                    <div data-target="#myCarousel" data-slide-to="3" class="gallery-static-thumbnail-item">
+                      <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-04.png" alt="chart4" />
+                    </div>
 
-                  <div data-target="#myCarousel" data-slide-to="4" class="gallery-static-thumbnail-item">
-                    <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-05.png" alt="chart5" />
-                  </div>
+                    <div data-target="#myCarousel" data-slide-to="4" class="gallery-static-thumbnail-item">
+                      <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-05.png" alt="chart5" />
+                    </div>
 
-                </ol>
+                  </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-01.png" alt="chart1" style="width:100%;">
-                  </div>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-01.png" alt="chart1" style="width:100%;">
+                    </div>
 
-                  <div class="carousel-item">
-                    <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-02.png" alt="chart1" style="width:100%;">
-                  </div>
-                
-                  <div class="carousel-item">
-                    <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-03.png" alt="chart1" style="width:100%;">
-                  </div>
+                    <div class="carousel-item">
+                      <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-02.png" alt="chart1" style="width:100%;">
+                    </div>
+                  
+                    <div class="carousel-item">
+                      <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-03.png" alt="chart1" style="width:100%;">
+                    </div>
 
-                  <div class="carousel-item">
-                    <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-04.png" alt="chart1" style="width:100%;">
-                  </div>
+                    <div class="carousel-item">
+                      <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-04.png" alt="chart1" style="width:100%;">
+                    </div>
 
-                  <div class="carousel-item">
-                    <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-05.png" alt="chart1" style="width:100%;">
+                    <div class="carousel-item">
+                      <img src="../../assets/img/portfolio/locked1/portfolio-user-chart-05.png" alt="chart1" style="width:100%;">
+                    </div>
                   </div>
+                  
                 </div>
 
                 <div style="margin-top: 15px;">
@@ -141,10 +144,9 @@
                     For confidentiality reasons, the values have been omitted.
                   </span>
                 </div>
-                
+              
               </div>
             </div>
-            
 
           </div>
         </div>
@@ -185,7 +187,7 @@
           <div class="offset-md-4 col-md-4 offset-sm-0 col-sm-12">
             
             <div class="group-first">
-              <div style="padding:30px; background-color:#F6F7F9;">
+              <div style="background-color:#F6F7F9;">
                 <b>Group A</b>
                 <div>
                   <ul>
@@ -206,8 +208,8 @@
 
 
           <div class="col-md-4 col-sm-12">
-            <div class="group-second" style="background-color:#F6F7F9;">
-              <div style="padding:30px; background-color:#F6F7F9;">
+            <div class="group-second">
+              <div style="background-color:#F6F7F9;">
                 <b>Group B</b>
                 <div>
                   <ul>
@@ -232,8 +234,8 @@
 
     <!-- Persona -->
     <!-- Group A- -->
-    <div class="portfolio-work-wrap animatable fadeInUp" style="background-color:#F6F7F9; padding-bottom: 90px;">
-      <div class="portfolio-work v-container-fluid">
+    <div class="portfolio-work-wrap animatable fadeInUp" style="background-color:#F6F7F9;">
+      <div class="portfolio-work v-container-fluid xs-margin-15">
         
         <div class="row animatable fadeInUp" style="margin-bottom: 120px;">
           <div class="col-md-6 col-sm-12">
@@ -257,7 +259,7 @@
         <div class="row animatable fadeInUp">
           <div class="col-md-4 col-sm-12">
             <div class="group-first">
-              <div style="padding:30px; background-color:white;">
+              <div style="background-color:white;">
                 <div class="locked-circle-image">
                   <img src="../../assets/img/portfolio/locked1/portfolio-locked1-group1-profile.png" alt="group1" />
                 </div>
@@ -334,9 +336,9 @@
             </div>
           </div>
 
-          <div class="col-md-8 col-sm-12" style="padding:30px; background-color:white;">
+          <div class="col-md-8 col-sm-12">
             <div class="group-second">
-              <div>
+              <div style="background-color:white;">
                 <div>
                   <div class="profile-subtitle">
                     Motivations
@@ -444,7 +446,7 @@
     <!-- Persona -->
     <!-- Group B- -->
     <!-- <div class="portfolio-work-wrap animatable fadeInUp" style="background-color:#F6F7F9;"> -->
-      <div class="portfolio-work v-container-fluid" style="padding-top: 0px;">
+      <div class="portfolio-work v-container-fluid xs-margin-15" style="padding-top: 0px;">
         <div class="row animatable fadeInUp">
           <div class="portfolio-work-title subtitle-lg">
             Group B–<br/>
@@ -455,7 +457,7 @@
         <div class="row animatable fadeInUp">
           <div class="col-md-4 col-sm-12">
             <div class="group-first">
-              <div style="padding:30px; background-color:white;">
+              <div style="background-color:white;">
                 <div class="locked-circle-image">
                   <img src="../../assets/img/portfolio/locked1/portfolio-locked1-group2-profile.png" alt="group1" />
                 </div>
@@ -531,9 +533,9 @@
             </div>
           </div>
 
-          <div class="col-md-8 col-sm-12" style="padding:30px; background-color:white;">
+          <div class="col-md-8 col-sm-12">
             <div class="group-second">
-              <div>
+              <div style="background-color:white;">
                 <div>
                   <div class="profile-subtitle">
                     Motivations
@@ -783,13 +785,13 @@
 
         <div class="animatable fadeInUp" style="margin-top: 120px;">
           <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="offset-md-0 col-md-6 offset-sm-2 col-sm-8 offset-xs-0 col-xs-12">
               <div class="half-first">
                 <img src="../../assets/img/portfolio/locked1/portfolio-locked1-interview-opportunities.png" alt="principle" />
               </div>
             </div>
 
-            <div class="col-md-6 col-sm-12">
+            <div class="offset-md-0 col-md-6 offset-sm-2 col-sm-8 offset-xs-0 col-xs-12">
               <div class="half-second">
                 <img src="../../assets/img/portfolio/locked1/portfolio-locked1-interview-painpoints.png" alt="principle" />
               </div>
@@ -847,7 +849,7 @@
           </div>
         </div>
 
-        <div class="row animatable fadeInUp" style="margin-top: 120px;">
+        <div class="row animatable fadeInUp" style="margin-top: 60px;">
           <div class="offset-md-2 col-md-8 offset-sm-0 col-sm-12">
             <img src="../../assets/img/portfolio/locked1/portfolio-locked1-frustration-approach-01.png" alt="frustration-approach-01" />
           </div>
@@ -890,12 +892,12 @@
               Most relevant information
             </div>
             <div>
-              According to interviews, we laid out all the content users want to be provided when they opened the app, then we prioritized by urgency so that we can fulfill their tasks as quickly as possible.
+              We utilized interview feedback from users to improve our app so that it provides relevant information as soon as users open the app. We then prioritize tasks by urgency so that users have access to them as quickly as possible.
             </div>
           </div>
         </div>
 
-        <div class="row animatable fadeInUp" style="margin-top: 120px;">
+        <div class="row animatable fadeInUp" style="margin-top: 60px;">
           <div class="offset-md-2 col-md-8 offset-sm-0 col-sm-12" style="text-align: center;">
             <img src="../../assets/img/portfolio/locked1/portfolio-locked1-frustration-approach-02.png" alt="frustration-approach-02" />
           </div>
@@ -915,7 +917,7 @@
               Hesitation
             </div>
             <div>
-              We could learn from the interviews that investors feel initial STOs are risky. How can we improve confidence in the decision of investment?
+              We learned from the interviews that investors feel initial STOs are risky. How can we improve confidence in the decision of investment?
             </div>
           </div>
 
@@ -1010,7 +1012,7 @@
           </div>
 
 
-          <div class="col-md-5 offset-md-right-1 col-sm-12 offset-sm-right-0">
+          <div class="sm-margin-top-60 col-md-5 offset-md-right-1 col-sm-12 offset-sm-right-0">
             <div>
               <div>
                 <span>B. Dashboard</span>
@@ -1025,7 +1027,7 @@
                 </div>
 
                 <div>
-                  Personalized summary helps users overview their current investment state at a glance.
+                  The personalized summary helps users overview their current investment state at a glance.
                 </div>
               </div>
 
@@ -1035,7 +1037,7 @@
                 </div>
 
                 <div>
-                  They might escape as soon as fulfilling their needs, which keeps them from getting to know other deals.
+                  They might escape as soon as they fulfill their needs, which keeps them from exploring other deals.
                 </div>
               </div>
             </div>
@@ -1069,7 +1071,7 @@
                 </div>
 
                 <div>
-                  Good for browsing tokens from both STO and Trade, which are basically the same tokens with other phases.
+                  It simplifies browsing tokens from both STO and Trade, which are basically the same tokens with other phases.
                 </div>
               </div>
 
@@ -1079,7 +1081,7 @@
                 </div>
 
                 <div>
-                  It might confuse users because users very likely don’t know the difference between STO and Trade.
+                  It might confuse users because users most likely don’t know the difference between STO and Trade when they first start our service.
                 </div>
               </div>
               
@@ -1088,10 +1090,10 @@
 
 
 
-          <div class="col-md-5 offset-md-right-1 col-sm-12 offset-sm-right-0">
+          <div class="sm-margin-top-60 col-md-5 offset-md-right-1 col-sm-12 offset-sm-right-0">
             <div>
               <div>
-                <span>B. Separating into STO / Trade  </span>
+                <span>B. Separating into STO / Trade</span>
               </div>
               <div>
                 <img src="../../assets/img/portfolio/locked1/portfolio-locked1-iterations-04.png" alt="iterations" />
@@ -1103,7 +1105,7 @@
                 </div>
 
                 <div>
-                  It’s more clear and easy to understand that each is in different markets.
+                  It’s easier to understand that these two are different features.
                 </div>
               </div>
 
@@ -1113,7 +1115,7 @@
                 </div>
 
                 <div>
-                  Harder to look at both tokens from STO and Trade at the same time.
+                  It’s harder to look at both tokens from STO and Trade at the same time.
                 </div>
               </div>
               
@@ -1128,7 +1130,7 @@
             </div>
           
             <div>
-              After internal and external usability testings, we chose both Bs. because we put the easy usability the most. Even though there’s a possibility that users don’t see other deals, it matters the most to let urgent needs users fulfill their needs first without effort for finding where is what they want. As well, we didn’t want to confuse the users with combined STO and Trade because those are new concepts of investing.
+              After internal and external usability testing, we chose both B’s because we value user friendliness the most. Even though there’s a possibility that users don’t see other deals, it is critical that ‘Urgent needs users’ fulfill their needs first without spending too much time navigating the app. Additionally, we didn’t want to confuse the users with combined STO and Trade because those are new concepts in investing.
             </div>
           </div>
         </div>
@@ -1137,20 +1139,22 @@
 
     <!-- Full size Product image -->
     <div class="portfolio-work-wrap animatable fadeInUp" style="background-color:black;">
-      <div class="portfolio-work v-container-fluid" style="padding-bottom: 10px;">
+      <div class="portfolio-work v-container-fluid" style="padding-bottom: 0px;">
         <div class="row animatable fadeInUp">
           <div class="col-md-6 col-sm-12">
             <div class="portfolio-work-title subtitle-sm" style="color: white; padding-bottom: 0px;">Designs</div>
           </div>
         </div>
       </div>
-      
-      <div class="row animatable fadeInUp">
-        <img
-          style="width:100%; height:100%; position: relative;"
-          src="../../assets/img/portfolio/locked1/portfolio-locked1-fullsize-background-design.jpg"
-          alt="product image"
-          />
+
+      <div class="portfolio-work" style="padding-top: 0px;">
+        <div class="row animatable fadeInUp">
+          <img
+            style="width:100%; height:100%; position: relative;"
+            src="../../assets/img/portfolio/locked1/portfolio-locked1-fullsize-background-design.jpg"
+            alt="product image"
+            />
+        </div>
       </div>
     </div>
 
@@ -1494,7 +1498,15 @@ export default {
 }
 
 .group-second {
+  padding-left:10px;
+}
 
+.group-first>div {
+  padding:30px;
+}
+
+.group-second>div {
+  padding:30px;
 }
 
 .half-first {
@@ -1553,14 +1565,17 @@ export default {
   left: 30px;
 }
 
-.carousel-indicators {
-  /* width: 43%; */
+#myCarousel .carousel-indicators {
   top: 0;
   left: 0;
   bottom: initial;
   margin-right: 0px;
   margin-left: 0px;
   padding: 12px;
+}
+
+#myCarousel .carousel-content {
+  position: relative;
 }
 
 .gallery-static-thumbnail-item.active {
@@ -1575,15 +1590,16 @@ export default {
 }
 
 .gallery-static-thumbnail-item img {
-  width: 90%;
+  width: auto;
+  height: 100%;;
   position: relative;
   margin-top: 0px;
 }
 
-/* md */
+/* ~md */
 @media screen and (max-width: 1439px) {
   .group-desc-image-wrapper {
-    height: 125px;
+    height: 115px;
   }
 }
 
@@ -1592,6 +1608,10 @@ export default {
   .group-first {
     padding-right: 0px;
     padding-bottom: 30px;
+  }
+
+  .group-second {
+    padding-left:0px;
   }
 
   .mobile-row {
@@ -1626,9 +1646,10 @@ export default {
   justify-content: center;
   align-items: center;
   border: 1px solid #EEEEEE;
+  overflow:hidden;
 }
 
-.carousel-indicators {
+#myCarousel .carousel-indicators {
   display: block;
 }
 .gallery-static-thumbnail-item:hover::after, 
@@ -1672,8 +1693,17 @@ export default {
 
 /* xs */
 @media screen and (max-width: 767px) {
+  .xs-margin-15 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
   .group-desc-image-wrapper {
-    height: 110px;
+    height: 80px;
+    line-height: 15px;
+  }
+
+  .group-desc-image-wrapper .profile-subtitle {
+      line-height: 20px;
   }
 
   .profile-subtitle {
@@ -1683,6 +1713,59 @@ export default {
   .gallery-static-thumbnail-item {
     height: 53px;
     width: 53px;
+  }
+
+  .group-first>div {
+    padding:15px;
+  }
+
+  .group-second>div {
+    padding:15px;
+  }
+
+  .group-desc-image {
+    padding-right: 15px;
+  }
+
+  #myCarousel .carousel-indicators {
+    top: 0;
+    left: 0;
+    bottom: initial;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 12px;
+  }
+
+  #myCarousel .carousel-indicators {
+    padding: 0px;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    display: block;
+    line-height: 0;
+    top: 10px;
+  }
+
+  #myCarousel .gallery-static-thumbnail-item {
+    padding: 0px;
+    margin: 0px;
+    width: 20%;
+    height: initial;
+    position: relative;
+  }
+
+  #myCarousel .gallery-static-thumbnail-item img {
+    height: auto;
+    width: 100%;
+  }
+  
+}
+
+/*  ~ md */
+@media screen and (max-width: 1023px) {
+  .sm-margin-top-60 {
+    margin-top: 60px;
   }
 }
 

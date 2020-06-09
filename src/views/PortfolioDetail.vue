@@ -67,6 +67,7 @@ export default {
         if (!isSuccess) {
           window.location.href = "/";
         } else {
+          gtag('event', `UnlockSuccess|${work.name}`, {'event_category': 'Lock', 'event_label': 'Move to the page directly. + Unlock Success'});
           $("#footer").show();
         }
       });
@@ -105,16 +106,16 @@ export default {
   methods: {
     doUnlock(isUnlocked) {
       if (this.tempLockingCallback != null) {
-        this.tempLockingCallback(isUnlocked)
-        this.tempLockingCallback = null
-        this.shouldShowLockingUI = false
+        this.tempLockingCallback(isUnlocked);
+        this.tempLockingCallback = null;
+        this.shouldShowLockingUI = false;
       }
     },
     askToUnlockTheProjectIfItIsLockedProject(work, callback) {
       if (work.isLockedProject && !work.isUnlocked) {
-        this.tempLockingCallback = callback
-        this.lockedWorkWantToSee = work
-        this.shouldShowLockingUI = true
+        this.tempLockingCallback = callback;
+        this.lockedWorkWantToSee = work;
+        this.shouldShowLockingUI = true;
       }
     },
     work() {

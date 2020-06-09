@@ -67,13 +67,13 @@ export default {
 <style>
 .portfolio-work {
   padding-top: 120px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
   /* margin: auto; */
 
   /* 로딩 되면서, 위로 fadein & translateY 하기 위함 */
   position: relative;
   /* opacity: 0; */
-  top: 10px;
+  /* top: 10px; */
 }
 
 .portfolio-work-wrap img,
@@ -177,6 +177,7 @@ video:focus {
 
   .portfolio-work {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .subtitle-sm {
@@ -203,7 +204,7 @@ video:focus {
   }
 
   .portfolio-work {
-    padding-bottom: 20px;
+    padding-bottom: 60px;
   }
 
   .subtitle-lg {
