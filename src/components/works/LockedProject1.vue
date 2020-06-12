@@ -624,7 +624,7 @@
                       </div>
 
                       <div>
-                        Moderate
+                        Moderately-Conservative
                       </div>
 
                       <div class="group-desc-image">
@@ -664,7 +664,7 @@
           <div class="row">
             <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-10 offset-xs-0 col-xs-12">
               <div class="portfolio-work-title subtitle-lg" style="padding-top: 60px;">
-              The user did not understand our new concept: STO (Secure Token Offering)
+              The user did not understand our new concept: STO (Security Token Offerings)
               </div>
             </div>
           </div>
