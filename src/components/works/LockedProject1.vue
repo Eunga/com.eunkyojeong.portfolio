@@ -592,7 +592,7 @@
                       </div>
 
                       <div>
-                        Tech-savvy
+                        Medium
                       </div>
 
                       <div class="group-desc-image">
@@ -608,7 +608,7 @@
                       </div>
 
                       <div>
-                        Medium
+                        High
                       </div>
 
                       <div class="group-desc-image">
@@ -1398,17 +1398,6 @@ export default {
         }, CAROUSEL_INTERVAL);
         carouselIntervals.push({id: intervalOfCarousel, enabled: true});
       })();
-
-      // $(".gallery-static-thumbnail-item").mouseover(function() {
-      //   $(this).trigger("click");
-      //   clearAllIntervals();
-      // }).mouseout(function() {
-      //   clearAllIntervals();
-      //   const intervalOfCarousel = setInterval(function() {
-      //     $('#myCarousel').carousel("next");
-      //   }, CAROUSEL_INTERVAL);
-      //   carouselIntervals.push({id: intervalOfCarousel, enabled: true});
-      // });;
     })
   },
 };
@@ -1668,10 +1657,7 @@ export default {
 
 /* lg ~ */
 @media screen and (min-width: 1440px) {
-  .gallery-static-thumbnail-item {
-    height: 65px;
-    width: 65px;
-  }
+  
 }
 
 /* md ~ lg */
@@ -1708,11 +1694,6 @@ export default {
 
   .profile-subtitle {
     font-size: 15px;
-  }
-
-  .gallery-static-thumbnail-item {
-    height: 53px;
-    width: 53px;
   }
 
   .group-first>div {
@@ -1756,8 +1737,19 @@ export default {
   }
 
   #myCarousel .gallery-static-thumbnail-item img {
-    height: auto;
-    width: 100%;
+    height: 100%;
+    width: auto;
+    position: absolute;
+  }
+
+  #myCarousel .gallery-static-thumbnail-item.active::after, 
+  #myCarousel .gallery-static-thumbnail-item:hover::after {
+    position: relative;
+  }
+  #myCarousel .gallery-static-thumbnail-item::after {
+    content: ' ';
+    display: block;
+    padding-bottom: 100%;
   }
   
 }
