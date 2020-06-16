@@ -624,7 +624,7 @@
                       </div>
 
                       <div>
-                        Moderately-Conservative
+                        Conservative
                       </div>
 
                       <div class="group-desc-image">

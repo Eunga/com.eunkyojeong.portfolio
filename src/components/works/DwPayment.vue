@@ -46,7 +46,7 @@
 
         <!-- Better usability for heavy users -->
         <div class="row animatable fadeInUp">
-          <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+          <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
             <div class="portfolio-work-title subtitle-lg">Better usability for heavy users</div>
           </div>
         </div>
@@ -171,7 +171,7 @@
         <!-- Distinct and Consistent Color -->
         <div class="animatable fadeInUp">
           <div class="row">
-            <div class="offset-md-3 col-md-9 offset-sm-0 col-sm-12">
+            <div class="offset-md-3 col-md-6 offset-sm-0 col-sm-12">
               <div class="portfolio-work-title subtitle-lg">Distinct and Consistent Color</div>
             </div>
           </div>

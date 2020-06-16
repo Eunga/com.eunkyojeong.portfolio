@@ -16,7 +16,7 @@
          </a>
         </div>
         
-        <h1>Protected<br/>Page</h1>
+        <h1>You need<br/>access</h1>
         <p>Please ask me for the password<br/>if you wish to proceed</p>
         
         <div style="position: relative;">
