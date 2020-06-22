@@ -59,7 +59,7 @@ export default {
     
     if (work.isLockedProject && !work.isUnlocked) {
       this.showProjectDetails = false
-      $("#footer").hide();
+      $("#footer").css({'display': 'none'})
       this.askToUnlockTheProjectIfItIsLockedProject(work, (isSuccess) => {
         work.isUnlocked = isSuccess
         this.showProjectDetails = isSuccess
@@ -68,7 +68,11 @@ export default {
           window.location.href = "/";
         } else {
           gtag('event', `UnlockSuccess|${work.name}`, {'event_category': 'Lock', 'event_label': 'Move to the page directly. + Unlock Success'});
-          $("#footer").show();
+          $("#footer").css({
+            'display': 'block',
+            'position': 'relative',
+            'bottom': '0px'
+          })
         }
       });
     }
