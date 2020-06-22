@@ -244,7 +244,7 @@
             </div>
 
             <div class="row">
-              We generated two personas that represent each user group: Individual investors from Group A, Group B, and Corporate investors. These personas are insight touchstones for the design process.
+              We generated two personas that represent each user group: Individual investors from Group A and Group B. These personas are insight touchstones for the design process.
             </div>
           </div>
         </div>
@@ -1380,7 +1380,7 @@ export default {
   name: "LockedProject1",
   mounted() {
     $(document).ready(function() { 
-      const CAROUSEL_INTERVAL = 5000;
+      const CAROUSEL_INTERVAL = 9000;
       window.carouselIntervals = [];
       
       function clearAllIntervals() {
