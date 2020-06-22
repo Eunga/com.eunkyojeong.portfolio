@@ -40,7 +40,8 @@ export default {
     return {
       percent: 0,
       barInterval: null,
-      isOnMoving: false,
+      isOnMovingToDetailPage: false,
+      isCarouselMoving: false,
       shouldRenderIt: true,
     }
   },
@@ -74,6 +75,7 @@ export default {
           })
           .on("slid.bs.carousel", function() {
             _this.percent = 0;
+            _this.isCarouselMoving = false;
           });
         
         if (carouselBehavior.shouldPauseWhenHover) {
@@ -120,6 +122,7 @@ export default {
       return this.$store.getters.currentCarouselIntervalId;
     },
     progressBarCarousel() {
+      if (this.isCarouselMoving) return;
       const $bar = $("#portfolio-carousel-progressbar");
       const $crsl = $("#portfolio-list");
 
@@ -128,8 +131,11 @@ export default {
       });
       this.percent = this.percent + 1;
       if (this.percent > 110) {
-        if (!this.isOnMoving) {
+        
+
+        if (!this.isOnMovingToDetailPage) {
           $crsl.carousel("next");
+          this.isCarouselMoving = true;
         }
       }
     },
@@ -143,16 +149,18 @@ export default {
     },
     mouseWheelEventForCarousel(e) {
       e.stopPropagation();
-      if (this.isOnMoving) {
-        return;
-      }
+      e.preventDefault();
+      if (this.isOnMovingToDetailPage) return;
+      if (this.isCarouselMoving) return;
 
       const wheelDelta = e.deltaY;
       const $crsl = $("#portfolio-list");
       if (wheelDelta > 30) {
         $crsl.carousel("next");
+        this.isCarouselMoving = true;
       } else if (wheelDelta < -30) {
         $crsl.carousel("prev");
+        this.isCarouselMoving = true;
       }
     },
 
@@ -188,7 +196,7 @@ export default {
 
       this.$emit("goPortfolioDetail", work);
       
-      this.isOnMoving = true;
+      this.isOnMovingToDetailPage = true;
       
       const $crsl = $("#portfolio-list");
       $crsl.carousel('pause');
@@ -200,10 +208,16 @@ export default {
       this.$router.push({ path: `/portfolio/${work.path}` });
     },
     next() {
+      if (this.isCarouselMoving) return;
+
       $("#portfolio-list").carousel("next");
+      this.isCarouselMoving = true;
     },
     previous() {
+      if (this.isCarouselMoving) return;
+
       $("#portfolio-list").carousel("prev");
+      this.isCarouselMoving = true;
     }
   }
 };
