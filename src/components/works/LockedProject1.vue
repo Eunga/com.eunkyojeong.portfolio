@@ -1285,9 +1285,8 @@
           </div>
         </div>
 
-        <!-- Seamless flow by providing relevant suggestions -->
-<!-- TBD
-        <div class="row work-solution-align animatable fadeInUp">
+        <!-- Facilitation of communication -->
+        <div class="row work-solution-align animatable fadeInUp" id="FacilitationOfCommunication">
           <div class="order-md-1 order-sm-last offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-3 col-sm-6 offset-sm-right-3 offset-xs-2 col-xs-8 offset-xs-right-2">
             <img class="locked-solution-anime" 
               src="../../assets/img/portfolio/locked1/locked-solution-6.gif"
@@ -1302,25 +1301,25 @@
               <div
                 class="portfolio-work-title subtitle-lg"
               >
-                Seamless flow by providing relevant suggestions
+                Facilitation of communication
               </div>
               <span>
-                Flows are always connected and should be designed smoothly. A User’s Wallet needs to be funded enough prior to making an order. When a user attempts to participate in an initial offering or buy tokens from trade but they don’t have enough cash in their wallet, I let them go to the deposit feature and continue from where they left off.
+                Because the service is new and unfamiliar to new customers, we made the message feature accessible. Users need to know that support is there anytime. Also, to make them more confident in their investment decisions, I allow them to contact Issuers (the company of a product) more accessible with this feature.
               </span>
             </div>
           </div>
         </div>
--->
-        <!-- Facilitation of communication -->
+        
+        <!-- Seamless flow by providing relevant suggestions -->
 <!-- TBD
         <div class="row work-solution-align animatable fadeInUp">
           <div class="offset-lg-1 col-lg-4 offset-lg-right-1 offset-md-0 col-md-5 offset-md-right-1 offset-sm-0 col-sm-8 offset-sm-right-4 offset-xs-0 col-xs-12 offset-xs-right-0">
             <div>
               <div class="portfolio-work-title subtitle-lg">
-                Facilitation of communication
+                Seamless flow by providing relevant suggestions
               </div>
               <span>
-                Because the service is new and unfamiliar to new customers, we made the message feature accessible. Users need to know that support is there anytime. Also, to make them more confident in their investment decisions, I allow them to contact Issuers (the company of a product) more accessible with this feature.
+                Flows are always connected and should be designed smoothly. A User’s Wallet needs to be funded enough prior to making an order. When a user attempts to participate in an initial offering or buy tokens from trade but they don’t have enough cash in their wallet, I let them go to the deposit feature and continue from where they left off.
               </span>
             </div>
           </div>
