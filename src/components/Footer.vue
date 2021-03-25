@@ -8,7 +8,7 @@
         class="pankipark"
       >
         <span>Panki Park</span>
-      </a> © 2020 All rights reserved.
+      </a> © 2021 All rights reserved.
     </div>
 
     <div id="contact">

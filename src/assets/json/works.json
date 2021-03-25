@@ -29,79 +29,163 @@
     }
   },
   {
-    "name": "Rivu",
-    "title": "RIVU\nApp Design",
-    "theme": "white",
-    "subtitle": "The Most Efficient Way\nto Memorize Vocabularies",
-    "path": "rivu",
-    "backgroundImage": "rivu/portfolio-rivu-bg",
-    "shouldBeExposed": true,
-    "stuff": {
-      "url": "rivu/portfolio-rivu-stuff",
-      "ext": "png",
-      "animation": "transitionY 10px",
-      "duration": 1
-    }
-  },
-  {
-    "name": "DwPayment",
-    "title": "DAUM WEBTOON\nPayment Renewal",
+    "name": "LockedProject2",
+    "title": "Protected\nProject",
     "theme": "black",
-    "subtitle": "Easy and Fast Payment\nfor Seamless Reading Experience",
-    "path": "daum_payment",
-    "backgroundImage": "dw/portfolio-dw-bg",
+    "subtitle": "Please request access",
+    "path": "lockedproject2",
+    "backgroundImage": "https://trello-attachments.s3.amazonaws.com/5d385e1a9c68ea134a96280c/5ed347e047081d0189fecafd/3dc52e0b2bbe77dbf485a484d9fa47ab/img_cover_BG_locked.png",
     "shouldBeExposed": true,
     "stuff": {
-      "url": "dw/portfolio-dw-stuff",
+      "url": "https://trello-attachments.s3.amazonaws.com/5ed347e047081d0189fecafd/840x1360/60edaf3b07e3bfd21fcec8727f4d5b41/img_cover_main_locked.png",
       "ext": "png",
       "animation": "transitionY 10px",
       "duration": 1
+    },
+    "isLockedProject": true,
+    "unlockedInfo": {
+      "password": "4U<3",
+      "title": "RIVU\nApp Design",
+      "theme": "white",
+      "subtitle": "The Most Efficient Way\nto Memorize Vocabularies",
+      "path": "rivu",
+      "backgroundImage": "rivu/portfolio-rivu-bg",
+      "shouldBeExposed": true,
+      "stuff": {
+        "url": "rivu/portfolio-rivu-stuff",
+        "ext": "png",
+        "animation": "transitionY 10px",
+        "duration": 1
+      }
     }
   },
   {
-    "name": "Howser",
-    "title": "HOWSER\n3D Home Planner",
-    "theme": "white",
-    "subtitle": "The Easiest Way to Create 3D Floor Plans",
-    "path": "howser",
-    "backgroundImage": "howser/portfolio-howser-bg",
+    "name": "LockedProject3",
+    "title": "Protected\nProject",
+    "theme": "black",
+    "subtitle": "Please request access",
+    "path": "lockedproject3",
+    "backgroundImage": "https://trello-attachments.s3.amazonaws.com/5d385e1a9c68ea134a96280c/5ed347e047081d0189fecafd/3dc52e0b2bbe77dbf485a484d9fa47ab/img_cover_BG_locked.png",
     "shouldBeExposed": true,
     "stuff": {
-      "url": "howser/portfolio-howser-stuff",
+      "url": "https://trello-attachments.s3.amazonaws.com/5ed347e047081d0189fecafd/840x1360/60edaf3b07e3bfd21fcec8727f4d5b41/img_cover_main_locked.png",
       "ext": "png",
       "animation": "transitionY 10px",
       "duration": 1
+    },
+    "isLockedProject": true,
+    "unlockedInfo": {
+      "password": "4U<3",
+      "name": "DwPayment",
+      "title": "DAUM WEBTOON\nPayment Renewal",
+      "theme": "black",
+      "subtitle": "Easy and Fast Payment\nfor Seamless Reading Experience",
+      "path": "daum_payment",
+      "backgroundImage": "dw/portfolio-dw-bg",
+      "shouldBeExposed": true,
+      "stuff": {
+        "url": "dw/portfolio-dw-stuff",
+        "ext": "png",
+        "animation": "transitionY 10px",
+        "duration": 1
+      }
+    }
+  },
+  {
+    "name": "LockedProject4",
+    "title": "Protected\nProject",
+    "theme": "black",
+    "subtitle": "Please request access",
+    "path": "lockedproject4",
+    "backgroundImage": "https://trello-attachments.s3.amazonaws.com/5d385e1a9c68ea134a96280c/5ed347e047081d0189fecafd/3dc52e0b2bbe77dbf485a484d9fa47ab/img_cover_BG_locked.png",
+    "shouldBeExposed": true,
+    "stuff": {
+      "url": "https://trello-attachments.s3.amazonaws.com/5ed347e047081d0189fecafd/840x1360/60edaf3b07e3bfd21fcec8727f4d5b41/img_cover_main_locked.png",
+      "ext": "png",
+      "animation": "transitionY 10px",
+      "duration": 1
+    },
+    "isLockedProject": true,
+    "unlockedInfo": {
+      "password": "4U<3",
+      "name": "Howser",
+      "title": "HOWSER\n3D Home Planner",
+      "theme": "white",
+      "subtitle": "The Easiest Way to Create 3D Floor Plans",
+      "path": "howser",
+      "backgroundImage": "howser/portfolio-howser-bg",
+      "shouldBeExposed": true,
+      "stuff": {
+        "url": "howser/portfolio-howser-stuff",
+        "ext": "png",
+        "animation": "transitionY 10px",
+        "duration": 1
+      }
     }
   },
   
   {
-    "name": "Offin",
-    "title": "OFFIN\nFashion O2O App",
+    "name": "LockedProject5",
+    "title": "Protected\nProject",
     "theme": "black",
-    "subtitle": "Offline Fashion Stores in Your Phone",
-    "path": "offin",
-    "backgroundImage": "offin/portfolio-offin-bg",
+    "subtitle": "Please request access",
+    "path": "lockedproject5",
+    "backgroundImage": "https://trello-attachments.s3.amazonaws.com/5d385e1a9c68ea134a96280c/5ed347e047081d0189fecafd/3dc52e0b2bbe77dbf485a484d9fa47ab/img_cover_BG_locked.png",
     "shouldBeExposed": true,
     "stuff": {
-      "url": "offin/portfolio-offin-stuff",
+      "url": "https://trello-attachments.s3.amazonaws.com/5ed347e047081d0189fecafd/840x1360/60edaf3b07e3bfd21fcec8727f4d5b41/img_cover_main_locked.png",
       "ext": "png",
       "animation": "transitionY 10px",
       "duration": 1
+    },
+    "isLockedProject": true,
+    "unlockedInfo": {
+      "password": "4U<3",
+      "name": "Offin",
+      "title": "OFFIN\nFashion O2O App",
+      "theme": "black",
+      "subtitle": "Offline Fashion Stores in Your Phone",
+      "path": "offin",
+      "backgroundImage": "offin/portfolio-offin-bg",
+      "shouldBeExposed": true,
+      "stuff": {
+        "url": "offin/portfolio-offin-stuff",
+        "ext": "png",
+        "animation": "transitionY 10px",
+        "duration": 1
+      }
     }
   },
   {
-    "name": "Gabia",
-    "title": "GABIA\nWebsite Renewal",
-    "theme": "white",
-    "subtitle": "Clear and Easy Website for IT Businesses",
-    "path": "gabia",
-    "backgroundImage": "gabia/portfolio-gabia-bg",
+    "name": "LockedProject6",
+    "title": "Protected\nProject",
+    "theme": "black",
+    "subtitle": "Please request access",
+    "path": "lockedproject6",
+    "backgroundImage": "https://trello-attachments.s3.amazonaws.com/5d385e1a9c68ea134a96280c/5ed347e047081d0189fecafd/3dc52e0b2bbe77dbf485a484d9fa47ab/img_cover_BG_locked.png",
     "shouldBeExposed": true,
     "stuff": {
-      "url": "gabia/portfolio-gabia-stuff",
+      "url": "https://trello-attachments.s3.amazonaws.com/5ed347e047081d0189fecafd/840x1360/60edaf3b07e3bfd21fcec8727f4d5b41/img_cover_main_locked.png",
       "ext": "png",
       "animation": "transitionY 10px",
       "duration": 1
+    },
+    "isLockedProject": true,
+    "unlockedInfo": {
+      "password": "4U<3",
+      "name": "Gabia",
+      "title": "GABIA\nWebsite Renewal",
+      "theme": "white",
+      "subtitle": "Clear and Easy Website for IT Businesses",
+      "path": "gabia",
+      "backgroundImage": "gabia/portfolio-gabia-bg",
+      "shouldBeExposed": true,
+      "stuff": {
+        "url": "gabia/portfolio-gabia-stuff",
+        "ext": "png",
+        "animation": "transitionY 10px",
+        "duration": 1
+      }
     }
   }
 ]
