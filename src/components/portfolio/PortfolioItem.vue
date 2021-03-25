@@ -76,6 +76,9 @@ export default {
       return this.work.stuff.ext;
     },
     theme() {
+      if (this.work.isLockedProject && this.work.isUnlocked) {
+        return this.work.unlockedInfo.theme;
+      }
       return this.work.theme;
     },
     isActive() {
